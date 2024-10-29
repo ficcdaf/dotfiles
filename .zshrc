@@ -126,6 +126,7 @@ prompt purer
 eval "$(fzf --zsh)"
 
 alias top=btop
+alias v=nvim
 
 # Created by `pipx` on 2024-09-20 02:14:00
 export PATH="$PATH:/home/fic/.local/bin"
