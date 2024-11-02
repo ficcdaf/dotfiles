@@ -90,37 +90,8 @@ plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases color
 source $ZSH/oh-my-zsh.sh
 
 
-autoload -U promptinit; promptinit
-prompt purer
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# autoload -U promptinit; promptinit
+# prompt purer
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
@@ -128,6 +99,7 @@ eval "$(fzf --zsh)"
 alias top=btop
 alias v=nvim
 alias lg=lazygit
+alias t=tmux
 bindkey -r '^T'
 
 # Created by `pipx` on 2024-09-20 02:14:00
@@ -141,8 +113,8 @@ function y() {
   fi
   rm -f -- "$tmp"
 }
-. /opt/asdf-vm/asdf.sh
-# echo -ne '\e[6 q'    # Caret/vertical bar cursor style
+# . /opt/asdf-vm/asdf.sh
+# Need this to fix the cursor in tmux
 print -n '\033[5 q'
 function zle-keymap-select zle-line-init zle-line-finish
 {
@@ -155,4 +127,4 @@ function zle-keymap-select zle-line-init zle-line-finish
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
