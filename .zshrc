@@ -78,7 +78,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z fzf systemd tmux z )
+plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z fzf systemd z )
 # plugins+=(sudo)
 # ZVM_INIT_MODE=sourcing
 # function zvm_config() {
@@ -128,6 +128,7 @@ eval "$(fzf --zsh)"
 alias top=btop
 alias v=nvim
 alias lg=lazygit
+bindkey -r '^T'
 
 # Created by `pipx` on 2024-09-20 02:14:00
 export PATH="$PATH:/home/fic/.local/bin"
@@ -141,4 +142,5 @@ function y() {
   rm -f -- "$tmp"
 }
 . /opt/asdf-vm/asdf.sh
+echo -ne '\e[6 q'    # Caret/vertical bar cursor style
 # eval "$(starship init zsh)"
