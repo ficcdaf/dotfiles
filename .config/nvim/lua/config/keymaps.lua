@@ -34,16 +34,6 @@ map({ "n", "x" }, "<Up>", "k", { desc = "Up", remap = true })
 map({ "n", "x" }, "<Down>", "j", { desc = "Down", remap = true })
 map({ "n", "x" }, "<Left>", "h", { desc = "Left", remap = true })
 map({ "n", "x" }, "<Right>", "l", { desc = "Right", remap = true })
--- map({ "n", "x" }, "<PageDown>", function()
---   move_cursor_to("down")
--- end, { desc = "Move cursor to bottom", remap = true })
--- map({ "n", "x" }, "<PageUp>", function()
---   move_cursor_to("up")
--- end, { desc = "Move cursor to top", remap = true })
--- map({ "n", "t" }, "<C-Left>", "<C-H>", { desc = "Switch Window Left", remap = true })
--- map({ "n", "t" }, "<C-Right>", "<C-L>", { desc = "Switch Window Right", remap = true })
--- map({ "n", "t" }, "<C-Up>", "<C-K>", { remap = true })
--- map({ "n", "t" }, "<C-Down>", "<C-J>", { desc = "Switch Window Down", remap = true })
 
 map({ "n", "t", "i" }, "<C-Left>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Switch Window Left", remap = true })
 map({ "n", "t", "i" }, "<C-Right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Switch Window Right", remap = true })
@@ -54,11 +44,39 @@ map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
 map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
 map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })
 map({ "n", "x", "v" }, "<M-Down>", "<M-j>", { remap = true })
-map({ "n" }, "<S-Left>", "H", { desc = "Left Buffer", remap = true })
-map({ "n" }, "<S-Right>", "L", { desc = "Right Buffer", remap = true })
+map({ "n" }, "<S-Left>", "[b", { desc = "Previous Buffer", remap = true })
+map({ "n" }, "<S-Right>", "]b", { desc = "Next Buffer", remap = true })
 map({ "n" }, "<S-Down>", "5j", { remap = true })
 map({ "n" }, "<S-Up>", "5k", { remap = true })
 map({ "i" }, "<M-e>", "<Esc>", { desc = "Escape insert mode", remap = true })
+
+-- better navigation
+map({ "n" }, "<C-u>", "<C-u>zz", { remap = false })
+map({ "n" }, "<C-d>", "<C-d>zz", { remap = false })
+map({ "n" }, "n", "nzz", { remap = false })
+map({ "n" }, "N", "Nzz", { remap = false })
+
+-- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
+vim.keymap.del({ "n" }, "<S-h>")
+vim.keymap.del({ "n" }, "<S-l>")
+map({ "n" }, "<S-h>", "L", { remap = false })
+map({ "n" }, "<S-l>", "H", { remap = false })
+-- better delete and put
+map({ "n", "x" }, "<leader>p", '"_p', { remap = false })
+map({ "n", "x" }, "<leader>P", '"_P', { remap = false })
+map({ "n", "x" }, "<leader>d", '"_d', { remap = false })
+map({ "n", "x" }, "<leader>dd", '"_dd', { remap = false })
+map({ "n", "x" }, "<leader>D", '"_D', { remap = false })
+
+-- yank history
+map({ "n", "x" }, "<leader>fp", function()
+  if LazyVim.pick.picker.name == "telescope" then
+    require("telescope").extensions.yank_history.yank_history({})
+  else
+    vim.cmd([[YankyRingHistory]])
+  end
+end, { desc = "Open Yank History", remap = false })
+
 -- <PageDown><PageUp>
 
 -- Remap spelling suggestions
