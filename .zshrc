@@ -10,6 +10,7 @@ eval "$(fzf --zsh)"
 
 alias top=btop
 alias v=nvim
+alias testvim='NVIM_APPNAME=nvim-test nvim'
 alias lg=lazygit
 alias t=tmux
 bindkey -r '^T'
