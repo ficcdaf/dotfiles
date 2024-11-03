@@ -1,6 +1,7 @@
 return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   { "folke/tokyonight.nvim", enabled = false },
+  -- { "folke/noice.nvim", enabled = false },
 }
 -- TODO:
 -- figure out how to make markdown extra work together with Obsidian, disable it for now

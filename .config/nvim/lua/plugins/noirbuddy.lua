@@ -16,6 +16,12 @@
 -- #d4d4d4
 local noiropts = {
   -- preset = "miami-nights",
+  styles = {
+    italic = true,
+    bold = true,
+    underline = true,
+    undercurl = true,
+  },
   colors = {
     primary = "#994848",
     secondary = "#933737",
@@ -41,6 +47,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = function()
+        -- local Color, colors, Group, groups, styles = require("colorbuddy").setup()
+        -- Group.new("SpellBad", colors.primary, nil, styles.undercurl + styles.italic)
         require("noirbuddy").setup(noiropts)
       end,
     },
