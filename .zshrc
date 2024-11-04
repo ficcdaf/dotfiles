@@ -12,7 +12,16 @@ alias top=btop
 alias v=nvim
 alias testvim='NVIM_APPNAME=nvim-test nvim'
 alias lg=lazygit
-alias t=tmux
+# tmux aliases
+alias t="tmux"
+alias ta="tmux attach-session"
+alias tat="tmux attach-session -t"
+alias tka="tmux kill-session -a"
+alias tkt="tmux kill-session -t"
+alias tl="tmux list-sessions"
+alias tn="tmux new-session"
+alias tnt="tmux new-session -t"
+
 bindkey -r '^T'
 
 # Created by `pipx` on 2024-09-20 02:14:00
