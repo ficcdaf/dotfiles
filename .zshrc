@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
+alias ls="eza -lh"
 alias top=btop
 alias v=nvim
 alias testvim='NVIM_APPNAME=nvim-test nvim'
