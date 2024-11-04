@@ -8,6 +8,15 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.opt_local.breakindent = true
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
+    local secondary = "#379393"
+    local primary = "#933737"
+    vim.api.nvim_set_hl(0, "ObsidianRefText", { fg = primary, bold = true, underline = true })
+    vim.api.nvim_set_hl(0, "ObsidianRef", { fg = primary, bold = true, underline = true })
+    vim.api.nvim_set_hl(0, "ObsidianBullet", { fg = secondary, bold = true, underline = false })
+    vim.api.nvim_set_hl(0, "ObsidianDone", { fg = secondary, bold = true, underline = false })
+    vim.api.nvim_set_hl(0, "ObsidianTodo", { fg = secondary, bold = true, underline = false })
+    vim.api.nvim_set_hl(0, "obsidiantag", { fg = secondary, bold = false, italics = true })
+    vim.api.nvim_set_hl(0, "ObsidianTag", { fg = secondary, bold = false, italics = true })
     vim.api.nvim_buf_set_keymap(
       0,
       "i",
