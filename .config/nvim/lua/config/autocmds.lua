@@ -1,7 +1,7 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
-vim.cmd("let &t_ut=''")
+-- vim.cmd("let &t_ut=''")
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
@@ -15,8 +15,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.api.nvim_set_hl(0, "ObsidianBullet", { fg = secondary, bold = true, underline = false })
     vim.api.nvim_set_hl(0, "ObsidianDone", { fg = secondary, bold = true, underline = false })
     vim.api.nvim_set_hl(0, "ObsidianTodo", { fg = secondary, bold = true, underline = false })
-    vim.api.nvim_set_hl(0, "obsidiantag", { fg = secondary, bold = false, italics = true })
-    vim.api.nvim_set_hl(0, "ObsidianTag", { fg = secondary, bold = false, italics = true })
+    vim.api.nvim_set_hl(0, "obsidiantag", { fg = secondary, bold = false, italic = true })
+    vim.api.nvim_set_hl(0, "ObsidianTag", { fg = secondary, bold = false, italic = true })
     vim.api.nvim_buf_set_keymap(
       0,
       "i",

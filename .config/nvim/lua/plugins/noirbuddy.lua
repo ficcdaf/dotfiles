@@ -76,6 +76,7 @@ return {
         Group.new("NotifyERRORIcon", colors.error)
         Group.new("ErrorMsg", colors.noir_1, colors.error)
         Group.new("SpellBad", nil, nil, styles.undercurl)
+        Group.new("String", colors.primary, nil, nil)
 
         -- Group.new("ObsidianExtLinkIcon", colors.primary, nil, styles.bold)
         -- Group.new("ObsidianRef", colors.primary, nil, styles.underline + styles.bold)
