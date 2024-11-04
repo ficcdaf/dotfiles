@@ -35,12 +35,11 @@ return {
             undercurl = false,
           },
           colors = {
-            -- secondary = "#379393",
+            secondary = "#BD4C4C",
             -- secondary = "#994848",
             -- secondary = "#B45959",
             -- secondary = "#215858",
             -- secondary = "#B34242",
-            secondary = "#BD4C4C",
             primary = "#933737",
             diagnostic_error = "#AC2020",
             diagnostic_warning = "#ff7700",
@@ -65,6 +64,14 @@ return {
         Color.new("infoborder", "#215858")
         Color.new("complement", "#379393")
         -- Override specific highlight groups
+        -- Group.new("Type", colors.complement)
+        Group.new("@markup.link", colors.secondary)
+        Group.new("@markup.list", colors.complement)
+        Group.new("@variable", colors.complement)
+        Group.new("@type.builtin", colors.complement)
+        Group.new("@boolean.go", colors.complement)
+        Group.new("Boolean", colors.complement)
+        Group.new("Constant", colors.complement)
         Group.new("NotifyINFOBorder", colors.infoborder)
         Group.new("NotifyINFOTitle", colors.complement)
         Group.new("NotifyINFOIcon", colors.complement)
@@ -77,6 +84,7 @@ return {
         Group.new("ErrorMsg", colors.noir_1, colors.error)
         Group.new("SpellBad", nil, nil, styles.undercurl)
         Group.new("String", colors.primary, nil, nil)
+        Group.new("Title", colors.primary, nil, styles.bold)
 
         -- Group.new("ObsidianExtLinkIcon", colors.primary, nil, styles.bold)
         -- Group.new("ObsidianRef", colors.primary, nil, styles.underline + styles.bold)
