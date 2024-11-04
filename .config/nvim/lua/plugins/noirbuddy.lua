@@ -32,10 +32,15 @@ return {
             italic = true,
             bold = true,
             underline = true,
-            undercurl = true,
+            undercurl = false,
           },
           colors = {
-            secondary = "#379393",
+            -- secondary = "#379393",
+            -- secondary = "#994848",
+            -- secondary = "#B45959",
+            -- secondary = "#215858",
+            -- secondary = "#B34242",
+            secondary = "#BD4C4C",
             primary = "#933737",
             diagnostic_error = "#AC2020",
             diagnostic_warning = "#ff7700",
@@ -58,10 +63,11 @@ return {
         Color.new("warn", "#f79000")
         Color.new("warnborder", "#79491d")
         Color.new("infoborder", "#215858")
+        Color.new("complement", "#379393")
         -- Override specific highlight groups
         Group.new("NotifyINFOBorder", colors.infoborder)
-        Group.new("NotifyINFOTitle", colors.secondary)
-        Group.new("NotifyINFOIcon", colors.secondary)
+        Group.new("NotifyINFOTitle", colors.complement)
+        Group.new("NotifyINFOIcon", colors.complement)
         Group.new("NotifyWARNBorder", colors.warnborder)
         Group.new("NotifyWARNTitle", colors.warn)
         Group.new("NotifyWARNIcon", colors.warn)
