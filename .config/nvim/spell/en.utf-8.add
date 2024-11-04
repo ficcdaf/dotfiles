@@ -28,3 +28,6 @@ config
 Hyprland
 Rofi
 Dunst
+Mindmap
+linters
+PRs
