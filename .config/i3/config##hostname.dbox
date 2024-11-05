@@ -189,7 +189,9 @@ bindsym $mod+Shift+l exec ~/.config/i3/scripts/powermenu
 bindsym $mod+Shift+x exec ~/.config/i3/scripts/blur-lock
 
 # Take screenshot
+# bindsym $mod+s exec --no-startup-id flameshot gui
 bindsym $mod+s exec --no-startup-id flameshot gui
+bindsym $mod+Shift+s exec --no-startup-id flameshot screen -c -p ~/Pictures/screenshots/
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
