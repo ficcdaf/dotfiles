@@ -55,6 +55,8 @@ map({ "n" }, "<C-u>", "<C-u>zz", { remap = false })
 map({ "n" }, "<C-d>", "<C-d>zz", { remap = false })
 map({ "n" }, "n", "nzz", { remap = false })
 map({ "n" }, "N", "Nzz", { remap = false })
+map({ "n" }, "<PageDown>", "<Down><C-e>", { remap = false })
+map({ "n" }, "<PageUp>", "<Up><C-y>", { remap = false })
 
 -- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
 vim.keymap.del({ "n" }, "<S-h>")
@@ -62,11 +64,12 @@ vim.keymap.del({ "n" }, "<S-l>")
 map({ "n" }, "<S-h>", "L", { remap = false })
 map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
-map({ "n", "x" }, "<leader>p", '"_p', { remap = false })
-map({ "n", "x" }, "<leader>P", '"_P', { remap = false })
-map({ "n", "x" }, "<leader>d", '"_d', { remap = false })
-map({ "n", "x" }, "<leader>dd", '"_dd', { remap = false })
-map({ "n", "x" }, "<leader>D", '"_D', { remap = false })
+-- map({ "n" }, "dT", "dvT", { remap = false })
+-- map({ "n", "x" }, "<leader>p", '"_p', { remap = false })
+-- map({ "n", "x" }, "<leader>P", '"_P', { remap = false })
+-- map({ "n", "x" }, "<leader>d", '"_d', { remap = false })
+-- map({ "n", "x" }, "<leader>dd", '"_dd', { remap = false })
+-- map({ "n", "x" }, "<leader>D", '"_D', { remap = false })
 
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
