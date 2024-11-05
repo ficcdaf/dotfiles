@@ -83,6 +83,7 @@ return {
         Group.new("NotifyERRORIcon", colors.error)
         Group.new("ErrorMsg", colors.noir_1, colors.error)
         Group.new("SpellBad", nil, nil, styles.undercurl)
+        Group.new("SpellCap", nil, nil, styles.undercurl)
         Group.new("String", colors.primary, nil, nil)
         Group.new("Title", colors.primary, nil, styles.bold)
 

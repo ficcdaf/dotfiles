@@ -246,4 +246,5 @@ exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec --no-startup-id blueman-applet &
 exec_always --no-startup-id pkill dunst && dunst &
 exec_always --no-startup-id wal --theme sidonia
+exec --no-startup-id tmux start-server &
 # exec_always --no-startup-id wal --theme arch
