@@ -1,0 +1,5 @@
+set selection-clipboard clipboard
+map <C-i> zoom in
+map <C-o> zoom out
+map <S-Down> navigate next
+map <S-Up> navigate previous
