@@ -1,0 +1,29 @@
+{
+  "checksum": "f2fc35338e3bb8655212e0b1920e28a4",
+  "wallpaper": "/home/fic/Pictures/wallpapers/sidonia.png",
+  "alpha": "100",
+  "special": {
+    "background": "#1e1e1e",
+    "foreground": "#c3c3c3",
+    "cursor": "#c3c3c3"
+  },
+  "colors": {
+    "color0": "#1e1e1e",
+    "color1": "#781e1e",
+    "color2": "#842121",
+    "color3": "#862121",
+    "color4": "#257a96",
+    "color5": "#259797",
+    "color6": "#a82929",
+    "color7": "#988d8d",
+    "color8": "#6c5959",
+    "color9": "#a12828",
+    "color10": "#b22c2c",
+    "color11": "#b42c2c",
+    "color12": "#32aac8",
+    "color13": "#32c9c9",
+    "color14": "#d14848",
+    "color15": "#c3c3c3"
+  }
+}
+
