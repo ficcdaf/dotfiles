@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z fzf systemd z )
+plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd z )
 source $ZSH/oh-my-zsh.sh
 
 # autoload -U promptinit; promptinit
