@@ -614,6 +614,7 @@ exec --no-startup-id xrandr --output HDMI-A-0 --auto --right-of DisplayPort-0
 exec_always --no-startup-id xset r rate 250 25
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id birdtray
+exec --no-startup-id obsidian
 exec --no-startup-id ~/AppImage/filen_x86_64*.AppImage
 #exec --no-startup-id greenclip daemon>/dev/null
 #bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
