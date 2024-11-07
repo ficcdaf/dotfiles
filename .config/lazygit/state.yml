@@ -2,13 +2,6 @@ lastupdatecheck: 0
 recentrepos:
     - /home/fic
     - /home/fic/scripts
-    - /home/fic/dev/zona
-    - /home/fic/dev/darkvoid.nvim
-    - /home/fic/dev/ficcdaf
-    - /home/fic/dev/zoner
-    - /home/fic/ficd-blog
-    - /home/fic/neocities/dev/ficd-blog
-    - /home/fic/github/lid
 startuppopupversion: 5
 lastversion: 0.44.1
 customcommandshistory: []
