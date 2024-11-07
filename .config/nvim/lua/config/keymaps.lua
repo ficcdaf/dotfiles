@@ -57,6 +57,8 @@ map({ "n" }, "n", "nzz", { remap = false })
 map({ "n" }, "N", "Nzz", { remap = false })
 map({ "n" }, "<PageDown>", "<Down>zz", { remap = false })
 map({ "n" }, "<PageUp>", "<Up>zz", { remap = false })
+map({ "n", "x" }, "<M-i>", "$", { remap = false })
+map({ "n", "x" }, "<M-m>", "0", { remap = false })
 
 -- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
 vim.keymap.del({ "n" }, "<S-h>")
