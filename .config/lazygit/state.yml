@@ -1,5 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
+    - /home/fic
     - /home/fic/scripts
     - /home/fic/dev/zona
     - /home/fic/dev/darkvoid.nvim
