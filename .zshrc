@@ -13,6 +13,7 @@ alias top=btop
 alias v=nvim
 alias testvim='NVIM_APPNAME=nvim-test nvim'
 alias lg=lazygit
+alias ylg="yadm enter lazygit"
 # tmux aliases
 alias t="tmux"
 alias ta="tmux attach-session"
