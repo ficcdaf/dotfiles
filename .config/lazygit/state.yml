@@ -1,9 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/fic
+    - /home/fic/scripts
     - /home/fic/dev/zona
     - /home/fic/dev/darkvoid.nvim
-    - /home/fic/scripts
     - /home/fic/dev/ficcdaf
     - /home/fic/dev/zoner
     - /home/fic/ficd-blog
