@@ -21,6 +21,14 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.api.nvim_set_hl(0, "ObsidianTodo", { fg = colors.complement:to_vim(), bold = true, underline = false })
     vim.api.nvim_set_hl(0, "obsidiantag", { fg = colors.complement:to_vim(), bold = false, italic = true })
     vim.api.nvim_set_hl(0, "ObsidianTag", { fg = colors.complement:to_vim(), bold = false, italic = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "<leader>mc", "gzaiW`", { desc = "Markdown: add Code Surround", silent = true })
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "n",
+      "<leader>mr",
+      "gzd`",
+      { desc = "Markdown: delete Code Surround", silent = true }
+    )
     vim.api.nvim_buf_set_keymap(
       0,
       "i",
