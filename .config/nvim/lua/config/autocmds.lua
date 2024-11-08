@@ -5,15 +5,27 @@
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
 local md_tex = function()
-  vim.cmd("syn region markdownMathInline matchgroup=texMathZone start=/$/ end=/$/ contains=@texMath")
-  vim.cmd("syn match markdownMathInline '$[^$].{-}$' contains=@texMath")
-  vim.cmd("syn region markdownMathBlock matchgroup=texMathZone start=/$$/ end=/$$/ contains=@texMath")
-  vim.cmd("syn include @texMath syntax/tex.vim")
+  -- vim.cmd("syn region markdownMathInline matchgroup=texMathZone start=/$/ end=/$/ contains=@texMath")
+  -- vim.cmd("syn match markdownMathInline '$[^$].{-}$' contains=@texMath")
+  -- vim.cmd("syn region markdownMathBlock matchgroup=texMathZone start=/$$/ end=/$$/ contains=@texMath")
+  -- vim.cmd("syn include @texMath syntax/tex.vim")
+  -- Include the tex syntax for use within markdown
+  vim.cmd("syntax include @tex syntax/tex.vim")
+
+  -- Define the inline math region and allow it to contain tex syntax
+  vim.cmd("syntax region texMathZone start=/\\$/ end=/\\$/ contained contains=@tex")
+
+  -- Define the display math region and allow it to contain tex syntax
+  vim.cmd("syntax region texMathDisplay start=/\\$\\$/ end=/\\$\\$/ contained contains=@tex")
+
+  -- Optionally, conceal the `$` symbols for cleaner display
+  vim.opt.conceallevel = 2
+  vim.cmd("syntax region texMathZone start=/\\$/ skip=/\\\\\\$/ end=/\\$/ concealends contained")
+  vim.cmd("syntax region texMathDisplay start=/\\$\\$/ end=/\\$\\$/ concealends contained")
 end
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
-    md_tex()
     vim.opt_local.breakindent = true
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
