@@ -19,6 +19,10 @@ vim.api.nvim_create_autocmd("FileType", {
     hi def link mathBlock Statement
     hi def link mathInline Statement
   ]])
+    -- vim.g.vimtex_syntax_conceal = {
+    --   math = 1,
+    --   oplus = "⊕",
+    -- }
   end,
 })
 vim.api.nvim_create_autocmd({ "FileType" }, {
