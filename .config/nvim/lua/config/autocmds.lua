@@ -3,14 +3,6 @@
 -- Add any additional autocmds here
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "tex",
-  callback = function()
-    vim.cmd([[
-            syntax match texMathSymbol "\\oplus" conceal cchar=⊕
-        ]])
-  end,
-})
 -- This autocommand fixes syntax highlighting for inline math in markdown files
 -- Together with vimtex, it will apply very sexy good stuff here!
 vim.api.nvim_create_autocmd("FileType", {
@@ -25,13 +17,6 @@ vim.api.nvim_create_autocmd("FileType", {
     syn include @tex syntax/tex.vim
     hi def link mathBlock Statement
     hi def link mathInline Statement
-    " let g:vimtex_syntax_custom_cmds = [
-    "       \ {'name': 'vct', 'mathmode': 1, 'argstyle': 'bold'},
-    "       \ {'name': 'R', 'cmdre': 'R>', 'mathmode': 1, 'concealchar': 'ℝ'},
-    "       \ {'name': 'R',  'mathmode': 1, 'concealchar': 'ℝ'},
-    "       \ {'name': 'mathnote', 'mathmode': 1, 'nextgroup': 'texMathTextArg'},
-    "       \ {'name': 'nospell', 'argspell': 0},
-    "       \]
   ]])
     vim.g.vimtex_syntax_custom_cmds = vim.tbl_extend("force", vim.g.vimtex_syntax_custom_cmds or {}, {
       -- { name = "oplus", mathmode = 1, concealchar = "⊕" },
