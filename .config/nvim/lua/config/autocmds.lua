@@ -23,6 +23,20 @@ local md_tex = function()
   vim.cmd("syntax region texMathZone start=/\\$/ skip=/\\\\\\$/ end=/\\$/ concealends contained")
   vim.cmd("syntax region texMathDisplay start=/\\$\\$/ end=/\\$\\$/ concealends contained")
 end
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    -- Define syntax regions for inline math
+    vim.cmd([[syntax match markdownMathInline '\\$[^$].\{-}\$']])
+    vim.cmd([[syntax region markdownMathBlock start=/\\$\\$/ end=/\\$\\$/]])
+
+    -- Set both inline and block math to 'tex' filetype
+    vim.cmd([[
+      syntax match tex '\\$[^$].\{-}\$'
+      syntax region tex start=/\\$\\$/ end=/\\$\\$/
+    ]])
+  end,
+})
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
