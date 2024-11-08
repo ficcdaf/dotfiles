@@ -27,13 +27,12 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
     vim.cmd([[
-    syn region math start=/\$\$/ end=/\$\$/ contained contains=@tex ft=tex
+    syn region math start=/\$\$/ end=/\$\$/ contains=@tex=tex
     " inline math
-    syn match math '\$[^$].\{-}\$' contained contains=@tex ft=tex
-    syn include @tex syntax/tex.vim
-    hi link math @texMath
+    syn match math '\$[^$].\{-}\$' contains=@tex
+    " syn include @tex syntax/tex.vim
     " actually highlight the region we defined as "math"
-    " hi link math Statement
+    hi link math Statement
   ]])
   end,
 })
