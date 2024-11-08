@@ -1,38 +1,23 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
--- vim.cmd("let &t_ut=''")
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
-local md_tex = function()
-  -- vim.cmd("syn region markdownMathInline matchgroup=texMathZone start=/$/ end=/$/ contains=@texMath")
-  -- vim.cmd("syn match markdownMathInline '$[^$].{-}$' contains=@texMath")
-  -- vim.cmd("syn region markdownMathBlock matchgroup=texMathZone start=/$$/ end=/$$/ contains=@texMath")
-  -- vim.cmd("syn include @texMath syntax/tex.vim")
-  -- Include the tex syntax for use within markdown
-  vim.cmd("syntax include @tex syntax/tex.vim")
 
-  -- Define the inline math region and allow it to contain tex syntax
-  vim.cmd("syntax region texMathZone start=/\\$/ end=/\\$/ contained contains=@tex")
-
-  -- Define the display math region and allow it to contain tex syntax
-  vim.cmd("syntax region texMathDisplay start=/\\$\\$/ end=/\\$\\$/ contained contains=@tex")
-
-  -- Optionally, conceal the `$` symbols for cleaner display
-  vim.opt.conceallevel = 2
-  vim.cmd("syntax region texMathZone start=/\\$/ skip=/\\\\\\$/ end=/\\$/ concealends contained")
-  vim.cmd("syntax region texMathDisplay start=/\\$\\$/ end=/\\$\\$/ concealends contained")
-end
+-- This autocommand fixes syntax highlighting for inline math in markdown files
+-- Together with vimtex, it will apply very sexy good stuff here!
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
     vim.cmd([[
-    syn region math start=/\$\$/ end=/\$\$/ contains=@tex=tex
+    syn region mathBlock start=/\$\$/ end=/\$\$/ contains=@tex
     " inline math
-    syn match math '\$[^$].\{-}\$' contains=@tex
+    syn match mathInline '\$[^$].\{-}\$' contains=@tex
     " syn include @tex syntax/tex.vim
     " actually highlight the region we defined as "math"
-    hi link math Statement
+    syn include @tex syntax/tex.vim
+    hi def link mathBlock Statement
+    hi def link mathInline Statement
   ]])
   end,
 })
