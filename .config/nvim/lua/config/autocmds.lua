@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd("FileType", {
           " \ {'name': 'R',  'mathmode': 1, 'concealchar': 'ℝ'},
           " \ {'name': 'mathnote', 'mathmode': 1, 'nextgroup': 'texMathTextArg'},
           " \ {'name': 'nospell', 'argspell': 0},
-          \]
+          ]
   ]])
     -- vim.g.vimtex_syntax_conceal = {
     --   math = 1,
