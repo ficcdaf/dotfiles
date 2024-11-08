@@ -9,7 +9,7 @@ zle -N edit-command-line
 bindkey "^e" edit-command-line
 
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
 
 alias ls="eza -lh"
 alias top=btop
