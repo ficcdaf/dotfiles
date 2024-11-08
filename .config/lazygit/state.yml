@@ -1,7 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/fic/scripts
     - /home/fic/cisc/indiv-project
+    - /home/fic/scripts
 startuppopupversion: 5
 lastversion: 0.44.1
 customcommandshistory: []
