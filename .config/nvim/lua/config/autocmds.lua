@@ -30,7 +30,7 @@ vim.api.nvim_create_autocmd("FileType", {
     syn region math start=/\$\$/ end=/\$\$/ contained contains=@tex
     " inline math
     syn match math '\$[^$].\{-}\$' contained contains=@tex
-
+    syn include @tex syntax/tex.vim
     " actually highlight the region we defined as "math"
     " hi link math Statement
   ]])
