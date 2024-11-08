@@ -26,20 +26,14 @@ end
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
-    -- Enable concealment for inline and block math
-    vim.opt_local.conceallevel = 2
-    vim.opt_local.concealcursor = "nc"
-
-    -- Define regions for inline and block math to be treated as `tex`
     vim.cmd([[
-    syntax region texMathInline matchgroup=texMath start="\\$" skip="\\\\\\$" end="\\$" concealends
-    syntax region texMathBlock matchgroup=texMath start="\\$\\$" end="\\$\\$" concealends
-  ]])
+    syn region math start=/\$\$/ end=/\$\$/
+    " inline math
+    syn match math '\$[^$].\{-}\$'
 
-    -- Set syntax highlighting for these regions to `tex`
-    vim.cmd("highlight link texMath texMathZone")
-    vim.cmd("highlight link texMathInline texMathZone")
-    vim.cmd("highlight link texMathBlock texMathZone")
+    " actually highlight the region we defined as "math"
+    hi link math Statement
+  ]])
   end,
 })
 vim.api.nvim_create_autocmd({ "FileType" }, {
