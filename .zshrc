@@ -4,6 +4,9 @@ source $ZSH/oh-my-zsh.sh
 
 # autoload -U promptinit; promptinit
 # prompt purer
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey "^e" edit-command-line
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
