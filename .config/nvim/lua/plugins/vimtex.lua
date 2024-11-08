@@ -7,10 +7,6 @@ return {
     vim.g.vimtex_viewer_method = "zathura"
     vim.g.vimtex_quickfix_open_on_warning = 0
     vim.g.vimtex_compiler_silent = 1
-    vim.g.vimtex_syntax_conceal = {
-      math = 1,
-      oplus = "⊕",
-    }
   end,
   keys = {
     { "<localLeader>l", "", desc = "+vimtex" },
