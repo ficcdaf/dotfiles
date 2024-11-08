@@ -4,9 +4,16 @@
 -- vim.cmd("let &t_ut=''")
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
+local md_tex = function()
+  vim.cmd("syn region markdownMathInline matchgroup=texMathZone start=/$/ end=/$/ contains=@texMath")
+  vim.cmd("syn match markdownMathInline '$[^$].{-}$' contains=@texMath")
+  vim.cmd("syn region markdownMathBlock matchgroup=texMathZone start=/$$/ end=/$$/ contains=@texMath")
+  vim.cmd("syn include @texMath syntax/tex.vim")
+end
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
+    md_tex()
     vim.opt_local.breakindent = true
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
