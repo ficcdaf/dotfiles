@@ -4,6 +4,14 @@
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
 vim.api.nvim_create_autocmd("FileType", {
+  pattern = "python",
+  callback = function()
+    local cl = require("colorbuddy")
+    cl.Group.new("@variable", cl.colors.primary)
+    cl.Group.new("@string", cl.colors.secondary)
+  end,
+})
+vim.api.nvim_create_autocmd("FileType", {
   pattern = "tex",
   callback = function()
     vim.cmd([[
