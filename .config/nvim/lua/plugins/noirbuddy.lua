@@ -78,6 +78,7 @@ return {
         Group.new("Boolean", colors.complement)
         Group.new("Constant", colors.complement)
         -- TODO: change these groups to match Snacks instead...
+        -- Is that even needed actually?
         Group.new("NotifyINFOBorder", colors.infoborder)
         Group.new("NotifyINFOTitle", colors.complement)
         Group.new("NotifyINFOIcon", colors.complement)
