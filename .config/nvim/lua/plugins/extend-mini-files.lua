@@ -29,5 +29,8 @@ return {
       -- go_out = "<BS>",
       -- reset = "-",
     },
+    options = {
+      use_as_default_explorer = true,
+    },
   },
 }
