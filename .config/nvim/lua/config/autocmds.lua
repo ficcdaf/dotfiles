@@ -14,14 +14,14 @@ vim.api.nvim_create_autocmd("FileType", {
     cl.Group.new("@constant.builtin", cl.colors.complement)
   end,
 })
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "tex",
-  callback = function()
-    vim.cmd([[
-            syntax match texMathSymbol "\\oplus" conceal cchar=⊕
-        ]])
-  end,
-})
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "tex",
+--   callback = function()
+--     vim.cmd([[
+--             syntax match texMathSymbol "\\oplus" conceal cchar=⊕
+--         ]])
+--   end,
+-- })
 -- This autocommand fixes syntax highlighting for inline math in markdown files
 -- Together with vimtex, it will apply very sexy good stuff here!
 vim.api.nvim_create_autocmd("FileType", {
