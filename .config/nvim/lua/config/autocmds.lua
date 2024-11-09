@@ -11,6 +11,7 @@ vim.api.nvim_create_autocmd("FileType", {
     cl.Group.new("@string", cl.colors.secondary)
     cl.Group.new("@keyword", cl.colors.complement)
     cl.Group.new("@keyword.operator", cl.colors.complement)
+    cl.Group.new("@constant.builtin", cl.colors.complement)
   end,
 })
 vim.api.nvim_create_autocmd("FileType", {
