@@ -58,6 +58,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
     vim.opt_local.breakindent = true
+    -- We want markdown files to autosave
+    vim.opt_local.autowrite = true
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
     -- local secondary = "#379393"
