@@ -31,27 +31,11 @@ vim.api.nvim_create_autocmd("FileType", {
     syn region mathBlock start=/\$\$/ end=/\$\$/ contains=@tex
     " inline math
     syn match mathInline '\$[^$].\{-}\$' contains=@tex
-    " syn include @tex syntax/tex.vim
     " actually highlight the region we defined as "math"
     syn include @tex syntax/tex.vim
     hi def link mathBlock Statement
     hi def link mathInline Statement
-    " let g:vimtex_syntax_custom_cmds = [
-    "       \ {'name': 'vct', 'mathmode': 1, 'argstyle': 'bold'},
-    "       \ {'name': 'R', 'cmdre': 'R>', 'mathmode': 1, 'concealchar': 'ℝ'},
-    "       \ {'name': 'R',  'mathmode': 1, 'concealchar': 'ℝ'},
-    "       \ {'name': 'mathnote', 'mathmode': 1, 'nextgroup': 'texMathTextArg'},
-    "       \ {'name': 'nospell', 'argspell': 0},
-    "       \]
   ]])
-    vim.g.vimtex_syntax_custom_cmds = vim.tbl_extend("force", vim.g.vimtex_syntax_custom_cmds or {}, {
-      -- { name = "oplus", mathmode = 1, concealchar = "⊕" },
-      { name = "oplus", mathmode = 1, concealchar = "⊕" },
-    })
-    -- vim.g.vimtex_syntax_conceal = {
-    --   math = 1,
-    --   oplus = "⊕",
-    -- }
   end,
 })
 vim.api.nvim_create_autocmd({ "FileType" }, {
