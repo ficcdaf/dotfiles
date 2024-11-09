@@ -11,7 +11,7 @@ bindkey "^e" edit-command-line
 # Set up fzf key bindings and fuzzy completion
 # eval "$(fzf --zsh)"
 
-alias ls="eza -lh"
+alias ls="eza -lh --git"
 alias top=btop
 alias v=nvim
 alias testvim='NVIM_APPNAME=nvim-test nvim'
