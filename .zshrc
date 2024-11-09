@@ -27,6 +27,9 @@ alias tl="tmux list-sessions"
 alias tn="tmux new-session"
 alias tnt="tmux new-session -t"
 
+alias svenv="source .venv/bin/activate"
+alias szsh="source ~/.zshrc"
+
 bindkey -r '^T'
 
 # Created by `pipx` on 2024-09-20 02:14:00
