@@ -1,3 +1,5 @@
+-- Ok, this plugin is really awesome!
+-- And everyone should know about it -- game changer!!!
 return {
   "shortcuts/no-neck-pain.nvim",
   version = "*",
@@ -6,6 +8,7 @@ return {
       { "<leader>n", group = "+NoNeckPain" },
     })
     return {
+      width = 120,
       mappings = {
         enabled = true,
       },
