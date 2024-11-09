@@ -3,8 +3,6 @@
 -- Add any additional autocmds here
 vim.opt_local.breakindent = true
 vim.opt_local.wrap = true
-<<<<<<< HEAD
-=======
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "python",
   callback = function()
@@ -24,7 +22,6 @@ vim.api.nvim_create_autocmd("FileType", {
         ]])
   end,
 })
->>>>>>> refs/remotes/origin/main
 -- This autocommand fixes syntax highlighting for inline math in markdown files
 -- Together with vimtex, it will apply very sexy good stuff here!
 vim.api.nvim_create_autocmd("FileType", {
