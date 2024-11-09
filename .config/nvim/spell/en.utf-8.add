@@ -61,3 +61,6 @@ unicode
 ints
 oplus
 Neo4J
+neo4j
+APOC
+GDS
