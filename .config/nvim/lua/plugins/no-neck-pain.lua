@@ -13,6 +13,12 @@ return {
         enableOnVimEnter = true,
         skipEnteringNoNeckPainBuffer = false,
       },
+      buffers = {
+        scratchPad = {
+          enabled = true,
+          pathToFile = "~/SyncDocuments/scratch.md",
+        },
+      },
     }
   end,
 }
