@@ -19,5 +19,10 @@ done
 # Commit and push if there are changes
 if [[ -n $(yadm status --porcelain) ]]; then
   yadm commit -m "Auto commit: $(date +'%Y-%m-%d %H:%M:%S')"
+  if [ -f ~/.ssh/agent_env ]; then
+    source "$HOME/.ssh/environment-dpad"
+  else
+    echo "hi"
+  fi
   yadm push
 fi
