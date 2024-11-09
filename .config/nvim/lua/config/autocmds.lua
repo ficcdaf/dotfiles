@@ -9,6 +9,8 @@ vim.api.nvim_create_autocmd("FileType", {
     local cl = require("colorbuddy")
     cl.Group.new("@variable", cl.colors.primary)
     cl.Group.new("@string", cl.colors.secondary)
+    cl.Group.new("@keyword", cl.colors.complement)
+    cl.Group.new("@keyword.operator", cl.colors.complement)
   end,
 })
 vim.api.nvim_create_autocmd("FileType", {
