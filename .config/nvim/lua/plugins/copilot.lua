@@ -18,8 +18,23 @@ return {
 
       -- disable by default
       require("copilot.command").disable()
-
-      LazyVim.toggle.map("<leader>at", copilot_toggle)
+      local cpt = Snacks.toggle.new({
+        name = "Copilot",
+        map = vim.keymap.set,
+        which_key = true,
+        get = function()
+          return not require("copilot.client").is_disabled()
+        end,
+        notify = true,
+        set = function(state)
+          if state then
+            require("copilot.command").enable()
+          else
+            require("copilot.command").disable()
+          end
+        end,
+      })
+      -- LazyVim.toggle.map("<leader>at", copilot_toggle)
     end,
   },
   { "CopilotC-Nvim/CopilotChat.nvim", opts = {
