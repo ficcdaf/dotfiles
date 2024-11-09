@@ -14,9 +14,17 @@ return {
         skipEnteringNoNeckPainBuffer = false,
       },
       buffers = {
-        scratchPad = {
-          enabled = true,
-          pathToFile = "~/SyncDocuments/scratch.md",
+        left = {
+          scratchPad = {
+            enabled = false,
+            pathToFile = "~/SyncDocuments/scratch-l.md",
+          },
+        },
+        right = {
+          scratchPad = {
+            enabled = false,
+            pathToFile = "~/SyncDocuments/scratch-r.md",
+          },
         },
       },
     }
