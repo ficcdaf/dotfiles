@@ -1,9 +1,14 @@
 return {
   "shortcuts/no-neck-pain.nvim",
   version = "*",
-  opts = {
-    mappings = {
-      enabled = true,
-    },
-  },
+  opts = function()
+    require("which-key").add({
+      { "<leader>n", group = "+NoNeckPain" },
+    })
+    return {
+      mappings = {
+        enabled = true,
+      },
+    }
+  end,
 }
