@@ -14,7 +14,7 @@ return {
       },
       autocmds = {
         enableOnVimEnter = true,
-        skipEnteringNoNeckPainBuffer = false,
+        skipEnteringNoNeckPainBuffer = true,
       },
       buffers = {
         left = {

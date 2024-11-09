@@ -20,7 +20,7 @@ done
 if [[ -n $(yadm status --porcelain) ]]; then
   yadm commit -m "Auto commit: $(date +'%Y-%m-%d %H:%M:%S')"
   # Check if the ssh-agent env is present
-  if [ -f ~/.ssh/agent_env ]; then
+  if [ -f ~/.ssh/environment-dpad ]; then
     source "$HOME/.ssh/environment-dpad"
     yadm push
   else
