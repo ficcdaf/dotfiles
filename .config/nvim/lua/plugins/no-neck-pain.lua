@@ -9,6 +9,10 @@ return {
       mappings = {
         enabled = true,
       },
+      autocmds = {
+        enableOnVimEnter = true,
+        skipEnteringNoNeckPainBuffer = false,
+      },
     }
   end,
 }
