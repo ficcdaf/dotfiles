@@ -1,6 +1,10 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/fic
+<<<<<<< HEAD
+=======
+    - /home/fic/cisc/indiv-project
+>>>>>>> refs/remotes/origin/main
     - /home/fic/scripts
 startuppopupversion: 5
 lastversion: 0.44.1

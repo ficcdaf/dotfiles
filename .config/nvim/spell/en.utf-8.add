@@ -56,6 +56,14 @@ pwntools
 networkx
 NetworkX
 ie
+numpy
 unicode
 ints
 oplus
+Neo4J
+neo4j
+APOC
+GDS
+Configs
+TarInfo
+csv
