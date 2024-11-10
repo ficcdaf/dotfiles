@@ -11,7 +11,7 @@ bindkey "^e" edit-command-line
 # Set up fzf key bindings and fuzzy completion
 # eval "$(fzf --zsh)"
 
-alias ls="eza -lh"
+alias ls="eza -lh --git"
 alias top=btop
 alias v=nvim
 alias testvim='NVIM_APPNAME=nvim-test nvim'
@@ -26,6 +26,9 @@ alias tkt="tmux kill-session -t"
 alias tl="tmux list-sessions"
 alias tn="tmux new-session"
 alias tnt="tmux new-session -t"
+
+alias svenv="source .venv/bin/activate"
+alias szsh="source ~/.zshrc"
 
 bindkey -r '^T'
 

@@ -14,14 +14,14 @@ vim.api.nvim_create_autocmd("FileType", {
     cl.Group.new("@constant.builtin", cl.colors.complement)
   end,
 })
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "tex",
-  callback = function()
-    vim.cmd([[
-            syntax match texMathSymbol "\\oplus" conceal cchar=⊕
-        ]])
-  end,
-})
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "tex",
+--   callback = function()
+--     vim.cmd([[
+--             syntax match texMathSymbol "\\oplus" conceal cchar=⊕
+--         ]])
+--   end,
+-- })
 -- This autocommand fixes syntax highlighting for inline math in markdown files
 -- Together with vimtex, it will apply very sexy good stuff here!
 vim.api.nvim_create_autocmd("FileType", {
@@ -31,26 +31,22 @@ vim.api.nvim_create_autocmd("FileType", {
     syn region mathBlock start=/\$\$/ end=/\$\$/ contains=@tex
     " inline math
     syn match mathInline '\$[^$].\{-}\$' contains=@tex
-    " syn include @tex syntax/tex.vim
     " actually highlight the region we defined as "math"
     syn include @tex syntax/tex.vim
     hi def link mathBlock Statement
     hi def link mathInline Statement
   ]])
-    vim.g.vimtex_syntax_custom_cmds = vim.tbl_extend("force", vim.g.vimtex_syntax_custom_cmds or {}, {
-      -- { name = "oplus", mathmode = 1, concealchar = "⊕" },
-      { name = "oplus", mathmode = 1, concealchar = "⊕" },
-    })
-    -- vim.g.vimtex_syntax_conceal = {
-    --   math = 1,
-    --   oplus = "⊕",
-    -- }
   end,
 })
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()
     vim.opt_local.breakindent = true
+    -- We want markdown files to autosave
+    vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
+      buffer = 0,
+      command = "silent! write",
+    })
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
     -- local secondary = "#379393"
