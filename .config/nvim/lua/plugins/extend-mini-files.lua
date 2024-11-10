@@ -32,6 +32,7 @@ return {
       -- reset = "-",
     },
     options = {
+      permanent_delete = false,
       use_as_default_explorer = true,
     },
   },
