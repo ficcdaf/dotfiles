@@ -29,6 +29,10 @@ alias tnt="tmux new-session -t"
 
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
+alias vzsh="vim ~/.zshrc"
+
+alias autoyadm="~/.config/yadm/autoyadm.sh"
+alias yadmadd="~/.config/yadm/yadmadd.sh"
 
 bindkey -r '^T'
 
