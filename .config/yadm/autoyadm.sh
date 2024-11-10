@@ -7,6 +7,9 @@
 
 AYE="AutoYADM Error:"
 AYM="AutoYADM:"
+# Set hostname explicitly because it
+# may not be present in this shell environment
+HOST="$(hostname)"
 
 # First we read each path from "tracked"
 while read -r path; do
