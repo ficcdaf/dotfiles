@@ -31,7 +31,7 @@ alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
 alias vzsh="vim ~/.zshrc"
 
-alias autoyadm="~/dev/autoyadm/autoyadm.sh"
+alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
 alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 
 bindkey -r '^T'
