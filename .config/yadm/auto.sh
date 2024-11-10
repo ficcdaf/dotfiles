@@ -16,13 +16,15 @@ for config in "${configs[@]}"; do
   find "$config" -type f -exec yadm add {} +
 done
 
+sshenv="$HOME/.ssh/environment-$(cat /etc/hostname)"
+
 # Commit and push if there are changes
 if [[ -n $(yadm status --porcelain) ]]; then
   yadm commit -m "Auto commit: $(date +'%Y-%m-%d %H:%M:%S')"
   # Check if the ssh-agent env is present
-  if [ -f ~/.ssh/environment-dpad ]; then
+  if [ -f "$sshenv" ]; then
     # source "$HOME/.ssh/environment-dpad"
-    source "$HOME/.ssh/environment-$(cat /etc/hostname)"
+    source "$sshenv"
     yadm push
   else
     echo "ERROR: ssh-agent environment not found, aborting push..."
