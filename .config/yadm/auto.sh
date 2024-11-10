@@ -21,7 +21,8 @@ if [[ -n $(yadm status --porcelain) ]]; then
   yadm commit -m "Auto commit: $(date +'%Y-%m-%d %H:%M:%S')"
   # Check if the ssh-agent env is present
   if [ -f ~/.ssh/environment-dpad ]; then
-    source "$HOME/.ssh/environment-dpad"
+    # source "$HOME/.ssh/environment-dpad"
+    source "$HOME/.ssh/environment-$(cat /etc/hostname)"
     yadm push
   else
     echo "ERROR: ssh-agent environment not found, aborting push..."
