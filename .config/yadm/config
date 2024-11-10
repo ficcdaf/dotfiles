@@ -1,2 +1,4 @@
 [pull]
 	rebase = false
+[advice]
+	addIgnoredFile = false

@@ -7,12 +7,22 @@
 
 AYE="AutoYADM Error:"
 AYM="AutoYADM:"
+
+# We check not to overwrite the user's env setting
+if [ -z "$VAR" ]; then
+  AUTOYADMPUSH=0
+fi
+
 # Set hostname explicitly because it
 # may not be present in this shell environment
-HOST="$(hostname)"
+if [ -z "$HOST" ]; then
+  HOST="$(hostname)"
+fi
 
 # First we read each path from "tracked"
-while read -r path; do
+(while read -r path; do
+  # we disable ignored warning for this subshell
+  yadm config advice.addIgnoredFile false
   # Execute yadm add on each real file
   # if the path points to a directory
   # This ensures symlinks are not added
@@ -26,22 +36,23 @@ while read -r path; do
     echo "$AYE Target must be a directory or a file!"
     exit 1
   fi
-done <"$HOME/.config/yadm/tracked"
+done) <"$HOME/.config/yadm/tracked"
 
 # Define the location of the ssh-agent environment
 sshenv="$HOME/.ssh/environment-$HOST"
-
 if [[ -n $(yadm status --porcelain) ]]; then
   yadm commit -m "AutoYADM commit: $(date +'%Y-%m-%d %H:%M:%S')"
   # Check if the ssh-agent env exists
-  if [ -f "$sshenv" ]; then
+  if [[ -f "$sshenv" ]]; then
+    if ((!AUTOYADMPUSH)); then
+      echo "$AYM Pushing disabled, aborting..."
+      exit 1
+    fi
     # Directive to suppress shellcheck warning
     # shellcheck source=/dev/null
     source "$sshenv"
     yadm push
   else
-    echo "Host value is: '$HOST'"
-    echo "Expected SSH env file path: $sshenv"
     echo "$AYE ssh-agent environment not found, aborting push..."
     exit 1
   fi
