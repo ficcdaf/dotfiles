@@ -1,5 +1,6 @@
 return {
   "echasnovski/mini.files",
+  lazy = false,
   keys = {
     {
       "<leader>e",
@@ -9,14 +10,14 @@ return {
       desc = "Open mini.files (current file directory)",
     },
     {
-      "<leader>E",
+      "<leader>fm",
       function()
         require("mini.files").open(vim.uv.cwd(), true)
       end,
       desc = "Open mini.files (cwd)",
     },
     {
-      "<leader>fm",
+      "<leader>E",
       function()
         require("mini.files").open(LazyVim.root(), true)
       end,
