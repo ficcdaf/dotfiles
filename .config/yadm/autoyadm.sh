@@ -7,7 +7,7 @@
 
 AYE="AutoYADM Error:"
 AYM="AutoYADM:"
-
+yadm enter
 # We check not to overwrite the user's env setting
 if [ -z "$VAR" ]; then
   AUTOYADMPUSH=0
