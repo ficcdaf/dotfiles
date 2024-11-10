@@ -91,7 +91,7 @@ end, { desc = "Open Yank History", remap = false })
 -- map({ "n" }, "z-", "z=", { desc = "Spelling Suggestions", remap = true })
 
 -- Oil.nvim open parent directory
-map("n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" })
+-- map("n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" })
 
 -- TODO: add leader + y for save current buf, leader + Y to write all
 map({ "n", "x" }, "<leader>y", "<CMD>w<CR>", { desc = "Save" })

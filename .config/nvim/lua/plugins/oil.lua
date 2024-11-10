@@ -1,5 +1,6 @@
 return {
   "stevearc/oil.nvim",
+  enabled = true,
   ---@module 'oil'
   ---@type oil.SetupOpts
   opts = {
@@ -16,6 +17,9 @@ return {
     keymaps = {
       -- ["<BS>"] = "actions.parent",
     },
+  },
+  keys = {
+    { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
   },
   -- Optional dependencies
   dependencies = { { "echasnovski/mini.icons", opts = {} } },
