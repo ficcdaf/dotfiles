@@ -7,7 +7,6 @@
 
 AYE="AutoYADM Error:"
 AYM="AutoYADM:"
-yadm enter
 # We check not to overwrite the user's env setting
 if [ -z "$VAR" ]; then
   AUTOYADMPUSH=0
@@ -19,7 +18,6 @@ if [ -z "$HOST" ]; then
   HOST="$(hostname)"
 fi
 
-yadm config advice.addIgnoredFile false
 # First we read each path from "tracked"
 (while read -r path; do
   # we disable ignored warning for this subshell
@@ -34,7 +32,6 @@ yadm config advice.addIgnoredFile false
   # If neither file nor dir, something is very wrong!
   else
     echo "$AYE Target must be a directory or a file!"
-    yadm config --unset advice.addIgnoredFile
     exit 1
   fi
 done) <"$HOME/.config/yadm/tracked"
@@ -47,7 +44,6 @@ if [[ -n $(yadm status --porcelain) ]]; then
   if [[ -f "$sshenv" ]]; then
     if ((!AUTOYADMPUSH)); then
       echo "$AYM Pushing disabled, aborting..."
-      yadm config --unset advice.addIgnoredFile
       exit 1
     fi
     # Directive to suppress shellcheck warning
@@ -56,10 +52,8 @@ if [[ -n $(yadm status --porcelain) ]]; then
     yadm push
   else
     echo "$AYE ssh-agent environment not found, aborting push..."
-    yadm config --unset advice.addIgnoredFile
     exit 1
   fi
 fi
 
-yadm config --unset advice.addIgnoredFile
 echo "$AYM Push successful!"
