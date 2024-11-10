@@ -1,3 +1,6 @@
+local filter_hide = function(fs_entry)
+  return not vim.startswith(fs_entry.name, ".")
+end
 return {
   "echasnovski/mini.files",
   lazy = false,
@@ -25,6 +28,9 @@ return {
     },
   },
   opts = {
+    content = {
+      filter = filter_hide,
+    },
     mappings = {
       go_in_plus = "<CR>",
       synchronize = ":w",
