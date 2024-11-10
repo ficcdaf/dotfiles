@@ -1,8 +1,10 @@
 local function mapPrefix(prefix, enabled)
+  -- create the WK group for the prefix
   require("which-key").add({
     { prefix, group = "+NoNeckPain" },
   })
-  local M = {
+  -- define the suffix mappings
+  local mappings = {
     toggle = "p",
     toggleLeftSide = "ql",
     toggleRightSide = "qr",
@@ -10,8 +12,13 @@ local function mapPrefix(prefix, enabled)
     widthDown = "-",
     scratchPad = "s",
   }
-
-  return M
+  -- concat prefix and suffix
+  for action, suffix in pairs(mappings) do
+    mappings[action] = prefix .. suffix
+  end
+  -- include the enabled flag
+  mappings.enabled = enabled
+  return mappings
 end
 -- Ok, this plugin is really awesome!
 -- And everyone should know about it -- game changer!!!
