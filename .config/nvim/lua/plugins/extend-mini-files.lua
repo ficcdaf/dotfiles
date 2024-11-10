@@ -27,6 +27,7 @@ return {
   opts = {
     mappings = {
       go_in_plus = "<CR>",
+      synchronize = ":w",
       -- go_out = "<BS>",
       -- reset = "-",
     },
