@@ -37,6 +37,7 @@ if [[ -n $(yadm status --porcelain) ]]; then
     source "$sshenv"
     yadm push
   else
+    echo "Expected SSH env file path: $sshenv"
     echo "$AYE ssh-agent environment not found, aborting push..."
     exit 1
   fi
