@@ -4,8 +4,10 @@
 return {
   dir = "~/dev/taskview.nvim/",
   name = "taskview",
-  lazy = false,
-  -- opts = {},
+  -- event = "VeryLazy",
+  opts = {
+    out = "Hi test",
+  },
   -- config = function()
   --   require("taskview")
   -- end,
