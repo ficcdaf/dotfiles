@@ -79,6 +79,9 @@ return {
         Group.new("Constant", colors.complement)
         -- TODO: change these groups to match Snacks instead...
         -- Is that even needed actually?
+        Group.new("DashboardHeader", colors.primary)
+        Group.new("DashboardIcon", colors.primary)
+        Group.new("DashboardKey", colors.complement)
         Group.new("NotifyINFOBorder", colors.infoborder)
         Group.new("NotifyINFOTitle", colors.complement)
         Group.new("NotifyINFOIcon", colors.complement)
