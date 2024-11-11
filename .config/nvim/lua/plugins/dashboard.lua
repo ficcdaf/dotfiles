@@ -11,19 +11,6 @@ return {
     --      ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝
     -- ]]
 
-    local saturn2 = [[
-                     .::.
-                  .:'  .:
-        ,MMM8&&&.:'   .:'
-       MMMMM88&&&&  .:'
-      MMMMM88&&&&&&:'
-      MMMMM88&&&&&&
-    .:MMMMM88&&&&&&
-  .:'  MMMMM88&&&&
-.:'   .:'MMM8&&&'
-:'  .:'
-'::'  
-    ]]
     local saturn = [[
                                          _.oo. 
                  _.u[[/;:,.         .odMMMMMM' 
@@ -73,7 +60,7 @@ YMMMUP^
           -- { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
           -- { action = loadObsidian, desc = " Obsidian Tags",       icon = "󱤇 ", key = "o" },
           { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
-          { action = "<cmd>ObsidianQuickSwitch<cr>", desc = " Obsidian", icon = " ", key = "o"},
+          { action = function () vim.api.nvim_input("<CMD>ObsidianQuickSwitch<CR>") end, desc = " Obsidian", icon = " ", key = "o"},
           -- { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           -- { action = 'lua LazyVim.pick("live_grep")()',                desc = " Grep",       icon = " ", key = "/" },
           -- { action = function() LazyVim.lazygit( { cwd = LazyVim.root.git() }) end,                desc = " Git",       icon = " ", key = "g" },
