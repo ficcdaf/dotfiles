@@ -5,6 +5,7 @@ return {
   dir = "~/dev/taskview.nvim/",
   name = "taskview",
   -- event = "VeryLazy",
+  lazy = false,
   opts = {
     out = "Hi test",
   },
