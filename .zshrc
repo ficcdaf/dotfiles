@@ -30,6 +30,9 @@ alias tnt="tmux new-session -t"
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
 alias vzsh="vim ~/.zshrc"
+alias icat="kitty +kitten icat"
+alias vn=viewnior
+
 
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
 alias yadmadd="~/dev/autoyadm/yadmadd.sh"
