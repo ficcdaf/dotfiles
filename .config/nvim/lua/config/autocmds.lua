@@ -35,9 +35,6 @@ vim.api.nvim_create_autocmd("FileType", {
     syn include @tex syntax/tex.vim
     hi def link mathBlock Statement
     hi def link mathInline Statement
-
-    syn region mermBlock start=\`\`\`mermaid end=\`\`\`mermaid contains=@merm
-    sync include @merm syntax/mermaid.vim
   ]])
   end,
 })
