@@ -6,8 +6,8 @@ local function retmap()
     inline_surround_change = "<leader>mc", -- (string|boolean) change emphasis surrounding cursor
     -- link_add = "<leader>ml", -- (string|boolean) add link
     -- link_follow = "<leader>mx", -- (string|boolean) follow link
-    go_curr_heading = "<leader>mp",
-    go_parent_heading = "<leader>mP",
+    go_curr_heading = "<leader>mh",
+    go_parent_heading = "<leader>mH",
     go_next_heading = "<M-n>",
     go_prev_heading = "<M-e>",
   }
