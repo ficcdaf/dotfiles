@@ -15,5 +15,22 @@ return {
   },
   config = function()
     vim.cmd([[do FileType]])
+    local mdscrolltoggle = Snacks.toggle.new({
+      name = "Markdown Preview Scroll",
+      -- map = vim.keymap.set,
+      which_key = true,
+      get = function()
+        return not vim.g.mkdp_preview_options.disable_sync_scroll
+      end,
+      notify = true,
+      set = function(state)
+        if state then
+          vim.g.mkdp_preview_options.disable_sync_scroll = 1
+        else
+          vim.g.mkdp_preview_options.disable_sync_scroll = 0
+        end
+      end,
+    })
+    Snacks.toggle.map(mdscrolltoggle, "<leader>mP", { desc = "Toggle Markdown Preview Scroll" })
   end,
 }
