@@ -20,14 +20,14 @@ return {
       -- map = vim.keymap.set,
       which_key = true,
       get = function()
-        return not vim.g.mkdp_preview_options.disable_sync_scroll
+        return vim.g.mkdp_preview_options.disable_sync_scroll == 0
       end,
       notify = true,
       set = function(state)
         if state then
-          vim.g.mkdp_preview_options.disable_sync_scroll = 1
+          vim.cmd("let g:mkdp_preview_options['disable_sync_scroll'] = 0")
         else
-          vim.g.mkdp_preview_options.disable_sync_scroll = 0
+          vim.cmd("let g:mkdp_preview_options['disable_sync_scroll'] = 1")
         end
       end,
     })
