@@ -1,11 +1,11 @@
-local tv = require("taskview")
+-- local tv = require("taskview")
 
 -- tv.setup({})
 return {
   dir = "~/dev/taskview.nvim/",
   name = "taskview",
   lazy = false,
-  opts = {},
+  -- opts = {},
   -- config = function()
   --   require("taskview")
   -- end,
