@@ -40,12 +40,11 @@ map({ "n", "t", "i" }, "<C-Right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Swi
 map({ "n", "t", "i" }, "<C-Up>", "<cmd> TmuxNavigateUp<CR>", { remap = true })
 map({ "n", "t", "i" }, "<C-Down>", "<cmd> TmuxNavigateDown<CR>", { desc = "Switch Window Down", remap = true })
 
-map("n", "<C-CR>", function()
-  print("testing?")
-  Snacks.terminal(nil, { cwd = LazyVim.root() })
-end, { desc = "Terminal (Root Dir)" })
-map("t", "<C-CR>", "<cmd>close<cr>", { desc = "Hide Terminal" })
-
+-- map("n", "^M", function()
+--   print("testing?")
+--   Snacks.terminal(nil, { cwd = LazyVim.root() })
+-- end, { remap = false, desc = "Terminal (Root Dir)" })
+-- map("t", "^M", "<cmd>close<cr>", { remap = false, desc = "Hide Terminal" })
 map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
 map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
 map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })

@@ -8,3 +8,4 @@ font_size 12
 # END_KITTY_FONTS
 include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.8
+
