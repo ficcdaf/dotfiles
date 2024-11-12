@@ -12,6 +12,11 @@ M.isCursorInList = function()
     end
     node = node:parent()
   end
+  -- Fall back to line-based check for list item pattern if not directly on `list_item` node
+  local line = vim.api.nvim_get_current_line()
+  if line:match("^%s*[%-%*%+%d+%.]%s+") then
+    return true
+  end
   return false
 end
 
