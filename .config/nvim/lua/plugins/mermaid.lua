@@ -1,3 +1,0 @@
-return {
-  "mracos/mermaid.vim",
-}
