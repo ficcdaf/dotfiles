@@ -65,6 +65,10 @@ return {
         Color.new("complement", "#379393")
         -- Override specific highlight groups
         -- Group.new("Type", colors.complement)
+        Group.new("DiagnosticOk", colors.diagnostic_info)
+        Group.new("Added", colors.diff_change)
+        Group.new("Removed", colors.primary)
+        Group.new("Changed", colors.complement)
         Group.new("@markup.link", colors.secondary)
         Group.new("@markup.list", colors.complement)
         Group.new("@variable", colors.complement)
