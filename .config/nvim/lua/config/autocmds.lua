@@ -52,11 +52,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
       local md_utils = require("md-utils")
       local isList = md_utils.isCursorInList()
       if isList then
-        print("Markdown list!")
+        -- print("Markdown list!")
+        vim.api.nvim_command("MDListItemBelow")
       else
-        print("Not markdown list")
+        -- print("Not markdown list")
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<CR>", true, true, true), "n", true)
       end
-      vim.api.nvim_input("<CR>")
     end, { desc = "Continue List", silent = true, remap = true })
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
