@@ -64,7 +64,7 @@ YMMMUP^
           -- { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           -- { action = 'lua LazyVim.pick("live_grep")()',                desc = " Grep",       icon = " ", key = "/" },
           -- { action = function() LazyVim.lazygit( { cwd = LazyVim.root.git() }) end,                desc = " Git",       icon = " ", key = "g" },
-          -- { action = 'lua LazyVim.pick.config_files()()',              desc = " Search Config",          icon = " ", key = "c" },
+          { action = 'lua LazyVim.pick.config_files()()',              desc = " Search Config",          icon = " ", key = "c" },
           -- { action = openConfig,              desc = " Open Config",          icon = " ", key = "c" },
           { action = 'lua require("persistence").load()',              desc = " Restore Session", icon = " ", key = "s" },
           -- { action = 'lua require("persistence").select()',              desc = " Select Session", icon = "󱦞 ", key = "S" },
