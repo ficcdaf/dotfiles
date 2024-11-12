@@ -47,6 +47,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
       buffer = 0,
       command = "silent! write",
     })
+    vim.keymap.set("i", "<Cr>", "<cmd>MDListItemBelow<cr>", { desc = "Continue List", silent = true, remap = true })
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
     -- local secondary = "#379393"
