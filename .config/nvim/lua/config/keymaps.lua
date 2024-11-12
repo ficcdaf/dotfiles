@@ -4,30 +4,12 @@
 local map = vim.keymap.set
 local wk = require("which-key")
 
--- unbind ctrl S since it's tmux prefix
--- vim.keymap.del({ "i", "n" }, "<C-t>")
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 
 local dirmap = {
   up = "w0",
   down = "w$",
 }
-
-local function move_cursor_to(direction) end
-
--- TODO: finish this
--- local function scroll(direction)
---   -- current window for now; could extend later
---   local win_id = 0
---   -- in form {line, column}
---   local current_cursor = vim.api.nvim_win_get_cursor(win_id)
---
---   -- this is the height of the window in lines
---   local win_height = vim.api.nvim_win_get_height(win_id)
---
---   local new_top = vim.fn.line(dirmap[direction])
---
--- end
 
 -- Bind arrows to hjkl to my colemak-dh motions work as expected
 map({ "n", "x" }, "<Up>", "k", { desc = "Up", remap = true })
@@ -40,11 +22,6 @@ map({ "n", "t", "i" }, "<C-Right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Swi
 map({ "n", "t", "i" }, "<C-Up>", "<cmd> TmuxNavigateUp<CR>", { remap = true })
 map({ "n", "t", "i" }, "<C-Down>", "<cmd> TmuxNavigateDown<CR>", { desc = "Switch Window Down", remap = true })
 
--- map("n", "^M", function()
---   print("testing?")
---   Snacks.terminal(nil, { cwd = LazyVim.root() })
--- end, { remap = false, desc = "Terminal (Root Dir)" })
--- map("t", "^M", "<cmd>close<cr>", { remap = false, desc = "Hide Terminal" })
 map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
 map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
 map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })
@@ -74,12 +51,6 @@ vim.keymap.del({ "n" }, "<S-l>")
 map({ "n" }, "<S-h>", "L", { remap = false })
 map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
--- map({ "n" }, "dT", "dvT", { remap = false })
--- map({ "n", "x" }, "<leader>p", '"_p', { remap = false })
--- map({ "n", "x" }, "<leader>P", '"_P', { remap = false })
--- map({ "n", "x" }, "<leader>d", '"_d', { remap = false })
--- map({ "n", "x" }, "<leader>dd", '"_dd', { remap = false })
--- map({ "n", "x" }, "<leader>D", '"_D', { remap = false })
 
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
@@ -89,14 +60,6 @@ map({ "n", "x" }, "<leader>fp", function()
     vim.cmd([[YankyRingHistory]])
   end
 end, { desc = "Open Yank History", remap = false })
-
--- <PageDown><PageUp>
-
--- Remap spelling suggestions
--- map({ "n" }, "z-", "z=", { desc = "Spelling Suggestions", remap = true })
-
--- Oil.nvim open parent directory
--- map("n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" })
 
 -- TODO: add leader + y for save current buf, leader + Y to write all
 map({ "n", "x" }, "<leader>y", "<CMD>w<CR>", { desc = "Save" })
@@ -124,10 +87,6 @@ map("n", "<leader>on", function()
   require("command-key").command("ObsidianNew")
 end, { desc = "Obsidian New Note" })
 map("n", "<leader>ob", "<CMD>ObsidianBacklinks<CR>", { desc = "Obsidian Backlinks" })
--- map("n", "<leader>ot", function()
---   require("command-key").command("ObsidianTags")
--- end, { desc = "Obsidian Tags" })
-
 map("n", "<leader>ot", "<CMD>ObsidianTags<CR>", { desc = "Obsidian Tags" })
 map("n", "<leader>olv", "<CMD>ObsidianFollowLink vsplit<CR>", { desc = "Obsidian Follow Link Vsplit" })
 map("n", "<leader>olh", "<CMD>ObsidianFollowLink hsplit<CR>", { desc = "Obsidian Follow Link Hsplit" })
