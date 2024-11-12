@@ -47,15 +47,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
       buffer = 0,
       command = "silent! write",
     })
-    -- TODO: fix the <CR> not being sent\ recognize other types too?
     vim.keymap.set("i", "<Cr>", function()
       local md_utils = require("md-utils")
       local isList = md_utils.isCursorInList()
       if isList then
-        -- print("Markdown list!")
         vim.api.nvim_command("MDListItemBelow")
       else
-        -- print("Not markdown list")
         vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<CR>", true, true, true), "n", true)
       end
     end, { desc = "Continue List", silent = true, remap = true })

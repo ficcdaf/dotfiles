@@ -61,7 +61,7 @@ YMMMUP^
           -- { action = loadObsidian, desc = " Obsidian Tags",       icon = "󱤇 ", key = "o" },
           { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
           { action = function () vim.api.nvim_input("<CMD>ObsidianQuickSwitch<CR>") end, desc = " Obsidian", icon = " ", key = "o"},
-          -- { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
+          { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           -- { action = 'lua LazyVim.pick("live_grep")()',                desc = " Grep",       icon = " ", key = "/" },
           -- { action = function() LazyVim.lazygit( { cwd = LazyVim.root.git() }) end,                desc = " Git",       icon = " ", key = "g" },
           { action = 'lua LazyVim.pick.config_files()()',              desc = " Search Config",          icon = " ", key = "c" },
