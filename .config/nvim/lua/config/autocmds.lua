@@ -24,6 +24,17 @@ vim.api.nvim_create_autocmd("FileType", {
 -- })
 -- This autocommand fixes syntax highlighting for inline math in markdown files
 -- Together with vimtex, it will apply very sexy good stuff here!
+-- vim.api.nvim_create_autocmd("FileType", {
+--   patterm = "tex",
+--   callback = function()
+--     vim.api.nvim_create_autocmd("BufWrite", {
+--       buffer = 0,
+--       callback = function()
+--         vim.api.nvim_command("VimtexCompile")
+--       end,
+--     })
+--   end,
+-- })
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
