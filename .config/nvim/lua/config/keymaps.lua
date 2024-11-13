@@ -52,6 +52,9 @@ map({ "n" }, "<S-h>", "L", { remap = false })
 map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
 
+-- better quit
+map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
+
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
   if LazyVim.pick.picker.name == "telescope" then
