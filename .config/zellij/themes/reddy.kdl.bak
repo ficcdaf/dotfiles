@@ -1,0 +1,15 @@
+themes {
+    reddy {
+        fg "#1e1e1e"
+        bg "#781e1e"
+        black "#c3c3c3"
+        red "#842121"
+        green "#862121"
+        yellow "#257a96"
+        blue "#259797"
+        magenta "#a82929"
+        cyan "#988d8d"
+        white "#6c5959"
+        orange "#a12828"
+    }
+}
