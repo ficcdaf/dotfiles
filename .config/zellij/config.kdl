@@ -125,7 +125,8 @@ keybinds clear-defaults=true {
         bind "Alt l" { PreviousSwapLayout; }
         bind "Alt u" { NextSwapLayout; }
         bind "Alt f" { ToggleFocusFullscreen; }
-        bind "Alt z" { ToggleFloatingPanes; }
+        bind "Alt w" { ToggleFloatingPanes; }
+        bind "Alt z" { TogglePaneFrames; }
         bind "Ctrl g" { SwitchToMode "locked"; }
         bind "Alt j" { GoToPreviousTab; }
         bind "Alt y" { GoToNextTab; }
