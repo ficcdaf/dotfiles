@@ -146,10 +146,10 @@ keybinds clear-defaults=true {
         // bind "Alt down" { MoveFocus "down"; }
         // bind "Alt up" { MoveFocus "up"; }
         // bind "Alt right" { MoveFocusOrTab "right"; }
-        bind "Alt m" { MoveFocusOrTab "left"; }
+        bind "Alt m" { MoveFocus "left"; }
         bind "Alt n" { MoveFocus "down"; }
         bind "Alt e" { MoveFocus "up"; }
-        bind "Alt i" { MoveFocusOrTab "right"; }
+        bind "Alt i" { MoveFocus "right"; }
         bind "Shift Alt m" { MovePane "left"; }
         bind "Shift Alt n" { MovePane "down"; }
         bind "Shift Alt e" { MovePane "up"; }
