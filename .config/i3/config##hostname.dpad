@@ -241,7 +241,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id xset r rate 250 40
 exec_always --no-startup-id autotiling &
 # exec_always --no-startup-id nitrogen --restore &
-exec --no-startup-id ~/Applications/filen_x86_64_*.AppImage
+# exec --no-startup-id ~/Applications/filen_x86_64_*.AppImage
 exec --no-startup-id obsidian
 # exec --no-startup-id sh -c "obsidian &> /tmp/obsidian.log"
 exec_always --no-startup-id ~/scripts/setdpi.sh &
