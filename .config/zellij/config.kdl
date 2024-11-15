@@ -122,16 +122,16 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Alt -" { Resize "Increase"; }
         bind "Alt esc" { Resize "Decrease"; }
-        bind "Alt l" { PreviousSwapLayout; }
-        bind "Alt u" { NextSwapLayout; }
+        bind "Alt h" { PreviousSwapLayout; }
+        bind "Alt ," { NextSwapLayout; }
         bind "Alt f" { ToggleFocusFullscreen; }
         bind "Alt w" { ToggleFloatingPanes; }
         bind "Alt z" { TogglePaneFrames; }
         bind "Ctrl g" { SwitchToMode "locked"; }
-        bind "Alt j" { GoToPreviousTab; }
-        bind "Alt y" { GoToNextTab; }
+        bind "Alt l" { GoToPreviousTab; }
+        bind "Alt u" { GoToNextTab; }
         bind "Alt v" { NewPane "right"; }
-        bind "Alt h" { NewPane "down"; }
+        bind "Alt s" { NewPane "down"; }
         bind "Alt x" { CloseFocus; }
         bind "Ctrl q" { Quit; }
     }

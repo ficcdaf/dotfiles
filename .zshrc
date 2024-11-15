@@ -18,14 +18,16 @@ alias testvim='NVIM_APPNAME=nvim-test nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
 # tmux aliases
-alias t="tmux"
-alias ta="tmux attach-session"
-alias tat="tmux attach-session -t"
-alias tka="tmux kill-session -a"
-alias tkt="tmux kill-session -t"
-alias tl="tmux list-sessions"
-alias tn="tmux new-session"
-alias tnt="tmux new-session -t"
+alias tm="tmux"
+# alias ta="tmux attach-session"
+# alias tat="tmux attach-session -t"
+# alias tka="tmux kill-session -a"
+# alias tkt="tmux kill-session -t"
+# alias tl="tmux list-sessions"
+# alias tn="tmux new-session"
+# alias tnt="tmux new-session -t"
+
+alias zj=zellij
 
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
