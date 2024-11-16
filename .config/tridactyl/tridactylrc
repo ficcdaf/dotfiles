@@ -1,10 +1,12 @@
 " General Settings
+set configversion 2.0
 set update.lastchecktime 1731706223220
 set update.nag true
 set update.nagwait 7
 set update.lastnaggedversion 1.14.0
 set update.checkintervalsecs 86400
-set configversion 2.0
+set searchengine duckduckgo
+set hintchars neiomtsraglphdufcxwyqzvkbj
 
 " Binds
 bind ;x hint -F e => { const pos = tri.dom.getAbsoluteCentre(e); tri.excmds.exclaim_quiet("xdotool mousemove --sync " + window.devicePixelRatio * pos.x + " " + window.devicePixelRatio * pos.y + "; xdotool click 1")}
@@ -38,7 +40,7 @@ bind gH home true
 bind p clipboard open
 bind P clipboard tabopen
 bind j scrollline 10
-bind <C-e> scrollline 10
+unbind <C-e>
 bind k scrollline -10
 bind <C-y> scrollline -10
 bind h scrollpx -50
@@ -116,9 +118,9 @@ bind ;v hint -W mpvsafe
 bind ;V hint -V
 bind ;w hint -w
 bind ;t hint -W tabopen
-bind ;O hint -W fillcmdline_notrail open 
-bind ;W hint -W fillcmdline_notrail winopen 
-bind ;T hint -W fillcmdline_notrail tabopen 
+bind ;O hint -W fillcmdline_notrail open
+bind ;W hint -W fillcmdline_notrail winopen
+bind ;T hint -W fillcmdline_notrail tabopen
 bind ;d hint -W tabopen --discard
 bind ;gd hint -qW tabopen --discard
 bind ;z hint -z
@@ -175,8 +177,6 @@ bind N tabnext
 bind E tabprev
 bind I forward
 bind <C-m> gobble 1 markaddglobal
-" seturl ^https://chatgpt.com/* superignore true
+
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl
-
-set hintchars neiomtsraglphdufcxwyqzvkbj
