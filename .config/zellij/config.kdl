@@ -123,8 +123,8 @@ keybinds clear-defaults=true {
         bind "Alt -" { Resize "Increase"; }
         bind "Alt esc" { Resize "Decrease"; }
         bind "Alt h" { PreviousSwapLayout; }
-        bind "Alt ," { NextSwapLayout; }
         bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt ," { NextSwapLayout; }
         bind "Alt w" { ToggleFloatingPanes; }
         bind "Alt z" { TogglePaneFrames; }
         bind "Ctrl g" { SwitchToMode "locked"; }
