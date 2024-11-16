@@ -178,3 +178,5 @@ bind <C-m> gobble 1 markaddglobal
 " seturl ^https://chatgpt.com/* superignore true
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl
+
+set hintchars neiomtsraglphdufcxwyqzvkbj
