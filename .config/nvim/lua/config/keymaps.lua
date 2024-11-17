@@ -55,6 +55,10 @@ map({ "n" }, "<S-l>", "H", { remap = false })
 -- better quit
 map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 
+map("n", "<C-x>", function()
+  Snacks.bufdelete()
+end, { remap = true, desc = "Delete Buffer" })
+
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
   if LazyVim.pick.picker.name == "telescope" then

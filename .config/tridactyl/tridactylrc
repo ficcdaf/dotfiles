@@ -178,5 +178,8 @@ bind E tabprev
 bind I forward
 bind <C-m> gobble 1 markaddglobal
 
+" Autocmds
+autocmd DocStart monkeytype.com mode ignore
+
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl
