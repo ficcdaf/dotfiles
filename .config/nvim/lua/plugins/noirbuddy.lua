@@ -78,6 +78,7 @@ return {
         Group.new("Comment", colors.noir_6)
         Group.new("@comment", colors.noir_6)
         Group.new("@boolean.go", colors.complement)
+        Group.new("@boolean", colors.complement)
         Group.new("@keyword.return", colors.complement)
         -- Group.new("gotype", colors.primary)
         Group.new("Boolean", colors.complement)
