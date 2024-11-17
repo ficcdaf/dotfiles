@@ -338,3 +338,4 @@ bold_italic_font auto
 # END_KITTY_FONTS
 include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.9
+map ctrl+shift+r no_op

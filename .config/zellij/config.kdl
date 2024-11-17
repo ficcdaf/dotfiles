@@ -61,7 +61,7 @@ keybinds clear-defaults=true {
         bind "Shift down" { Resize "Decrease down"; }
         bind "Shift up" { Resize "Decrease up"; }
         bind "Shift right" { Resize "Decrease right"; }
-        bind "Ctrl r" { SwitchToMode "normal"; }
+        bind "Ctrl R" { SwitchToMode "normal"; }
     }
     move {
         bind "left" { MovePane "left"; }
@@ -133,7 +133,7 @@ keybinds clear-defaults=true {
         bind "Alt v" { NewPane "right"; }
         bind "Alt s" { NewPane "down"; }
         bind "Alt x" { CloseFocus; }
-        bind "Ctrl q" { Quit; }
+        bind "Ctrl Q" { Quit; }
     }
     shared_except "locked" "move" {
         bind "Ctrl m" { SwitchToMode "move"; }
@@ -169,7 +169,7 @@ keybinds clear-defaults=true {
         bind "Ctrl p" { SwitchToMode "pane"; }
     }
     shared_except "locked" "resize" {
-        bind "Ctrl r" { SwitchToMode "resize"; }
+        bind "Ctrl R" { SwitchToMode "resize"; }
     }
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }

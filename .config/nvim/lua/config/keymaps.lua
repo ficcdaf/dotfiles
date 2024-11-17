@@ -53,7 +53,7 @@ map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
 
 -- better quit
-map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
+map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
 
 map("n", "<C-x>", function()
   Snacks.bufdelete()
@@ -69,8 +69,8 @@ map({ "n", "x" }, "<leader>fp", function()
 end, { desc = "Open Yank History", remap = false })
 
 -- TODO: add leader + y for save current buf, leader + Y to write all
-map({ "n", "x" }, "<leader>y", "<CMD>w<CR>", { desc = "Save" })
-map({ "n", "x" }, "<leader>Y", "<CMD>wa<CR>", { desc = "Save All" })
+map({ "n", "x" }, "<leader>y", ":w<CR>", { desc = "Save" })
+map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })
 
 -- Zen Mode
 map("n", "<leader>uz", "<CMD>ZenMode<CR>", { desc = "Toggle Zen Mode" })
