@@ -83,3 +83,5 @@ linewise
 charwise
 keybind
 Tridactyl
+optdepends
+auth
