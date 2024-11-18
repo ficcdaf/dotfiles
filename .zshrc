@@ -36,6 +36,7 @@ alias icat="kitty +kitten icat"
 alias vn=viewnior
 alias mermaid=mmdc
 alias dnd=dragon-drop
+alias cat=bat
 
 
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
