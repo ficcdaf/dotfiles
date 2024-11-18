@@ -35,6 +35,7 @@ alias vzsh="vim ~/.zshrc"
 alias icat="kitty +kitten icat"
 alias vn=viewnior
 alias mermaid=mmdc
+alias dnd=dragon-drop
 
 
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
