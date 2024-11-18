@@ -339,3 +339,4 @@ bold_italic_font auto
 include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.9
 map ctrl+shift+r no_op
+map ctrl+shift+o no_op
