@@ -1,4 +1,4 @@
 return {
   "williamboman/mason.nvim",
-  opts = { ensure_installed = { "typos-lsp" } },
+  -- opts = { ensure_installed = { "typos-lsp" } },
 }

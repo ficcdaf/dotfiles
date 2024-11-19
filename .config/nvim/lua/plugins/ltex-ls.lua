@@ -6,7 +6,7 @@ local extraOpts = {
     "en-CA",
   },
   path = vim.fn.expand("~") .. "/.local/share/ltex",
-  log_level = "warn",
+  log_level = "none",
 }
 return {
   {
