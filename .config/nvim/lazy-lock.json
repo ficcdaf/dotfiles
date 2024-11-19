@@ -72,7 +72,7 @@
   "playground": { "branch": "master", "commit": "ba48c6a62a280eefb7c85725b0915e021a1a0749" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "pomo.nvim": { "branch": "main", "commit": "aa8decc421d89be0f10b1fc6a602cdd269f350ff" },
-  "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
+  "presence.nvim": { "branch": "main", "commit": "df0a0b52cd0799e99d1b76805d1357ae9c0d017d" },
   "refactoring.nvim": { "branch": "master", "commit": "53ed6854e0bba64d467c58e87084dcf8b1c22d36" },
   "rustaceanvim": { "branch": "master", "commit": "6e742b9fc6a37e46181879f6c32cecfa8cd2cebf" },
   "snacks.nvim": { "branch": "main", "commit": "be8feef4ab584f50aaa96b69d50b3f86a35aacff" },

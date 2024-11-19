@@ -6,10 +6,10 @@ local function format_func(filename)
   end
 end
 return {
-  "andweeb/presence.nvim",
+  "jiriks74/presence.nvim",
+  event = "UIEnter",
   opts = {
     show_time = false,
-    -- editing_text = format_func,
-    -- log_level = "debug",
+    log_level = "warn",
   },
 }
