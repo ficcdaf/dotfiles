@@ -4,4 +4,4 @@
 local opt = vim.opt
 opt.scrolloff = 2
 
-opt.spelloptions = "camel"
+-- opt.spelloptions = "camel"
