@@ -1,5 +1,5 @@
 local extraOpts = {
-  init_check = true,
+  init_check = false,
   load_langs = {
     "en",
     "en-US",
@@ -18,6 +18,9 @@ return {
     opts = {
       servers = {
         ltex = {
+          filetypes = {
+            "tex",
+          },
           on_attach = function(client, bufnr)
             require("ltex_extra").setup(extraOpts)
           end,
@@ -29,18 +32,18 @@ return {
                 "latex",
                 "tex",
                 "bib",
-                "md",
-                "markdown",
+                -- "md",
+                -- "markdown",
               },
-              markdown = {
-                nodes = {
-                  CodeBlock = "ignore",
-                  FencedCodeBlock = "ignore",
-                  AutoLink = "dummy",
-                  Code = "dummy",
-                },
-              },
-              checkFrequency = { "edit" },
+              -- markdown = {
+              --   nodes = {
+              --     CodeBlock = "ignore",
+              --     FencedCodeBlock = "ignore",
+              --     AutoLink = "dummy",
+              --     Code = "dummy",
+              --   },
+              -- },
+              checkFrequency = { "write" },
               diagnosticSeverity = "information",
               sentencetCacheSize = 5000,
               additionalRules = {
