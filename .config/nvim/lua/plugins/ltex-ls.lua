@@ -1,11 +1,12 @@
 local extraOpts = {
+  init_check = true,
   load_langs = {
     "en",
     "en-US",
     "en-CA",
   },
   path = vim.fn.expand("~") .. "/.local/share/ltex",
-  log_level = "warn",
+  -- log_level = "warn",
 }
 return {
   {
@@ -17,14 +18,12 @@ return {
     opts = {
       servers = {
         ltex = {
-          on_attach = {
-            function(client, bufnr)
-              require("ltex_extra").setup(extraOpts)
-            end,
-          },
+          on_attach = function(client, bufnr)
+            require("ltex_extra").setup(extraOpts)
+          end,
           settings = {
             ltex = {
-              language = "en",
+              language = { "en", "en-US", "en-CA" },
               enabled = {
                 "latex",
                 "tex",
@@ -32,9 +31,9 @@ return {
                 "md",
                 "markdown",
               },
-              -- checkFrequency = { "save" },
-              -- diagnosticSeverity = "information",
-              -- sentencetCacheSize = 5000,
+              checkFrequency = { "save" },
+              diagnosticSeverity = "information",
+              sentencetCacheSize = 5000,
               -- additionalRules = {
               --   enablePickyRules = true,
               --   motherTongue = "en",
