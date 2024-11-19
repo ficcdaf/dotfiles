@@ -1,21 +1,27 @@
+local extraOpts = {
+  load_langs = {
+    "en",
+    "en-US",
+    "en-CA",
+  },
+  path = vim.fn.expand("~") .. "/.local/share/ltex",
+  log_level = "warn",
+}
 return {
   {
     "barreiroleo/ltex_extra.nvim",
-    opts = {
-      load_langs = {
-        "en",
-        "en-US",
-        "en-CA",
-      },
-      path = vim.fn.expand("~") .. "/.local/share/ltex",
-      log_level = "warn",
-    },
+    dependencies = { "neovim/nvim-lspconfig" },
   },
   {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
         ltex = {
+          on_attach = {
+            function(client, bufnr)
+              require("ltex_extra").setup(extraOpts)
+            end,
+          },
           settings = {
             ltex = {
               language = "en",
