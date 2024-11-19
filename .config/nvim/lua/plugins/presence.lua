@@ -9,7 +9,7 @@ return {
   "andweeb/presence.nvim",
   opts = {
     show_time = false,
-    editing_text = format_func,
-    log_level = "debug",
+    -- editing_text = format_func,
+    -- log_level = "debug",
   },
 }
