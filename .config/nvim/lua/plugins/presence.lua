@@ -10,6 +10,6 @@ return {
   event = "UIEnter",
   opts = {
     show_time = false,
-    log_level = "warn",
+    -- log_level = "warn",
   },
 }
