@@ -6,7 +6,7 @@ local extraOpts = {
     "en-CA",
   },
   path = vim.fn.expand("~") .. "/.local/share/ltex",
-  -- log_level = "warn",
+  log_level = "warn",
 }
 return {
   {
@@ -23,6 +23,7 @@ return {
           end,
           settings = {
             ltex = {
+              completionEnabled = true,
               language = { "en", "en-US", "en-CA" },
               enabled = {
                 "latex",
@@ -31,13 +32,20 @@ return {
                 "md",
                 "markdown",
               },
-              checkFrequency = { "save" },
+              markdown = {
+                nodes = {
+                  CodeBlock = "ignore",
+                  FencedCodeBlock = "ignore",
+                  AutoLink = "dummy",
+                  Code = "dummy",
+                },
+              },
+              checkFrequency = { "edit" },
               diagnosticSeverity = "information",
               sentencetCacheSize = 5000,
-              -- additionalRules = {
-              --   enablePickyRules = true,
-              --   motherTongue = "en",
-              -- },
+              additionalRules = {
+                enablePickyRules = true,
+              },
             },
           },
         },
