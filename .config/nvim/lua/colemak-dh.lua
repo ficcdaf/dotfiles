@@ -6,25 +6,6 @@ local wk = require("which-key")
 local wk_presets = {
   text_objects = {
     mode = { "o", "x" },
-    { "a", group = "around" },
-    { 'a"', desc = '" string' },
-    { "a'", desc = "' string" },
-    { "a(", desc = "[(]) block" },
-    { "a)", desc = "[(]) block" },
-    { "a<", desc = "<> block" },
-    { "a>", desc = "<> block" },
-    { "aB", desc = "[{]} block" },
-    { "aW", desc = "WORD with ws" },
-    { "a[", desc = "[] block" },
-    { "a]", desc = "[] block" },
-    { "a`", desc = "` string" },
-    { "ab", desc = "[(]) block" },
-    { "ap", desc = "paragraph" },
-    { "as", desc = "sentence" },
-    { "at", desc = "tag block" },
-    { "aw", desc = "word with ws" },
-    { "a{", desc = "[{]} block" },
-    { "a}", desc = "[{]} block" },
     { "l", group = "inside" },
     { 'l"', desc = 'inner " string' },
     { "l'", desc = "inner ' string" },
@@ -123,6 +104,7 @@ M.fix_hjkl = function()
   map({ "n", "x", "o" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { expr = true, desc = "Up", remap = false })
   map({ "n", "x", "o" }, "E", "K", { desc = "Up", remap = false })
   map({ "n", "x", "o" }, "i", "l", { desc = "Right", remap = false })
+  map({ "n", "x", "o" }, "gh", "ge", { remap = false })
   map({ "n" }, "I", "<cmd>bprevious<cr>", { desc = "Next Buffer", remap = false })
 
   map({ "n", "x", "o" }, "l", "i", { desc = "Insert", remap = false })
