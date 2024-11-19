@@ -2,4 +2,10 @@
 
 My personal Neovim configuration based on [LazyVim](https://github.com/LazyVim/LazyVim).
 
-Currently I'm using `obsidian.nvim` along with the Obsidian app for my notes and task management. I write all my notes in Neovim and read them or interact with my tasklist in the app. I'm also planning out a plugin which will scan the Obsidian vault for checklist items, populating a buffer as a sort of master todo list.
+Currently I'm using `obsidian.nvim` for note-taking.
+
+The colorscheme is a heavily modified version of `noirbuddy.nvim`.
+
+A note on keybindings: I use Colemak-DH, which is a non-qwerty keyboard layout. I use either `MNEI` or the arrow keys (which is a mod key + `MNEI` on my keyboard) for navigation, depending on a few different factors.
+
+Therefore, some of these bindings may seem weird.

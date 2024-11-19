@@ -6,6 +6,12 @@ I use Arch btw.
 
 The root of this repo is equivalent to my $HOME directory.
 
+## Note On Keybindings
+
+A note on keybindings: I use Colemak-DH, which is a non-qwerty keyboard layout. I use either `MNEI` or the arrow keys (which is a mod key + `MNEI` on my keyboard) for navigation, depending on a few different factors.
+
+If `MNEI` conflicts with any defaults that would be far too finicky to remap, I just use the arrow keys. Otherwise, I bind `MNEI` to navigation.
+
 ## Of Interest
 
 ### Neovim
