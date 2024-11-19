@@ -1,5 +1,17 @@
 return {
   {
+    "barreiroleo/ltex_extra.nvim",
+    opts = {
+      load_langs = {
+        "en",
+        "en-US",
+        "en-CA",
+      },
+      path = vim.fn.expand("~") .. "/.local/share/ltex",
+      log_level = "warn",
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
