@@ -96,3 +96,11 @@ Colemak
 RQ3b
 RQ3a
 TBD
+msg
+num
+fv
+args
+hasSeen
+isSeen
+isState
+bytesRead
