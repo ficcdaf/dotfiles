@@ -28,55 +28,21 @@ local wk_presets = {
   },
   motions = {
     mode = { "o", "x", "n" },
-    { "$", desc = "End of line" },
-    { "%", desc = "Matching (){}[]" },
-    { "0", desc = "Start of line" },
-    { "F", desc = "Move to prev char" },
-    { "G", desc = "Last line" },
-    { "T", desc = "Move before prev char" },
-    { "^", desc = "Start of line (non ws)" },
-    { "b", desc = "Prev word" },
     { "k", desc = "Next end of word" },
-    { "f", desc = "Move to next char" },
     { "gh", desc = "Prev end of word" },
-    { "gg", desc = "First line" },
     { "m", desc = "Left" },
     { "n", desc = "Down" },
     { "e", desc = "Up" },
     { "i", desc = "Right" },
-    { "t", desc = "Move before next char" },
-    { "w", desc = "Next word" },
-    { "{", desc = "Prev empty line" },
-    { "}", desc = "Next empty line" },
-    { ";", desc = "Next ftFT" },
-    { ",", desc = "Prev ftFT" },
-    { "/", desc = "Search forward" },
-    { "?", desc = "Search backward" },
-    { "B", desc = "Prev WORD" },
     { "H", desc = "Next end of WORD" },
-    { "W", desc = "Next WORD" },
   },
   windows = {
     mode = { "n", "x" },
-    { "<c-w>", group = "window" },
-    { "<c-w>+", desc = "Increase height" },
-    { "<c-w>-", desc = "Decrease height" },
-    { "<c-w><", desc = "Decrease width" },
-    { "<c-w>=", desc = "Equally high and wide" },
-    { "<c-w>>", desc = "Increase width" },
-    { "<c-w>T", desc = "Break out into a new tab" },
-    { "<c-w>_", desc = "Max out the height" },
     { "<c-w>m", desc = "Go to the left window" },
     { "<c-w>n", desc = "Go to the down window" },
     { "<c-w>e", desc = "Go to the up window" },
     { "<c-w>i", desc = "Go to the right window" },
     { "<c-w>o", desc = "Close all other windows" },
-    { "<c-w>q", desc = "Quit a window" },
-    { "<c-w>s", desc = "Split window" },
-    { "<c-w>v", desc = "Split window vertically" },
-    { "<c-w>w", desc = "Switch windows" },
-    { "<c-w>x", desc = "Swap current with next" },
-    { "<c-w>|", desc = "Max out the width" },
   },
 }
 
@@ -103,11 +69,11 @@ M.fix_hjkl = function()
   map({ "n", "x", "o" }, "e", "v:count == 0 ? 'gk' : 'k'", { expr = true, desc = "Up", remap = false })
   map({ "n", "x", "o" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { expr = true, desc = "Up", remap = false })
   map({ "n", "x", "o" }, "E", "K", { desc = "Up", remap = false })
-  map({ "n", "x", "o" }, "i", "l", { desc = "Right", remap = false })
+  map({ "n", "x", "o", "v", "s" }, "i", "l", { desc = "Right", remap = false })
   map({ "n", "x", "o" }, "gh", "ge", { remap = false })
   map({ "n" }, "I", "<cmd>bprevious<cr>", { desc = "Next Buffer", remap = false })
 
-  map({ "n", "x", "o" }, "l", "i", { desc = "Insert", remap = false })
+  map({ "n", "x", "o", "v", "s" }, "l", "i", { desc = "Insert", remap = false })
   map({ "n", "x", "o" }, "L", "I", { desc = "Insert Start Of Line", remap = false })
   map({ "n", "x", "o" }, "k", "m", { desc = "Marker", remap = false })
   map({ "n", "x", "o" }, "K", "M", { desc = "Marker", remap = false })
