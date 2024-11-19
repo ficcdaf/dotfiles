@@ -18,9 +18,9 @@ The best text editor ever made. There's too much going on there to cover here, s
 
 I use Zsh. It has some nice features while remaining POSIX compliance, which is important if you like to tinker and end up copying a lot of shell scripts from the internet. I also use `starship` for my prompt because it's wicked fast. I find that the `pure` preset with some minor changes to cwd display is really great for my needs.
 
-### Tmux
+### ZelliJ
 
-I really like tmux as a terminal multiplexer. The `vim-tmux-navigator` plugin offers really nice compatibility with Neovim split windows. The `minimal-tmux-status` is also really nice: displays only what's needed, in a slightly cleaner way than the default status bar. `tmux-yank` is awesome for easily copying text from the terminal without needing to use the mouse.
+I used to use tmux but I like ZelliJ simply because it's modal and the keybinds are sensible and more extendable.
 
 ### Terminal
 
