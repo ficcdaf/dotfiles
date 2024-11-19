@@ -10,5 +10,6 @@ return {
   opts = {
     show_time = false,
     editing_text = format_func,
+    log_level = "debug",
   },
 }

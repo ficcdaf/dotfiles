@@ -14,9 +14,13 @@ local function retmap()
   require("which-key").add({
     { "<leader>m", group = "Markdown" },
   })
-  vim.keymap.set("n", "<leader>m<cr>", "<cmd>MDListItemBelow<cr>", { silent = true })
-  vim.keymap.set("n", "<leader>mu", "<cmd>MDListItemAbove<cr>", { silent = true })
-  vim.keymap.set("n", "<leader>ml", "<cmd>MDResetListNumbering<cr>", { silent = true })
+  vim.keymap.set("n", "<leader>mu", "<cmd>MDListItemAbove<cr>", { desc = "Insert List Item Above", silent = true })
+  vim.keymap.set(
+    { "n", "x" },
+    "<leader>ml",
+    "<cmd>MDResetListNumbering<cr>",
+    { desc = "Reset List Numbering", silent = true }
+  )
   return m
 end
 local opts = {
