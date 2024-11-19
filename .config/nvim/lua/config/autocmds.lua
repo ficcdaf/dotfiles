@@ -68,7 +68,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
       end
     end, { desc = "Continue List", silent = true, remap = true })
     vim.opt_local.wrap = true
-    -- vim.opt_local.spell = true
+    vim.opt_local.spell = false
     -- local secondary = "#379393"
     -- local primary = "#933737"
     local colorbuddy = require("colorbuddy")
