@@ -1,6 +1,6 @@
 " General Settings
 set configversion 2.0
-set update.lastchecktime 1731706223220
+set update.lastchecktime 1732144052278
 set update.nag true
 set update.nagwait 7
 set update.lastnaggedversion 1.14.0
@@ -180,6 +180,9 @@ bind <C-m> gobble 1 markaddglobal
 
 " Autocmds
 autocmd DocStart monkeytype.com mode ignore
+autocmd DocStart app.diagrams.net mode ignore
+autocmd DocStart undefined mode ignore
+autocmd DocStart onq.queensu.ca mode ignore
 
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl
