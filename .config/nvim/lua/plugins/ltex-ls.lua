@@ -1,5 +1,5 @@
 local extraOpts = {
-  init_check = false,
+  init_check = true,
   load_langs = {
     "en",
     "en-US",
@@ -33,8 +33,8 @@ return {
                 "latex",
                 "tex",
                 "bib",
-                -- "md",
-                -- "markdown",
+                "md",
+                "markdown",
               },
               -- markdown = {
               --   nodes = {
