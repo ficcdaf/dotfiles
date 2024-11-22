@@ -77,3 +77,4 @@ zle -N zle-line-finish
 zle -N zle-keymap-select
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
