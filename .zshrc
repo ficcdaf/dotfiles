@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd z zellij-zsh-completions )
+plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source $ZSH/oh-my-zsh.sh
 
 # Note: if I do get Obsidian Bridge working, this is
@@ -20,8 +20,7 @@ bindkey "^e" edit-command-line
 
 alias ls="eza -lh --git"
 alias top=btop
-alias v=nvim
-alias testvim='NVIM_APPNAME=nvim-test nvim'
+alias v='NVIM_APPNAME="nvim-min" nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
 # tmux aliases
