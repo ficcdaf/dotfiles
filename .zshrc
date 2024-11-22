@@ -20,8 +20,7 @@ bindkey "^e" edit-command-line
 
 alias ls="eza -lh --git"
 alias top=btop
-alias v=nvim
-alias testvim='NVIM_APPNAME=nvim-test nvim'
+alias v='NVIM_APPNAME="nvim-min" nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
 # tmux aliases
