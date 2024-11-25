@@ -33,7 +33,7 @@ return {
       --   enabled = true,
       -- },
       autocmds = {
-        enableOnVimEnter = true,
+        enableOnVimEnter = false,
         skipEnteringNoNeckPainBuffer = true,
       },
       buffers = {
