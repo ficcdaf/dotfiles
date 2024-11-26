@@ -15,21 +15,25 @@ local modes = {
   ["V-REPLACE"] = "V-R",
 }
 
-local wordCountFiletypes = {
+local word_count_filetypes = {
   markdown = true,
   txt = true,
   tex = true,
 }
 
-local wcCache = ""
-local function updateWordCount()
+local wc_cache = ""
+local function update_word_count()
   local ft = vim.bo.filetype
   local wc = vim.api.nvim_eval("wordcount()")
   local w = "w:"
-  if wc["visual_words"] then
-    wcCache = w .. wc["visual_words"]
+  if word_count_filetypes[ft] then
+    if wc["visual_words"] then
+      wc_cache = w .. wc["visual_words"]
+    else
+      wc_cache = w .. wc["words"]
+    end
   else
-    wcCache = w .. wc["words"]
+    wc_cache = ""
   end
 end
 local sections = {
@@ -45,7 +49,7 @@ local sections = {
   lualine_c = { { "filename", path = 1 } },
   lualine_x = { "diagnostics", { "filetype", colored = false }, {
     function()
-      return wcCache
+      return wc_cache
     end,
   } },
   lualine_y = { "progress" },
@@ -63,7 +67,7 @@ return {
 
     vim.api.nvim_create_autocmd(
       { "TextChanged", "TextChangedI", "CursorHold" },
-      { pattern = "*", callback = updateWordCount }
+      { pattern = "*", callback = update_word_count }
     )
 
     require("lualine").setup({

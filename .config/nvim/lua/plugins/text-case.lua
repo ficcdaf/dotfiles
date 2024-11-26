@@ -1,5 +1,6 @@
 return {
   "johmsalas/text-case.nvim",
+  enabled = false,
   dependencies = { "nvim-telescope/telescope.nvim" },
   config = function()
     require("textcase").setup({})
@@ -10,7 +11,6 @@ return {
     { "ga.", "<cmd>TextCaseOpenTelescope<CR>", mode = { "n", "x" }, desc = "Telescope" },
   },
   cmd = {
-    -- NOTE: The Subs command name can be customized via the option "substitude_command_name"
     "Subs",
     "TextCaseOpenTelescope",
     "TextCaseOpenTelescopeQuickChange",
