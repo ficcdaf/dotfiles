@@ -5,7 +5,7 @@ local function mapPrefix(prefix, enabled)
   })
   -- define the suffix mappings
   local mappings = {
-    toggle = "p",
+    toggle = "n",
     toggleLeftSide = "ql",
     toggleRightSide = "qr",
     widthUp = "=",
@@ -28,7 +28,7 @@ return {
   opts = function()
     return {
       width = 150,
-      mappings = mapPrefix("<leader>N", true),
+      mappings = mapPrefix("<leader><Cr>", true),
       -- mappings = {
       --   enabled = true,
       -- },
