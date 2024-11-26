@@ -22,15 +22,17 @@ local word_count_filetypes = {
 }
 
 local wc_cache = ""
+local function _update_word_count()
+  return tostring(vim.fn.wordcount().words)
+end
 local function update_word_count()
   local ft = vim.bo.filetype
   local wc = vim.api.nvim_eval("wordcount()")
-  local w = "w:"
   if word_count_filetypes[ft] then
     if wc["visual_words"] then
-      wc_cache = w .. wc["visual_words"]
+      wc_cache = "vw:" .. wc["visual_words"]
     else
-      wc_cache = w .. wc["words"]
+      wc_cache = "w:" .. wc["words"]
     end
   else
     wc_cache = ""
@@ -47,11 +49,16 @@ local sections = {
   },
   lualine_b = { "branch", "diff" },
   lualine_c = { { "filename", path = 1 } },
-  lualine_x = { "diagnostics", { "filetype", colored = false }, {
-    function()
-      return wc_cache
-    end,
-  } },
+  lualine_x = {
+    "diagnostics",
+    { "filetype", colored = false },
+    {
+      function()
+        update_word_count()
+        return wc_cache
+      end,
+    },
+  },
   lualine_y = { "progress" },
   lualine_z = { "location" },
 }
@@ -65,10 +72,10 @@ return {
     local theme = noirbuddy_lualine.theme
     local nb_inactive_sections = noirbuddy_lualine.inactive_sections
 
-    vim.api.nvim_create_autocmd(
-      { "TextChanged", "TextChangedI", "CursorHold" },
-      { pattern = "*", callback = update_word_count }
-    )
+    -- vim.api.nvim_create_autocmd(
+    --   { "TextChanged", "TextChangedI", "CursorHold" },
+    --   { pattern = "*", callback = update_word_count }
+    -- )
 
     require("lualine").setup({
       options = {
