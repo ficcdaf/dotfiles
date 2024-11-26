@@ -60,7 +60,12 @@ local sections = {
     },
   },
   lualine_y = { "progress" },
-  lualine_z = { "location" },
+  lualine_z = { {
+    "location",
+    fmt = function(str)
+      return string.match(str, "^[^:]+")
+    end,
+  } },
 }
 return {
   "nvim-lualine/lualine.nvim",
