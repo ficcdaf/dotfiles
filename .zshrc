@@ -24,6 +24,7 @@ alias top=btop
 alias v='nvim'
 alias vi='nvim'
 alias vm='nvim --clean'
+alias mktdir='cd $(mktemp -d)'
 alias n='nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
