@@ -46,6 +46,11 @@ local sections = {
         return modes[str] or str
       end,
     },
+    {
+      require("noice").api.status.mode.get,
+      cond = require("noice").api.status.mode.has,
+      -- color = { fg = "#ff9e64" },
+    },
   },
   lualine_b = { "branch", "diff" },
   lualine_c = { { "filename", path = 1 } },
