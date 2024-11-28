@@ -20,7 +20,10 @@ bindkey "^e" edit-command-line
 
 alias ls="eza -lh --git"
 alias top=btop
-alias v='NVIM_APPNAME="nvim-min" nvim'
+# alias v='NVIM_APPNAME="nvim-min" nvim'
+alias v='nvim'
+alias vi='nvim'
+alias vm='nvim --clean'
 alias n='nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
