@@ -1,6 +1,7 @@
 return {
   {
     "zbirenbaum/copilot-cmp",
+    enabled = false,
     opts = function()
       require("copilot.command").disable()
       local cptoggle = Snacks.toggle.new({
@@ -20,7 +21,6 @@ return {
         end,
       })
       Snacks.toggle.map(cptoggle, "<leader>at", { desc = "Toggle Copilot" })
-      -- LazyVim.toggle.map("<leader>at", copilot_toggle)
     end,
   },
   { "CopilotC-Nvim/CopilotChat.nvim", opts = {
