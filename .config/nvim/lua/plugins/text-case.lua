@@ -1,6 +1,6 @@
 return {
   "johmsalas/text-case.nvim",
-  enabled = false,
+  enabled = true,
   dependencies = { "nvim-telescope/telescope.nvim" },
   config = function()
     require("textcase").setup({})
