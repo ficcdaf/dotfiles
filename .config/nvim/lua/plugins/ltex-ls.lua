@@ -44,7 +44,7 @@ return {
               --     Code = "dummy",
               --   },
               -- },
-              checkFrequency = { "write" },
+              checkFrequency = { "save" },
               diagnosticSeverity = "information",
               sentencetCacheSize = 5000,
               additionalRules = {
