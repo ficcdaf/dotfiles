@@ -50,7 +50,7 @@ alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
 alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 
 bindkey -r '^T'
-bindkey -r '\M-x'
+bindkey -r '\ex'
 
 # Created by `pipx` on 2024-09-20 02:14:00
 export PATH="$PATH:/home/fic/.local/bin"
