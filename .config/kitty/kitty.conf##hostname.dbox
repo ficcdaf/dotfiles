@@ -10,3 +10,4 @@ include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.8
 map ctrl+shift+r no_op
 map ctrl+shift+o no_op
+enable_audio_bell no
