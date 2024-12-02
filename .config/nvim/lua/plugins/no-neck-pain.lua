@@ -27,7 +27,7 @@ return {
   version = "*",
   opts = function()
     return {
-      width = 120,
+      width = 100,
       mappings = mapPrefix("<leader><Cr>", true),
       -- mappings = {
       --   enabled = true,

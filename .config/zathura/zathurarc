@@ -3,3 +3,36 @@ map <C-i> zoom in
 map <C-o> zoom out
 map <S-Down> navigate next
 map <S-Up> navigate previous
+
+set completion-bg "#0f0f0f"
+set completion-fg "#d4d4d4"
+set completion-group-bg "#0f0f0f"
+set completion-group-fg "#A23D3D"
+set completion-highlight-bg "#d4d4d4"
+set completion-highlight-fg "#0f0f0f"
+
+set recolor-lightcolor "#0f0f0f"
+set recolor-darkcolor "#d4d4d4"
+set default-bg "#0f0f0f"
+
+set inputbar-bg "#0f0f0f"
+set inputbar-fg "#d4d4d4"
+set notification-bg "#0f0f0f"
+set notification-fg "#d4d4d4"
+set notification-error-bg "#933737"
+set notification-error-fg "#d4d4d4"
+set notification-warning-bg "#933737"
+set notification-warning-fg "#d4d4d4"
+set statusbar-bg "#0f0f0f"
+set statusbar-fg "#d4d4d4"
+set index-bg "#0f0f0f"
+set index-fg "#d4d4d4"
+set index-active-bg "#d4d4d4"
+set index-active-fg "#0f0f0f"
+set render-loading-bg "#0f0f0f"
+set render-loading-fg "#d4d4d4"
+
+set window-title-home-tilde true
+set statusbar-basename true
+set window-title-basename true
+set recolor "true"
