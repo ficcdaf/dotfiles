@@ -11,7 +11,6 @@ end
 return {
   {
     "3rd/image.nvim",
-    -- lazy = false,
     opts = {
       tmux_show_only_in_active_window = true,
       integrations = {
