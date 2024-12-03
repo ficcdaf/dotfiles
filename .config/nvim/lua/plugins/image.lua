@@ -9,24 +9,25 @@
 --     },
 -- })
 local function resolver(document_path, image_path, fallback)
-  local working_dir = vim.fn.getcwd()
-  Snacks.notify.notify("Doc path... " .. document_path)
+  local vault_dir = "/home/fic/second-brain"
   -- Format path for Obsidian vault
-  if document_path:find("/home/fic/second-brain", 1, true) then
-    -- if working_dir:find("~/second-brain/") then
-    local out = "Obsidian image: " .. working_dir .. "/" .. image_path
-    Snacks.notify.notify(out)
-    return working_dir .. "/" .. image_path
+  if document_path:find(vault_dir, 1, true) then
+    return vault_dir .. "/" .. image_path
   end
   -- fallback to default
   return fallback(document_path, image_path)
 end
+
 local function tester(document_path, image_path, fallback)
+  local working_dir = vim.fn.getcwd()
+  local notes_dir = vim.fn.expand(vim.env.NOTES_DIR)
+  -- Format image path for Obsidian notes
+  if working_dir:find(notes_dir, 1, true) then
+    return vim.fn.shellescape(notes_dir .. "/" .. image_path)
+  end
+  -- Fallback to the default behavior
   return fallback(document_path, image_path)
 end
--- local function simple_resolver(document_path, image_path, fallback)
---   image_path = "/home/fic/second-brain"
--- end
 return {
   {
     "3rd/image.nvim",
@@ -36,7 +37,7 @@ return {
       integrations = {
         markdown = {
           enabled = true,
-          resolve_image_path = resolver,
+          resolve_image_path = tester,
           -- From https://github.com/3rd/image.nvim/issues/190
           -- resolve_image_path = function(document_path, image_path, fallback)
           --   Snacks.notify.notify("This prints")
