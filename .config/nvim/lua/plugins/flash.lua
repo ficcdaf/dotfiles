@@ -12,6 +12,12 @@ local conf = {
   highlight = {
     backdrop = false,
   },
+  modes = {
+    char = {
+      jump_labels = true,
+      highlight = { backdrop = false },
+    },
+  },
 }
 
 return {
