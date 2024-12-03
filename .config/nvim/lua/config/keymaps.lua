@@ -86,9 +86,10 @@ wk.add({
 map("n", "<leader>oo", "<CMD>ObsidianQuickSwitch<CR>", { desc = "Obsidian Quick Switch" })
 map("n", "<leader>o/", "<CMD>ObsidianSearch<CR>", { desc = "Obsidian Grep" })
 -- This one will open the command line and let the user type the arg
-map("n", "<leader>on", function()
-  require("command-key").command("ObsidianNew")
-end, { desc = "Obsidian New Note" })
+map("n", "<leader>on", "<CMD>ObsidianNew<CR>", { desc = "Obsidian New Note" })
+-- map("n", "<leader>on", function()
+--   require("command-key").command("ObsidianNew")
+-- end, { desc = "Obsidian New Note" })
 map("n", "<leader>ob", "<CMD>ObsidianBacklinks<CR>", { desc = "Obsidian Backlinks" })
 map("n", "<leader>ot", "<CMD>ObsidianTags<CR>", { desc = "Obsidian Tags" })
 map("n", "<leader>olv", "<CMD>ObsidianFollowLink vsplit<CR>", { desc = "Obsidian Follow Link Vsplit" })
