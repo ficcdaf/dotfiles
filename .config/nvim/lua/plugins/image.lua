@@ -20,6 +20,9 @@ local function resolver(document_path, image_path, fallback)
   -- fallback to default
   return fallback(document_path, image_path)
 end
+local function tester(document_path, image_path, fallback)
+  return fallback(document_path, image_path)
+end
 -- local function simple_resolver(document_path, image_path, fallback)
 --   image_path = "/home/fic/second-brain"
 -- end
@@ -33,7 +36,14 @@ return {
         markdown = {
           enabled = true,
           -- From https://github.com/3rd/image.nvim/issues/190
-          resolve_image_path = resolver,
+          resolve_image_path = function(document_path, image_path, fallback)
+            -- document_path is the path to the file that contains the image
+            -- image_path is the potentially relative path to the image. for
+            -- markdown it's `![](this text)`
+
+            -- you can call the fallback function to get the default behavior
+            return fallback(document_path, image_path)
+          end,
         },
       },
     },
