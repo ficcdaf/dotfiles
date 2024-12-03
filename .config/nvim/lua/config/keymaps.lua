@@ -63,7 +63,6 @@ map({ "n", "x" }, "<leader>fp", function()
     vim.cmd([[YankyRingHistory]])
   end
 end, { desc = "Open Yank History", remap = false })
-
 -- TODO: add leader + y for save current buf, leader + Y to write all
 map({ "n", "x" }, "<leader>y", ":w<CR>", { desc = "Save" })
 map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })

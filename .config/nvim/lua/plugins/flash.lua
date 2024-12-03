@@ -7,7 +7,7 @@ local conf = {
     offset = nil,
   },
   label = {
-    uppercase = false,
+    uppercase = true,
   },
   highlight = {
     backdrop = false,
