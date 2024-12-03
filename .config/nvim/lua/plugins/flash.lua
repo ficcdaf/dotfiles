@@ -3,6 +3,14 @@ local conf = {
   labels = "arstgmneioqwfpbjluyzxcdvkh",
   jump = {
     inclusive = nil,
+    nohlsearch = false,
+    offset = nil,
+  },
+  label = {
+    uppercase = true,
+  },
+  highlight = {
+    backdrop = false,
   },
 }
 
