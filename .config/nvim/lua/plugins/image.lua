@@ -8,14 +8,25 @@ local function resolver(document_path, image_path, fallback)
   return fallback(document_path, image_path)
 end
 
-local function tester(document_path, image_path, fallback)
+local function resolver_ahmed(document_path, image_path, fallback)
   -- my vault root
   vim.env.NOTES_DIR = "/home/fic/second-brain"
   local working_dir = vim.fn.getcwd()
   local notes_dir = vim.fn.expand(vim.env.NOTES_DIR)
   -- Format image path for Obsidian notes
   if working_dir:find(notes_dir, 1, true) then
-    print((notes_dir .. "/" .. image_path))
+    return vim.fn.shellescape(notes_dir .. "/" .. image_path)
+  end
+  -- Fallback to the default behavior
+  return fallback(document_path, image_path)
+end
+local function resolver_ahmed_fixed(document_path, image_path, fallback)
+  -- my vault root
+  vim.env.NOTES_DIR = "/home/fic/second-brain"
+  local working_dir = vim.fn.getcwd()
+  local notes_dir = vim.fn.expand(vim.env.NOTES_DIR)
+  -- Format image path for Obsidian notes
+  if working_dir:find(notes_dir, 1, true) then
     return (notes_dir .. "/" .. image_path)
   end
   -- Fallback to the default behavior
@@ -30,7 +41,7 @@ return {
       integrations = {
         markdown = {
           enabled = true,
-          resolve_image_path = tester,
+          resolve_image_path = resolver_ahmed,
         },
       },
     },
