@@ -10,9 +10,9 @@
 -- })
 local function resolver(document_path, image_path, fallback)
   local working_dir = vim.fn.getcwd()
-  Snacks.notify.notify("Resolving... " .. working_dir)
+  Snacks.notify.notify("Doc path... " .. document_path)
   -- Format path for Obsidian vault
-  if working_dir:find("/home/fic/second-brain", 1, true) then
+  if document_path:find("/home/fic/second-brain", 1, true) then
     -- if working_dir:find("~/second-brain/") then
     local out = "Obsidian image: " .. working_dir .. "/" .. image_path
     Snacks.notify.notify(out)
