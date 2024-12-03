@@ -72,6 +72,8 @@ return {
         Group.new("@markup.link", colors.secondary)
         Group.new("@markup.list", colors.complement)
         Group.new("@variable", colors.complement)
+        Group.new("@constant", colors.complement)
+        Group.new("@constant.builtin", colors.complement)
         Group.new("@type.builtin", colors.primary)
         Group.new("@number", colors.secondary)
         Group.new("NonText", colors.noir_7)
