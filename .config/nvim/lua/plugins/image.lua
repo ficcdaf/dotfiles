@@ -10,6 +10,7 @@
 -- })
 local function resolver(document_path, image_path, fallback)
   local working_dir = vim.fn.getcwd()
+  Snacks.notify.notify("Resolving... " .. working_dir)
   -- Format path for Obsidian vault
   if working_dir:find("/home/fic/second-brain", 1, true) then
     -- if working_dir:find("~/second-brain/") then
@@ -35,15 +36,17 @@ return {
       integrations = {
         markdown = {
           enabled = true,
+          resolve_image_path = resolver,
           -- From https://github.com/3rd/image.nvim/issues/190
-          resolve_image_path = function(document_path, image_path, fallback)
-            -- document_path is the path to the file that contains the image
-            -- image_path is the potentially relative path to the image. for
-            -- markdown it's `![](this text)`
-
-            -- you can call the fallback function to get the default behavior
-            return fallback(document_path, image_path)
-          end,
+          -- resolve_image_path = function(document_path, image_path, fallback)
+          --   Snacks.notify.notify("This prints")
+          --   -- document_path is the path to the file that contains the image
+          --   -- image_path is the potentially relative path to the image. for
+          --   -- markdown it's `![](this text)`
+          --
+          --   -- you can call the fallback function to get the default behavior
+          --   return fallback(document_path, image_path)
+          -- end,
         },
       },
     },
