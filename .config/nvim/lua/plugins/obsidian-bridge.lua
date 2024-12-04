@@ -1,7 +1,5 @@
 local opts = {
   obsidian_server_address = "https://127.0.0.1:27124",
-  -- obsidian_server_address = "http://127.0.0.1:27123",
-  scroll_sync = false, -- See "Sync of buffer scrolling" section below
 }
 return {
   "oflisback/obsidian-bridge.nvim",
