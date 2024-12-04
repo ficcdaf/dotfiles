@@ -1,3 +1,6 @@
+local function gen_header()
+  return "header!"
+end
 return {
   "folke/snacks.nvim",
   opts = {
@@ -60,6 +63,7 @@ return {
 YMMMUP^                                       
  ^^                                           
          ]],
+        header = gen_header(),
       },
       -- item field formatters
       formats = {
@@ -88,17 +92,17 @@ YMMMUP^
         end,
       },
       sections = {
-        -- { section = "header" },
-        {
-          -- pane = 2,
-          section = "terminal",
-          cmd = "fortune issa-haiku | ~/dev/pyku/pyku.py",
-          hl = "header",
-          height = 30,
-          random = 10,
-          indent = 12,
-          -- padding = 1,
-        },
+        { section = "header" },
+        -- {
+        --   -- pane = 2,
+        --   section = "terminal",
+        --   cmd = "fortune issa-haiku | ~/dev/pyku/pyku.py",
+        --   hl = "header",
+        --   height = 30,
+        --   random = 10,
+        --   indent = 12,
+        --   -- padding = 1,
+        -- },
         -- { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
