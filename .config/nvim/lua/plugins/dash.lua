@@ -71,7 +71,7 @@ YMMMUP^
         end,
         footer = { "%s", align = "center" },
         header = { "%s", align = "center" },
-        terminal = { "%s", align = "center" },
+        -- terminal = { "%s", align = "center" },
         file = function(item, ctx)
           local fname = vim.fn.fnamemodify(item.file, ":~")
           fname = ctx.width and #fname > ctx.width and vim.fn.pathshorten(fname) or fname
@@ -88,11 +88,12 @@ YMMMUP^
         end,
       },
       sections = {
-        { section = "header" },
+        -- { section = "header" },
         {
-          pane = 2,
+          -- pane = 2,
           section = "terminal",
-          cmd = "fortune issa-haiku",
+          cmd = "fortune issa-haiku | ~/dev/pyku/pyku.py",
+          hl = "header",
           -- height = 5,
           -- padding = 1,
         },
