@@ -1,11 +1,14 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    ---@class snacks.dashboard.Config
+    ---@field sections snacks.dashboard.Section
+    ---@field formats table<string, snacks.dashboard.Text|fun(item:snacks.dashboard.Item, ctx:snacks.dashboard.Format.ctx):snacks.dashboard.Text>
     dashboard = {
       width = 60,
       row = nil, -- dashboard position. nil for center
       col = nil, -- dashboard position. nil for center
-      pane_gap = 4, -- empty columns between vertical panes
+      pane_gap = 2, -- empty columns between vertical panes
       autokeys = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", -- autokey sequence
       -- These settings are used by some built-in sections
       preset = {
@@ -68,6 +71,7 @@ YMMMUP^
         end,
         footer = { "%s", align = "center" },
         header = { "%s", align = "center" },
+        terminal = { "%s", align = "center" },
         file = function(item, ctx)
           local fname = vim.fn.fnamemodify(item.file, ":~")
           fname = ctx.width and #fname > ctx.width and vim.fn.pathshorten(fname) or fname
@@ -85,7 +89,14 @@ YMMMUP^
       },
       sections = {
         { section = "header" },
-        { section = "keys", gap = 1, padding = 1 },
+        {
+          pane = 2,
+          section = "terminal",
+          cmd = "fortune issa-haiku",
+          -- height = 5,
+          -- padding = 1,
+        },
+        -- { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
     },
