@@ -13,9 +13,7 @@ return {
     "BufNewFile /home/fic/second-brain/*.md",
   },
   dependencies = {
-    -- Required.
     "nvim-lua/plenary.nvim",
-    "epwalsh/pomo.nvim",
   },
   opts = {
     workspaces = {
