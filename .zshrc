@@ -85,4 +85,4 @@ eval $(thefuck --alias)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 # colorscript -e 36
-[[ ! -r '/home/fic/.opam/opam-init/init.zsh' ]] || source '/home/fic/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+source ~/scripts/obsidian-bridge.sh
