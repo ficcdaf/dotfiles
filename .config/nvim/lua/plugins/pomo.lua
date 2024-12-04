@@ -9,5 +9,13 @@ return {
   },
   opts = {
     -- See below for full list of options 👇
+    notifiers = {
+      {
+        name = "Default",
+        opts = {
+          sticky = false,
+        },
+      },
+    },
   },
 }
