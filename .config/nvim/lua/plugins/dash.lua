@@ -1,6 +1,7 @@
 local function gen_header()
   -- local h = vim.fn.system("fortune issa-haiku")
   local h = vim.fn.system("~/dev/pyku/pyku.py --tree")
+  h = h .. vim.fn.system("fortune issa-haiku")
   return h
 end
 return {
