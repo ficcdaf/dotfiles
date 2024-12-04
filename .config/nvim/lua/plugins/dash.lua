@@ -1,5 +1,6 @@
 local function gen_header()
-  return "header!"
+  local h = vim.fn.system("fortune issa-haiku")
+  return h
 end
 return {
   "folke/snacks.nvim",
