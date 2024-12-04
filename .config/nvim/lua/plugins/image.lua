@@ -13,9 +13,12 @@ return {
     "3rd/image.nvim",
     opts = {
       tmux_show_only_in_active_window = true,
+      window_overlap_clear_enabled = true,
       integrations = {
         markdown = {
           enabled = true,
+          clear_in_insert_mode = true,
+          only_render_image_at_cursor = true,
           resolve_image_path = resolver,
         },
       },
