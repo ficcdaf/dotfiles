@@ -36,6 +36,10 @@ return {
         { name = "Work", duration = "25m" },
         { name = "Long Break", duration = "15m" },
       },
+      test = {
+        { name = "Work", duration = "5s" },
+        { name = "Short Break", duration = "5s" },
+      },
     },
   },
 }
