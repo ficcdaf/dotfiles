@@ -1,18 +1,16 @@
 local function gen_header()
   -- local h = vim.fn.system("fortune issa-haiku")
   local h = vim.fn.system("~/dev/pyku/pyku.py --tree")
-  -- h = h .. vim.fn.system("fortune issa-haiku")
+  h = h .. vim.fn.system("fortune issa-haiku")
   return h
 end
 local function get_footer()
-  return vim.fn.system("fortune issa-haiku")
+  local h = vim.fn.system("fortune issa-haiku")
+  return "test"
 end
 return {
   "folke/snacks.nvim",
   opts = {
-    ---@class snacks.dashboard.Config
-    ---@field sections snacks.dashboard.Section
-    ---@field formats table<string, snacks.dashboard.Text|fun(item:snacks.dashboard.Item, ctx:snacks.dashboard.Format.ctx):snacks.dashboard.Text>
     dashboard = {
       width = 60,
       row = nil, -- dashboard position. nil for center
@@ -70,7 +68,8 @@ return {
         --  ^^
         --          ]],
         header = gen_header(),
-        footer = get_footer(),
+        -- header = "test",
+        -- footer = "testing",
       },
       -- item field formatters
       formats = {
@@ -100,7 +99,6 @@ return {
       },
       sections = {
         { section = "header" },
-        { section = "footer" },
         {
           -- pane = 2,
           section = "terminal",
@@ -113,6 +111,7 @@ return {
         },
         -- { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
+        -- { section = "footer" },
       },
     },
   },
