@@ -23,6 +23,7 @@ bindkey "^e" edit-command-line
 
 # alias ls="eza -lh --git"
 alias ls="eza --long --git --header --icons"
+alias c="clear"
 alias top=btop
 # alias v='NVIM_APPNAME="nvim-min" nvim'
 alias v='nvim'
