@@ -1,12 +1,11 @@
 local function gen_header()
-  -- local h = vim.fn.system("fortune issa-haiku")
   local h = vim.fn.system("~/dev/pyku/pyku.py --tree")
-  h = h .. vim.fn.system("fortune issa-haiku")
   return h
 end
-local function get_footer()
-  local h = vim.fn.system("fortune issa-haiku")
-  return "test"
+local function get_haiku()
+  -- local h = vim.fn.system("fortune issa-haiku")
+  local h = vim.fn.system("fortune -e -s")
+  return h
 end
 return {
   "folke/snacks.nvim",
@@ -98,7 +97,8 @@ return {
         end,
       },
       sections = {
-        { section = "header" },
+        { section = "header", gap = 0, padding = 0 },
+        { text = get_haiku(), align = "center", gap = 0, padding = 0 },
         {
           -- pane = 2,
           section = "terminal",
@@ -107,10 +107,12 @@ return {
           -- height = 30,
           random = 10,
           indent = 11,
+          gap = 0,
+          padding = 0,
           -- padding = 1,
         },
         -- { section = "keys", gap = 1, padding = 1 },
-        { section = "startup" },
+        { section = "startup", gap = 0, padding = 0 },
         -- { section = "footer" },
       },
     },
