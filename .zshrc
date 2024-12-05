@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(ssh-agent git zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
+plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source $ZSH/oh-my-zsh.sh
 
 # Note: if I do get Obsidian Bridge working, this is
@@ -15,13 +15,18 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey "^e" edit-command-line
 
+# autoload -Uz compinit
+# compinit
+
 # Set up fzf key bindings and fuzzy completion
 # eval "$(fzf --zsh)"
 
-alias ls="eza -lh --git"
+# alias ls="eza -lh --git"
+alias ls="eza --long --git --header --icons"
 alias top=btop
 # alias v='NVIM_APPNAME="nvim-min" nvim'
 alias v='nvim'
+alias vim='nvim'
 alias vi='nvim'
 alias vm='nvim --clean'
 alias mktdir='cd $(mktemp -d)'
@@ -78,6 +83,7 @@ function zle-keymap-select zle-line-init zle-line-finish
   esac
 }
 
+# fpath+=(~/.zsh/completions)
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
