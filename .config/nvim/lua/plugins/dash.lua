@@ -1,8 +1,11 @@
 local function gen_header()
   -- local h = vim.fn.system("fortune issa-haiku")
   local h = vim.fn.system("~/dev/pyku/pyku.py --tree")
-  h = h .. vim.fn.system("fortune issa-haiku")
+  -- h = h .. vim.fn.system("fortune issa-haiku")
   return h
+end
+local function get_footer()
+  return vim.fn.system("fortune issa-haiku")
 end
 return {
   "folke/snacks.nvim",
@@ -49,24 +52,25 @@ return {
           -- { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
         -- Used by the `header` section
-        header = [[
-                                         _.oo.
-                 _.u[[/;:,.         .odMMMMMM'
-              .o888UU[[[/;:-.  .o@P^    MMM^  
-             oN88888UU[[[/;::-.        dP^    
-            dNMMNN888UU[[[/;:--.   .o@P^      
-           ,MMMMMMN888UU[[/;::-. o@^          
-           NNMMMNN888UU[[[/~.o@P^             
-           888888888UU[[[/o@^-..              
-          oI8888UU[[[/o@P^:--..               
-       .@^  YUU[[[/o@^;::---..                
-     oMP     ^/o@P^;:::---..                  
-  .dMMM    .o@^ ^;::---...                    
- dMMMMMMM@^`       `^^^^                      
-YMMMUP^                                       
- ^^                                           
-         ]],
+        --         header = [[
+        --                                          _.oo.
+        --                  _.u[[/;:,.         .odMMMMMM'
+        --               .o888UU[[[/;:-.  .o@P^    MMM^
+        --              oN88888UU[[[/;::-.        dP^
+        --             dNMMNN888UU[[[/;:--.   .o@P^
+        --            ,MMMMMMN888UU[[/;::-. o@^
+        --            NNMMMNN888UU[[[/~.o@P^
+        --            888888888UU[[[/o@^-..
+        --           oI8888UU[[[/o@P^:--..
+        --        .@^  YUU[[[/o@^;::---..
+        --      oMP     ^/o@P^;:::---..
+        --   .dMMM    .o@^ ^;::---...
+        --  dMMMMMMM@^`       `^^^^
+        -- YMMMUP^
+        --  ^^
+        --          ]],
         header = gen_header(),
+        footer = get_footer(),
       },
       -- item field formatters
       formats = {
@@ -96,6 +100,7 @@ YMMMUP^
       },
       sections = {
         { section = "header" },
+        { section = "footer" },
         {
           -- pane = 2,
           section = "terminal",
@@ -103,8 +108,8 @@ YMMMUP^
           -- hl = "header",
           -- height = 30,
           random = 10,
-          -- indent = 11,
-          padding = 1,
+          indent = 11,
+          -- padding = 1,
         },
         -- { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
