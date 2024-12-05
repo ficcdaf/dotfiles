@@ -14,7 +14,7 @@ return {
       width = 60,
       row = nil, -- dashboard position. nil for center
       col = nil, -- dashboard position. nil for center
-      pane_gap = 2, -- empty columns between vertical panes
+      pane_gap = 0, -- empty columns between vertical panes
       autokeys = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", -- autokey sequence
       -- These settings are used by some built-in sections
       preset = {
@@ -96,16 +96,16 @@ YMMMUP^
       },
       sections = {
         { section = "header" },
-        -- {
-        --   -- pane = 2,
-        --   section = "terminal",
-        --   cmd = "fortune issa-haiku | ~/dev/pyku/pyku.py",
-        --   hl = "header",
-        --   height = 30,
-        --   random = 10,
-        --   indent = 12,
-        --   -- padding = 1,
-        -- },
+        {
+          -- pane = 2,
+          section = "terminal",
+          cmd = "colorscript -e 36",
+          -- hl = "header",
+          -- height = 30,
+          random = 10,
+          -- indent = 11,
+          padding = 1,
+        },
         -- { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
