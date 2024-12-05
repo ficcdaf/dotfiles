@@ -130,7 +130,7 @@ return {
         --   padding = 0,
         --   -- padding = 1,
         -- },
-        { section = "keys", gap = 1, padding = 1 },
+        { section = "keys", gap = 0, padding = 0 },
         { section = "startup", gap = 0, padding = 0 },
         -- { section = "footer" },
       },

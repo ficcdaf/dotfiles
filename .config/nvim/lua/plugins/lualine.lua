@@ -102,6 +102,11 @@ return {
     require("lualine").setup({
       options = {
         theme = theme,
+        disabled_filetypes = {
+          statusline = {
+            "snacks_dashboard",
+          },
+        },
         -- section_separators = { left = "", right = "" },
         -- component_separators = { left = "", right = "" },
         component_separators = { left = "", right = "" },
