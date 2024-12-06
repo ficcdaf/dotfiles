@@ -1,5 +1,6 @@
 local opts = {
   obsidian_server_address = "https://127.0.0.1:27124",
+  cert_path = "~/.ssl/obsidian-bridge.pem",
 }
 return {
   "oflisback/obsidian-bridge.nvim",
