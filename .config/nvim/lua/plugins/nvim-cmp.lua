@@ -1,5 +1,18 @@
+-- vim.api.nvim_create_autocmd('BufReadPre', {
+--   pattern = "markdown",
+-- 	callback = function(t)
+-- 		local sources = default_cmp_sources
+-- 		if not bufIsBig(t.buf) then
+-- 			sources[#sources+1] = {name = 'treesitter', group_index = 2}
+-- 		end
+-- 	cmp.setup.buffer {
+-- 		sources = sources
+-- 	}
+-- 	end
+-- })
 return {
   "hrsh7th/nvim-cmp",
+  -- enabled = false,
   -- ---@param opts cmp.ConfigSchema
   -- opts = function(_, opts)
   --   local has_words_before = function()
