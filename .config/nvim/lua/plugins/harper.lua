@@ -1,4 +1,3 @@
-vim.lsp.set_log_level("debug")
 local harperSettings = {
   fileDictPath = "/home/fic/.config/harper-ls/file_dictionaries/",
   userDictPath = "/home/fic/.config/harper-ls/dictionary.txt",
@@ -33,7 +32,7 @@ return {
             "markdown",
           },
           settings = {
-            ["haper-ls"] = harperSettings,
+            ["harper-ls"] = harperSettings,
           },
         },
       },
