@@ -13,8 +13,8 @@ return {
           -- end,
           settings = {
             harper_ls = {
-              fileDictPath = "~/.config/harper-ls/",
-              userDictPath = "~/.config/harper-ls/dictionary.txt",
+              fileDictPath = "/home/fic/.config/harper-ls/file_dictionaries/",
+              userDictPath = "/home/fic/.config/harper-ls/dictionary.txt",
               linters = {
                 spell_check = true,
                 spelled_numbers = false,
