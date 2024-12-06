@@ -20,6 +20,11 @@ local harperSettings = {
     terminating_conjunctions = true,
   },
 }
+require("lspconfig").harper_ls.setup({
+  settings = {
+    ["harper-ls"] = harperSettings,
+  },
+})
 return {
   {
     "neovim/nvim-lspconfig",
