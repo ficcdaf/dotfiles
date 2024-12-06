@@ -5,15 +5,16 @@ return {
       servers = {
         harper_ls = {
           -- autostart = false,
-          -- filetypes = {
-          --   "tex",
-          -- },
+          filetypes = {
+            "markdown",
+          },
           -- on_attach = function(client, bufnr)
           --   require("ltex_extra").setup(extraOpts)
           -- end,
           settings = {
             harper_ls = {
-              -- fileDictPath = "~/.harper/"
+              fileDictPath = "~/.config/harper-ls/",
+              userDictPath = "~/.config/harper-ls/dictionary.txt",
               linters = {
                 spell_check = true,
                 spelled_numbers = false,
