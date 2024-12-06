@@ -20,14 +20,6 @@ local harperSettings = {
     terminating_conjunctions = true,
   },
 }
-require("lspconfig").harper_ls.setup({
-  filetypes = {
-    "markdown",
-  },
-  settings = {
-    ["harper-ls"] = harperSettings,
-  },
-})
 return {
   {
     "neovim/nvim-lspconfig",
@@ -38,6 +30,7 @@ return {
           filetypes = {
             "markdown",
           },
+          settings = harperSettings,
         },
       },
     },
