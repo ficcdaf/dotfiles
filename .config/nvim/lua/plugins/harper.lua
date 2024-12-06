@@ -16,7 +16,7 @@ local harperSettings = {
     correct_number_suffix = true,
     number_suffix_capitalization = true,
     multiple_sequential_pronouns = true,
-    linking_verbs = false,
+    linking_verbs = true,
     avoid_curses = true,
     terminating_conjunctions = true,
   },
