@@ -48,12 +48,15 @@ map({ "n" }, "<S-h>", "L", { remap = false })
 map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
 
+-- Duplicate and comment line
+map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "Duplicate and comment line" })
+
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
 
--- map("n", "<C-x>", function()
---   Snacks.bufdelete()
--- end, { remap = true, desc = "Delete Buffer" })
+map("n", "<C-X>", function()
+  Snacks.bufdelete()
+end, { remap = true, desc = "Delete Buffer" })
 
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
@@ -64,7 +67,7 @@ map({ "n", "x" }, "<leader>fp", function()
   end
 end, { desc = "Open Yank History", remap = false })
 -- TODO: add leader + y for save current buf, leader + Y to write all
-map({ "n", "x" }, "<leader>y", ":w<CR>", { desc = "Save" })
+-- map({ "n", "x" }, "<leader>y", ":w<CR>", { desc = "Save" })
 map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })
 
 -- Zen Mode
