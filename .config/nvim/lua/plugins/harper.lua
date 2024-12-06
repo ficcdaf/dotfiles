@@ -21,6 +21,9 @@ local harperSettings = {
   },
 }
 require("lspconfig").harper_ls.setup({
+  filetypes = {
+    "markdown",
+  },
   settings = {
     ["harper-ls"] = harperSettings,
   },
@@ -40,7 +43,7 @@ return {
     },
   },
   {
-    "williamboman/mason-lspconfig.nvim",
-    opts = { ensure_installed = { "harper_ls" } },
+    "williamboman/mason.nvim",
+    opts = { ensure_installed = { "harper-ls" } },
   },
 }
