@@ -3,7 +3,6 @@ local function gen_header()
   return h
 end
 local function get_haiku()
-  -- local h = vim.fn.system("fortune issa-haiku")
   local h = vim.fn.system("fortune -s computers linux")
   return h
 end
