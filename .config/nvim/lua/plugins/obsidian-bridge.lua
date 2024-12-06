@@ -6,8 +6,8 @@ local function ssl(opt)
   end
 end
 local opts = {
-  obsidian_server_address = ssl(false),
-  cert_path = "/home/fic/.ssl/obsidian-bridge.pem",
+  obsidian_server_address = ssl(true),
+  cert_path = "/home/fic/.ssl/obsidiasexpenisn-bridge.pem",
 }
 return {
   "oflisback/obsidian-bridge.nvim",
