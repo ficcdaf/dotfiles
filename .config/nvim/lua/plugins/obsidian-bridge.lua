@@ -5,6 +5,7 @@ return {
   "oflisback/obsidian-bridge.nvim",
   -- disable for now because paths aren't working
   enabled = true,
+  dev = true,
   -- config = function()
   --   require("obsidian-bridge").setup(opts)
   -- end,
