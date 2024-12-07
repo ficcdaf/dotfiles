@@ -1,9 +1,11 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-font_family      SauceCodeProNFM
-bold_font        auto
-italic_font      auto
+font_family SauceCodeProNFM
+bold_font auto
+italic_font auto
 bold_italic_font auto
 font_size 14.0
+window_padding_width 0
+single_window_padding_width -1
 # force_ltr no
 # symbol_map
 # narrow_symbols
@@ -331,9 +333,9 @@ listen_on unix:/tmp/kitty
 # map cmd+m minimize_macos_window
 # map cmd+q quit
 # BEGIN_KITTY_FONTS
-font_family      family='SauceCodePro Nerd Font Mono' postscript_name=SauceCodeProNFM
-bold_font        auto
-italic_font      auto
+font_family family='SauceCodePro Nerd Font Mono' postscript_name=SauceCodeProNFM
+bold_font auto
+italic_font auto
 bold_italic_font auto
 # END_KITTY_FONTS
 include ~/.cache/wal/colors-kitty.conf
