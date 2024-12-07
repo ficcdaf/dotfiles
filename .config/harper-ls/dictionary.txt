@@ -1,4 +1,6 @@
 RQ
+CVE
+CVEs
 Roadmap
 PKGBUILD
 filetypes
