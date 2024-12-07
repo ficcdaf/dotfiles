@@ -5,8 +5,9 @@ italic_font auto
 bold_italic_font auto
 font_size 14.0
 window_padding_width 0
-single_window_padding_width -1
 # force_ltr no
+single_window_padding_width -1
+single_window_padding_height -1
 # symbol_map
 # narrow_symbols
 # disable_ligatures never
