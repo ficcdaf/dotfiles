@@ -86,8 +86,8 @@ function zle-keymap-select zle-line-init zle-line-finish
 
 # fpath+=(~/.zsh/completions)
 # Don't lazy-load in development, source directly:
-source ~/.config/zsh/functions/mkbak.zsh
-# fpath+=(~/.config/zsh/functions)
+source ~/scripts/mkbak.zsh
+# fpath+=(~/scripts/functions)
 # autoload -Uz mkbak
 
 zle -N zle-line-init
