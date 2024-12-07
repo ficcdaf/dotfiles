@@ -63,7 +63,7 @@ bindkey -r '^T'
 bindkey -r '\ex'
 
 # Created by `pipx` on 2024-09-20 02:14:00
-export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin"
+export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
 fpath=(~/.zsh.d/ $fpath)
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
