@@ -2,22 +2,29 @@ return {
   "wfxr/minimap.vim",
   build = "cargo install --locked code-minimap",
   config = function()
-    local cptoggle = Snacks.toggle.new({
-      name = "Copilot",
+    vim.api.nvim_create_autocmd("BufEnter", {
+      callback = function()
+        vim.b.minimap_enabled = 0
+      end,
+    })
+    local minimap_toggle = Snacks.toggle.new({
+      name = "Minimap",
       -- map = vim.keymap.set,
       which_key = true,
       get = function()
-        return not require("copilot.client").is_disabled()
+        return vim.b.minimap_enabled == 1
       end,
       notify = true,
       set = function(state)
         if state then
-          require("copilot.command").enable()
+          vim.b.minimap_enabled = 1
+          vim.cmd("Minimap")
         else
-          require("copilot.command").disable()
+          vim.b.minimap_enabled = 0
+          vim.cmd("MinimapClose")
         end
       end,
     })
-    Snacks.toggle.map(cptoggle, "<leader>at", { desc = "Toggle Copilot" })
+    Snacks.toggle.map(minimap_toggle, "<leader>um", { desc = "Toggle Minimap" })
   end,
 }
