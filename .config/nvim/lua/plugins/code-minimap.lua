@@ -6,7 +6,7 @@ return {
   },
   config = function()
     vim.g.minimap_left = 1
-    vim.g.minimap_enable_highlight_colorgroup = 0
+    vim.g.minimap_enable_highlight_colorgroup = 1
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
         if vim.g.minimap_enabled == nil then
