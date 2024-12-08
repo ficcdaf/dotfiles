@@ -1,26 +1,30 @@
 return {
   "wfxr/minimap.vim",
   build = "cargo install --locked code-minimap",
+  dependencies = {
+    "folke/snacks.nvim", -- for the toggling
+  },
   config = function()
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
-        vim.b.minimap_enabled = 0
+        if vim.g.minimap_enabled == nil then
+          vim.g.minimap_enabled = 0
+        end
       end,
     })
     local minimap_toggle = Snacks.toggle.new({
       name = "Minimap",
-      -- map = vim.keymap.set,
       which_key = true,
       get = function()
-        return vim.b.minimap_enabled == 1
+        return vim.g.minimap_enabled == 1
       end,
-      notify = true,
+      notify = false,
       set = function(state)
         if state then
-          vim.b.minimap_enabled = 1
+          vim.g.minimap_enabled = 1
           vim.cmd("Minimap")
         else
-          vim.b.minimap_enabled = 0
+          vim.g.minimap_enabled = 0
           vim.cmd("MinimapClose")
         end
       end,
