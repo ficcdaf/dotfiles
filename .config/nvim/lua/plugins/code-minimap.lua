@@ -11,11 +11,6 @@ return {
     local Group = colorbuddy.Group
     Group.new("minimapCursor", colors.secondary, colors.noir_9)
     Group.new("minimapRange", colors.primary, colors.background)
-    -- vim.api.nvim_set_hl(0, "minimapCursor", {
-    --   -- fg = "#933737",
-    --   fg = colors.primary,
-    --   bg = "#000000",
-    -- })
     -- vim.g.minimap_enable_highlight_colorgroup = 1
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
