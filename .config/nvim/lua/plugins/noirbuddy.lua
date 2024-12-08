@@ -106,7 +106,8 @@ return {
         Group.new("Title", colors.primary, nil, styles.bold)
         local linkhl = require("link-hl")
         linkhl.link(linkhl.go_map, "go")
-
+        -- minimap.nvim
+        -- Group.link("minimapCursor", "Cursor")
         -- Group.new("ObsidianExtLinkIcon", colors.primary, nil, styles.bold)
         -- Group.new("ObsidianRef", colors.primary, nil, styles.underline + styles.bold)
         -- Group.new("ObsidianRefText", colors.primary, nil, styles.underline + styles.bold)
