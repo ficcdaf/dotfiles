@@ -5,6 +5,7 @@ return {
     "folke/snacks.nvim", -- for the toggling
   },
   config = function()
+    vim.g.minimap_left = 1
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
         if vim.g.minimap_enabled == nil then
