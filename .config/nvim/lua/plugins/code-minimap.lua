@@ -9,7 +9,8 @@ return {
     local colorbuddy = require("colorbuddy")
     local colors = colorbuddy.colors
     local Group = colorbuddy.Group
-    Group.new("minimapCursor", colors.primary, colors.noir_8)
+    Group.new("minimapCursor", colors.secondary, colors.noir_9)
+    Group.new("minimapRange", colors.primary, colors.background)
     -- vim.api.nvim_set_hl(0, "minimapCursor", {
     --   -- fg = "#933737",
     --   fg = colors.primary,
