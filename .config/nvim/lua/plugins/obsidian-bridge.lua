@@ -7,6 +7,7 @@ local function ssl(opt)
 end
 local opts = {
   obsidian_server_address = ssl(true),
+  -- obsidian_server_address = "https://localhost:27124",
   cert_path = "/home/fic/.ssl/obsidian-bridge.pem",
 }
 return {
