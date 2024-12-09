@@ -5,3 +5,4 @@ CC'd
 Roadmap
 PKGBUILD
 filetypes
+CyberChef
