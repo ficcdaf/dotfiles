@@ -50,6 +50,7 @@ alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
 alias vzsh="vim ~/.zshrc"
 alias icat="kitty +kitten icat"
+alias iecho="xclip -selection clipboard -t image/png -o >"
 alias vn=viewnior
 alias mermaid=mmdc
 alias dnd=dragon-drop
@@ -86,7 +87,7 @@ function zle-keymap-select zle-line-init zle-line-finish
 
 # fpath+=(~/.zsh/completions)
 # Don't lazy-load in development, source directly:
-source ~/scripts/mkbak.zsh
+# source ~/scripts/mkbak.zsh
 # fpath+=(~/scripts/functions)
 # autoload -Uz mkbak
 
