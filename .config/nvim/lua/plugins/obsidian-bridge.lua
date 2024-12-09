@@ -1,6 +1,6 @@
 local function ssl(opt)
   if opt then
-    return "https://127.0.0.1:27124"
+    return "https://127.0.0.1:27124/"
   else
     return "http://127.0.0.1:27123"
   end
