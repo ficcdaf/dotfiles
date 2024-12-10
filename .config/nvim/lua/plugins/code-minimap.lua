@@ -3,6 +3,7 @@ return {
   build = "cargo install --locked code-minimap",
   dependencies = {
     "folke/snacks.nvim", -- for the toggling
+    tag = "*",
   },
   config = function()
     vim.g.minimap_left = 1
