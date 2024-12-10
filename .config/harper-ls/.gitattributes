@@ -1,0 +1,2 @@
+dictionary.txt filter=git-crypt diff=git-crypt
+file_dictionaries/** filter=git-crypt diff=git-crypt
