@@ -14,7 +14,7 @@ local opts = {
 return {
   "oflisback/obsidian-bridge.nvim",
   enabled = true,
-  dev = true,
+  dev = false,
   opts = opts,
   event = {
     "BufReadPre *.md",
