@@ -37,10 +37,6 @@ return {
           },
           colors = {
             secondary = "#BD4C4C",
-            -- secondary = "#994848",
-            -- secondary = "#B45959",
-            -- secondary = "#215858",
-            -- secondary = "#B34242",
             primary = "#933737",
             diagnostic_error = "#AC2020",
             diagnostic_warning = "#ff7700",
