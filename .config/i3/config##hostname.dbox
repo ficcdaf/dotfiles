@@ -489,26 +489,22 @@ for_window [class="urxvt"] border pixel 1
 # set $mediumgrey		#8b8b8b
 # set $yellowbrown	#e1b700
 #
-# # define colors for windows:
-# #class		        	border		bground		text		indicator	child_border
-# client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-# client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-# client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-# client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
-# Dracula color settings
+set $fg #c3c3c3
+set $bg #781e1e
+set $bgb #282828
+set $bg2 #933737
+set $warn #f79000
+# set $complement #259797
 
-set $lgray #43454A
+# class                 border  backgr. text indicator child_border
+client.focused          $bg2    $bg2     $fg  $bg2       $bg2
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $warn     $warn     $fg  $warn       $warn
+client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-# client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused          $lgray $lgray #F8F8F2 $lgray $lgray
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-
-client.background       #F8F8F2
-
+client.background       $bg
 
 
 ############################################
@@ -544,15 +540,15 @@ strip_workspace_numbers yes
 # 		urgent_workspace	$urgentred	    	$urgentred	$white		$purple
       
     # background #282A36
-    background #292929
-    statusline #F8F8F2
-    separator  #43454A
+    background $bgb
+    statusline $fg
+    separator  $bg
 
-    focused_workspace  #43454A #43454A #F8F8F2
-    active_workspace   #292929 #292929 #F8F8F2
-    inactive_workspace #292929 #292929 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
+    focused_workspace  $bg2 $bg2 $fg
+    active_workspace   $bgb $bgb $fg
+    inactive_workspace $bgb $bgb $fg
+    urgent_workspace   $warn $warn $fg
+    binding_mode       $warn $warn $fg
 	}
 }
 
