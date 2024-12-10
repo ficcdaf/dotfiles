@@ -2,8 +2,10 @@ RQ
 CVE
 CVEs
 CC'd
+nvim
 Roadmap
 PKGBUILD
 filetypes
 CyberChef
 Abdelaziz
+colorscheme
