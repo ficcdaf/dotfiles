@@ -5,5 +5,6 @@ local opt = vim.opt
 opt.scrolloff = 0
 
 opt.spell = true
+opt.wrap = true
 opt.spelllang = { "en", "en-academic" }
 -- opt.spelloptions = "camel"

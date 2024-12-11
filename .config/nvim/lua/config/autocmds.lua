@@ -36,6 +36,7 @@
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
+    vim.opt_local.breakindent = true
     vim.cmd([[
     syn region mathBlock start=/\$\$/ end=/\$\$/ contains=@tex
     " inline math
