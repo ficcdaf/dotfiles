@@ -86,10 +86,10 @@ local sections = {
 }
 return {
   "nvim-lualine/lualine.nvim",
-  enabled = false,
-  -- dependencies = {
-  --   "jesseleite/nvim-noirbuddy",
-  -- },
+  enabled = true,
+  dependencies = {
+    "ficcdaf/ashen.nvim",
+  },
   config = function()
     local ashen_lualine = require("ashen.plugins.lualine")
     local theme = ashen_lualine.theme
