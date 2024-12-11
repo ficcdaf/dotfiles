@@ -5,5 +5,6 @@ local opt = vim.opt
 opt.scrolloff = 0
 
 opt.spell = true
-table.insert(opt.spelllang, -1, "academic")
+-- opt.spelllang = vim.tbl_extend("force", opt.spelllang, { "en", "academic" })
+opt.spelllang = { "en", "en-academic" }
 -- opt.spelloptions = "camel"
