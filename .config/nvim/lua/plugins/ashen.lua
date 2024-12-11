@@ -2,7 +2,7 @@ return {
   {
     "ficcdaf/ashen.nvim",
     dir = "~/dev/plugins/ashen.nvim/",
-    dev = true,
+    dev = false,
     lazy = false,
     priority = 1000,
     enabled = true,
