@@ -1,5 +1,5 @@
 return {
   "ficcdaf/ashen.nvim",
-  enabled = false,
+  enabled = true,
   dev = true,
 }
