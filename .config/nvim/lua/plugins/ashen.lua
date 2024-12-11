@@ -1,13 +1,14 @@
 return {
   "ficcdaf/ashen.nvim",
-  -- lazy = false,
-  priority = 1000,
-  enabled = true,
+  -- dir = "~/dev/plugins/ashen.nvim/",
   dev = true,
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "ashen",
-    },
-  },
+  -- lazy = false,
+  -- priority = 1000,
+  -- enabled = true,
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     -- colorscheme = "ashen",
+  --   },
+  -- },
 }
