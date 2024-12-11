@@ -1,13 +1,13 @@
 return {
   "ficcdaf/ashen.nvim",
+  -- lazy = false,
+  priority = 1000,
   enabled = true,
   dev = true,
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = function()
-        require("ashen").setup()
-      end,
+      colorscheme = "ashen",
     },
   },
 }

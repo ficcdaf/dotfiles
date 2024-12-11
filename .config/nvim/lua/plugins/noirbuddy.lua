@@ -14,6 +14,7 @@
 -- -- #7C8080
 -- -- #8D8D8D
 -- -- #d4d4d4
+-- return {}
 -- return {
 --   {
 --     "jesseleite/nvim-noirbuddy",
@@ -25,8 +26,8 @@
 --     {
 --   },
 --     "LazyVim/LazyVim",
+--     colorscheme = function()
 --     opts = {
---       colorscheme = function()
 --         local noiropts = {
 --           -- preset = "miami-nights",
 --           styles = {

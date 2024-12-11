@@ -86,6 +86,7 @@ local sections = {
 }
 return {
   "nvim-lualine/lualine.nvim",
+  enabled = false,
   -- dependencies = {
   --   "jesseleite/nvim-noirbuddy",
   -- },
