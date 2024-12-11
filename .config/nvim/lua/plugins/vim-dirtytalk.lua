@@ -12,6 +12,4 @@ return {
     end
     o.spelllang = current
   end,
-  -- Note: let g:dirtytalk_blacklist=['lorem-ipsum'] to disable a wordlist
-  -- Mus run :DirtytalkUpdate after making this change
 }

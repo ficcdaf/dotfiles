@@ -22,6 +22,10 @@ local harperSettings = {
   },
 }
 local enabled = false
+local har = ""
+if enabled then
+  har = "harper_ls"
+end
 local spec = {
   {
     "neovim/nvim-lspconfig",
@@ -41,16 +45,13 @@ local spec = {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = { ensure_installed = { "harper_ls" } },
+    opts = { ensure_installed = { har } },
   },
 }
 if enabled then
   return spec
 else
   return {
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      vim.cmd("LspUninstall harper_ls")
-    end,
+    "neovim/nvim-lspconfig",
   }
 end
