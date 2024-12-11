@@ -86,13 +86,13 @@ local sections = {
 }
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = {
-    "jesseleite/nvim-noirbuddy",
-  },
+  -- dependencies = {
+  --   "jesseleite/nvim-noirbuddy",
+  -- },
   config = function()
-    local noirbuddy_lualine = require("noirbuddy.plugins.lualine")
-    local theme = noirbuddy_lualine.theme
-    local nb_inactive_sections = noirbuddy_lualine.inactive_sections
+    local ashen_lualine = require("ashen.plugins.lualine")
+    local theme = ashen_lualine.theme
+    local ashen_inactive_sections = ashen_lualine.inactive_sections
 
     -- vim.api.nvim_create_autocmd(
     --   { "TextChanged", "TextChangedI", "CursorHold" },
@@ -113,7 +113,7 @@ return {
         section_separators = { left = "", right = "" },
       },
       sections = sections,
-      inactive_sections = nb_inactive_sections,
+      inactive_sections = ashen_inactive_sections,
     })
   end,
 }
