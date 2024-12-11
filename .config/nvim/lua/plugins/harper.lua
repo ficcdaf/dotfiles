@@ -21,7 +21,8 @@ local harperSettings = {
     terminating_conjunctions = true,
   },
 }
-return {
+local enabled = false
+local spec = {
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -39,7 +40,17 @@ return {
     },
   },
   {
-    "williamboman/mason.nvim",
-    opts = { ensure_installed = { "harper-ls" } },
+    "williamboman/mason-lspconfig.nvim",
+    opts = { ensure_installed = { "harper_ls" } },
   },
 }
+if enabled then
+  return spec
+else
+  return {
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      vim.cmd("LspUninstall harper_ls")
+    end,
+  }
+end
