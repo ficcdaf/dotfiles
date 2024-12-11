@@ -1,8 +1,8 @@
 local M = {}
 
 -- test comment
-
 M.go_map = {
+
   -- ["@lsp.type.class"] = { link = "Structure" },
   -- ["@lsp.type.decorator"] = { link = "Function" },
   -- ["@lsp.type.enum"] = { link = "Structure" },
