@@ -23,13 +23,14 @@ return {
   dependencies = {
     "folke/snacks.nvim", -- for the toggling
     -- version = "*",
+    -- opts = toggleopt,
   },
   keys = {
-    { "<leader>um", Snacks.toggle(toggleopt) },
+    -- { "<leader>um", Snacks.toggle(toggleopt) },
   },
   config = function()
     -- local minimap_toggle = Snacks.toggle.new({
-    local minimap_toggle = Snacks.toggle.new()
+    -- local minimap_toggle = Snacks.toggle.new()
     vim.g.minimap_left = 1
     vim.api.nvim_create_autocmd("BufEnter", {
       callback = function()
