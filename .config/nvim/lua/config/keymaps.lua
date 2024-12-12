@@ -80,7 +80,7 @@ map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
 
-map("n", "<M-q>", function()
+map("n", "<C-x>", function()
   Snacks.bufdelete()
 end, { remap = true, desc = "Delete Buffer" })
 
