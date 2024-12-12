@@ -79,10 +79,11 @@ map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "
 
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
-
+map({ "n", "x" }, "<C-i>", "<C-a>", { desc = "Increment" })
+map({ "n", "x" }, "<C-a>", "<C-x>", { desc = "Decrement" })
 map("n", "<C-x>", function()
   Snacks.bufdelete()
-end, { remap = true, desc = "Delete Buffer" })
+end, { remap = false, desc = "Delete Buffer" })
 
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
