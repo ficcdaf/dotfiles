@@ -23,6 +23,7 @@ return {
     local minimap_toggle = Snacks.toggle.new({
       name = "Minimap",
       map = {},
+      keys = "<leader>um",
       which_key = true,
       get = function()
         return vim.g.minimap_enabled == 1
@@ -38,6 +39,7 @@ return {
         end
       end,
     })
-    minimap_toggle:map("<leader>um", { desc = "Toggle Minimap" })
+    -- minimap_toggle:map("<leader>um", { desc = "Toggle Minimap" })
+    -- vim.keymap.set("n", "<leader>um", )
   end,
 }
