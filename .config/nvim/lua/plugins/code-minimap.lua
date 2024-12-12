@@ -20,7 +20,7 @@ local toggleopt = {
 return {
   "wfxr/minimap.vim",
   build = "cargo install --locked code-minimap",
-  event = "BufEnter",
+  event = "UIEnter",
   dependencies = {
     "folke/snacks.nvim", -- for the toggling
     -- version = "*",
