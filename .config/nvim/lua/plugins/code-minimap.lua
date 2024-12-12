@@ -5,25 +5,15 @@ return {
     "folke/snacks.nvim", -- for the toggling
     version = "*",
   },
+  -- keys = {
+  --   {"<leader>um", minimap_toggle.}
+  -- }
   config = function()
-    vim.g.minimap_left = 1
-    -- local colorbuddy = require("colorbuddy")
-    -- local colors = colorbuddy.colors
-    -- local Group = colorbuddy.Group
-    -- Group.new("minimapCursor", colors.secondary, colors.noir_9)
-    -- Group.new("minimapRange", colors.primary, colors.background)
-    -- vim.g.minimap_enable_highlight_colorgroup = 1
-    vim.api.nvim_create_autocmd("BufEnter", {
-      callback = function()
-        if vim.g.minimap_enabled == nil then
-          vim.g.minimap_enabled = 0
-        end
-      end,
-    })
-    local minimap_toggle = Snacks.toggle.new({
+    -- local minimap_toggle = Snacks.toggle.new({
+    local minimap_toggle = Snacks.toggle({
       name = "Minimap",
       map = {},
-      keys = "<leader>um",
+      -- keys = "<leader>um",
       which_key = true,
       get = function()
         return vim.g.minimap_enabled == 1
@@ -39,7 +29,15 @@ return {
         end
       end,
     })
-    -- minimap_toggle:map("<leader>um", { desc = "Toggle Minimap" })
-    -- vim.keymap.set("n", "<leader>um", )
+    vim.g.minimap_left = 1
+    vim.api.nvim_create_autocmd("BufEnter", {
+      callback = function()
+        if vim.g.minimap_enabled == nil then
+          vim.g.minimap_enabled = 0
+        end
+      end,
+    })
+    -- minimap_toggle:map("<leader>um")
+    vim.inspect(minimap_toggle)
   end,
 }
