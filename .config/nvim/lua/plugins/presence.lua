@@ -8,6 +8,7 @@ end
 return {
   "jiriks74/presence.nvim",
   event = "UIEnter",
+  pin = true,
   opts = {
     -- show_time = false,
     -- log_level = "warn",
