@@ -20,6 +20,7 @@ local toggleopt = {
 return {
   "wfxr/minimap.vim",
   build = "cargo install --locked code-minimap",
+  event = "BufEnter",
   dependencies = {
     "folke/snacks.nvim", -- for the toggling
     -- version = "*",
@@ -39,7 +40,6 @@ return {
         end
       end,
     })
-    -- minimap_toggle:map("<leader>um")
-    -- vim.inspect(minimap_toggle)
+    require("snacks.toggle").new(toggleopt):map(toggleopt.keys, { mode = { "n" } })
   end,
 }
