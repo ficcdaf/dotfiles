@@ -44,8 +44,9 @@ return {
           "stack3",
         },
       },
-      hl_groups = {},
+      hl_groups = require("ashen.plugins.trailblazer").map,
     }
+
     require("trailblazer").setup(opts)
   end,
 }
