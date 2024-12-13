@@ -21,7 +21,7 @@ local harperSettings = {
     terminating_conjunctions = true,
   },
 }
-local enabled = false
+local enabled = true
 local har = ""
 if enabled then
   har = "harper_ls"
@@ -32,7 +32,7 @@ local spec = {
     opts = {
       servers = {
         harper_ls = {
-          -- autostart = false,
+          autostart = false,
           filetypes = {
             "markdown",
           },
