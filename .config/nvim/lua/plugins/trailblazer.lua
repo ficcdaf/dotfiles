@@ -46,7 +46,6 @@ return {
           "stack3",
         },
       },
-      -- hl_groups = hl_groups,
     }
     require("trailblazer").setup(opts)
     require("ashen.plugins").setup("trailblazer")
