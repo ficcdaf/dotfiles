@@ -1,8 +1,10 @@
 local prefix = "<leader>m"
 local function fmt_prefix(mappings)
+  local out = {}
   for k, v in pairs(mappings) do
-    mappings[k] = prefix .. v
+    out[k] = prefix .. v
   end
+  return out
 end
 local opts = {
   force_mappings = {
@@ -27,13 +29,14 @@ local opts = {
     },
   },
 }
-print(vim.inspect(opts.force_mappings.nv.motions))
+-- print(vim.inspect(opts.force_mappings.nv.motions))
 return {
   "LeonHeidelbach/trailblazer.nvim",
-  -- config = function()
-  --   require("which-key").add({
-  --     { "<leader>m", group = "Trailblazer" },
-  --   })
-  --   require("trailblazer").setup(opts)
-  -- end,
+  config = function()
+    require("which-key").add({
+      { "<leader>m", group = "Trailblazer" },
+    })
+    require("trailblazer").setup(opts)
+    -- print(vim.inspect(opts.force_mappings.nv.motions))
+  end,
 }
