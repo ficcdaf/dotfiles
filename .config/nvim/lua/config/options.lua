@@ -4,6 +4,7 @@
 local opt = vim.opt
 opt.scrolloff = 0
 
+vim.g.snacks_animate = false
 opt.spell = true
 opt.wrap = true
 opt.spelllang = { "en", "en-academic" }
