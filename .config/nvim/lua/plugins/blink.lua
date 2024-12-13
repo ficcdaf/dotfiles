@@ -26,7 +26,7 @@ return {
         documentation = {
           auto_show = true,
           auto_show_delay_ms = 200,
-          treesitter_highlighting = false,
+          treesitter_highlighting = true,
           window = {
             -- winhighlight = require("ashen.plugins.blink").winhighlight,
             -- winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
