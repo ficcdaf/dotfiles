@@ -1,10 +1,10 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local map = vim.keymap.set
 local wk = require("which-key")
 
-map({ "n" }, "<C-Cr>", function()
+local map = vim.keymap.set
+map({ "n" }, "^[[91;5u", function()
   vim.notify("Done!")
 end)
 
