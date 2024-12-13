@@ -1,6 +1,5 @@
--- vim.keymap.set("n", "<80>ku", function()
--- 	print("Detected... special")
--- end)
--- vim.keymap.set("n", "<Up>", function()
---   print("Detected... special")
--- end)
+local function display()
+	vim.notify("Displaying something", vim.log.levels.INFO)
+end
+local key = "←"
+vim.keymap.set({ "n", "i" }, key, display)
