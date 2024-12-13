@@ -2,9 +2,10 @@
 return {
   "LeonHeidelbach/trailblazer.nvim",
   config = function()
-    require("which-key").add({
-      { "<leader>m", group = "Trailblazer" },
-    })
+    local hl_groups =
+      require("ashen.plugins.trailblazer").map, require("which-key").add({
+        { "<leader>m", group = "Trailblazer" },
+      })
     local function fmt_prefix(prefix, mappings)
       local out = {}
       for k, v in pairs(mappings) do
@@ -44,7 +45,7 @@ return {
           "stack3",
         },
       },
-      hl_groups = require("ashen.plugins.trailblazer").map,
+      hl_groups = hl_groups,
     }
 
     require("trailblazer").setup(opts)
