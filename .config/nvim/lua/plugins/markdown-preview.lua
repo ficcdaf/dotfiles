@@ -31,6 +31,6 @@ return {
         end
       end,
     })
-    Snacks.toggle.map(mdscrolltoggle, "<leader>mP", { desc = "Toggle Markdown Preview Scroll" })
+    -- Snacks.toggle.map(mdscrolltoggle, "<leader>mP", { desc = "Toggle Markdown Preview Scroll" })
   end,
 }
