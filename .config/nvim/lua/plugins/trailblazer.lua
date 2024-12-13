@@ -44,6 +44,7 @@ return {
           "stack3",
         },
       },
+      hl_groups = {},
     }
     require("trailblazer").setup(opts)
   end,
