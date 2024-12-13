@@ -5,11 +5,14 @@ local wk = require("which-key")
 
 local map = vim.keymap.set
 
--- Tmux won't forward <C-Cr> to Neovim.
--- So, I've mapped ctrl+enter to \u2190 in kitty,
--- which is the "←" unicode symbol.
-KITTY_SPECIAL = "←"
-map({ "n", "i", "x" }, KITTY_SPECIAL, "<C-Cr>", { remap = true })
+-- required to remap special sequence
+-- when inside tmux :)
+require("tmux-remap").setup({
+  special = "←",
+  remap = "<C-Cr>",
+  autoset = true,
+})
+
 map({ "n" }, "<C-Cr>", function()
   vim.notify("Special!")
 end)
