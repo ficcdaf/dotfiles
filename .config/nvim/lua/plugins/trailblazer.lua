@@ -1,11 +1,11 @@
 -- TODO: add trailblazer highlight groups to ashen
 return {
   "LeonHeidelbach/trailblazer.nvim",
+  enabled = false,
   config = function()
-    local hl_groups =
-      require("ashen.plugins.trailblazer").map, require("which-key").add({
-        { "<leader>m", group = "Trailblazer" },
-      })
+    local hl_groups = require("which-key").add({
+      { "<leader>m", group = "Trailblazer" },
+    })
     local function fmt_prefix(prefix, mappings)
       local out = {}
       for k, v in pairs(mappings) do
@@ -45,9 +45,10 @@ return {
           "stack3",
         },
       },
-      hl_groups = hl_groups,
+      -- hl_groups = hl_groups,
     }
 
-    require("trailblazer").setup(opts)
+    -- require("trailblazer").setup(opts)
+    -- require("ashen.plugins.trailblazer").map
   end,
 }
