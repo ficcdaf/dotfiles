@@ -28,6 +28,7 @@ return {
           auto_show_delay_ms = 200,
           treesitter_highlighting = false,
           window = {
+            -- winhighlight = require("ashen.plugins.blink").winhighlight,
             -- winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
           },
         },
@@ -36,24 +37,16 @@ return {
           -- enabled = false,
         },
       },
-      -- sources = {
-      --   default = { "lsp", "path", "snippets", "buffer" },
-      -- },
 
       keymap = {
-        preset = "default",
-        -- ["<Tab>"] = {
-        --   LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
-        --   "fallback",
-        -- },
         ["<Tab>"] = { "fallback" },
         ["<C-Cr>"] = { "select_and_accept", "fallback" },
-        ["<C-l>"] = { "select_prev" },
-        ["<C-h>"] = { "select_next" },
+        ["<C-l>"] = { "select_prev", "fallback" },
+        ["<C-h>"] = { "select_next", "fallback" },
         ["<C-L>"] = { "scroll_documentation_up" },
         ["<C-H>"] = { "scroll_documentation_down" },
-        ["<Up>"] = { "fallback" },
-        ["<Down>"] = { "fallback" },
+        ["<Up>"] = {},
+        ["<Down>"] = {},
       },
     },
   },
