@@ -3,7 +3,10 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 local wk = require("which-key")
-local cmdh = require("colemak-dh")
+
+map({ "n" }, "<C-Cr>", function()
+  vim.notify("Done!")
+end)
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 

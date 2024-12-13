@@ -10,6 +10,7 @@ include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.8
 map ctrl+shift+r no_op
 map ctrl+shift+o no_op
+# map ctrl+enter send_text all \u000A
 # map alt+v new_window
 # map ctrl+left neighboring_window left
 # map ctrl+right neighboring_window right
@@ -18,4 +19,3 @@ map ctrl+shift+o no_op
 map alt+shift+r load_config_file
 # map alt+f toggle_maximized
 audio_bell no
-
