@@ -4,6 +4,7 @@
 local opt = vim.opt
 opt.scrolloff = 0
 
+vim.g.ai_cmp = false
 vim.g.snacks_animate = false
 opt.spell = true
 opt.wrap = true
