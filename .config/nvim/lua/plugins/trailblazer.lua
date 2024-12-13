@@ -1,4 +1,4 @@
--- print(vim.inspect(opts.force_mappings.nv.motions))
+-- TODO: add trailblazer highlight groups to ashen
 return {
   "LeonHeidelbach/trailblazer.nvim",
   config = function()
@@ -35,6 +35,13 @@ return {
         nv = {
           motions = fmt_prefix("<leader>m", motions_map),
           actions = fmt_prefix("<leader>m", actions_map),
+        },
+      },
+      trail_options = {
+        default_trail_mark_stacks = {
+          "stack1",
+          "stack2",
+          "stack3",
         },
       },
     }
