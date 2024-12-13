@@ -25,7 +25,9 @@ bindkey "^e" edit-command-line
 alias ls="eza --long --git --header --icons"
 alias c="clear"
 alias top=btop
-# alias v='NVIM_APPNAME="nvim-min" nvim'
+alias minvim='NVIM_APPNAME="nvim-min" nvim'
+alias vimclean='nvim --clean'
+alias catkeys='/bin/cat -v'
 alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'

@@ -1,1 +1,6 @@
-print("hello nvim")
+-- vim.keymap.set("n", "<80>ku", function()
+-- 	print("Detected... special")
+-- end)
+-- vim.keymap.set("n", "<Up>", function()
+--   print("Detected... special")
+-- end)
