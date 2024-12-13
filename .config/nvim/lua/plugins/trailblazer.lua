@@ -1,0 +1,3 @@
+return {
+  "LeonHeidelbach/trailblazer.nvim",
+}
