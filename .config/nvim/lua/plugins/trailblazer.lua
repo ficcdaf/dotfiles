@@ -49,6 +49,6 @@ return {
     }
 
     require("trailblazer").setup(opts)
-    -- require("ashen.plugins.trailblazer").map
+    require("ashen.plugins").setup("trailblazer")
   end,
 }
