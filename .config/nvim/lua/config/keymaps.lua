@@ -4,8 +4,14 @@
 local wk = require("which-key")
 
 local map = vim.keymap.set
-map({ "n" }, "<Esc>[91~", function()
-  vim.notify("Done!")
+
+-- Tmux won't forward <C-Cr> to Neovim.
+-- So, I've mapped ctrl+enter to \u2190 in kitty,
+-- which is the "←" unicode symbol.
+KITTY_SPECIAL = "←"
+map({ "n", "i", "x" }, KITTY_SPECIAL, "<C-Cr>", { remap = true })
+map({ "n" }, "<C-Cr>", function()
+  vim.notify("Special!")
 end)
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")

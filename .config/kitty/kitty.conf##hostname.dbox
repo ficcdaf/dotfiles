@@ -13,9 +13,8 @@ include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.8
 map ctrl+shift+r no_op
 map ctrl+shift+o no_op
-# map ctrl+enter send_text all \u2190
+map ctrl+enter send_text all \u2190
 # map ctrl+enter with application nvim send_text all \u2190
-map ctrl+enter send_text normal,application \u2190
 # map ctrl+enter with application tmux send_text all \u2190
 # map ctrl+enter send_text all \x0A
 
