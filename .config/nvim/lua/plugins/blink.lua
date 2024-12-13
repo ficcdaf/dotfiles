@@ -4,11 +4,9 @@ if follow_main then
 end
 
 return {
-  -- { "giuxtaposition/blink-cmp-copilot", enabled = false },
+  { "giuxtaposition/blink-cmp-copilot", enabled = false },
   {
     "saghen/blink.cmp",
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
     opts = {
       appearance = {
         nerd_font_variant = "mono",
@@ -17,7 +15,7 @@ return {
         accept = {
           -- experimental auto-brackets support
           auto_brackets = {
-            enabled = true,
+            enabled = false,
           },
         },
         menu = {
@@ -28,14 +26,18 @@ return {
         documentation = {
           auto_show = true,
           auto_show_delay_ms = 200,
-          treesitter_highlighting = true,
+          treesitter_highlighting = false,
           window = {
-            winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
+            -- winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
           },
         },
         ghost_text = {
           enabled = vim.g.ai_cmp,
+          -- enabled = false,
         },
+      },
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
       },
 
       keymap = {
@@ -44,6 +46,7 @@ return {
         --   LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
         --   "fallback",
         -- },
+        ["<Tab>"] = { "fallback" },
         ["<C-Cr>"] = { "select_and_accept", "fallback" },
         ["<C-l>"] = { "select_prev" },
         ["<C-h>"] = { "select_next" },
