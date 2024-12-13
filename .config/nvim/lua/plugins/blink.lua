@@ -36,9 +36,9 @@ return {
           -- enabled = false,
         },
       },
-      sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-      },
+      -- sources = {
+      --   default = { "lsp", "path", "snippets", "buffer" },
+      -- },
 
       keymap = {
         preset = "default",
