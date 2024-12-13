@@ -10,7 +10,9 @@ include ~/.cache/wal/colors-kitty.conf
 background_opacity 0.8
 map ctrl+shift+r no_op
 map ctrl+shift+o no_op
-map ctrl+enter send_text all \x1b[91;5u
+# map ctrl+enter send_text all \x1b[91;5u
+# map ctrl+enter send_text all [91;5u
+map ctrl+enter send_text all \x1b[91~
 # map ctrl+enter no_op
 # map ctrl+enter send_text all \u000A
 # map ctrl+enter send_text all \x1b[91;5u

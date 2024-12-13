@@ -4,7 +4,7 @@
 local wk = require("which-key")
 
 local map = vim.keymap.set
-map({ "n" }, "^[[91;5u", function()
+map({ "n" }, "<Esc>[91~", function()
   vim.notify("Done!")
 end)
 
