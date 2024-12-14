@@ -12,6 +12,9 @@ return {
         nerd_font_variant = "mono",
       },
       completion = {
+        list = {
+          selection = "manual",
+        },
         accept = {
           -- experimental auto-brackets support
           auto_brackets = {
@@ -40,7 +43,7 @@ return {
 
       keymap = {
         preset = "default",
-        ["<CR>"] = {},
+        ["<CR>"] = { "accept", "fallback" },
         ["<Tab>"] = { "fallback" },
         ["<C-CR>"] = { "select_and_accept", "fallback" },
         -- ["<C-l>"] = { "select_prev", "fallback" },

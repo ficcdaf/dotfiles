@@ -1,7 +1,6 @@
 # disable_terminal_key_bindings yes
 # BEGIN_KITTY_FONTS
 # TODO: figure out how to make this conditional?
-max_fps = 120
 font_family      family='SauceCodePro Nerd Font Mono' postscript_name=SauceCodeProNFM
 bold_font        auto
 italic_font      auto

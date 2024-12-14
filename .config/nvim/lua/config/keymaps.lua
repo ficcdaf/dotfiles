@@ -7,15 +7,14 @@ local map = vim.keymap.set
 
 -- required to remap special sequence
 -- when inside tmux :)
-require("tmux-remap").setup({
-  special = "←",
-  remap = "<C-Cr>",
-  autoset = true,
-})
+-- require("tmux-remap").setup({
+--   special = "←",
+--   remap = "<C-Cr>",
+--   autoset = true,
+-- })
 
-map({ "n" }, "<C-Cr>", function()
-  vim.notify("Special!")
-end)
+local special_key = "←"
+vim.keymap.set({ "n", "i" }, special_key, "<C-CR>", { remap = true })
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 

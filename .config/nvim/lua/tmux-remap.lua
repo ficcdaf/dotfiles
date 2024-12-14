@@ -5,7 +5,7 @@ local M = {}
 
 M.config = {
   special = "←",
-  remap = "<C-Cr>",
+  remap = "<C-CR>",
   autoset = true,
 }
 
