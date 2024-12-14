@@ -18,6 +18,8 @@ vim.keymap.set({ "n", "i" }, special_key, "<C-CR>", { remap = true })
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 
+map({ "n" }, "cu", "vgu", { desc = "Lowercase current char" })
+map({ "n" }, "cU", "vgU", { desc = "Uppercase current char" })
 -- Bind arrows to hjkl to my colemak-dh motions work as expected
 map({ "n", "x" }, "<Up>", "k", { desc = "Up", remap = true })
 map({ "n", "x" }, "<Down>", "j", { desc = "Down", remap = true })
