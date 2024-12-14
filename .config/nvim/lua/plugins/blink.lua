@@ -36,15 +36,14 @@ return {
           },
         },
         ghost_text = {
-          enabled = vim.g.ai_cmp,
-          -- enabled = false,
+          enabled = true,
         },
       },
 
       keymap = {
         preset = "default",
         ["<CR>"] = { "accept", "fallback" },
-        ["<Tab>"] = { "fallback" },
+        ["<Tab>"] = { "select_and_accept", "fallback" },
         ["<C-CR>"] = { "select_and_accept", "fallback" },
         -- ["<C-l>"] = { "select_prev", "fallback" },
         -- ["<C-h>"] = { "select_next", "fallback" },
