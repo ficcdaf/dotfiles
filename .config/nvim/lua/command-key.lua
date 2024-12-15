@@ -1,4 +1,3 @@
--- TODO: turn this into a plugin? lol
 local M = {}
 
 function M.command(command_name)
