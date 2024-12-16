@@ -1,38 +1,19 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
--- Add any additional autocmds here
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = "python",
---   callback = function()
---     local cl = require("colorbuddy")
---     cl.Group.new("@variable", cl.colors.primary)
---     cl.Group.new("@string", cl.colors.secondary)
---     cl.Group.new("@keyword", cl.colors.complement)
---     cl.Group.new("@keyword.operator", cl.colors.complement)
---     cl.Group.new("@constant.builtin", cl.colors.complement)
---   end,
--- })
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = "tex",
---   callback = function()
---     vim.cmd([[
---             syntax match texMathSymbol "\\oplus" conceal cchar=⊕
---         ]])
---   end,
--- })
--- This autocommand fixes syntax highlighting for inline math in markdown files
--- Together with vimtex, it will apply very sexy good stuff here!
--- vim.api.nvim_create_autocmd("FileType", {
---   patterm = "tex",
---   callback = function()
---     vim.api.nvim_create_autocmd("BufWrite", {
---       buffer = 0,
---       callback = function()
---         vim.api.nvim_command("VimtexCompile")
---       end,
---     })
---   end,
--- })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    local args = vim.fn.argv()
+    print(vim.inspect(args))
+    if #args > 0 then
+      local arg = args[1]
+      if vim.fn.isdirectory(arg) == 1 then
+        vim.api.nvim_exec_autocmds("User", { pattern = "DirOpened" })
+      end
+    end
+  end,
+})
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()

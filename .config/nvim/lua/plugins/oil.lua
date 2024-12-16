@@ -1,7 +1,8 @@
 return {
   "stevearc/oil.nvim",
   -- lazy = false,
-  event = "VimEnter",
+  -- event = "VimEnter",
+  event = "User DirOpened",
   keys = {
     { "-", "<CMD>Oil<CR>", desc = "Open Oil" },
   },
