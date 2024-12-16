@@ -596,9 +596,9 @@ bindsym $mod+d exec rofi -modi drun -show drun
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 ## rofi bindings for window menu ($mod+t /F10 optional disabled)
-
-bindsym $mod+t exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+t exec neovide
+# bindsym $mod+t exec rofi -show window \
+# 		-config ~/.config/rofi/rofidmenu.rasi
 
 #bindsym F10 exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
