@@ -1,3 +1,5 @@
+bindkey -r '^S'
+bindkey -r '\ex'
 ZSH="$HOME/.oh-my-zsh"
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source $ZSH/oh-my-zsh.sh
@@ -20,6 +22,7 @@ bindkey "^e" edit-command-line
 
 # Set up fzf key bindings and fuzzy completion
 source ~/.config/zsh/fzf.zsh
+# Not working for some reason...
 source ~/.config/zsh/fzf-git.sh
 
 # alias ls="eza -lh --git"
@@ -63,8 +66,6 @@ alias cat=bat
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
 alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 
-bindkey -r '^S'
-bindkey -r '\ex'
 
 # Created by `pipx` on 2024-09-20 02:14:00
 export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
@@ -87,12 +88,6 @@ function zle-keymap-select zle-line-init zle-line-finish
       viins|main) print -n '\033[5 q';; # line cursor
   esac
 }
-
-# fpath+=(~/.zsh/completions)
-# Don't lazy-load in development, source directly:
-# source ~/scripts/mkbak.zsh
-# fpath+=(~/scripts/functions)
-# autoload -Uz mkbak
 
 zle -N zle-line-init
 zle -N zle-line-finish
