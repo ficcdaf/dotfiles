@@ -179,6 +179,10 @@ bind E tabprev
 bind I forward
 bind <C-m> gobble 1 markaddglobal
 
+" Seturl
+set allowautofocus false
+seturl *(chatgpt|openai)\*.com allowautofocus false
+
 " Autocmds
 autocmd DocStart monkeytype.com mode ignore
 autocmd DocStart app.diagrams.net mode ignore
