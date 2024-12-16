@@ -29,6 +29,8 @@
 local spec = {
   "tadmccorkle/markdown.nvim",
   ft = "markdown",
+  -- cmd = "MDListItemBelow",
+  opts = {},
   -- opts = opts,
 }
 

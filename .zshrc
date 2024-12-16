@@ -19,7 +19,7 @@ bindkey "^e" edit-command-line
 # compinit
 
 # Set up fzf key bindings and fuzzy completion
-# eval "$(fzf --zsh)"
+eval "$(fzf --zsh)"
 
 # alias ls="eza -lh --git"
 alias ls="eza --long --git --header --icons"
