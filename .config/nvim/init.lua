@@ -13,5 +13,5 @@ if vim.g.neovide then
       hide_mouse_when_typing = true,
     },
   }
-  require("neovide-config").setup()
+  require("neovide-config").setup(nv_opts)
 end
