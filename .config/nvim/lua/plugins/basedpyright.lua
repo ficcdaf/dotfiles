@@ -24,6 +24,9 @@ return {
           basedpyright = {
             analysis = {
               typeCheckingMode = "standard",
+              inlayHints = {
+                genericTypes = true,
+              },
             },
           },
         },
