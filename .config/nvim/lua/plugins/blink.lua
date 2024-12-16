@@ -18,7 +18,7 @@ return {
         accept = {
           -- experimental auto-brackets support
           auto_brackets = {
-            enabled = false,
+            enabled = true,
           },
         },
         -- menu = {
@@ -39,7 +39,9 @@ return {
           enabled = true,
         },
       },
-
+      signature = {
+        enabled = true,
+      },
       keymap = {
         preset = "default",
         ["<CR>"] = { "accept", "fallback" },
