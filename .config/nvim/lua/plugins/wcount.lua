@@ -1,5 +1,5 @@
 return {
   dev = true,
-  enabled = false,
+  enabled = true,
   "ficcdaf/wcount.nvim",
 }
