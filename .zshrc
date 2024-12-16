@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+unset vblank_mode
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source $ZSH/oh-my-zsh.sh
 
