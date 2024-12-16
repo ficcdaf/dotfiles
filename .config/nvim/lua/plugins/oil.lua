@@ -1,12 +1,11 @@
 return {
   "stevearc/oil.nvim",
-  lazy = false,
-  -- cmd = "Oil",
+  -- lazy = false,
+  -- event = "VimEnter",
+  event = "FileExplorer",
   keys = {
-    -- { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
     { "-", "<CMD>Oil<CR>", desc = "Open Oil" },
   },
-  -- opts = {},
   opts = {
     default_file_explorer = true,
     delete_to_trash = true,
@@ -22,7 +21,5 @@ return {
       ["<BS>"] = "actions.parent",
     },
   },
-  -- Optional dependencies
   dependencies = { { "echasnovski/mini.icons", opts = {} } },
-  -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
 }
