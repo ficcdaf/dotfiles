@@ -1,7 +1,7 @@
 {
   "CopilotChat.nvim": { "branch": "main", "commit": "2ebe591cff06018e265263e71e1dbc4c5aa8281e" },
   "LazyVim": { "branch": "main", "commit": "c8d8dd0ab6b4db711b33a79835cbac3b389b37f4" },
-  "SchemaStore.nvim": { "branch": "main", "commit": "f8c2a0f5d51b800ea4625808e243d9e8f7c5e1df" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "a5678ede14f8ebf92728fb45abb71824c6b3a657" },
   "blink-cmp-copilot": { "branch": "main", "commit": "e3eedf36ceda1932e296ec894de4ceea8ddeacb6" },
   "blink.cmp": { "branch": "main", "commit": "ae5a4ce8f7e519e49de7ae6fcadd74547f820a52" },
   "bufferline.nvim": { "branch": "main", "commit": "261a72b90d6db4ed8014f7bda976bcdc9dd7ce76" },
@@ -76,7 +76,7 @@
   "presence.nvim": { "branch": "main", "commit": "df0a0b52cd0799e99d1b76805d1357ae9c0d017d" },
   "refactoring.nvim": { "branch": "master", "commit": "2db6d378e873de31d18ade549c2edba64ff1c2e3" },
   "rustaceanvim": { "branch": "master", "commit": "25aab238aad3e58f864274449456bdc339981750" },
-  "snacks.nvim": { "branch": "main", "commit": "188b04370561470323ef20347c273105abd9b54d" },
+  "snacks.nvim": { "branch": "main", "commit": "0617e28f8289002310fed5986acc29fde38e01b5" },
   "speedtyper.nvim": { "branch": "v2", "commit": "f27fa7870dd35f1884efaef1c9f1d2e7dcedcacf" },
   "telescope.nvim": { "branch": "master", "commit": "2eca9ba22002184ac05eddbe47a7fe2d5a384dfc" },
   "text-case.nvim": { "branch": "main", "commit": "e898cfd46fa6cde0e83abb624a16e67d2ffc6457" },
