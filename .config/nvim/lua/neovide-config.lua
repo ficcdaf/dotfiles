@@ -20,8 +20,6 @@ M.setup = function(opts)
       change_scale_factor(1 / opts.font_maps.scale_factor)
     end)
   end
-
-  print("Setup goes here")
 end
 
 return M
