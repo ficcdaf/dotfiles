@@ -1,6 +1,11 @@
 return {
   "stevearc/oil.nvim",
   enabled = true,
+  -- lazy = false,
+  event = "VeryLazy",
+  keys = {
+    { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
+  },
   opts = {
     default_file_explorer = false,
     delete_to_trash = true,
@@ -13,11 +18,8 @@ return {
       -- "permissions",
     },
     keymaps = {
-      -- ["<BS>"] = "actions.parent",
+      ["<BS>"] = "actions.parent",
     },
-  },
-  keys = {
-    { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
   },
   -- Optional dependencies
   dependencies = { { "echasnovski/mini.icons", opts = {} } },

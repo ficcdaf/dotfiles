@@ -1,1 +1,1 @@
-return { "tridactyl/vim-tridactyl" }
+return { lazy = true, "tridactyl/vim-tridactyl" }
