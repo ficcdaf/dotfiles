@@ -1,13 +1,13 @@
 return {
   "stevearc/oil.nvim",
-  enabled = true,
-  -- lazy = false,
-  event = "VeryLazy",
+  cmd = "Oil",
   keys = {
-    { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
+    -- { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
+    { "-", "<CMD>Oil<CR>", desc = "Open Oil" },
   },
+  -- opts = {},
   opts = {
-    default_file_explorer = false,
+    default_file_explorer = true,
     delete_to_trash = true,
     columns = {
       "icon",
