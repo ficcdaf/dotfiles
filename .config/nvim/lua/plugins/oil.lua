@@ -1,6 +1,7 @@
 return {
   "stevearc/oil.nvim",
-  cmd = "Oil",
+  lazy = false,
+  -- cmd = "Oil",
   keys = {
     -- { "n", "-", "<CMD>Oil<CR>", { desc = "Open Oil" } },
     { "-", "<CMD>Oil<CR>", desc = "Open Oil" },
