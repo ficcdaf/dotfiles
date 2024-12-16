@@ -19,11 +19,7 @@ bindkey "^e" edit-command-line
 # compinit
 
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
-
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+source ~/.config/zsh/fzf.zsh
 
 # alias ls="eza -lh --git"
 alias ls="eza --long --git --header --icons"
