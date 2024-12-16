@@ -23,10 +23,10 @@ bindkey "^e" edit-command-line
 # Set up fzf key bindings and fuzzy completion
 source ~/.config/zsh/fzf.zsh
 # Not working for some reason...
-source ~/.config/zsh/fzf-git.sh
+# source ~/.config/zsh/fzf-git.sh
 
 # alias ls="eza -lh --git"
-alias ls="eza --long --git --header --icons"
+alias ls="eza --long --color=always --git --header --icons --no-user"
 alias c="clear"
 alias top=btop
 alias minvim='NVIM_APPNAME="nvim-min" nvim'
