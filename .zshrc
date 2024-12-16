@@ -1,8 +1,6 @@
 ZSH="$HOME/.oh-my-zsh"
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source $ZSH/oh-my-zsh.sh
-BREAKPOINT="AFTER SOURCING OMZSH"
-echo "$BREAKPOINT: vblank_mode=${vblank_mode}"
 
 # Note: if I do get Obsidian Bridge working, this is
 # a really bad way to load the env because 
@@ -103,4 +101,3 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 # colorscript -e 36
 source ~/scripts/obsidian-bridge.sh
-unset vblank_mode
