@@ -43,6 +43,7 @@ for_window [class="^.*"] pixel 1
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id sudo systemctl start keyd
+exec_always --no-startup-id xsettingsd
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
