@@ -21,6 +21,10 @@ bindkey "^e" edit-command-line
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
 # alias ls="eza -lh --git"
 alias ls="eza --long --git --header --icons"
 alias c="clear"
@@ -62,7 +66,7 @@ alias cat=bat
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
 alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 
-bindkey -r '^T'
+# bindkey -r '^T'
 bindkey -r '\ex'
 
 # Created by `pipx` on 2024-09-20 02:14:00
