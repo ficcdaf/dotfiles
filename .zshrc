@@ -20,6 +20,7 @@ bindkey "^e" edit-command-line
 
 # Set up fzf key bindings and fuzzy completion
 source ~/.config/zsh/fzf.zsh
+source ~/.config/zsh/fzf-git.sh
 
 # alias ls="eza -lh --git"
 alias ls="eza --long --git --header --icons"
