@@ -1,5 +1,6 @@
 local spec = {
   guess = {
+    enabled = false,
     "nmac427/guess-indent.nvim",
     opts = {},
   },
