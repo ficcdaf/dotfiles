@@ -95,6 +95,7 @@ zle -N zle-keymap-select
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+export DIRENV_LOG_FORMAT=""
 eval "$(direnv hook zsh)"
 # colorscript -e 36
 source ~/scripts/obsidian-bridge.sh
