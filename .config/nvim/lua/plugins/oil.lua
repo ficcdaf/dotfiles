@@ -24,14 +24,14 @@ return {
     win_options = {
       winbar = "%!v:lua.get_oil_winbar()",
     },
-    columns = {
-      "icon",
-      -- "size",
-      -- TODO:
-      -- Add a keybind to toggle permissions view?
-      -- There's a recipe for this in the docs
-      -- "permissions",
-    },
+    -- columns = {
+    --   "icon",
+    --   -- "size",
+    --   -- TODO:
+    --   -- Add a keybind to toggle permissions view?
+    --   -- There's a recipe for this in the docs
+    --   -- "permissions",
+    -- },
     view_options = {
       is_hidden_file = require("oil-extras").handle_git,
     },
