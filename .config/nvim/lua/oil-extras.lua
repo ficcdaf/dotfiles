@@ -37,13 +37,25 @@ local new_git_status = function()
   })
 end
 
-M.git_status = new_git_status()
+local git_status = new_git_status()
 
-local refresh = require("oil.actions").refresh
-local orig_refresh = refresh.callback
-refresh.callback = function(...)
-  M.git_status = new_git_status()
-  orig_refresh(...)
+M.handle_git = function(name, bufnr)
+  local refresh = require("oil.actions").refresh
+  local orig_refresh = refresh.callback
+  refresh.callback = function(...)
+    git_status = new_git_status()
+    orig_refresh(...)
+  end
+  local dir = require("oil").get_current_dir(bufnr)
+  local is_dotfile = vim.startswith(name, ".") and name ~= ".."
+  if not dir then
+    return is_dotfile
+  end
+  if is_dotfile then
+    return not git_status[dir].tracked[name]
+  else
+    return git_status[dir].ignored[name]
+  end
 end
 
 return M

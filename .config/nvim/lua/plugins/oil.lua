@@ -32,6 +32,9 @@ return {
       -- There's a recipe for this in the docs
       -- "permissions",
     },
+    view_options = {
+      is_hidden_file = require("oil-extras").handle_git,
+    },
     keymaps = {
       ["<BS>"] = "actions.parent",
       ["gd"] = {
