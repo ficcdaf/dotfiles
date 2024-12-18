@@ -5,7 +5,7 @@ function _G.get_oil_winbar()
   if dir then
     return vim.fn.fnamemodify(dir, ":~")
   else
-    return vim.api.nvim_buf_get_names(0)
+    return vim.api.nvim_buf_get_name(0)
   end
 end
 
