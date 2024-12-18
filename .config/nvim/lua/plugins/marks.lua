@@ -12,8 +12,8 @@ return {
       return out
     end
     local map = {
-      toggle = { "m", "Toggle next mark at cursor" },
-      set_next = { "n", "Set next mark at cursor" },
+      toggle = { "t", "Toggle next mark at cursor" },
+      set_next = { "m", "Set next mark at cursor" },
       delete = { "D", "Delete mark" },
       delete_buf = { "db", "Delete all mark in buffer" },
       delete_line = { "da", "Delete all mark in line" },
