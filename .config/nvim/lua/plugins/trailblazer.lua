@@ -1,7 +1,7 @@
 -- TODO: add trailblazer highlight groups to ashen
 return {
   "LeonHeidelbach/trailblazer.nvim",
-  enabled = true,
+  enabled = false,
   event = "UIEnter",
   config = function()
     local hl_groups = require("which-key").add({
