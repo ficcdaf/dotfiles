@@ -40,7 +40,7 @@ return {
         },
       },
       signature = {
-        enabled = true,
+        enabled = false,
       },
       keymap = {
         preset = "default",
