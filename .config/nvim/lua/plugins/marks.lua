@@ -1,6 +1,8 @@
 return {
   "chentoast/marks.nvim",
-  enabled = false,
+  enabled = true,
   event = "VeryLazy",
-  opts = {},
+  opts = {
+    builtin_marks = { ".", "<", ">", "^" },
+  },
 }
