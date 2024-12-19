@@ -1,7 +1,7 @@
 return {
   "ficcdaf/academic.nvim",
   dev = true,
-  opts = {},
+  -- opts = {},
   -- opts = {
   --   add = false,
   -- },
