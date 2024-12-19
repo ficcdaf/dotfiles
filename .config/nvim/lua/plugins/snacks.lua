@@ -1,6 +1,5 @@
 local zenops = {
 
-  notify = false,
   dim = false,
   git_signs = false,
   mini_diff_signs = false,
@@ -12,11 +11,26 @@ return {
   --   priority = 1000,
   keys = {
     {
-      "<leader>z",
+      "<leader>uz",
       function()
-        Snacks.zen(zenops)
+        Snacks.toggle.zen():map("<leader>uz", {
+          notify = false,
+        })
       end,
       desc = "Toggle Zen Mode",
+    },
+  },
+  opts = {
+    zen = {
+      toggles = {
+
+        notify = false,
+        dim = false,
+        git_signs = false,
+        mini_diff_signs = false,
+        diagnostics = false,
+        inlay_hints = true,
+      },
     },
   },
   -- opts = {
