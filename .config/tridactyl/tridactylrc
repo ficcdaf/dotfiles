@@ -182,6 +182,7 @@ bind <C-m> gobble 1 markaddglobal
 " Seturl
 set allowautofocus false
 seturl *(chatgpt|openai)\*.com allowautofocus false
+seturl *(monkeytype)\*.com allowautofocus true
 
 " Autocmds
 autocmd DocStart monkeytype.com mode ignore
