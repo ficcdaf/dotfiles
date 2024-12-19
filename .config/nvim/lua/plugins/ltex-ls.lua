@@ -5,7 +5,7 @@ local extraOpts = {
     "en-US",
     "en-CA",
   },
-  path = vim.fn.expand("~") .. "/.local/share/ltex",
+  path = vim.fn.expand("~") .. "/.config/ltex",
   log_level = "none",
 }
 return {
