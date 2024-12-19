@@ -3,7 +3,6 @@ return {
   --   priority = 1000,
   opts = {
     zen = {
-      Snacks.toggle.zen,
       toggles = {
         dim = false,
         git_signs = false,
