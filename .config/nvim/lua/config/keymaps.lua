@@ -18,6 +18,7 @@ vim.keymap.set({ "n", "i" }, special_key, "<C-CR>", { remap = true })
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 
+-- Snacks.toggle.zen():map("<leader>uz")
 map({ "n" }, "cl", "vgu", { noremap = true, desc = "Lowercase current char" })
 map({ "n" }, "cu", "vgU", { noremap = true, desc = "Uppercase current char" })
 -- Bind arrows to hjkl to my colemak-dh motions work as expected
