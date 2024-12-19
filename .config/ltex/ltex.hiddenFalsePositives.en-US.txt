@@ -1,0 +1,11 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QKnowledge, possession, inherence\nMFA & Passwordless\nSound-Proof\nExplanation of the protocol\nExplanation of the server-client vs. P2P implementations\nExplanation of microphone-spoofing phishing attack\nSecurity benefit: Authentication by proof of possession\nUsability benefit: zero user interaction required.\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QOr at least disable all sources that aren't snippets\n Add toggle for \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"IS_AND_ARE","sentence":"^\\QThe error page reveals the source code and call stack of the process which generated the error.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe attacker may investigate whether QLoader properly sanitizes file paths; which could lead to a local file inclusion exploit as just one example.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QKingston, Ontario.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QKingston, ON.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QJan. 2024 – Apr. 2024.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QDec. 2022 – Aug. 2023.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QAug. 2022 – Apr. 2024.\\E$"}
+{"rule":"SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA","sentence":"^\\QCurrently in slow-but-steady active development due to its being a passion project.\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QNeovim Configuration\\E$"}
