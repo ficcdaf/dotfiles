@@ -9,5 +9,6 @@ vim.g.ai_cmp = false
 vim.g.snacks_animate = false
 opt.spell = true
 opt.wrap = true
-opt.spelllang = { "en", "en-academic" }
+-- opt.spelllang = { "en", "en-academic" }
+opt.spelllang = { "en" }
 -- opt.spelloptions = "camel"
