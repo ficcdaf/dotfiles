@@ -109,7 +109,8 @@ return {
       substitutions = {},
     },
     picker = {
-      name = "telescope.nvim",
+      -- name = "telescope.nvim",
+      name = "fzf-lua",
     },
     search_max_lines = 1000,
     -- open_notes_in = "vsplit",
