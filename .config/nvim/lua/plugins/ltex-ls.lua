@@ -49,6 +49,7 @@ return {
               sentencetCacheSize = 5000,
               additionalRules = {
                 enablePickyRules = true,
+                languageModel = "~/ngrams/",
               },
             },
           },
