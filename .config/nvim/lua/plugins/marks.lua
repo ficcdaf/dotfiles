@@ -21,7 +21,7 @@ return {
       prev = { ",", "Prev mark" },
     }
     local opts = {
-      builtin_marks = { ".", "^" },
+      -- builtin_marks = { ".", "^" },
       mappings = fmt_prefix("<leader>m", map),
     }
     require("marks").setup(opts)
