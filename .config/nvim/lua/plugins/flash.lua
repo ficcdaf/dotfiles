@@ -14,7 +14,7 @@ local conf = {
   },
   modes = {
     char = {
-      jump_labels = true,
+      jump_labels = false,
       highlight = { backdrop = false },
       keys = { "f", "F", "t", "T" },
       char_actions = function(motion)
@@ -93,7 +93,9 @@ return {
     {
       "<c-s>",
       mode = { "n", "x", "o" },
-      diagHL,
+      function()
+        diagHL()
+      end,
       desc = "Toggle Flash Search",
     },
   },
