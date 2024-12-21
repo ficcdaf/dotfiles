@@ -8,11 +8,14 @@ return {
       right_pad = 1,
     },
     heading = {
-      sign = false,
+      -- width = "block",
+      -- left_pad = 2,
+      -- right_pad = 4,
+      -- sign = false,
       -- icons = {},
     },
   },
-  ft = { "markdown", "rmd" },
+  ft = { "markdown", "rmd", "vimwiki" },
   config = function(_, opts)
     require("render-markdown").setup(opts)
     Snacks.toggle({
