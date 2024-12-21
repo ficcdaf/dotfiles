@@ -60,7 +60,7 @@ return {
         ["<Tab>"] = { "select_and_accept", "fallback" },
         ["<C-CR>"] = { "select_and_accept", "fallback" },
         ["<C-e>"] = { "hide", "show" },
-        ["<C-y>"] = { "hide", "show" },
+        ["<C-n>"] = { "show_documentation", "hide_documentation" },
         -- ["<C-l>"] = { "select_prev", "fallback" },
         -- ["<C-h>"] = { "select_next", "fallback" },
         -- ["<C-L>"] = { "scroll_documentation_up" },
