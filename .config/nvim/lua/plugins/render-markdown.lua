@@ -27,7 +27,6 @@ return {
   },
   ft = { "markdown", "rmd", "vimwiki" },
   config = function(_, opts)
-    vim.g.md_tex = true
     require("render-markdown").setup(opts)
     Snacks.toggle({
       name = "Render Markdown",
