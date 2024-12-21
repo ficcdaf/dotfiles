@@ -28,6 +28,7 @@ return {
             enabled = true,
           },
         },
+        menu = { border = "single" },
         -- menu = {
         --   draw = {
         --     treesitter = true,
@@ -38,6 +39,7 @@ return {
           auto_show_delay_ms = 200,
           treesitter_highlighting = true,
           window = {
+            border = "single",
             -- winhighlight = require("ashen.plugins.blink").winhighlight,
             -- winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
           },
