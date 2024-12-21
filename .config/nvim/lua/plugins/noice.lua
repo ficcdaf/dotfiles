@@ -1,9 +1,9 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
-  dependencies = {
-    "rcarriga/nvim-notify",
-  },
+  -- dependencies = {
+  --   "rcarriga/nvim-notify",
+  -- },
   -- opts = {
   --   -- recipe to ignore progress messages from
   --   -- the ltex lsp

@@ -1,3 +1,0 @@
-local spec = {}
-
-return spec
