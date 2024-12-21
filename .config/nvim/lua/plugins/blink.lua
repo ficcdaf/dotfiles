@@ -52,10 +52,14 @@ return {
         enabled = false,
       },
       keymap = {
-        preset = "default",
+        -- Available commands:
+        --   show, hide, cancel, accept, select_and_accept, select_prev, select_next, show_documentation, hide_documentation,
+        --   scroll_documentation_up, scroll_documentation_down, snippet_forward, snippet_backward, fallback
+        -- preset = "default",
         ["<CR>"] = { "accept", "fallback" },
         ["<Tab>"] = { "select_and_accept", "fallback" },
         ["<C-CR>"] = { "select_and_accept", "fallback" },
+        -- ["<C-CR>"] = { "select_and_accept", "fallback" },
         -- ["<C-l>"] = { "select_prev", "fallback" },
         -- ["<C-h>"] = { "select_next", "fallback" },
         -- ["<C-L>"] = { "scroll_documentation_up" },

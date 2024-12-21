@@ -17,6 +17,9 @@ local special_key = "←"
 vim.keymap.set({ "n", "i" }, special_key, "<C-CR>", { remap = true })
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
+-- map({ "n" }, "<C-Cr>", function()
+--   vim.notify("test")
+-- end)
 
 -- Snacks.toggle.zen():map("<leader>uz")
 map({ "n" }, "cl", "vgu", { noremap = true, desc = "Lowercase current char" })
