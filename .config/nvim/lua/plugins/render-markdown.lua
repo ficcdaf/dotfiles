@@ -11,11 +11,11 @@ return {
       -- right_pad = 1,
     },
     heading = {
-      -- width = "block",
-      -- left_pad = 2,
-      -- right_pad = 4,
+      width = "block",
+      left_pad = 2,
+      right_pad = 4,
       -- sign = false,
-      -- icons = {},
+      icons = {},
     },
     bullet = {
       -- icons = { "•", "⦾", "∙" },
