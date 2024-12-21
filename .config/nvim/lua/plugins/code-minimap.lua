@@ -1,6 +1,6 @@
 local toggleopt = {
   name = "Minimap",
-  keys = "<leader>um",
+  keys = "<leader>uM",
   which_key = true,
   get = function()
     return vim.g.minimap_enabled == 1
