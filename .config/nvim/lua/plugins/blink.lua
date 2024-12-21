@@ -8,6 +8,12 @@ return {
   {
     "saghen/blink.cmp",
     opts = {
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer", "markdown", "lazydev" },
+        providers = {
+          markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
+        },
+      },
       appearance = {
         nerd_font_variant = "mono",
       },
