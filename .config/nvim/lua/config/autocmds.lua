@@ -17,8 +17,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
-    vim.opt_local.breakindent = true
-    vim.cmd([[
+    if vim.g.md_tex then
+      vim.opt_local.breakindent = true
+      vim.cmd([[
     syn region mathBlock start=/\$\$/ end=/\$\$/ contains=@tex
     " inline math
     syn match mathInline '\$[^$].\{-}\$' contains=@tex
@@ -27,8 +28,10 @@ vim.api.nvim_create_autocmd("FileType", {
     hi def link mathBlock Statement
     hi def link mathInline Statement
   ]])
+    end
   end,
 })
+
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "markdown" },
   callback = function()

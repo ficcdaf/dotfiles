@@ -6,9 +6,9 @@ return {
       enabled = true,
     },
     code = {
-      sign = false,
-      width = "block",
-      right_pad = 1,
+      -- sign = false,
+      -- width = "block",
+      -- right_pad = 1,
     },
     heading = {
       -- width = "block",
