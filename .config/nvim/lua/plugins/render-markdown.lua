@@ -2,7 +2,7 @@ local icons = {
   abstract = { "", "", "", "" },
   -- weather = {"", ""},
   weather = { "", "", "", "", "", "" },
-  md = {},
+  md = { "󰉫 ", "󰉬 ", "󰉭 ", "󰉮 ", "󰉯 ", "󰉰 " },
 }
 return {
   "MeanderingProgrammer/render-markdown.nvim",
@@ -21,7 +21,8 @@ return {
       left_pad = 2,
       right_pad = 4,
       -- sign = false,
-      icons = icons.weather,
+      -- icons = icons.weather,
+      icons = icons.md,
     },
     bullet = {
       -- icons = { "•", "⦾", "∙" },
