@@ -1,3 +1,9 @@
+local icons = {
+  abstract = { "", "", "", "" },
+  -- weather = {"", ""},
+  weather = { "", "", "", "", "", "" },
+  md = {},
+}
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
@@ -15,7 +21,7 @@ return {
       left_pad = 2,
       right_pad = 4,
       -- sign = false,
-      icons = {},
+      icons = icons.weather,
     },
     bullet = {
       -- icons = { "•", "⦾", "∙" },
