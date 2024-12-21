@@ -9,7 +9,7 @@ return {
   dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
   opts = {
     indent = {
-      enabled = true,
+      enabled = false,
       -- skip_level = 0,
     },
     anti_conceal = {
