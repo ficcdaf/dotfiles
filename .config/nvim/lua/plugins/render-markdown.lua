@@ -17,6 +17,10 @@ return {
       -- sign = false,
       -- icons = {},
     },
+    bullet = {
+      -- icons = { "•", "⦾", "∙" },
+      icons = { "•", "∙" },
+    },
   },
   ft = { "markdown", "rmd", "vimwiki" },
   config = function(_, opts)
