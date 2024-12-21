@@ -48,8 +48,10 @@ return {
         local m = require("render-markdown")
         if enabled then
           m.enable()
+          Snacks.indent.disable()
         else
           m.disable()
+          Snacks.indent.enable()
         end
       end,
     }):map("<leader>um")
