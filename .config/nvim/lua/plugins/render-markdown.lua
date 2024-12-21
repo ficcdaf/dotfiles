@@ -8,13 +8,17 @@ return {
   "MeanderingProgrammer/render-markdown.nvim",
   dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
   opts = {
+    indent = {
+      enabled = true,
+      -- skip_level = 0,
+    },
     anti_conceal = {
       enabled = true,
     },
     code = {
       -- sign = false,
-      -- width = "block",
-      -- right_pad = 1,
+      width = "block",
+      right_pad = 1,
     },
     heading = {
       width = "block",
