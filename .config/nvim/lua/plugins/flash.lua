@@ -54,9 +54,12 @@ return {
       "s",
       mode = { "n", "x", "o" },
       function()
-        require("flash").jump({ jump = {
-          inclusive = true,
-        } })
+        require("flash").jump({
+          jump = {
+            inclusive = true,
+            -- pos = "end",
+          },
+        })
       end,
       desc = "Flash Inclusive",
     },
@@ -64,9 +67,12 @@ return {
       "<c-s>",
       mode = { "n", "x", "o" },
       function()
-        require("flash").jump({ jump = {
-          inclusive = false,
-        } })
+        require("flash").jump({
+          jump = {
+            inclusive = false,
+            -- pos = "end",
+          },
+        })
       end,
       desc = "Flash Exclusive",
     },
