@@ -2,7 +2,7 @@
 local conf = {
   labels = "arstgmneioqwfpbjluyzxcdvkh",
   jump = {
-    inclusive = nil,
+    -- inclusive = false,
     nohlsearch = false,
     offset = nil,
   },
@@ -54,9 +54,21 @@ return {
       "s",
       mode = { "n", "x", "o" },
       function()
-        require("flash").jump()
+        require("flash").jump({ jump = {
+          inclusive = true,
+        } })
       end,
-      desc = "Flash",
+      desc = "Flash Inclusive",
+    },
+    {
+      "<c-s>",
+      mode = { "n", "x", "o" },
+      function()
+        require("flash").jump({ jump = {
+          inclusive = false,
+        } })
+      end,
+      desc = "Flash Exclusive",
     },
     {
       "S",
@@ -82,21 +94,21 @@ return {
       end,
       desc = "Treesitter Search",
     },
-    {
-      "<c-s>",
-      mode = { "c" },
-      function()
-        require("flash").toggle()
-      end,
-      desc = "Toggle Flash Search",
-    },
-    {
-      "<c-s>",
-      mode = { "n", "x", "o" },
-      function()
-        diagHL()
-      end,
-      desc = "Toggle Flash Search",
-    },
+    -- {
+    --   "<c-s>",
+    --   mode = { "c" },
+    --   function()
+    --     require("flash").toggle()
+    --   end,
+    --   desc = "Toggle Flash Search",
+    -- },
+    -- {
+    --   "<c-s>",
+    --   mode = { "n", "x", "o" },
+    --   function()
+    --     diagHL()
+    --   end,
+    --   desc = "Toggle Flash Search",
+    -- },
   },
 }
