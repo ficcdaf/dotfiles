@@ -79,6 +79,7 @@
   "pomo.nvim": { "branch": "main", "commit": "7e06e5221d8d1e596a0ab29dd4d7fcee5f3cd05a" },
   "presence.nvim": { "branch": "main", "commit": "df0a0b52cd0799e99d1b76805d1357ae9c0d017d" },
   "refactoring.nvim": { "branch": "master", "commit": "2db6d378e873de31d18ade549c2edba64ff1c2e3" },
+  "render-markdown.nvim": { "branch": "main", "commit": "0022a579ac7355966be5ade77699b88c76b6a549" },
   "rustaceanvim": { "branch": "master", "commit": "0a618c1d1c05a8059880076feccb15301da6993d" },
   "snacks.nvim": { "branch": "main", "commit": "98df370703b3c47a297988f3e55ce99628639590" },
   "speedtyper.nvim": { "branch": "v2", "commit": "f27fa7870dd35f1884efaef1c9f1d2e7dcedcacf" },
