@@ -7,11 +7,10 @@ return {
   { "giuxtaposition/blink-cmp-copilot", enabled = false },
   {
     "saghen/blink.cmp",
+    -- opts_extend = {"sources"},
     opts = {
       sources = {
-        -- default = { "lsp", "path", "snippets", "buffer", "markdown", "lazydev" },
-        default = {},
-        -- default = { "lsp", "snippets", "markdown", "lazydev" },
+        default = { "lsp", "snippets", "markdown", "lazydev", "buffer" },
         providers = {
           markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
         },
