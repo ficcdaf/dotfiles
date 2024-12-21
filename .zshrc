@@ -50,7 +50,8 @@ alias tl="tmux list-sessions"
 alias tn="tmux new-session"
 alias tnt="tmux new-session -t"
 
-alias zj=zellij
+# alias zj=zellij
+alias yeet="yay -Rns"
 
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
