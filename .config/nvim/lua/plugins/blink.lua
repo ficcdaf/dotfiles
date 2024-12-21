@@ -63,6 +63,8 @@ return {
         ["<C-y>"] = { "show_documentation", "hide_documentation" },
         ["<C-u>"] = { "scroll_documentation_up" },
         ["<C-d>"] = { "scroll_documentation_down" },
+        ["<C-n>"] = { "snippet_forward" },
+        ["<C-p>"] = { "snippet_backward" },
         ["<Up>"] = { "select_prev", "fallback" },
         ["<Down>"] = { "select_next", "fallback" },
       },
