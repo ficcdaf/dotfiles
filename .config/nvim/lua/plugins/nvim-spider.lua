@@ -13,4 +13,7 @@ return {
     subwordMovement = true,
     customPatterns = {}, -- check "Custom Movement Patterns" in the README for details
   },
+  dependencies = {
+    "https://github.com/starwing/luautf8",
+  },
 }
