@@ -9,7 +9,8 @@ return {
     "saghen/blink.cmp",
     opts = {
       sources = {
-        default = { "lsp", "path", "snippets", "buffer", "markdown", "lazydev" },
+        -- default = { "lsp", "path", "snippets", "buffer", "markdown", "lazydev" },
+        default = {},
         -- default = { "lsp", "snippets", "markdown", "lazydev" },
         providers = {
           markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
