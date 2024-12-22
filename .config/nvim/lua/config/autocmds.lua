@@ -5,29 +5,32 @@
 
 -- We preserve comment-continuation on <CR> in insert mode,
 -- but disable it for normal mode commands like `o`
-vim.g.prev_conceallevel = 0
-vim.api.nvim_create_autocmd("InsertLeave", {
+-- vim.g.prev_conceallevel = 0
+
+vim.api.nvim_create_autocmd({ "InsertLeave", "FileType" }, {
+  -- pattern = "*",
   buffer = 0,
-  -- command = "setlocal formatoptions-=c formatoptions-=r formatoptions-=o",
-  callback = function()
-    local ft = vim.bo.filetype
-    if ft == "markdown" then
-      vim.cmd("set conceallevel=" .. vim.g.prev_conceallevel)
-    end
-    vim.cmd("setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
-  end,
+  command = "setlocal formatoptions-=c formatoptions-=r formatoptions-=o",
+  -- callback = function()
+  --   local ft = vim.bo.filetype
+  --   if ft == "markdown" then
+  --     vim.cmd("set conceallevel=" .. vim.g.prev_conceallevel)
+  --   end
+  --   vim.cmd("setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
+  -- end,
 })
 vim.api.nvim_create_autocmd("InsertEnter", {
   buffer = 0,
-  callback = function()
-    local ft = vim.bo.filetype
-    local cl = vim.o.conceallevel
-    vim.g.prev_conceallevel = cl
-    if ft == "markdown" then
-      vim.cmd("set conceallevel=0")
-    end
-    vim.cmd("setlocal formatoptions+=c formatoptions+=r formatoptions+=o")
-  end,
+  command = "setlocal formatoptions+=c formatoptions+=r formatoptions+=o",
+  -- callback = function()
+  --   local ft = vim.bo.filetype
+  --   local cl = vim.o.conceallevel
+  --   vim.g.prev_conceallevel = cl
+  --   if ft == "markdown" then
+  --     vim.cmd("set conceallevel=0")
+  --   end
+  --   vim.cmd("setlocal formatoptions+=c formatoptions+=r formatoptions+=o")
+  -- end,
 })
 
 vim.api.nvim_create_autocmd("VimEnter", {
