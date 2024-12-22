@@ -14,6 +14,10 @@ return {
     },
     anti_conceal = {
       enabled = true,
+      ignore = {
+        code_background = true,
+        sign = true,
+      },
     },
     code = {
       -- sign = false,
