@@ -1,6 +1,19 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 
+-- vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
+
+-- We preserve comment-continuation on <CR> in insert mode,
+-- but disable it for normal mode commands like `o`
+vim.api.nvim_create_autocmd("InsertLeave", {
+  buffer = 0,
+  command = "setlocal formatoptions-=c formatoptions-=r formatoptions-=o",
+})
+vim.api.nvim_create_autocmd("InsertEnter", {
+  buffer = 0,
+  command = "setlocal formatoptions+=c formatoptions+=r formatoptions+=o",
+})
+
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     local args = vim.fn.argv()
