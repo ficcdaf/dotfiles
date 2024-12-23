@@ -64,7 +64,8 @@ return {
         --   scroll_documentation_up, scroll_documentation_down, snippet_forward, snippet_backward, fallback
         preset = "none",
         ["<CR>"] = { "accept", "fallback" },
-        ["<Tab>"] = { "select_and_accept", "fallback" },
+        ["<Tab>"] = { "select_and_accept", "snippet_forward", "fallback" },
+        ["<S-Tab>"] = { "snippet_backward", "fallback" },
         ["<C-Cr>"] = { "select_and_accept", "fallback" },
         -- ["<C-e>"] = { "hide", "show", "fallback" },
         ["<C-e>"] = { "hide", "fallback" },
