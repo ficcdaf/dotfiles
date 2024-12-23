@@ -189,6 +189,7 @@ autocmd DocStart monkeytype.com mode ignore
 autocmd DocStart app.diagrams.net mode ignore
 autocmd DocStart undefined mode ignore
 autocmd DocStart onq.queensu.ca mode ignore
+autocmd DocStart speedtyper.dev mode ignore
 
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl

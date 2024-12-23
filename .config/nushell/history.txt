@@ -1,2 +1,5 @@
 rm *
 exit
+clear
+ls
+exit
