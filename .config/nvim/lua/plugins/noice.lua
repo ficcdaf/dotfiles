@@ -8,28 +8,38 @@ return {
   },
   keys = {
     {
-      "<c-h>",
+      "<c-d>",
       function()
         if not require("noice.lsp").scroll(4) then
-          return "<c-f>"
+          return "<c-d>"
         end
       end,
       silent = true,
       expr = true,
       desc = "Scroll Forward",
-      mode = { "i", "n", "s" },
+      mode = { "i" },
     },
     {
-      "<c-l>",
+      "<c-u>",
       function()
         if not require("noice.lsp").scroll(-4) then
-          return "<c-b>"
+          return "<c-u>"
         end
       end,
       silent = true,
       expr = true,
       desc = "Scroll Backward",
-      mode = { "i", "n", "s" },
+      mode = { "i" },
+    },
+    {
+      "<C-y>",
+      function()
+        require("noice").cmd("dismiss")
+      end,
+      silent = true,
+      expr = true,
+      desc = "Dismiss Noice",
+      mode = { "i" },
     },
   },
 }

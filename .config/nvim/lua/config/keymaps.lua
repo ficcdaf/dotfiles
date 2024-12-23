@@ -21,6 +21,11 @@ vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 --   vim.notify("test")
 -- end)
 
+-- Better Scroll
+
+map({ "n" }, "<C-e>", "<C-y>", { noremap = true, desc = "Scroll Up" })
+map({ "n" }, "<C-n>", "<C-e>", { noremap = true, desc = "Scroll Down" })
+
 -- Snacks.toggle.zen():map("<leader>uz")
 map({ "n" }, "cl", "vgu", { noremap = true, desc = "Lowercase current char" })
 map({ "n" }, "cu", "vgU", { noremap = true, desc = "Uppercase current char" })
