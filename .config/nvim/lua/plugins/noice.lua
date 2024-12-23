@@ -41,5 +41,25 @@ return {
       desc = "Dismiss Popups (insert mode)",
       mode = { "i" },
     },
+    {
+      "<C-y>",
+      function()
+        require("noice.lsp").signature()
+      end,
+      silent = true,
+      expr = true,
+      desc = "Show LSP signature help (insert mode)",
+      mode = { "i" },
+    },
+    {
+      "<C-y>",
+      function()
+        require("noice").cmd("dismiss")
+      end,
+      silent = true,
+      expr = true,
+      desc = "Dismiss Popups (normal mode)",
+      mode = { "n" },
+    },
   },
 }
