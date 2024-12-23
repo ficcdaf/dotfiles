@@ -1,6 +1,6 @@
 return {
   "chentoast/marks.nvim",
-  enabled = true,
+  enabled = false,
   event = "VeryLazy",
   config = function()
     local function fmt_prefix(prefix, mappings)
