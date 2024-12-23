@@ -16,7 +16,7 @@ return {
       end,
       silent = true,
       expr = true,
-      desc = "Scroll Forward",
+      desc = "Scroll Down (insert mode)",
       mode = { "i" },
     },
     {
@@ -28,17 +28,17 @@ return {
       end,
       silent = true,
       expr = true,
-      desc = "Scroll Backward",
+      desc = "Scroll Up (Insert mode)",
       mode = { "i" },
     },
     {
-      "<C-y>",
+      "<C-e>",
       function()
         require("noice").cmd("dismiss")
       end,
       silent = true,
       expr = true,
-      desc = "Dismiss Noice",
+      desc = "Dismiss Popups (insert mode)",
       mode = { "i" },
     },
   },
