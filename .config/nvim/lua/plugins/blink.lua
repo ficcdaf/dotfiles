@@ -10,7 +10,7 @@ return {
     -- opts_extend = {"sources"},
     opts = {
       sources = {
-        default = { "lsp", "snippets", "markdown", "lazydev", "buffer" },
+        default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
         providers = {
           markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
         },
