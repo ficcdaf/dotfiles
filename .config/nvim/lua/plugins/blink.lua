@@ -65,7 +65,7 @@ return {
         preset = "none",
         ["<CR>"] = { "accept", "fallback" },
         ["<Tab>"] = { "select_and_accept", "fallback" },
-        ["<C-CR>"] = { "select_and_accept", "fallback" },
+        ["<C-Cr>"] = { "select_and_accept", "fallback" },
         -- ["<C-e>"] = { "hide", "show", "fallback" },
         ["<C-e>"] = { "hide", "fallback" },
         -- ["<C-n>"] = { "snippet_forward", "show", "fallback" },
