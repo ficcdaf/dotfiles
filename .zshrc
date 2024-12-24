@@ -57,6 +57,7 @@ alias tnt="tmux new-session -t"
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
 alias vzsh="vim ~/.zshrc"
+alias vtmux="vim ~/.config/tmux/tmux.conf"
 alias icat="kitty +kitten icat"
 alias iecho="xclip -selection clipboard -t image/png -o >"
 alias vn=viewnior
