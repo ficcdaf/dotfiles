@@ -50,8 +50,8 @@ map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })
 map({ "n", "x", "v" }, "<M-Down>", "<M-j>", { remap = true })
 map({ "n" }, "<S-Left>", "[b", { desc = "Previous Buffer", remap = true })
 map({ "n" }, "<S-Right>", "]b", { desc = "Next Buffer", remap = true })
-map({ "n" }, "<S-Down>", "5j", { remap = true })
-map({ "n" }, "<S-Up>", "5k", { remap = true })
+-- map({ "n" }, "<S-Down>", "5j", { remap = true })
+-- map({ "n" }, "<S-Up>", "5k", { remap = true })
 map({ "i" }, "<M-e>", "<Esc>", { desc = "Escape insert mode", remap = true })
 
 -- better navigation
