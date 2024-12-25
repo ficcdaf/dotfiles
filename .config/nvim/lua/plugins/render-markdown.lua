@@ -33,7 +33,6 @@ return {
       icons = icons.md,
     },
     bullet = {
-      -- icons = { "•", "⦾", "∙" },
       icons = { "•", "∙" },
     },
     latex = {
