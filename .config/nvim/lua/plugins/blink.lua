@@ -62,14 +62,14 @@ return {
         -- Available commands:
         --   show, hide, cancel, accept, select_and_accept, select_prev, select_next, show_documentation, hide_documentation,
         --   scroll_documentation_up, scroll_documentation_down, snippet_forward, snippet_backward, fallback
+        -- ["<C-e>"] = { "hide", "show", "fallback" },
+        -- ["<C-n>"] = { "snippet_forward", "show", "fallback" },
         preset = "none",
         ["<CR>"] = { "accept", "fallback" },
         ["<Tab>"] = { "select_and_accept", "snippet_forward", "fallback" },
         ["<S-Tab>"] = { "snippet_backward", "fallback" },
         ["<C-Cr>"] = { "select_and_accept", "fallback" },
-        -- ["<C-e>"] = { "hide", "show", "fallback" },
         ["<C-e>"] = { "hide", "fallback" },
-        -- ["<C-n>"] = { "snippet_forward", "show", "fallback" },
         ["<C-n>"] = { "snippet_forward", "show" },
         ["<C-y>"] = { "show_documentation", "hide_documentation", "fallback" },
         ["<C-u>"] = { "scroll_documentation_up", "fallback" },
