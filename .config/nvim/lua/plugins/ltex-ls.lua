@@ -19,10 +19,10 @@ return {
     opts = {
       servers = {
         ltex = {
-          autostart = false,
-          -- filetypes = {
-          --   "tex",
-          -- },
+          autostart = true,
+          filetypes = {
+            "tex",
+          },
           on_attach = function(client, bufnr)
             require("ltex_extra").setup(extraOpts)
           end,
