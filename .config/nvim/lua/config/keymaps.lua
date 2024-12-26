@@ -132,7 +132,7 @@ map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })
 -- map("n", "<leader>uz", "<CMD>ZenMode<CR>", { desc = "Toggle Zen Mode" })
 
 -- Source Current File
-map("n", "<leader><leader>x", "<CMD>source %<CR>", { desc = "Source current file" })
+-- map("n", "<leader><leader>x", "<CMD>source %<CR>", { desc = "Source current file" })
 
 -- Obsidian
 -- <leader>o is the prefix for all Obsidian bindings

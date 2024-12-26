@@ -24,7 +24,7 @@ return {
         dim = false,
         git_signs = false,
         mini_diff_signs = false,
-        diagnostics = false,
+        diagnostics = true,
         inlay_hints = true,
       },
     },
