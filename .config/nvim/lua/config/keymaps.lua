@@ -64,6 +64,8 @@ map({ "n" }, "<C-u>", "<C-u>zz", { remap = false })
 map({ "n" }, "<C-d>", "<C-d>zz", { remap = false })
 map({ "n" }, "n", "nzz", { remap = false })
 map({ "n" }, "N", "Nzz", { remap = false })
+map({ "n" }, "{", "{zz", { remap = false })
+map({ "n" }, "}", "}zz", { remap = false })
 map({ "n" }, "<PageDown>", "<Down>zz", { remap = false })
 map({ "n" }, "<PageUp>", "<Up>zz", { remap = false })
 map({ "n", "x" }, "<M-i>", "$", { remap = false })
@@ -81,36 +83,6 @@ map({ "n" }, "<S-l>", "H", { remap = false })
 
 -- Duplicate and comment line
 map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "Duplicate and comment line" })
-
--- local function is_lsp_attached()
---   local clients = vim.lsp.get_clients({ bufnr = 0 })
---   print(#clients .. " clients found")
---   return #clients > 0
--- end
---
--- local lsptoggle = Snacks.toggle.new({
---   name = "Lsp",
---   -- map = vim.keymap.set,
---   which_key = true,
---   get = function()
---     return not is_lsp_attached()
---   end,
---   notify = true,
---   set = function(state)
---     if state then
---       -- vim.cmd("LspStart")
---       print("we start lsp...")
---     else
---       -- vim.cmd("LspStop")
---       print("We stop lsp...")
---     end
---   end,
--- })
--- Snacks.toggle.map(lsptoggle, "<leader>cL", { desc = "Toggle LSP" })
-
--- diagnostic hopping
--- map({ "n" }, "h", '<cmd>echo "test"<cr> ', { noremap = true, desc = "Next Diagnostic" })
--- • *vim.diagnostic.goto_next()*	Use |vim.diagnostic.jump()| with `{count=1, float=true}` instead.
 
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
