@@ -27,15 +27,41 @@ return {
         diagnostics = true,
         inlay_hints = true,
       },
+      win = {
+        backdrop = {
+          transparent = false,
+          blend = 20,
+        },
+      },
     },
   },
   keys = {
     {
       "<leader>z",
       function()
-        Snacks.zen()
+        Snacks.zen({
+          win = {
+            backdrop = {
+              transparent = true,
+              blend = 10,
+            },
+          },
+        })
       end,
       desc = "Toggle Zen Mode",
+    },
+    {
+      "<leader>Z",
+      function()
+        Snacks.zen({
+          win = {
+            backdrop = {
+              transparent = false,
+            },
+          },
+        })
+      end,
+      desc = "Toggle Zen Mode (no backdrop)",
     },
   },
 }
