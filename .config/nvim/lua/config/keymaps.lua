@@ -108,6 +108,10 @@ map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "
 -- })
 -- Snacks.toggle.map(lsptoggle, "<leader>cL", { desc = "Toggle LSP" })
 
+-- diagnostic hopping
+-- map({ "n" }, "h", '<cmd>echo "test"<cr> ', { noremap = true, desc = "Next Diagnostic" })
+-- • *vim.diagnostic.goto_next()*	Use |vim.diagnostic.jump()| with `{count=1, float=true}` instead.
+
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
 map({ "n", "x" }, "<C-i>", "<C-a>", { desc = "Increment" })
