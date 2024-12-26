@@ -2,6 +2,13 @@ return {
   "folke/noice.nvim",
   event = "VeryLazy",
   opts = {
+    routes = {
+      {
+        -- we skip `ltex` messages since they're spammy :)
+        filter = { event = "lsp", find = "ltex" },
+        opts = { skip = true },
+      },
+    },
     presets = {
       lsp_doc_border = true,
     },
