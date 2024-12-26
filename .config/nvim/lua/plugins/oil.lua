@@ -15,6 +15,7 @@ return {
   cmd = "Oil",
   keys = {
     { "-", "<CMD>Oil<CR>", desc = "Open Oil" },
+    { "_", "<CMD>Oil --float<CR>", desc = "Open Oil Floating" },
   },
   opts = {
     default_file_explorer = true,

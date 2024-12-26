@@ -21,6 +21,9 @@ vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 --   vim.notify("test")
 -- end)
 
+map({ "n", "i", "x", "o" }, "<C-c>", "<Esc>", { noremap = true, desc = "Escape" })
+map({ "n", "i", "x", "o" }, "<M-c>", "<Esc>", { noremap = true, desc = "Escape" })
+
 -- Better Scroll
 
 map({ "n" }, "<C-e>", "<C-y>", { noremap = true, desc = "Scroll Up" })
