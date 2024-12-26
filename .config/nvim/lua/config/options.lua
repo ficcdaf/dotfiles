@@ -4,6 +4,7 @@
 local opt = vim.opt
 opt.scrolloff = 2
 
+vim.g.maplocalleader = ","
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.ai_cmp = false
 vim.g.snacks_animate = false
