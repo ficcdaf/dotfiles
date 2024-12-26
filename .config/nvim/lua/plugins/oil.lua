@@ -38,6 +38,7 @@ return {
     },
     keymaps = {
       ["<BS>"] = "actions.parent",
+      ["q"] = { "actions.close", mode = "n" },
       ["gd"] = {
         desc = "Toggle file detail view",
         callback = function()
