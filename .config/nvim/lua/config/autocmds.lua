@@ -7,21 +7,6 @@
 -- but disable it for normal mode commands like `o`
 -- vim.g.prev_conceallevel = 0
 
--- vim.api.nvim_create_autocmd("FileType", {
---   -- pattern = "*.tex",
---   pattern = "tex",
---   callback = function(args)
---     local buf = args.buf
---     local b = vim.b[buf]
---     dd(b.autoformat)
---     b.autoformat = false
---     dd(b.autoformat)
---     vim.keymap.set("n", "<leader>test", function ()
---       dd(b.autoformat)
---     end)
---   end,
--- })
-
 vim.api.nvim_create_autocmd({ "InsertLeave", "FileType" }, {
   -- pattern = "*",
   buffer = 0,
