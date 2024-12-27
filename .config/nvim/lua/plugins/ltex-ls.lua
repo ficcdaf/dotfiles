@@ -2,8 +2,6 @@ local extraOpts = {
   init_check = true,
   load_langs = {
     "en",
-    "en-US",
-    "en-CA",
   },
   path = vim.fn.expand("~") .. "/.config/ltex",
   log_level = "none",
@@ -29,7 +27,7 @@ return {
           settings = {
             ltex = {
               completionEnabled = true,
-              language = { "en", "en-US", "en-CA" },
+              language = { "en" },
               enabled = {
                 "latex",
                 "tex",
@@ -37,14 +35,6 @@ return {
                 "md",
                 "markdown",
               },
-              -- markdown = {
-              --   nodes = {
-              --     CodeBlock = "ignore",
-              --     FencedCodeBlock = "ignore",
-              --     AutoLink = "dummy",
-              --     Code = "dummy",
-              --   },
-              -- },
               checkFrequency = { "save" },
               diagnosticSeverity = "information",
               sentencetCacheSize = 5000,
