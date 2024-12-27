@@ -25,11 +25,16 @@ map({ "n", "x" }, "\\", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
 
-map({ "n", "i" }, "<M-c>", function()
+map({ "n" }, "<M-c>", function()
+  -- the `a` is necessary to return the cursor to the same
+  -- position it was before
+  vim.cmd("normal! zz")
+end, { remap = false, noremap = true, desc = "Center Screen" })
+map({ "i" }, "<M-c>", function()
   -- the `a` is necessary to return the cursor to the same
   -- position it was before
   vim.api.nvim_input("<Esc>zza")
-end, { remap = false, noremap = true, desc = "Center Screen" })
+end, { remap = false, noremap = true, desc = "Center Screen (Insert mode)" })
 
 map("n", "<C-z>", "<CMD>stop<CR>", { desc = "Suspend" })
 
