@@ -21,18 +21,19 @@ vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
 --   vim.notify("test")
 -- end)
 
-map({ "n", "v" }, "\\", function()
+map({ "n", "x" }, "\\", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
 
-map({ "n", "i" }, "<M-z>", function()
-  vim.cmd("normal! zz")
-end, { remap = false, noremap = true, desc = "Center Screen (Insert Mode)" })
+map({ "n", "i" }, "<M-c>", function()
+  -- the `a` is necessary to return the cursor to the same
+  -- position it was before
+  vim.api.nvim_input("<Esc>zza")
+end, { remap = false, noremap = true, desc = "Center Screen" })
 
 map("n", "<C-z>", "<CMD>stop<CR>", { desc = "Suspend" })
 
 map({ "n", "i", "x", "o" }, "<C-c>", "<Esc>", { noremap = true, desc = "Escape" })
-map({ "n", "i", "x", "o" }, "<M-c>", "<Esc>", { noremap = true, desc = "Escape" })
 
 -- Better Scroll
 
