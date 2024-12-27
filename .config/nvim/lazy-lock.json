@@ -84,7 +84,6 @@
   "snacks.nvim": { "branch": "main", "commit": "98df370703b3c47a297988f3e55ce99628639590" },
   "speedtyper.nvim": { "branch": "v2", "commit": "f27fa7870dd35f1884efaef1c9f1d2e7dcedcacf" },
   "tabout.nvim": { "branch": "master", "commit": "9a3499480a8e53dcaa665e2836f287e3b7764009" },
-  "telescope-words.nvim": { "branch": "main", "commit": "0b12c4b75ed4d6d13a35cb7f40cc370b39eb1043" },
   "telescope.nvim": { "branch": "master", "commit": "2eca9ba22002184ac05eddbe47a7fe2d5a384dfc" },
   "text-case.nvim": { "branch": "main", "commit": "e898cfd46fa6cde0e83abb624a16e67d2ffc6457" },
   "todo-comments.nvim": { "branch": "main", "commit": "ae0a2afb47cf7395dc400e5dc4e05274bf4fb9e0" },
