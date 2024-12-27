@@ -25,6 +25,12 @@ map({ "n", "v" }, "\\", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
 
+map({ "n", "i" }, "<M-z>", function()
+  vim.cmd("normal! zz")
+end, { remap = false, noremap = true, desc = "Center Screen (Insert Mode)" })
+
+map("n", "<C-z>", "<CMD>stop<CR>", { desc = "Suspend" })
+
 map({ "n", "i", "x", "o" }, "<C-c>", "<Esc>", { noremap = true, desc = "Escape" })
 map({ "n", "i", "x", "o" }, "<M-c>", "<Esc>", { noremap = true, desc = "Escape" })
 
