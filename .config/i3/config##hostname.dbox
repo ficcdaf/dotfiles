@@ -607,6 +607,7 @@ exec --no-startup-id nitrogen --restore
 ## rofi bindings to manage clipboard (install rofi-greenclip from the AUR)
 exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 -r 143.98
 exec --no-startup-id xrandr --output HDMI-A-0 --auto --right-of DisplayPort-0
+exec --no-startup-id udiskie &
 exec_always --no-startup-id xset r rate 250 25
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id birdtray
