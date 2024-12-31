@@ -7,6 +7,11 @@
 -- but disable it for normal mode commands like `o`
 -- vim.g.prev_conceallevel = 0
 
+vim.filetype.add({
+  filename = {
+    ["base.keymap"] = "dts",
+  },
+})
 vim.api.nvim_create_autocmd({ "InsertLeave", "FileType" }, {
   -- pattern = "*",
   buffer = 0,
