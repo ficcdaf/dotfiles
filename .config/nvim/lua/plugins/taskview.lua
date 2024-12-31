@@ -1,6 +1,5 @@
 return {
-  dir = "~/dev/taskview.nvim/",
-  name = "taskview",
+  "ficcdaf/taskview.nvim",
   event = "VeryLazy",
   enabled = false,
   opts = {
