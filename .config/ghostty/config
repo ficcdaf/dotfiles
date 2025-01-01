@@ -1,7 +1,6 @@
 theme = ashen
 font-family = SauceCodePro NFM
 window-decoration = false
-gtk-titlebar = false
 keybind = ctrl+enter=unbind
 background-opacity = 1
 resize-overlay = never
