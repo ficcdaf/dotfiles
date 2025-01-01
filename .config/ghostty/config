@@ -7,3 +7,4 @@ background-opacity = 1
 resize-overlay = never
 confirm-close-surface = false
 mouse-hide-while-typing = true
+window-padding-balance = true
