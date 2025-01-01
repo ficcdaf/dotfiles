@@ -26,6 +26,8 @@ source ~/.config/zsh/fzf.zsh
 # Not working for some reason...
 # source ~/.config/zsh/fzf-git.sh
 
+alias gitfetch="onefetch"
+
 # alias ls="eza -lh --git"
 # alias ls="eza --long --color=always --git --header --icons --no-user"
 alias ls="eza --long --color=always --git --header --icons"
