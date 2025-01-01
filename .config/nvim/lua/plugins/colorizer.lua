@@ -8,8 +8,7 @@ return {
     user_default_options = {
       names = true,
       names_custom = function()
-        local ashen = require("ashen.colors")
-        return ashen
+        return require("ashen.colors")
       end,
     },
   },
