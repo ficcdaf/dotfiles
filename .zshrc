@@ -43,6 +43,7 @@ alias n='nvim'
 alias lg=lazygit
 alias ylg="yadm enter lazygit"
 # tmux aliases
+alias tmuxclean="tmux -L test -f /dev/null"
 alias tm="tmux"
 alias ta="tmux attach-session"
 alias tat="tmux attach-session -t"
