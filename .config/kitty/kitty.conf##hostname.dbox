@@ -32,3 +32,9 @@ map ctrl+enter send_text all \u2190
 map alt+shift+r load_config_file
 # map alt+f toggle_maximized
 audio_bell no
+
+
+# BEGIN_KITTY_THEME
+# Ashen
+include current-theme.conf
+# END_KITTY_THEME
