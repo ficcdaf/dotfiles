@@ -42,7 +42,7 @@ return {
         Snacks.zen({
           win = {
             backdrop = {
-              transparent = true,
+              transparent = false,
               blend = 10,
             },
           },
