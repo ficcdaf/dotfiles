@@ -51,7 +51,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 
-local md = false
+local md = true
 if md then
   vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
