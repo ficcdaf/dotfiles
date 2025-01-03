@@ -7,7 +7,7 @@ return {
           init_options = {
             diagnosticSeverity = "Warning",
           },
-          -- autostart = false,
+          autostart = false,
           -- filetypes = {
           --   "markdown",
           -- },
