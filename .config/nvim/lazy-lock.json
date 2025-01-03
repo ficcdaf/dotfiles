@@ -97,7 +97,7 @@
   "vessel.nvim": { "branch": "main", "commit": "bd97a5e164541372c15c82d7da2e25c7f7c737cf" },
   "vim-dadbod": { "branch": "master", "commit": "f740950d0703099e0f172016f10e0e39f50fd0ba" },
   "vim-dadbod-completion": { "branch": "master", "commit": "7f77c330df5f38b5ed11220c1f6622b61fd0149e" },
-  "vim-dadbod-ui": { "branch": "master", "commit": "b4b95e04fcd71c7787673b2a165221d681d06171" },
+  "vim-dadbod-ui": { "branch": "master", "commit": "65454e2011c029922c2c972d63f8bf04282de033" },
   "vim-dirtytalk": { "branch": "master", "commit": "aa57ba902b04341a04ff97214360f56856493583" },
   "vim-systemd-syntax": { "branch": "master", "commit": "2f788c627efa7a50baa5766cfacf1852528eca28" },
   "vim-tmux-navigator": { "branch": "master", "commit": "d847ea942a5bb4d4fab6efebc9f30d787fd96e65" },

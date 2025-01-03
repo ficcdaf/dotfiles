@@ -1,5 +1,6 @@
 return {
   "catgoose/nvim-colorizer.lua",
+  -- enabled = false,
   event = "BufReadPre",
   dependencies = {
     "ficcdaf/ashen.nvim",

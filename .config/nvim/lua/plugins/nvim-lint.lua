@@ -8,7 +8,10 @@ return {
       },
     },
   },
-  { "williamboman/mason.nvim", opts = {
-    ensure_installed = { "vale" },
-  } },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      -- ensure_installed = { "vale" },
+    },
+  },
 }
