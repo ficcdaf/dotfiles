@@ -13,9 +13,10 @@ return {
     -- opts_extend = {"sources"},
     opts = {
       sources = {
-        default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
+        -- default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
+        default = { "lsp", "snippets", "path", "lazydev", "buffer" },
         providers = {
-          markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
+          -- markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
           ripgrep = {
             module = "blink-ripgrep",
             name = "Ripgrep",
