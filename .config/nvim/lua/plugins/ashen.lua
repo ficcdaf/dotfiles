@@ -7,14 +7,14 @@ return {
     --   "folke/snacks.nvim",
     -- },
     dev = true,
-    -- opts = {
-    --   --   -- colors = { blue = "#ffffff" },
-    --   hl = {
-    --     -- Normal = {
-    --     --   "#FFFFFF",
-    --     -- },
-    --   },
-    -- },
+    colors = { background = "#000000" },
+    opts = {
+      hl = {
+        -- Normal = {
+        --   "#000000",
+        -- },
+      },
+    },
   },
   {
     "LazyVim/LazyVim",
