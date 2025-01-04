@@ -7,11 +7,14 @@ return {
     --   "folke/snacks.nvim",
     -- },
     dev = true,
-    colors = { background = "#000000" },
     opts = {
+      colors = {
+        background = "#121212",
+        -- background = "#000000",
+      },
       hl = {
         -- Normal = {
-        --   "#000000",
+        --   "#FFFFFF",
         -- },
       },
     },
