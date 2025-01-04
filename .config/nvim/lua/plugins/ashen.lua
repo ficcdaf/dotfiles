@@ -8,8 +8,12 @@ return {
     -- },
     dev = true,
     -- opts = {
-    --   -- colors = { blue = "#ffffff" },
-    --   -- hl = {},
+    --   --   -- colors = { blue = "#ffffff" },
+    --   hl = {
+    --     -- Normal = {
+    --     --   "#FFFFFF",
+    --     -- },
+    --   },
     -- },
   },
   {

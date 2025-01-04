@@ -5,6 +5,7 @@ return {
   dependencies = {
     "ficcdaf/ashen.nvim",
   },
+  opts = {},
   -- opts = {
   --   user_default_options = {
   --     names = true,
