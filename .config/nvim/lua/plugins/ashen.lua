@@ -9,13 +9,11 @@ return {
     dev = true,
     opts = {
       colors = {
-        background = "#121212",
+        -- background = "#121212",
         -- background = "#000000",
       },
       hl = {
-        -- Normal = {
-        --   "#FFFFFF",
-        -- },
+        force_override = { Normal = { "#FFFFFF", "#000000" } },
       },
     },
   },
