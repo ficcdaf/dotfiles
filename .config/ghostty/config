@@ -1,5 +1,6 @@
-theme = ashen
 font-family = SauceCodePro NFM
+theme = ashen
+background = 121212
 window-decoration = false
 keybind = ctrl+enter=unbind
 background-opacity = 0.8
