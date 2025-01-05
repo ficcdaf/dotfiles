@@ -1,5 +1,5 @@
 font-family = SauceCodePro NFM
-theme = gruvbox
+theme = ashen
 window-decoration = false
 keybind = ctrl+enter=unbind
 background-opacity = 1
