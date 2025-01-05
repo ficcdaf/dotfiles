@@ -12,11 +12,11 @@ return {
       colors = {
         -- background = "#121212",
         -- background = "#131313",
-        -- background = "#000000",
+        background = "#000000",
         -- background = "#1e1d2d",
       },
       hl = {
-        force_override = { Cursor = { nil, "#FFFFFF" } },
+        -- force_override = { Cursor = { nil, "#FFFFFF" } },
         -- soft_override = { Normal = { "#FFFFFF" } },
       },
     },
