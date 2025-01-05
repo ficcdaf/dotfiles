@@ -2,11 +2,19 @@ format = """
 $username\
 $hostname\
 $directory\
+$python\
+$c\
+$cmake\
+$golang\
+$java\
+$lua\
+$container\
+$direnv\
 $git_branch\
 $git_state\
 $git_status\
+$jobs\
 $cmd_duration\
-$python\
 $line_break\
 $character"""
 
@@ -47,3 +55,12 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[golang]
+symbol = " "
+
+[lua]
+symbol = "󰢱 "
+
+[nix_shell]
+symbol = "󱄅 "
