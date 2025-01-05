@@ -8,6 +8,7 @@ return {
     },
     dev = true,
     opts = {
+      transparent = true,
       colors = {
         -- background = "#121212",
         -- background = "#131313",
@@ -15,7 +16,7 @@ return {
         -- background = "#1e1d2d",
       },
       hl = {
-        -- force_override = { Normal = { "#FFFFFF" } },
+        force_override = { Cursor = { nil, "#FFFFFF" } },
         -- soft_override = { Normal = { "#FFFFFF" } },
       },
     },
