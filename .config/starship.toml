@@ -10,14 +10,16 @@ $python\
 $line_break\
 $character"""
 
+"$schema" = 'https://starship.rs/config-schema.json'
+
 [directory]
 style = "blue"
 fish_style_pwd_dir_length = 3
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[>](purple)"
+error_symbol = "[>](red)"
+vimcmd_symbol = "[<](green)"
 
 [git_branch]
 format = "[$branch]($style)"
