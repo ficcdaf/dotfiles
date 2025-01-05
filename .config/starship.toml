@@ -13,6 +13,7 @@ $container\
 $direnv\
 $nix_shell\
 $git_branch\
+$git_commit\
 $git_state\
 $git_status\
 $jobs\
@@ -61,6 +62,7 @@ symbol = "󰢱 "
 
 [nix_shell]
 symbol = "󱄅 "
+format = 'via [$symbol]($style)'
 
 [rust]
 symbol = "󱘗 "
