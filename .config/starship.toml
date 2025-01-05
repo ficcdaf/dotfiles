@@ -49,8 +49,8 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-# format = "[$virtualenv]($style) "
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = " [$symbol][$virtualenv]($style) "
+# format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 # style = "bright-black"
 symbol = "󰌠 "
 
