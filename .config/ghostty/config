@@ -1,8 +1,8 @@
 font-family = SauceCodePro NFM
-theme = gruvbox
+theme = GruvboxDarkHard
 window-decoration = false
 keybind = ctrl+enter=unbind
-background-opacity = 1
+background-opacity = 0.5
 resize-overlay = never
 confirm-close-surface = false
 mouse-hide-while-typing = true
