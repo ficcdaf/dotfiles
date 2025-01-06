@@ -5,13 +5,13 @@ return {
   dependencies = {
     "ficcdaf/ashen.nvim",
   },
-  opts = {},
-  -- opts = {
-  --   user_default_options = {
-  --     names = true,
-  --     names_custom = function()
-  --       return require("ashen.colors")
-  --     end,
-  --   },
-  -- },
+  -- opts = {},
+  opts = {
+    user_default_options = {
+      names = false,
+      -- names_custom = function()
+      --   return require("ashen.colors")
+      -- end,
+    },
+  },
 }
