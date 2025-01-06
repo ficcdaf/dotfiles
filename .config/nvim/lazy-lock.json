@@ -99,6 +99,7 @@
   "vim-dadbod-completion": { "branch": "master", "commit": "95cbcf21ea7a5c8c025f387280c2e261b8cb3a89" },
   "vim-dadbod-ui": { "branch": "master", "commit": "65454e2011c029922c2c972d63f8bf04282de033" },
   "vim-dirtytalk": { "branch": "master", "commit": "aa57ba902b04341a04ff97214360f56856493583" },
+  "vim-pencil": { "branch": "master", "commit": "6d70438a8886eaf933c38a7a43a61adb0a7815ed" },
   "vim-systemd-syntax": { "branch": "master", "commit": "2f788c627efa7a50baa5766cfacf1852528eca28" },
   "vim-tmux-navigator": { "branch": "master", "commit": "d847ea942a5bb4d4fab6efebc9f30d787fd96e65" },
   "vim-tridactyl": { "branch": "master", "commit": "fdd069bde3a34c786abed4601b6d59a065590ad9" },
