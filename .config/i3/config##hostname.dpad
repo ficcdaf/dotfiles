@@ -44,6 +44,7 @@ for_window [class="^.*"] pixel 1
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id sudo systemctl start keyd
 exec_always --no-startup-id xsettingsd
+exec --no-startup-id xautocfg &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
