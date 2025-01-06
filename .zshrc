@@ -66,7 +66,7 @@ alias iecho="xclip -selection clipboard -t image/png -o >"
 alias vn=viewnior
 alias mermaid=mmdc
 alias dnd=dragon-drop
-alias cat=bat
+# alias cat=bat
 
 
 alias autoyadm="AUTOYADMPUSH=1 ~/dev/autoyadm/autoyadm.sh"
@@ -87,6 +87,9 @@ function y() {
     builtin cd -- "$cwd"
   fi
   rm -f -- "$tmp"
+}
+function cat() {
+  bat "$@"
 }
 # . /opt/asdf-vm/asdf.sh
 # Need this to fix the cursor in tmux
