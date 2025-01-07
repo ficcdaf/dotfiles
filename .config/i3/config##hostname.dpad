@@ -253,7 +253,8 @@ exec --no-startup-id ~/Applications/filen_x86_64_*.AppImage
 exec --no-startup-id obsidian
 # exec --no-startup-id sh -c "obsidian &> /tmp/obsidian.log"
 exec_always --no-startup-id ~/scripts/setdpi.sh &
-exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
+# Disable picom because it's too heavy on the 4k screen
+# exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec --no-startup-id blueman-applet &
 exec_always --no-startup-id pkill dunst && dunst &
 exec_always --no-startup-id wal --theme sidonia-blurred
