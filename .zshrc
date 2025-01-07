@@ -26,7 +26,6 @@ source ~/.config/zsh/fzf.zsh
 # Not working for some reason...
 # source ~/.config/zsh/fzf-git.sh
 
-alias gitfetch="onefetch"
 
 # alias ls="eza -lh --git"
 # alias ls="eza --long --color=always --git --header --icons --no-user"
@@ -78,6 +77,9 @@ export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
 export PATH="$PATH:/home/fic/.local/share/bob/nvim-bin"
 fpath=(~/.zsh.d/ $fpath)
 unalias ls
+function nh() {
+  nohup "$@" > /dev/null 2>&1 &
+}
 function ls() {
   eza --long --color=always --git --header --icons "$@"
 }
