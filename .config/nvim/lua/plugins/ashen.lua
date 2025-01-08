@@ -17,7 +17,7 @@ return {
       },
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
-        -- soft_override = { Normal = { "#FFFFFF" } },
+        -- merge_override = { Normal = { nil, "#FFFFFF" } },
       },
     },
   },
