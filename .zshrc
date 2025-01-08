@@ -1,6 +1,7 @@
 # bindkey -r '^S'
 bindkey -r '\ex'
 ZSH="$HOME/.oh-my-zsh"
+export DISABLE_LS_COLORS=true
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source ~/.profile
 source $ZSH/oh-my-zsh.sh
@@ -76,7 +77,6 @@ alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
 export PATH="$PATH:/home/fic/.local/share/bob/nvim-bin"
 fpath=(~/.zsh.d/ $fpath)
-unalias ls
 function nh() {
   nohup "$@" > /dev/null 2>&1 &
 }
