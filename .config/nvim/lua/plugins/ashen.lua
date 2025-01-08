@@ -7,25 +7,25 @@ return {
       "folke/snacks.nvim",
     },
     dev = true,
-    opts = {
-      transparent = false,
-      colors = {
-        -- background = "#121212",
-        -- background = "#131313",
-        -- background = "#000000",
-        -- background = "#1e1d2d",
-      },
-      hl = {
-        -- force_override = { Cursor = { nil, "#FFFFFF" } },
-        -- merge_override = { Normal = { nil, "#FFFFFF" } },
-      },
-      terminal = {
-        enabled = true,
-        colors = {
-          -- [4] = "#FFFFFF",
-        },
-      },
-    },
+    -- opts = {
+    --   transparent = false,
+    --   colors = {
+    --     -- background = "#121212",
+    --     -- background = "#131313",
+    --     -- background = "#000000",
+    --     -- background = "#1e1d2d",
+    --   },
+    --   hl = {
+    --     -- force_override = { Cursor = { nil, "#FFFFFF" } },
+    --     -- merge_override = { Normal = { nil, "#FFFFFF" } },
+    --   },
+    --   terminal = {
+    --     enabled = true,
+    --     colors = {
+    --       -- [4] = "#FFFFFF",
+    --     },
+    --   },
+    -- },
   },
   {
     "LazyVim/LazyVim",
