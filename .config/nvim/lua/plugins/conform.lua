@@ -21,6 +21,9 @@ return {
             return #diag > 0
           end,
         },
+        prettier = {
+          prepend_args = { "--prose-wrap", "always" },
+        },
       },
       formatters_by_ft = {
         ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
