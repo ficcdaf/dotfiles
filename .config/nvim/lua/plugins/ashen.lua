@@ -21,7 +21,7 @@ return {
       },
       terminal = {
         colors = {
-          -- blue = "#FFFFFF",
+          [5] = "#FFFFFF",
         },
       },
     },
