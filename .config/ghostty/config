@@ -1,11 +1,1 @@
-theme = /home/fic/dev/plugins/ashen.nvim/extras/ghostty/ashen
-font-family = SauceCodePro NFM
-font-size = 14
-window-decoration = false
-window-theme = ghostty
-keybind = ctrl+enter=unbind
-background-opacity = 1
-resize-overlay = never
-confirm-close-surface = false
-mouse-hide-while-typing = true
-window-padding-balance = true
+config##hostname.dbox
