@@ -2,6 +2,7 @@ font-family = SauceCodePro NFM
 font-size = 14
 theme = ashen
 window-decoration = false
+window-theme = ghostty
 keybind = ctrl+enter=unbind
 background-opacity = 1
 resize-overlay = never
