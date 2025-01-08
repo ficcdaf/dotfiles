@@ -28,7 +28,7 @@ return {
       },
       completion = {
         list = {
-          selection = "manual",
+          selection = { preselect = false, auto_insert = true },
         },
         accept = {
           -- experimental auto-brackets support
