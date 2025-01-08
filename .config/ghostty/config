@@ -2,7 +2,7 @@ theme = /home/fic/dev/plugins/ashen.nvim/extras/ghostty/ashen
 font-family = SauceCodePro NFM
 font-size = 13
 window-decoration = false
-window-theme = ghostty
+window-theme = dark
 keybind = ctrl+enter=unbind
 background-opacity = 1
 resize-overlay = never
