@@ -20,7 +20,7 @@ return {
         -- merge_override = { Normal = { nil, "#FFFFFF" } },
       },
       terminal = {
-        enabled = false,
+        enabled = true,
         colors = {
           -- [4] = "#FFFFFF",
         },
