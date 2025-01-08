@@ -1,4 +1,3 @@
-theme = /home/fic/dev/plugins/ashen.nvim/extras/ghostty/ashen
 font-family = SauceCodePro NFM
 font-size = 14
 window-decoration = false
