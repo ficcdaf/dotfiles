@@ -12,7 +12,6 @@ return {
     },
     -- opts_extend = {"sources"},
     opts = {
-      snippets = { preset = "luasnip" },
       sources = {
         -- default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
         default = { "lsp", "snippets", "path", "lazydev", "buffer" },
