@@ -21,6 +21,7 @@ return {
       },
     },
     code = {
+      render_modes = { "i" },
       -- sign = false,
       width = "block",
       right_pad = 1,
