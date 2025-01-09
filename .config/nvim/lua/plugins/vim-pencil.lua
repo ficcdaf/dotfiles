@@ -1,7 +1,7 @@
 return {
   "preservim/vim-pencil",
   ft = { "markdown", "tex" },
-  enabled = true,
+  enabled = false,
   -- init = function()
   --   vim.g["pencil#wrapModeDefault"] = "soft"
   -- end,

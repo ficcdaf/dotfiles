@@ -7,7 +7,7 @@ local icons = {
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
-  enabled = false,
+  enabled = true,
   opts = {
     indent = {
       enabled = false,
