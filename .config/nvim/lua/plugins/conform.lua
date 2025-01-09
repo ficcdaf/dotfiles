@@ -22,7 +22,7 @@ return {
           end,
         },
         prettier = {
-          prepend_args = { "--prose-wrap", "preserve" },
+          prepend_args = { "--prose-wrap", "always" },
         },
       },
       formatters_by_ft = {
