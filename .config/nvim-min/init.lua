@@ -40,7 +40,7 @@ require("ashen").setup({
 		-- merge_override = { Normal = { nil, "#FFFFFF" } },
 		-- merge_override = { Normal = { "#FFFFFF" } },
 		-- merge_override = { NotifyBackground = { "#121212" } },
-		merge_override = { Normal = { "#121212" } },
+		merge_override = { Normal = { "#FFFFFF" } },
 	},
 	terminal = {
 		colors = {
