@@ -1,3 +1,4 @@
+include /etc/sway/config.d/*
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
@@ -36,7 +37,7 @@ set $laptop eDP-1
 set $lab DP-1
 output eDP-1 resolution 1920x1080
 output $lab resolution 3820x2160
-output $lab scale 1.5
+output $lab scale 2
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
@@ -266,4 +267,3 @@ exec bluman-applet
 exec_always pkill dunst && dunst &
 exec tmux start-server &
 
-include /etc/sway/config.d/*
