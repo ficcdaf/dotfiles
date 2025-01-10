@@ -19,6 +19,7 @@ set $term ghostty
 # Your preferred application launcher
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
+set $drun tofi-drun --drun-launch=true
 set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
 ### Output configuration
@@ -93,7 +94,8 @@ default_floating_border pixel 1
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+t exec $menu
+    bindsym $mod+d exec $drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -183,7 +185,7 @@ default_floating_border pixel 1
     bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    # bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
