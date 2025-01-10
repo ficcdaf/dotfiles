@@ -13,3 +13,4 @@ opt.wrap = true
 -- opt.spelllang = { "en", "en-academic" }
 opt.spelllang = { "en" }
 -- opt.spelloptions = "camel"
+opt.clipboard = "unnamedplus"
