@@ -1,10 +1,11 @@
 gui:
+  authorColors:
+    "Daniel Fichtinger": "#E49A44"
+    "*": "#B14242"
   theme:
     # Border color of focused window
     activeBorderColor:
-      # - bold
       - "#B14242"
-      # - red
 
     # Border color of non-focused windows
     inactiveBorderColor:
@@ -30,11 +31,11 @@ gui:
 
     # Foreground color of copied commit
     cherryPickedCommitFgColor:
-      - "#E5A72A"
+      - "#191919"
 
     # Background color of copied commit
     cherryPickedCommitBgColor:
-      - "#121212"
+      - "#4A8B8B"
 
     # Foreground color of marked base commit (for rebase)
     markedBaseCommitFgColor:
@@ -42,11 +43,11 @@ gui:
 
     # Background color of marked base commit (for rebase)
     markedBaseCommitBgColor:
-      - yellow
+      - "#191919"
 
     # Color for file with unstaged changes
     unstagedChangesColor:
-      - red
+      - "#B14242"
 
     # Default text color
     defaultFgColor:
