@@ -1,0 +1,78 @@
+{
+  "colors": {
+    "background": "#121212",
+    "background-alt": "#323232",
+    "foreground": "#d5d5d5",
+    "primary": "#B14242",
+    "secondary": "#C4693D",
+    "alert": "#C53030",
+    "disabled": "#949494",
+  },
+  "bar": {
+    "position": "top",
+    "height": 24,
+    "margin": "6",
+    "dpi": 96,
+    "background": "${colors.background}",
+    "foreground": "${colors.foreground}",
+    "modules-left": ["wlr/workspaces", "window"],
+    "modules-right": [
+      "filesystem",
+      "pulseaudio",
+      "memory",
+      "cpu",
+      "network",
+      "tray",
+      "battery",
+      "clock",
+    ],
+    "separator": "|",
+    "separator-color": "${colors.disabled}",
+    "font": "monospace 12",
+  },
+  "modules": {
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+    },
+    "window": {
+      "format": "{title}",
+    },
+    "filesystem": {
+      "path": "/",
+      "interval": 25,
+      "format": "{percentage_used}%",
+    },
+    "pulseaudio": {
+      "format": "{volume}%",
+      "format-muted": "Muted",
+      "on-click": "pavucontrol",
+    },
+    "memory": {
+      "interval": 2,
+      "format": "RAM {used_percent}%",
+    },
+    "cpu": {
+      "interval": 2,
+      "format": "CPU {usage}%",
+    },
+    "network": {
+      "interval": 5,
+      "format": "{ifname}: {ipaddr}",
+    },
+    "tray": {},
+    "battery": {
+      "interval": 5,
+      "format": "{capacity}% {status}",
+      "states": {
+        "warning": 15,
+        "critical": 5,
+      },
+    },
+    "clock": {
+      "interval": 1,
+      "format": "%H:%M",
+      "tooltip-format": "%Y-%m-%d %H:%M:%S",
+    },
+  },
+}
