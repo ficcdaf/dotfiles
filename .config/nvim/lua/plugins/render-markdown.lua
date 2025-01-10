@@ -38,7 +38,7 @@ return {
       icons = { "•", "∙" },
     },
     latex = {
-      enabled = false,
+      enabled = true,
     },
   },
   ft = { "markdown", "rmd", "vimwiki" },
