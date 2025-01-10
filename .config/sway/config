@@ -17,7 +17,7 @@ set $right i
 set $term ghostty
 # Your preferred application launcher
 # set $menu wmenu-run
-set $menu tofi-drun | xargs swaymsg exec --
+set $menu tofi-run | xargs swaymsg exec --
 set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
 ### Output configuration
@@ -260,7 +260,8 @@ bindsym $mod+r mode "resize"
 exec_always nm-applet
 
 exec_always autotiling &
-exec_always pkill waybar && waybar
+# exec_always pkill waybar && waybar
+exec waybar &
 exec bluman-applet 
 exec_always pkill dunst && dunst &
 exec tmux start-server &
