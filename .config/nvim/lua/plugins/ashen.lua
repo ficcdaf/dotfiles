@@ -27,7 +27,7 @@ return {
       },
       plugins = {
         -- autoload = false,
-        -- override = { "flash", "minimap" },
+        override = { "notfunny" },
       },
       terminal = {
         enabled = true,
