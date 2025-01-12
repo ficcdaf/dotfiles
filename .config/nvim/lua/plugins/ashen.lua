@@ -17,7 +17,7 @@ return {
       },
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
-        -- merge_override = { Normal = { nil, "#FFFFFF" } },
+        -- merge_override = { Normal = { nil, "#000000" } },
       },
       plugins = {
         autoload = true,
