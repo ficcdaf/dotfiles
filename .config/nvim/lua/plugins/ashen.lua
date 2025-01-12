@@ -22,9 +22,9 @@ return {
           -- FlashLabel = { nil, "#FFFFFF" },
         },
       },
-      plugins = {
-        autoload = false,
-      },
+      -- plugins = {
+      --   autoload = false,
+      -- },
       terminal = {
         enabled = true,
         colors = {
