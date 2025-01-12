@@ -27,7 +27,7 @@ return {
       },
       plugins = {
         -- autoload = false,
-        override = { "notfunny" },
+        -- override = { "notfunny" },
       },
       terminal = {
         enabled = true,
