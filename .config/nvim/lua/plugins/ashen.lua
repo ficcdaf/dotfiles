@@ -19,6 +19,9 @@ return {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
         -- merge_override = { Normal = { nil, "#FFFFFF" } },
       },
+      plugins = {
+        autoload = true,
+      },
       terminal = {
         enabled = true,
         colors = {
