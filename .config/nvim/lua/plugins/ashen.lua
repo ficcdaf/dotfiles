@@ -24,7 +24,7 @@ return {
       },
       plugins = {
         autoload = true,
-        override = { "flash" },
+        -- override = { "flash" },
       },
       terminal = {
         enabled = true,
