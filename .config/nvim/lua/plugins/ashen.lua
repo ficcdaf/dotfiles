@@ -17,7 +17,10 @@ return {
       },
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
-        -- merge_override = { Normal = { nil, "#000000" } },
+        merge_override = {
+          -- Normal = { nil, "#000000" },
+          FlashLabel = { nil, "#FFFFFF" },
+        },
       },
       plugins = {
         autoload = true,
