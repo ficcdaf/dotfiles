@@ -26,8 +26,8 @@ return {
         },
       },
       plugins = {
-        autoload = true,
-        -- override = { "flash" },
+        -- autoload = false,
+        -- override = { "flash", "minimap" },
       },
       terminal = {
         enabled = true,
