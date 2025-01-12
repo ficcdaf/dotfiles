@@ -19,11 +19,11 @@ return {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
         merge_override = {
           -- Normal = { nil, "#000000" },
-          FlashLabel = { nil, "#FFFFFF" },
+          -- FlashLabel = { nil, "#FFFFFF" },
         },
       },
       plugins = {
-        autoload = true,
+        autoload = false,
       },
       terminal = {
         enabled = true,
