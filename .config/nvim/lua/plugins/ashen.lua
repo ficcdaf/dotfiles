@@ -17,7 +17,22 @@ return {
       },
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
-        -- merge_override = { Normal = { nil, "#FFFFFF" } },
+        force_override = {
+          DiagnosticUnnecessary = {},
+        },
+        merge_override = {
+          -- NeogitDiffAdd = { "#3C8B6C" },
+          -- NeogitDiffAddHighlight = { "#1E6F54" },
+          -- NeogitChangeAdded = { "#3C8B6C" },
+          -- NeogitDiffAddCursor = { "#3C8B6C" },
+          -- NeogitDiffAdditions = { "#3C8B6C" },
+          -- Normal = { nil, "#000000" },
+          -- FlashLabel = { nil, "#FFFFFF" },
+        },
+      },
+      plugins = {
+        -- autoload = false,
+        -- override = { "notfunny" },
       },
       terminal = {
         enabled = true,

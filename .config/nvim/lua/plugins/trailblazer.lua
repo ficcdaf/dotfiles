@@ -48,6 +48,6 @@ return {
       },
     }
     require("trailblazer").setup(opts)
-    require("ashen.plugins").setup("trailblazer")
+    require("ashen.plugins").load_plugin("trailblazer")
   end,
 }
