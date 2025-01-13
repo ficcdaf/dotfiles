@@ -286,6 +286,8 @@ bar {
       background $bg
       statusline $fg
       focused_workspace $c1 $bg $fg
+      inactive_workspace $bg $bg $fg
+      urgent_workspace $c3 $bg $fg
       # inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
