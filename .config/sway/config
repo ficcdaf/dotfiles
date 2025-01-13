@@ -298,7 +298,8 @@ bar {
 # TODO: add obsidian and filen?
 
 # WARNING: DO NOT TOUCH OR ELSE BAD THINGS WILL HAPPEN!!!!
-exec nm-applet &
+exec xembedsniproxy
+exec nm-applet
 exec dunst  
 exec autotiling &
 exec blueman-applet &
