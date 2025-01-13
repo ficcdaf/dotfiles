@@ -123,7 +123,7 @@ default_floating_border pixel 1
 
     # Start your launcher
     bindsym $mod+t exec $menu
-    bindsym $mod+a exec $drun
+    bindsym $mod+d exec $drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
