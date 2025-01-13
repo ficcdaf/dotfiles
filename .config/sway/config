@@ -277,20 +277,24 @@ bindsym $mod+r mode "resize"
 #
 # Utilities:
 #
-    # Special keys to adjust volume via PulseAudio
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+# Special keys to adjust volume via PulseAudio
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 
-    bindsym --locked XF86AudioPlay exec playerctl --player=spotify play-pause
-    bindsym --locked XF86AudioStop exec playerctl --all-players play-pause --ignore-player=spotify
-    # Special keys to adjust brightness via brightnessctl
-    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    bindsym $mod+s exec flameshot gui
-    bindsym $mod+Shift+s exec flameshot screen -c -p ~/Pictures/screenshots/
+bindsym --locked XF86AudioPlay exec playerctl --player=spotify play-pause
+bindsym --locked XF86AudioStop exec playerctl --all-players play-pause --ignore-player=spotify
+# Special keys to adjust brightness via brightnessctl
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Special key to take a screenshot with grim
+# NOTE: Flameshot doesn't work for some reason?
+# bindsym $mod+s exec flameshot gui
+# bindsym $mod+Shift+s exec flameshot screen -c -p ~/Pictures/screenshots/
+bindsym $mod+s exec grimshot copy area
+bindsym $mod+Shift+s exec grimshot save area
 
 #
 # Status Bar:
