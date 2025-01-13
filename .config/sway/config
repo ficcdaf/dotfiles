@@ -67,6 +67,10 @@ set $lab DP-1
 output eDP-1 resolution 1920x1080
 output $lab resolution 3820x2160
 output $lab scale 2
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec XCURSOR_SIZE=48
+exec GDK_SCALE=2
+exec GDK_DPI_SCALE=0.5
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
