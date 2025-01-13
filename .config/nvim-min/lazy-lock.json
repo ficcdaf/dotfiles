@@ -1,3 +1,4 @@
 {
+  "ashen.nvim": { "branch": "main", "commit": "e42fb457ba4cd9697667153c7307c09a6ce44785" },
   "lazy.nvim": { "branch": "main", "commit": "d8f26efd456190241afd1b0f5235fe6fdba13d4a" }
 }
