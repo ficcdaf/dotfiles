@@ -40,8 +40,9 @@ set $c14 #b4b4b4
 set $c15 #d5d5d5
 
 client.focused          $c9    $c9     $fg  $c9       $c9
-client.focused_inactive $c9     $c9     $fg  $c9       $c9
-client.unfocused        $c9     $c9     $fg  $c9       $c9
+# client.focused_inactive $c9     $c9     $fg  $c9       $c9
+client.focused_inactive $bg $bg $bg $bg $bg
+client.unfocused        $bg $bg $bg $bg $bg
 client.urgent           $c11     $c11     $fg  $c11       $c11
 client.placeholder      $c9     $c9     $fg  $c9       $c9
 
