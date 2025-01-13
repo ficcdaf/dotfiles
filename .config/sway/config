@@ -22,6 +22,8 @@ set $menu tofi-run | xargs swaymsg exec --
 set $drun tofi-drun --drun-launch=true
 set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
+set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit lil bro?: " | grep -q Yes && swaymsg exit
+
 set $bg #121212
 set $fg #f5f5f5
 
@@ -141,7 +143,7 @@ default_floating_border pixel 1
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+l exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+l exec $exitcmd
 #
 # Moving around:
 #
