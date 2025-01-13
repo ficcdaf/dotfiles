@@ -427,3 +427,15 @@ info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
 warning(stream): unimplemented OSC command: change_window_icon
 warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
 warning(stream): unimplemented OSC command: end_of_command
+info(grid): reallocating GPU buffer old=4602 new=6911
+info(stream): OSC 1 (change icon) received and ignored icon=c
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=reboot
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+Gdk-Message: 13:35:18.453: Error reading events from display: Broken pipe
