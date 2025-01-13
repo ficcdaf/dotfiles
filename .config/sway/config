@@ -73,13 +73,6 @@ bindswitch --reload --locked lid:off output $laptop enable
 # Fix the clamshell issue when reloading sway
 exec_always ~/.config/sway/clam.sh
 
-exec systemctl --user set-environment ELECTRON_OZONE_PLATFORM_HINT=auto
-exec systemctl --user set-environment OZONE_PLATFORM=wayland
-
-exec {
-    export TESTVAR=hi
-  }
-
 
 input "type:keyboard" {
     repeat_delay 250
@@ -300,12 +293,12 @@ bar {
 
 # autostart applications
 # TODO: add obsidian and filen?
-exec_always nm-applet
+exec nm-applet
 
-exec_always autotiling &
+exec autotiling &
 # exec_always pkill waybar && waybar
 # exec waybar &
-exec bluman-applet 
+exec blueman-applet 
 exec_always pkill dunst && dunst &
 exec tmux start-server &
 
