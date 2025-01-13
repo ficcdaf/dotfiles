@@ -290,9 +290,6 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Special key to take a screenshot with grim
-# NOTE: Flameshot doesn't work for some reason?
-# bindsym $mod+s exec flameshot gui
-# bindsym $mod+Shift+s exec flameshot screen -c -p ~/Pictures/screenshots/
 bindsym $mod+s exec grimshot copy area
 bindsym $mod+Shift+s exec grimshot save area
 
@@ -321,7 +318,7 @@ exec nm-applet
 exec autotiling &
 # exec_always pkill waybar && waybar
 # exec waybar &
-exec blueman-applet 
 exec_always pkill dunst && dunst &
+exec blueman-applet 
 exec tmux start-server &
 
