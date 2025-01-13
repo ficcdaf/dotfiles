@@ -1,2 +1,215 @@
-00:00:00.004 [ERROR] [wlr] [backend/wayland/backend.c:601] Could not connect to remote display: No such file or directory
-00:00:00.004 [ERROR] [sway/server.c:228] Unable to create backend
+/home/fic/.config/sway/clam.sh: line 6: /proc/acpi/button/lid/LID0/state: No such file or directory
+Could not get lid state
+2025-01-13 13:28:50 - [swaybg-1.2.1/main.c:282] Found config * for output DP-1 (Lenovo Group Limited L32p-30 UK1001LA)
+blueman-applet 13.28.50 WARNING  PluginManager:93 load_plugin: Failed to start plugin GameControllerWakelock: Only X11 platform is supported
+blueman-applet 13.28.50 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 13.28.50 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+00:00:00.496 [INFO] [swaybar/tray/host.c:24] Registering Status Notifier Item ':1.254/org/ayatana/NotificationItem/nm_applet'
+00:00:00.510 [ERROR] [swaybar/tray/item.c:126] :1.254/org/ayatana/NotificationItem/nm_applet IconPixmap: No such property “IconPixmap”
+00:00:00.510 [ERROR] [swaybar/tray/item.c:126] :1.254/org/ayatana/NotificationItem/nm_applet AttentionIconPixmap: No such property “AttentionIconPixmap”
+00:00:00.510 [ERROR] [swaybar/tray/item.c:126] :1.254/org/ayatana/NotificationItem/nm_applet ItemIsMenu: No such property “ItemIsMenu”
+00:00:00.568 [INFO] [swaybar/tray/host.c:24] Registering Status Notifier Item ':1.259/org/blueman/sni'
+00:00:00.569 [ERROR] [swaybar/tray/item.c:126] :1.259/org/blueman/sni IconThemePath: No such property “IconThemePath”
+00:00:00.569 [ERROR] [swaybar/tray/item.c:126] :1.259/org/blueman/sni IconPixmap: No such property “IconPixmap”
+00:00:00.569 [ERROR] [swaybar/tray/item.c:126] :1.259/org/blueman/sni AttentionIconName: No such property “AttentionIconName”
+00:00:00.569 [ERROR] [swaybar/tray/item.c:126] :1.259/org/blueman/sni AttentionIconPixmap: No such property “AttentionIconPixmap”
+info: ghostty version=1.0.1-arch
+info: ghostty build optimize=ReleaseFast
+info: runtime=apprt.Runtime.gtk
+info: font_backend=font.main.Backend.fontconfig_freetype
+info: dependency harfbuzz=10.1.0
+info: dependency fontconfig=21500
+info: renderer=renderer.OpenGL
+info: libxev backend=main.Backend.io_uring
+info(os): setlocale from env result=en_US.UTF-8
+info(gtk): GTK version build=4.16.12 runtime=4.16.12
+info: reading configuration file path=/home/fic/.config/ghostty/config
+info(config): default shell source=env value=/bin/zsh
+info(sentry): sentry envelope does not contain crash, discarding
+info(gtk): libadwaita version build=1.6.3 runtime=1.6.3
+error(gtk): Read method failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+EGL API version 1.5 found
+ - Vendor: Mesa Project
+ - Version: 1.5
+ - Device: /dev/dri/renderD128, 226 128
+ - Client APIs: OpenGL OpenGL_ES 
+ - Extensions:
+	EGL_ANDROID_blob_cache
+	EGL_ANDROID_native_fence_sync
+	EGL_EXT_buffer_age
+	EGL_EXT_config_select_group
+	EGL_EXT_create_context_robustness
+	EGL_EXT_image_dma_buf_import
+	EGL_EXT_image_dma_buf_import_modifiers
+	EGL_EXT_pixel_format_float
+	EGL_EXT_present_opaque
+	EGL_EXT_protected_surface
+	EGL_EXT_query_reset_notification_strategy
+	EGL_EXT_surface_compression
+	EGL_EXT_swap_buffers_with_damage
+	EGL_IMG_context_priority
+	EGL_KHR_cl_event2
+	EGL_KHR_config_attribs
+	EGL_KHR_context_flush_control
+	EGL_KHR_create_context
+	EGL_KHR_create_context_no_error
+	EGL_KHR_fence_sync
+	EGL_KHR_get_all_proc_addresses
+	EGL_KHR_gl_colorspace
+	EGL_KHR_gl_renderbuffer_image
+	EGL_KHR_gl_texture_2D_image
+	EGL_KHR_gl_texture_3D_image
+	EGL_KHR_gl_texture_cubemap_image
+	EGL_KHR_image_base
+	EGL_KHR_no_config_context
+	EGL_KHR_reusable_sync
+	EGL_KHR_surfaceless_context
+	EGL_KHR_swap_buffers_with_damage
+	EGL_KHR_wait_sync
+	EGL_MESA_configless_context
+	EGL_MESA_drm_image
+	EGL_MESA_gl_interop
+	EGL_MESA_image_dma_buf_export
+	EGL_MESA_query_driver
+	EGL_MESA_x11_native_visual_id
+	EGL_WL_bind_wayland_display
+	EGL_WL_create_wayland_buffer_from_image
+ - Selected fbconfig: R8G8B8A8, depth 0, stencil 0
+          high depth: R16G16B16A16 float, depth 0, stencil 0
+Creating EGL context version 3.2 (debug:no, forward:no, legacy:no, es:no)
+Using OpenGL backend EGL
+Creating EGL context version 3.2 (debug:no, forward:no, legacy:no, es:no)
+OpenGL version: 4.6 (core)
+GLSL version: 4.60
+Max texture size: 16384
+Enabled features (use GDK_GL_DISABLE env var to disable):
+    debug: ✓
+    unpack-subimage: ✓
+    half-float: ✓
+    sync: ✓
+    base-instance: ✓
+    buffer-storage: ✓
+OpenGL version: 4.6 (core)
+GLSL version: 4.60
+Max texture size: 16384
+Enabled features (use GDK_GL_DISABLE env var to disable):
+    debug: ✓
+    unpack-subimage: ✓
+    half-float: ✓
+    sync: ✓
+    base-instance: ✓
+    buffer-storage: ✓
+Creating EGL context version 3.3 (debug:no, forward:no, legacy:no, es:no)
+OpenGL version: 4.6 (core)
+GLSL version: 4.60
+Max texture size: 16384
+Enabled features (use GDK_GL_DISABLE env var to disable):
+    debug: ✓
+    unpack-subimage: ✓
+    half-float: ✓
+    sync: ✓
+    base-instance: ✓
+    buffer-storage: ✓
+info(grid): loaded OpenGL 4.6
+info(font_shared_grid_set): font regular: SauceCodePro NFM
+info(font_shared_grid_set): font bold: SauceCodePro NFM Bold
+info(font_shared_grid_set): font italic: SauceCodePro NFM Italic
+info(font_shared_grid_set): font bold_italic: SauceCodePro NFM Bold Italic
+info(io_exec): found Ghostty resources dir: /usr/share/ghostty
+info(io_exec): shell integration automatically injected shell=termio.shell_integration.Shell.zsh
+warning(gtk): unimplemented action=apprt.action.Action.Key.cell_size
+warning(gtk): unimplemented action=apprt.action.Action.Key.size_limit
+info(io_exec): started subcommand path=/bin/sh pid=54873
+info(io_exec): subcommand cgroup=-
+error(gtk): Read method failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+Creating EGL context version 3.2 (debug:no, forward:no, legacy:no, es:no)
+OpenGL version: 4.6 (core)
+GLSL version: 4.60
+Max texture size: 16384
+Enabled features (use GDK_GL_DISABLE env var to disable):
+    debug: ✓
+    unpack-subimage: ✓
+    half-float: ✓
+    sync: ✓
+    base-instance: ✓
+    buffer-storage: ✓
+Using fractional scale 2 for EGL window (1000 600 => 2000 1200)
+Using fractional scale 2 for EGL window (1888 1025 => 3776 2050)
+info(grid): reallocating GPU buffer old=0 new=8
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+info(grid): reallocating GPU buffer old=8 new=20
+info(grid): reallocating GPU buffer old=20 new=65
+info(stream): OSC 1 (change icon) received and ignored icon=echo
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=c
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=vim
+warning(stream): unimplemented OSC command: change_window_icon
+info(grid): reallocating GPU buffer old=65 new=15569
+warning(stream): ignoring CSI t with unimplemented parameter: ESC [  { 8, 55, 209 } t
+warning(stream): ignoring CSI t with unimplemented parameter: ESC [  { 8, 55, 209 } t
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+APPIMAGE env is not defined, current application is not an AppImage
+checkForUpdatesAndNotify called, downloadPromise is null
+[55265:0113/132907.667278:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[55265:0113/132907.667343:ERROR:select_file_dialog_linux_portal.cc(294)] Failed to read portal version property
+[[38;2;88;101;242marRPC[0m > [38;2;254;231;92mipc[0m] listening at /run/user/1000/discord-ipc-0
+[[38;2;88;101;242marRPC[0m > [38;2;235;69;158mwebsocket[0m] listening on 6463
+[[38;2;88;101;242marRPC[0m > [38;2;237;66;69mprocess[0m] started
+00:00:17.862 [INFO] [swaybar/tray/host.c:24] Registering Status Notifier Item ':1.267/StatusNotifierItem'
+00:00:17.862 [ERROR] [swaybar/tray/item.c:126] :1.267/StatusNotifierItem IconThemePath: error occurred in Get
+00:00:17.862 [ERROR] [swaybar/tray/item.c:126] :1.267/StatusNotifierItem IconName: error occurred in Get
+[55393:0113/132909.555477:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Using fractional scale 2 for EGL window (938 1025 => 1876 2050)
+info(stream): OSC 1 (change icon) received and ignored icon=ls
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=vim
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): ignoring CSI t with unimplemented parameter: ESC [  { 8, 55, 103 } t
+[[38;2;88;101;242marRPC[0m > [38;2;254;231;92mipc[0m] new connection!
+warning(stream): ignoring CSI t with unimplemented parameter: ESC [  { 8, 55, 103 } t
+[[38;2;88;101;242marRPC[0m > [38;2;254;231;92mipc[0m] socket error Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at a.send (VCDMain:4:4935)
+    at Fs.onMessage (VCDMain:11:1267829)
+    at Ss.onMessage (VCDMain:4:5071) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[[38;2;88;101;242marRPC[0m > [38;2;254;231;92mipc[0m] socket closed true
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 0 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=flameshot
+warning(stream): unimplemented OSC command: change_window_icon
+info(stream): OSC 1 (change icon) received and ignored icon=~/.config/sway
+warning(stream): unimplemented OSC command: change_window_icon
+warning(stream): unimplemented OSC callback: terminal.osc.Command{ .end_of_command = terminal.osc.Command.Command__struct_95667{ .exit_code = 1 } }
+warning(stream): unimplemented OSC command: end_of_command
+info(stream): OSC 1 (change icon) received and ignored icon=flameshot
+warning(stream): unimplemented OSC command: change_window_icon
+00:01:14.356 [INFO] [swaybar/tray/host.c:24] Registering Status Notifier Item ':1.270/StatusNotifierItem'
