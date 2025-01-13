@@ -73,6 +73,14 @@ bindswitch --reload --locked lid:off output $laptop enable
 # Fix the clamshell issue when reloading sway
 exec_always ~/.config/sway/clam.sh
 
+exec systemctl --user set-environment ELECTRON_OZONE_PLATFORM_HINT=auto
+exec systemctl --user set-environment OZONE_PLATFORM=wayland
+
+exec {
+    export TESTVAR=hi
+  }
+
+
 input "type:keyboard" {
     repeat_delay 250
     repeat_rate 30
