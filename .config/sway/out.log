@@ -1,0 +1,2 @@
+00:00:00.004 [ERROR] [wlr] [backend/wayland/backend.c:601] Could not connect to remote display: No such file or directory
+00:00:00.004 [ERROR] [sway/server.c:228] Unable to create backend
