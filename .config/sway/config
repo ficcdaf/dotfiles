@@ -283,14 +283,17 @@ bar {
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
-        statusline $fg
-        background $bg
-        # inactive_workspace #32323200 #32323200 #5c5c5c
+      background $bg
+      statusline $fg
+      focused_workspace $c1 $bg $fg
+      # inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
 
 # autostart applications
 # TODO: add obsidian and filen?
+
+# WARNING: DO NOT TOUCH OR ELSE BAD THINGS WILL HAPPEN!!!!
 exec nm-applet
 exec dunst  
 exec autotiling &
