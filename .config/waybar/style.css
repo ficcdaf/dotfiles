@@ -1,5 +1,6 @@
 @define-color bg #121212;
 @define-color fg #d5d5d5;
+@define-color grey #949494;
 @define-color red_ember #B14242;
 @define-color red_glowing #DF6464;
 @define-color orange_glow #D87C4A;
@@ -54,50 +55,47 @@ tooltip {
 
 #workspaces button.focused {
   /* color: #ddc7a1; */
-  border: 2px solid @red_ember;
+  border: 1px solid @red_ember;
 }
 
 #workspaces button.urgent {
-  background-color: #e78a4e;
+  border: 1px solid @orange_glow;
 }
 
-#clock {
-  background-color: #303536;
-  border: 2px solid #434a4c;
-  color: #d4be98;
-}
+/* #clock { */
+/*   background-color: #303536; */
+/*   border: 2px solid #434a4c; */
+/*   color: #d4be98; */
+/* } */
 
 #tray {
-  background-color: #d4be98;
-  border: 2px solid #c7ab7a;
+  border: 1px solid @red_ember;
 }
 
 #battery {
-  background-color: #a9b665;
-  border: 2px solid #c7ab7a;
-  color: #6c782e;
+  /* background-color: #a9b665; */
+  /* border: 2px solid #c7ab7a; */
+  /* color: #6c782e; */
 }
 
 #cpu,
 #memory,
 #network,
 #pulseaudio {
-  background-color: #ddc7a1;
-  border: 2px solid #c7ab7a;
-  color: #1d2021;
+  /* background-color: #ddc7a1; */
+  /* border: 2px solid #c7ab7a; */
+  /* color: #1d2021; */
 }
 
 #cpu.critical,
 #memory.critical {
-  background-color: #ddc7a1;
-  border: 2px solid #c7ab7a;
-  color: #c14a4a;
+  color: @red_ember;
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  background-color: #ddc7a1;
-  border: 2px solid #c7ab7a;
-  color: #c14a4a;
+  /* background-color: #ddc7a1; */
+  /* border: 2px solid #c7ab7a; */
+  color: @red_ember;
 }
