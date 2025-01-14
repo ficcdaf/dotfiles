@@ -21,12 +21,26 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+vim.keymap.set("n", "<C-q>", "<CMD>qa!<Cr>")
+vim.keymap.set("n", "<leader>gg", "<CMD>Neogit<Cr>")
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
 		-- "ficcdaf/ashen.nvim",
 		{
 			dir = "~/dev/plugins/ashen.nvim/",
+		},
+		{
+			"NeogitOrg/neogit",
+			dependencies = {
+				"nvim-lua/plenary.nvim", -- required
+				"sindrets/diffview.nvim", -- optional - Diff integration
+
+				-- Only one of these is needed.
+				"ibhagwan/fzf-lua", -- optional
+			},
+			config = true,
 		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
