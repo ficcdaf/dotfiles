@@ -10,8 +10,8 @@
       "disable-scroll" : false,
   },
     "battery": {
-        "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format": "bat {capacity}%",
+        // "format-icons": ["", "", "", "", ""]
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
@@ -20,7 +20,7 @@
         "scroll-step": 5,
         "max-volume": 150,
         "format": "vol {volume}%",
-        "format-bluetooth": "{desc} {volume}%",
+        "format-bluetooth": "bt {volume}%",
         "format-muted": "mut",
         "nospacing": 1,
         "on-click": "pavucontrol",
