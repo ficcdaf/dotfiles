@@ -5,9 +5,10 @@
 @define-color orange_glow #D87C4A;
 @define-color orange_blaze #C4693D;
 @define-color orange_smolder #E49A44;
+@define-color green #629c7d
 * {
   border: none;
-  /* font-size: 14px; */
+  font-size: 12px;
   font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
   /* min-height: 25px; */
 }
@@ -68,17 +69,17 @@ window#waybar {
 
 #temperature.critical,
 #pulseaudio.muted {
-  color: #ff0000;
-  padding-top: 0;
+  color: @red_ember;
+  /* padding-top: 0; */
 }
 
 #clock {
-  color: #5fd1fa;
+  color: @orange_glow;
 }
 
 #battery.charging {
-  color: #ffffff;
-  background-color: #26a65b;
+  color: @fg;
+  background-color: @green;
 }
 
 #battery.warning:not(.charging) {
@@ -87,7 +88,7 @@ window#waybar {
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
+  background-color: @red_ember;
   color: #ffffff;
   animation-name: blink;
   animation-duration: 0.5s;
