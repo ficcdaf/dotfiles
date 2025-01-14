@@ -10,7 +10,8 @@ set $down n
 set $up e
 set $right i
 # Your preferred terminal emulator
-set $term ghostty
+# set $term ghostty
+set $term foot
 # Your preferred application launcher
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
