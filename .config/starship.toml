@@ -25,6 +25,7 @@ $character"""
 
 [directory]
 style = "blue"
+# style = "#C4693D"
 fish_style_pwd_dir_length = 3
 
 [character]
