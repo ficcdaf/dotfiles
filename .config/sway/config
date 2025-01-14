@@ -276,23 +276,23 @@ bindsym $mod+Shift+s exec grimshot save area
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%a, %b %d - %H:%M'; do sleep 1; done
-    # status_command inotifywait -m -e modify /home/fic/scripts/time | cat /home/fic/scripts/time
-
-    colors {
-      background $bg
-      statusline $fg
-      focused_workspace $c1 $bg $fg
-      inactive_workspace $bg $bg $fg
-      urgent_workspace $c3 $bg $fg
-      # inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+# bar {
+#     position top
+#
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%a, %b %d - %H:%M'; do sleep 1; done
+#     # status_command inotifywait -m -e modify /home/fic/scripts/time | cat /home/fic/scripts/time
+#
+#     colors {
+#       background $bg
+#       statusline $fg
+#       focused_workspace $c1 $bg $fg
+#       inactive_workspace $bg $bg $fg
+#       urgent_workspace $c3 $bg $fg
+#       # inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
 
 # autostart applications
 # TODO: add obsidian and filen?
@@ -301,6 +301,7 @@ bar {
 exec xembedsniproxy
 exec nm-applet
 exec dunst  
+exec waybar
 exec autotiling &
 exec blueman-applet &
 exec tmux start-server &
