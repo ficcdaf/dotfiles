@@ -6,7 +6,7 @@ opt.scrolloff = 2
 
 vim.g.maplocalleader = ","
 vim.g.lazyvim_python_lsp = "basedpyright"
-vim.g.lazyvim_rust_diagnostics = "bacon-ls"
+-- vim.g.lazyvim_rust_diagnostics = "bacon-ls"
 vim.g.ai_cmp = false
 vim.g.snacks_animate = false
 opt.spell = true
