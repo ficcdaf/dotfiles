@@ -5,7 +5,7 @@
 @define-color orange_glow #D87C4A;
 @define-color orange_blaze #C4693D;
 @define-color orange_smolder #E49A44;
-@define-color green #629c7d
+@define-color green #629c7d;
 * {
   border: none;
   font-size: 12px;
@@ -14,7 +14,7 @@
 }
 
 window#waybar {
-  background: transparent;
+  background: @bg;
   margin: 5px;
 }
 
@@ -26,20 +26,20 @@ window#waybar {
   padding-left: 5px;
   border-radius: 15px 0 0 15px;
   margin-top: 2px;
-  background: #000000;
+  /* background: #000000; */
 }
 
 .modules-center {
   padding: 0 15px;
   margin-top: 2px;
   border-radius: 15px 15px 15px 15px;
-  background: #000000;
+  /* background: #000000; */
 }
 
 .modules-left {
   border-radius: 0 15px 15px 0;
   margin-top: 2px;
-  background: #000000;
+  /* background: #000000; */
 }
 
 #battery,
@@ -83,23 +83,11 @@ window#waybar {
 }
 
 #battery.warning:not(.charging) {
-  background-color: #ffbe61;
+  background-color: @orange_smolder;
   color: black;
 }
 
 #battery.critical:not(.charging) {
   background-color: @red_ember;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
+  color: @fg;
 }
