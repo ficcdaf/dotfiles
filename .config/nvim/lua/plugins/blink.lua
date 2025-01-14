@@ -7,9 +7,6 @@ return {
   { "giuxtaposition/blink-cmp-copilot", enabled = false },
   {
     "saghen/blink.cmp",
-    dependencies = {
-      "mikavilpas/blink-ripgrep.nvim",
-    },
     -- opts_extend = {"sources"},
     opts = {
       sources = {
@@ -17,10 +14,6 @@ return {
         default = { "lsp", "snippets", "path", "lazydev", "buffer" },
         providers = {
           -- markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
-          ripgrep = {
-            module = "blink-ripgrep",
-            name = "Ripgrep",
-          },
         },
       },
       appearance = {
@@ -73,12 +66,6 @@ return {
         ["<C-p>"] = { "snippet_backward", "fallback" },
         ["<Up>"] = { "select_prev", "fallback" },
         ["<Down>"] = { "select_next", "fallback" },
-        ["<C-g>"] = {
-          function()
-            -- invoke manually, requires blink >v0.8.0
-            require("blink-cmp").show({ sources = { "ripgrep" } })
-          end,
-        },
       },
     },
   },

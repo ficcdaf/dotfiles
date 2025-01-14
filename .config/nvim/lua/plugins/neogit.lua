@@ -1,5 +1,11 @@
 return {
   "NeogitOrg/neogit",
+  keys = {
+    {
+      "<C-g>",
+      "<CMD>Neogit<Cr>",
+    },
+  },
   dependencies = {
     "nvim-lua/plenary.nvim", -- required
     "sindrets/diffview.nvim", -- optional - Diff integration
