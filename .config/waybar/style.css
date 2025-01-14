@@ -20,12 +20,10 @@
 
 window#waybar {
   background: @bg;
-  border: 2px solid #3c3836;
 }
 
 tooltip {
   background-color: @bg;
-  border: 2px solid #3c3836;
 }
 
 #clock,
@@ -69,7 +67,7 @@ tooltip {
 /* } */
 
 #tray {
-  border: 1px solid @red_ember;
+  border: 1px solid @grey;
 }
 
 #battery {

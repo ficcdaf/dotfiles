@@ -6,11 +6,24 @@
     "sway/window": {
         "max-length": 50
     },
+    "sway/workspaces": {
+      "disable-scroll" : false,
+  },
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "vol {volume}%",
+        "format-bluetooth": "{desc} {volume}%",
+        "format-muted": "mut",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
     }
 }
