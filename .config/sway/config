@@ -18,6 +18,7 @@ set $menu tofi-run | xargs swaymsg exec --
 set $drun tofi-drun --drun-launch=true
 set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
+set $lockcmd swaylock -c 121212 -e -f -F
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit lil bro?: " | grep -q Yes && swaymsg exit
 
 set $bg #121212
@@ -141,6 +142,7 @@ default_floating_border pixel 1
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+l exec $exitcmd
+    bindsym $mod+l exec $lockcmd
 #
 # Moving around:
 #
