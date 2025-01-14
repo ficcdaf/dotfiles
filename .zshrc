@@ -106,6 +106,10 @@ function zle-keymap-select zle-line-init zle-line-finish
   esac
 }
 
+function set_win_title(){
+    echo -ne "\033]0; $PWD \007"
+}
+# precmd_functions+=(set_win_title)
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
