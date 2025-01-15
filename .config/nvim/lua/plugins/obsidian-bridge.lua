@@ -13,7 +13,7 @@ local opts = {
 }
 return {
   "oflisback/obsidian-bridge.nvim",
-  enabled = true,
+  enabled = false,
   dev = false,
   opts = opts,
   event = {

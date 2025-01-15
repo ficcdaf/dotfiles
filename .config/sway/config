@@ -67,6 +67,7 @@ set $lab DP-1
 output eDP-1 resolution 1920x1080
 output $lab resolution 3820x2160
 output $lab scale 2
+output $laptop scale 1.5
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
