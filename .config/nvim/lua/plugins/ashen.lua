@@ -18,7 +18,7 @@ return {
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
         link = {
-          -- FlashLabel = "Normal",
+          FlashCursor = "Normal",
           -- SomethingFake = "thisisnotreal",
         },
         force_override = {
