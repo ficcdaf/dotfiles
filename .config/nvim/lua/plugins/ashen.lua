@@ -18,7 +18,8 @@ return {
       hl = {
         -- force_override = { Cursor = { nil, "#FFFFFF" } },
         link = {
-          FlashLabel = "Normal",
+          -- FlashLabel = "Normal",
+          -- SomethingFake = "thisisnotreal",
         },
         force_override = {
           DiagnosticUnnecessary = {},
