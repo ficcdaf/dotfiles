@@ -12,7 +12,7 @@ return {
       colors = {
         -- background = "#121212",
         -- background = "#131313",
-        -- background = "#000000",
+        background = "#000000",
         -- background = "#1e1d2d",
       },
       hl = {
@@ -25,11 +25,6 @@ return {
           DiagnosticUnnecessary = {},
         },
         merge_override = {
-          -- NeogitDiffAdd = { "#3C8B6C" },
-          -- NeogitDiffAddHighlight = { "#1E6F54" },
-          -- NeogitChangeAdded = { "#3C8B6C" },
-          -- NeogitDiffAddCursor = { "#3C8B6C" },
-          -- NeogitDiffAdditions = { "#3C8B6C" },
           -- Normal = { nil, "#000000" },
           -- FlashLabel = { nil, "#FFFFFF" },
         },
