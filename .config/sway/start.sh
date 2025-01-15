@@ -13,6 +13,7 @@
 # export _JAVA_AWT_WM_NONREPARENTING=1  # Fixes Java apps under Wayland
 # export WLR_DRM_DEVICES=/dev/dri/card0 # Explicitly set the DRM device
 # export WLR_RANDR_SCREENSHOOTING=1     # Enables better screenshot support
+export EDITOR="nvim"
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 export OZONE_PLATFORM=wayland
 export XDG_CURRENT_DESKTOP=sway
