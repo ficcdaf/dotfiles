@@ -12,7 +12,8 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
+  font-family: SauceCodePro NFM;
   font-weight: 500;
   font-size: 14px;
   padding: 0;
