@@ -107,7 +107,6 @@ function zle-keymap-select zle-line-init zle-line-finish
 }
 DISABLE_AUTO_TITLE="true"
 function set_win_title(){
-    # echo -ne "\033]0; $PWD \007"
     echo -ne "\033]0; ${PWD/#$HOME/~} \007"
 }
 precmd_functions+=(set_win_title)
