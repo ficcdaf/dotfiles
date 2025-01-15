@@ -12,7 +12,7 @@ return {
       colors = {
         -- background = "#121212",
         -- background = "#131313",
-        background = "#000000",
+        -- background = "#000000",
         -- background = "#1e1d2d",
       },
       hl = {
