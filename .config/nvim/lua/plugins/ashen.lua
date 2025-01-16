@@ -30,8 +30,8 @@ return {
         },
       },
       plugins = {
-        -- autoload = false,
-        -- override = { "notfunny" },
+        autoload = false,
+        override = { "fzflua" },
       },
       terminal = {
         enabled = true,
