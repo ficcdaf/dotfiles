@@ -11,7 +11,13 @@ return {
     opts = {
       sources = {
         -- default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
-        default = { "lsp", "snippets", "path", "lazydev", "buffer" },
+        -- default = { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" },
+        default = function()
+          if vim.bo.filetype == "org" then
+            return { "orgmode" }
+          end
+          return { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" }
+        end,
         providers = {
           -- markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
           orgmode = {
@@ -27,6 +33,12 @@ return {
         list = {
           selection = { preselect = false, auto_insert = true },
         },
+        -- enabled_providers = function()
+        --   if vim.bo.filetype == "org" then
+        --     return { "orgmode" }
+        --   end
+        --   return { "lsp", "snippets", "path", "lazydev", "buffer" }
+        -- end,
         accept = {
           -- experimental auto-brackets support
           auto_brackets = {
