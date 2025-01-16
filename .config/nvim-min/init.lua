@@ -33,6 +33,7 @@ require("lazy").setup({
 			opts = {
 				plugins = {
 					autoload = false,
+					override = { "fzflua" },
 				},
 			},
 		},
@@ -43,7 +44,7 @@ require("lazy").setup({
 			-- or if using mini.icons/mini.nvim
 			dependencies = { "echasnovski/mini.icons" },
 			opts = {
-				fzf_colors = true,
+				-- fzf_colors = true,
 			},
 		},
 		-- {
