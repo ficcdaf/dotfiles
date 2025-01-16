@@ -1,6 +1,6 @@
 return {
   "ibhagwan/fzf-lua",
   opts = {
-    -- fzf_colors = false,
+    fzf_colors = false,
   },
 }
