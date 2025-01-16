@@ -20,6 +20,7 @@ set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
 set $lockcmd swaylock -c 121212 -e -f -F
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit lil bro?: " | grep -q Yes && swaymsg exit
+set $poweroff echo -e "No\nYes" | tofi --prompt-text="u sure u wanna poweroff lil bro?: " | grep -q Yes && poweroff
 
 set $bg #121212
 set $fg #f5f5f5
@@ -143,6 +144,7 @@ default_floating_border pixel 1
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+l exec $exitcmd
+    bindsym $mod+Shift+p exec $poweroff
     bindsym $mod+l exec $lockcmd
 #
 # Moving around:
