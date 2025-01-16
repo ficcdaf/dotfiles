@@ -37,7 +37,9 @@ require("lazy").setup({
 			-- dependencies = { "nvim-tree/nvim-web-devicons" },
 			-- or if using mini.icons/mini.nvim
 			dependencies = { "echasnovski/mini.icons" },
-			opts = {},
+			opts = {
+				fzf_colors = true,
+			},
 		},
 		-- {
 		-- 	"NeogitOrg/neogit",
@@ -53,7 +55,7 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "habamax" } },
+	install = { colorscheme = { "ashen" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 })
