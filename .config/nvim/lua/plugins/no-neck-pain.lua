@@ -25,6 +25,7 @@ end
 return {
   "shortcuts/no-neck-pain.nvim",
   version = "*",
+  enabled = false,
   opts = function()
     return {
       width = 120,
