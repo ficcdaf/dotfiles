@@ -14,6 +14,10 @@ return {
         default = { "lsp", "snippets", "path", "lazydev", "buffer" },
         providers = {
           -- markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
+          orgmode = {
+            name = "Orgmode",
+            module = "orgmode.org.autocompletion.blink",
+          },
         },
       },
       appearance = {
