@@ -30,6 +30,11 @@ require("lazy").setup({
 		-- "ficcdaf/ashen.nvim",
 		{
 			dir = "~/dev/plugins/ashen.nvim/",
+			opts = {
+				plugins = {
+					autoload = false,
+				},
+			},
 		},
 		{
 			"ibhagwan/fzf-lua",
