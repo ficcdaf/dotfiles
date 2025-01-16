@@ -32,16 +32,24 @@ require("lazy").setup({
 			dir = "~/dev/plugins/ashen.nvim/",
 		},
 		{
-			"NeogitOrg/neogit",
-			dependencies = {
-				"nvim-lua/plenary.nvim", -- required
-				"sindrets/diffview.nvim", -- optional - Diff integration
-
-				-- Only one of these is needed.
-				"ibhagwan/fzf-lua", -- optional
-			},
-			config = true,
+			"ibhagwan/fzf-lua",
+			-- optional for icon support
+			-- dependencies = { "nvim-tree/nvim-web-devicons" },
+			-- or if using mini.icons/mini.nvim
+			dependencies = { "echasnovski/mini.icons" },
+			opts = {},
 		},
+		-- {
+		-- 	"NeogitOrg/neogit",
+		-- 	dependencies = {
+		-- 		"nvim-lua/plenary.nvim", -- required
+		-- 		"sindrets/diffview.nvim", -- optional - Diff integration
+		--
+		-- 		-- Only one of these is needed.
+		-- 		"ibhagwan/fzf-lua", -- optional
+		-- 	},
+		-- 	config = true,
+		-- },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
