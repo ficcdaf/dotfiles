@@ -58,5 +58,7 @@ require("lazy").setup({
 	checker = { enabled = true },
 })
 
+vim.keymap.set("n", "<leader><leader>", "<CMD>FzfLua<Cr>")
+
 -- require("ashen").setup()
 require("ashen").load()
