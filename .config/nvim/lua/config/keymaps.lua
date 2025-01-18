@@ -99,7 +99,7 @@ map({ "n" }, "<S-l>", "H", { remap = false })
 -- better delete and put
 
 -- Duplicate and comment line
-map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "Duplicate and comment line" })
+-- map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "Duplicate and comment line" })
 
 -- better quit
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit All" })
