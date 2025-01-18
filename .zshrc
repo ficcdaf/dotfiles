@@ -112,7 +112,8 @@ function set_win_title(){
 function viewport_osc(){
   print -Pn "\e]133;A\e\\"
 }
-precmd_functions+=(set_win_title viewport_osc)
+# precmd_functions+=(set_win_title viewport_osc)
+precmd_functions+=(viewport_osc)
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
