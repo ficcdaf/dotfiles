@@ -8,6 +8,9 @@ return {
     -- },
     dev = false,
     opts = {
+      style = {
+        -- italic = false,
+      },
       transparent = false,
       colors = {
         -- background = "#121212",
@@ -26,6 +29,7 @@ return {
           -- NonText = { "#FFFFFF" },
         },
         merge_override = {
+          -- Normal = { italic = true },
           -- Normal = {"red_ember"},
           -- FlashLabel = { nil, "#FFFFFF" },
         },
