@@ -1,7 +1,7 @@
 return {
   {
-    dir = "~/dev/plugins/ashen.nvim/",
-    -- "ficcdaf/ashen.nvim",
+    -- dir = "~/dev/plugins/ashen.nvim/",
+    "ficcdaf/ashen.nvim",
     -- only for debugging
     -- dependencies = {
     --   "folke/snacks.nvim",
