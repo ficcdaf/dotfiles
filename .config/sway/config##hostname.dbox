@@ -53,7 +53,15 @@ client.background       $c9
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+set $benq DP-1
+set $dell HDMI-A-1
+output $benq pos 0 0 mode 1920x1080@143.981Hz
+output $dell pos 1920 0 mode 1920x1200@59.950Hz
 output * bg $wallpaper fill
+
+workspace 1 output $benq
+workspace 0 output $dell
+
 # include "$HOME/.cache/wal/colors-sway"
 
 #
@@ -152,6 +160,11 @@ default_floating_border pixel 1
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
+
+    # Move workspaces between screens
+    bindsym $mod+Shift+period move workspace to output right
+    bindsym $mod+Shift+comma move workspace to output left
+
     # Or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
