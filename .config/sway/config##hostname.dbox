@@ -315,7 +315,8 @@ bindsym $mod+Shift+s exec grimshot save area
 # TODO: add obsidian and filen?
 
 # WARNING: DO NOT TOUCH OR ELSE BAD THINGS WILL HAPPEN!!!!
-exec foot --server
+exec_always foot --server
+exec filen-desktop
 exec xembedsniproxy
 exec nm-applet
 exec dunst  
