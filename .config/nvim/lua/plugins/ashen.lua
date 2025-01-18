@@ -23,6 +23,7 @@ return {
         },
         force_override = {
           DiagnosticUnnecessary = {},
+          NonText = { "#FFFFFF" },
         },
         merge_override = {
           -- Normal = { nil, "#000000" },

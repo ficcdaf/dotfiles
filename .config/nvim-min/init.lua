@@ -32,8 +32,8 @@ require("lazy").setup({
 			dir = "~/dev/plugins/ashen.nvim/",
 			opts = {
 				plugins = {
-					autoload = false,
-					override = { "fzflua" },
+					autoload = true,
+					-- override = { "fzflua", "fzf" },
 				},
 			},
 		},
