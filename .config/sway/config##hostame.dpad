@@ -16,7 +16,7 @@ set $term footclient
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
 set $drun tofi-drun --drun-launch=true
-set $wallpaper ~/Pictures/wallpapers/minimal_squares.png
+set $wallpaper ~/Pictures/wallpapers/sidonia-blurred.png
 
 set $lockcmd swaylock -c 121212 -e -f -F
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit lil bro?: " | grep -q Yes && swaymsg exit
@@ -62,17 +62,17 @@ output * bg $wallpaper fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-# set $laptop eDP-1
-# set $lab DP-1
-# output eDP-1 resolution 1920x1080
-# output $lab resolution 3820x2160
-# output $lab scale 2
-# output $laptop scale 1.5
-# bindswitch --reload --locked lid:on output $laptop disable
-# bindswitch --reload --locked lid:off output $laptop enable
-#
-# # Fix the clamshell issue when reloading sway
-# exec_always ~/.config/sway/clam.sh
+set $laptop eDP-1
+set $lab DP-1
+output eDP-1 resolution 1920x1080
+output $lab resolution 3820x2160
+output $lab scale 2
+output $laptop scale 1.5
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
+# Fix the clamshell issue when reloading sway
+exec_always ~/.config/sway/clam.sh
 
 
 input "type:keyboard" {
