@@ -26,7 +26,7 @@ return {
           -- NonText = { "#FFFFFF" },
         },
         merge_override = {
-          -- Normal = { nil, "#000000" },
+          -- Normal = {"red_ember"},
           -- FlashLabel = { nil, "#FFFFFF" },
         },
       },
