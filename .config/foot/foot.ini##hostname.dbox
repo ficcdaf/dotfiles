@@ -42,6 +42,7 @@ workers=8
 # utmp-helper=/usr/libexec/ulog-helper    # When utmp backend is ‘ulog’ (FreeBSD)
 
 [environment]
+TERMINFO=/usr/share/terminfo
 # name=value
 
 [security]
