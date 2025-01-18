@@ -32,7 +32,7 @@ return {
       },
       plugins = {
         -- autoload = false,
-        override = { "fzflua" },
+        -- override = { "fzflua" },
       },
       terminal = {
         enabled = true,
