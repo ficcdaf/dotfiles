@@ -20,7 +20,7 @@ font=SauceCodePro NFM:size=12
 # horizontal-letter-offset=0
 # vertical-letter-offset=0
 # underline-offset=<font metrics>
-# underline-thickness=<font underline thickness>
+underline-thickness=1
 # strikeout-thickness=<font strikeout thickness>
 # box-drawings-uses-font-glyphs=no
 # dpi-aware=no
