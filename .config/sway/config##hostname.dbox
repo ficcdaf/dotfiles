@@ -16,7 +16,8 @@ set $term footclient
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
 set $drun tofi-drun --drun-launch=true
-set $wallpaper ~/Pictures/wallpapers/minimal_squares.png
+# set $wallpaper ~/Pictures/wallpapers/minimal_squares.png
+set $wallpaper ~/Pictures/wallpapers/minimal.png
 
 set $lockcmd swaylock -c 121212 -e -f -F
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit lil bro?: " | grep -q Yes && swaymsg exit
@@ -41,15 +42,14 @@ set $c13 #a7a7a7
 set $c14 #b4b4b4
 set $c15 #d5d5d5
 
-client.focused          $c9    $c9     $fg  $c9       $c9
-# client.focused_inactive $c9     $c9     $fg  $c9       $c9
+client.focused          $c9 $c9 $fg $c9 $c9
 client.focused_inactive $bg $bg $bg $bg $bg
 client.unfocused        $bg $bg $bg $bg $bg
-client.urgent           $c11     $c11     $fg  $c11       $c11
-client.placeholder      $c9     $c9     $fg  $c9       $c9
-
+client.placeholder      $c9 $c9 $fg $c9 $c9
 client.background       $c9
+client.urgent           $c11 $c11 $fg $c11 $c11
 
+# client.focused_inactive $c9     $c9     $fg  $c9       $c9
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
