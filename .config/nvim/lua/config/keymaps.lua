@@ -130,40 +130,40 @@ map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })
 -- Obsidian
 -- <leader>o is the prefix for all Obsidian bindings
 
--- wk.add({
---   { "<leader>o", group = "Obsidian" },
---   { "<leader>od", group = "Daily Note" },
---   { "<leader>ol", group = "Follow Link" },
--- })
---
--- map("n", "<leader>oo", "<CMD>ObsidianQuickSwitch<CR>", { desc = "Obsidian Quick Switch" })
--- map("n", "<leader>o/", "<CMD>ObsidianSearch<CR>", { desc = "Obsidian Grep" })
--- -- This one will open the command line and let the user type the arg
--- map("n", "<leader>on", "<CMD>ObsidianNew<CR>", { desc = "Obsidian New Note" })
--- -- map("n", "<leader>on", function()
--- --   require("command-key").command("ObsidianNew")
--- -- end, { desc = "Obsidian New Note" })
--- map("n", "<leader>ob", "<CMD>ObsidianBacklinks<CR>", { desc = "Obsidian Backlinks" })
--- map("n", "<leader>ot", "<CMD>ObsidianTags<CR>", { desc = "Obsidian Tags" })
--- map("n", "<leader>olv", "<CMD>ObsidianFollowLink vsplit<CR>", { desc = "Obsidian Follow Link Vsplit" })
--- map("n", "<leader>olh", "<CMD>ObsidianFollowLink hsplit<CR>", { desc = "Obsidian Follow Link Hsplit" })
--- map("n", "<leader>odt", "<CMD>ObsidianToday<CR>", { desc = "Obsidian Open Today's Daily" })
--- map("n", "<leader>ods", "<CMD>ObsidianDailies<CR>", { desc = "Obsidian Search Dailies" })
--- map("n", "<leader>ols", "<CMD>ObsidianLinks<CR>", { desc = "Obsidian Search Links" })
--- map("x", "<leader>oll", function()
---   require("command-key").command("ObsidianLink")
--- end, { desc = "Obsidian Link Visual To Existing Note" })
--- map("x", "<leader>oln", function()
---   require("command-key").command("ObsidianLinkNew")
--- end, { desc = "Obsidian Link Visual To New Note" })
--- map("x", "<leader>ole", function()
---   require("command-key").command("ObsidianExtractNote")
--- end, { desc = "Obsidian Copy Selection To New Note & Link" })
---
--- map("n", "<leader>or", function()
---   require("command-key").command("ObsidianRename")
--- end, { desc = "Obsidian Rename" })
--- map("n", "<leader>oc", "<CMD>ObsidianTOC<CR>", { desc = "Obsidian Table Of Contents" })
+wk.add({
+  { "<leader>O", group = "Obsidian" },
+  { "<leader>Od", group = "Daily Note" },
+  { "<leader>Ol", group = "Follow Link" },
+})
+
+map("n", "<leader>Oo", "<CMD>ObsidianQuickSwitch<CR>", { desc = "Obsidian Quick Switch" })
+map("n", "<leader>O/", "<CMD>ObsidianSearch<CR>", { desc = "Obsidian Grep" })
+-- This one will open the command line and let the user type the arg
+map("n", "<leader>On", "<CMD>ObsidianNew<CR>", { desc = "Obsidian New Note" })
+-- map("n", "<leader>On", function()
+--   require("command-key").command("ObsidianNew")
+-- end, { desc = "Obsidian New Note" })
+map("n", "<leader>Ob", "<CMD>ObsidianBacklinks<CR>", { desc = "Obsidian Backlinks" })
+map("n", "<leader>Ot", "<CMD>ObsidianTags<CR>", { desc = "Obsidian Tags" })
+map("n", "<leader>Olv", "<CMD>ObsidianFollowLink vsplit<CR>", { desc = "Obsidian Follow Link Vsplit" })
+map("n", "<leader>Olh", "<CMD>ObsidianFollowLink hsplit<CR>", { desc = "Obsidian Follow Link Hsplit" })
+map("n", "<leader>Odt", "<CMD>ObsidianToday<CR>", { desc = "Obsidian Open Today's Daily" })
+map("n", "<leader>Ods", "<CMD>ObsidianDailies<CR>", { desc = "Obsidian Search Dailies" })
+map("n", "<leader>Ols", "<CMD>ObsidianLinks<CR>", { desc = "Obsidian Search Links" })
+map("x", "<leader>Oll", function()
+  require("command-key").command("ObsidianLink")
+end, { desc = "Obsidian Link Visual To Existing Note" })
+map("x", "<leader>Oln", function()
+  require("command-key").command("ObsidianLinkNew")
+end, { desc = "Obsidian Link Visual To New Note" })
+map("x", "<leader>Ole", function()
+  require("command-key").command("ObsidianExtractNote")
+end, { desc = "Obsidian Copy Selection To New Note & Link" })
+
+map("n", "<leader>Or", function()
+  require("command-key").command("ObsidianRename")
+end, { desc = "Obsidian Rename" })
+map("n", "<leader>Oc", "<CMD>ObsidianTOC<CR>", { desc = "Obsidian Table Of Contents" })
 -- TODO: Add binds for templates
 -- cmdh.fix_hjkl()
 -- cmdh.fix_all()
