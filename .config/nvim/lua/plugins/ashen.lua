@@ -12,7 +12,7 @@ return {
         -- italic = false,
       },
       style_presets = {
-        italic_comments = false,
+        italic_comments = true,
         bold_functions = true,
       },
       transparent = false,
@@ -33,7 +33,7 @@ return {
           -- NonText = { "#FFFFFF" },
         },
         merge_override = {
-          ["@function"] = { bold = true },
+          -- ["@function"] = { bold = true },
           -- Normal = { italic = true },
           -- Normal = {"red_ember"},
           -- FlashLabel = { nil, "#FFFFFF" },
