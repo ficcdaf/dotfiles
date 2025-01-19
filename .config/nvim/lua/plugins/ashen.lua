@@ -11,6 +11,9 @@ return {
       style = {
         -- italic = false,
       },
+      groups = {
+        italic_comments = false,
+      },
       transparent = false,
       colors = {
         -- background = "#121212",
@@ -29,6 +32,7 @@ return {
           -- NonText = { "#FFFFFF" },
         },
         merge_override = {
+          -- ["@function"] = { bold = true },
           -- Normal = { italic = true },
           -- Normal = {"red_ember"},
           -- FlashLabel = { nil, "#FFFFFF" },
