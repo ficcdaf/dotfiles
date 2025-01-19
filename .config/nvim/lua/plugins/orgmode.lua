@@ -11,6 +11,7 @@ return {
   {
     "chipsenkbeil/org-roam.nvim",
     -- tag = "0.1.1",
+    enabled = false,
     dependencies = {
       {
         "nvim-orgmode/orgmode",
