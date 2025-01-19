@@ -28,11 +28,19 @@ return {
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           {
             action = function()
+              require("telescope").extensions.orgmode.search_headings()
+            end,
+            desc = "Org",
+            icon = " ",
+            key = "o",
+          },
+          {
+            action = function()
               vim.api.nvim_input("<CMD>ObsidianQuickSwitch<CR>")
             end,
             desc = "Obsidian",
             icon = " ",
-            key = "o",
+            key = "O",
           },
           -- { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
           -- { icon = " ", key = "/", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
