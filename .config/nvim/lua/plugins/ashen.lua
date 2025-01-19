@@ -11,8 +11,9 @@ return {
       style = {
         -- italic = false,
       },
-      groups = {
+      style_presets = {
         italic_comments = false,
+        bold_functions = true,
       },
       transparent = false,
       colors = {
