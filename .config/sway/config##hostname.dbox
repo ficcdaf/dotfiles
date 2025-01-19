@@ -150,8 +150,7 @@ default_floating_border pixel 1
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+l exec $exitcmd
-    bindsym $mod+l exec $lockcmd
+    bindsym $mod+Shift+l exec $lockcmd
 #
 # Moving around:
 #
@@ -184,6 +183,9 @@ default_floating_border pixel 1
 #
 # Workspaces:
 #
+    # Cycle
+    bindsym $mod+u workspace next
+    bindsym $mod+l workspace prev
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
