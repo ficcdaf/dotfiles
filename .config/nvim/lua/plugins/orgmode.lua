@@ -8,6 +8,12 @@ return {
       org_default_notes_file = "~/orgfiles/refile.org",
       org_startup_folded = "content",
       win_split_mode = "auto",
+      mappings = {
+        org = {
+          org_timestamp_down = "<C-a>",
+          org_timestamp_up = "<C-i>",
+        },
+      },
     },
   },
   {
