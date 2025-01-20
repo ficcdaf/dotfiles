@@ -318,7 +318,7 @@ bindsym $mod+Shift+s exec grimshot save area
 
 # WARNING: DO NOT TOUCH OR ELSE BAD THINGS WILL HAPPEN!!!!
 exec_always foot --server
-exec filen-desktop
+exec /home/fic/AppImage/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
 exec xembedsniproxy
 exec nm-applet
 exec dunst  
