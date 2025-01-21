@@ -35,6 +35,12 @@ return {
             key = "o",
           },
           {
+            action = ":Org agenda a",
+            desc = "Agenda",
+            icon = " ",
+            key = "a",
+          },
+          {
             action = function()
               vim.api.nvim_input("<CMD>ObsidianQuickSwitch<CR>")
             end,
