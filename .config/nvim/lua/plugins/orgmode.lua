@@ -3,18 +3,23 @@ return {
     "nvim-orgmode/orgmode",
     event = "VeryLazy",
     ft = { "org" },
-    opts = {
-      org_agenda_files = "~/orgfiles/**/*",
-      org_default_notes_file = "~/orgfiles/refile.org",
-      org_startup_folded = "content",
-      win_split_mode = "auto",
-      mappings = {
-        org = {
-          org_timestamp_down = "<C-a>",
-          org_timestamp_up = "<C-i>",
+    opts = function()
+      require("nvim-treesitter.configs").setup({
+        ignore_install = { "org" },
+      })
+      return {
+        org_agenda_files = "~/orgfiles/**/*",
+        org_default_notes_file = "~/orgfiles/refile.org",
+        org_startup_folded = "content",
+        win_split_mode = "auto",
+        mappings = {
+          org = {
+            org_timestamp_down = "<C-a>",
+            org_timestamp_up = "<C-i>",
+          },
         },
-      },
-    },
+      }
+    end,
   },
   {
     "chipsenkbeil/org-roam.nvim",
