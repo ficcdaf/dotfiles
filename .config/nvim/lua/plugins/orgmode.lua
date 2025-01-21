@@ -42,7 +42,11 @@ return {
   },
   {
     "akinsho/org-bullets.nvim",
-    opts = {},
+    opts = {
+      symbols = {
+        list = false,
+      },
+    },
   },
   {
     "nvim-orgmode/telescope-orgmode.nvim",
