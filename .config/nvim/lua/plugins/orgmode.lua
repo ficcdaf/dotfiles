@@ -10,7 +10,7 @@ return {
       return {
         org_agenda_files = "~/orgfiles/**/*",
         org_default_notes_file = "~/orgfiles/refile.org",
-        org_startup_folded = "content",
+        org_startup_folded = "inherit",
         win_split_mode = "auto",
         mappings = {
           org = {
