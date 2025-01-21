@@ -143,8 +143,8 @@ default_floating_border pixel 1
 
     # Exit sway (logs you out of your Wayland session)
     # bindsym $mod+Shift+l exec $lockcmd
-    bindsym $mod+Shift+l swaylock -c 121212 -e -f -F
-    bindsym $mod+Shift+u $exitcmd
+    bindsym $mod+Shift+l exec $lockcmd
+    bindsym $mod+Shift+u exec $exitcmd
     # bindsym $mod+l exec $lockcmd
 #
 # Moving around:
