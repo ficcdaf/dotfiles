@@ -11,13 +11,13 @@ return {
     opts = {
       sources = {
         -- default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
-        -- default = { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" },
-        default = function()
-          if vim.bo.filetype == "org" then
-            return { "orgmode" }
-          end
-          return { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" }
-        end,
+        default = { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" },
+        -- default = function()
+        --   if vim.bo.filetype == "org" then
+        --     return { "orgmode", "snippets", path,  }
+        --   end
+        --   return { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" }
+        -- end,
         providers = {
           -- markdown = { name = "RenderMarkdown", module = "render-markdown.integ.blink" },
           orgmode = {
