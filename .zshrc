@@ -125,3 +125,4 @@ export GPG_TTY=$(tty)
 eval "$(direnv hook zsh)"
 # colorscript -e 36
 source ~/scripts/obsidian-bridge.sh
+
