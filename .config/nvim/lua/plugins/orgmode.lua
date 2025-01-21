@@ -11,6 +11,8 @@ return {
         org_agenda_files = "~/orgfiles/**/*",
         org_default_notes_file = "~/orgfiles/refile.org",
         org_startup_folded = "inherit",
+        org_hide_emphasis_markers = true,
+        org_blank_before_new_entry = { heading = false, plain_list_item = false },
         win_split_mode = "auto",
         mappings = {
           org = {
