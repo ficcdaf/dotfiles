@@ -7,6 +7,12 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   buffer = 0,
   command = "silent! write",
 })
+-- vim.api.nvim_create_autocmd({ "CursorMoved" }, {
+--   buffer = 0,
+--   callback = function()
+--     vim.cmd("normal! zz")
+--   end,
+-- })
 vim.keymap.set("n", "<localleader>f", function()
   vim.cmd("%s/\\s\\+$//e")
 end, { desc = "Trim trailing whitespace" })
