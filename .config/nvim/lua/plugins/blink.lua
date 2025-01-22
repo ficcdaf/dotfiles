@@ -6,11 +6,21 @@ end
 return {
   { "giuxtaposition/blink-cmp-copilot", enabled = false },
   {
+    "saghen/blink.compat",
+    -- version = '*',
+    lazy = true,
+    opts = {},
+  },
+  {
     "saghen/blink.cmp",
     -- opts_extend = {"sources"},
+    dependencies = {
+      "f3fora/cmp-spell",
+    },
     opts = {
       sources = {
         -- default = { "lsp", "snippets", "path", "markdown", "lazydev", "buffer" },
+        -- compat = { "spell" },
         default = { "lsp", "snippets", "path", "lazydev", "buffer", "orgmode" },
         -- default = function()
         --   if vim.bo.filetype == "org" then
@@ -23,6 +33,13 @@ return {
           orgmode = {
             name = "Orgmode",
             module = "orgmode.org.autocompletion.blink",
+          },
+          spell = {
+            name = "spell",
+            module = "blink.compat.source",
+            opts = {
+              preselect_correct_word = false,
+            },
           },
         },
       },
