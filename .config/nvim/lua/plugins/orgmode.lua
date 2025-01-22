@@ -41,11 +41,12 @@ return {
     end,
   },
   {
-    "akinsho/org-bullets.nvim",
+    -- "akinsho/org-bullets.nvim",
+    dir = "~/dev/plugins/org-bullets.nvim",
     enabled = true,
     opts = {
       symbols = {
-        list = false,
+        -- list = false,
       },
     },
   },

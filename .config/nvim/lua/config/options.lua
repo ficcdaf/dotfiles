@@ -3,6 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.scrolloff = 2
+-- vim.api.nvim_set_hl(0, "OrgBulletsDash", { fg = "#FFFFFF" })
 
 vim.g.maplocalleader = ","
 vim.g.lazyvim_python_lsp = "basedpyright"
