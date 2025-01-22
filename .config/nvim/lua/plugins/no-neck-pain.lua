@@ -29,7 +29,7 @@ return {
   opts = function()
     return {
       width = 100,
-      mappings = mapPrefix("<localleader><leader>", true),
+      mappings = mapPrefix("<C-Cr>", true),
       -- mappings = {
       --   enabled = true,
       -- },
