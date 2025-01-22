@@ -1,4 +1,4 @@
-local follow_main = false
+local follow_main = true
 if follow_main then
   vim.g.lazyvim_blink_main = true
 end
@@ -58,6 +58,7 @@ return {
         },
         ghost_text = {
           enabled = true,
+          show_without_selection = true,
         },
       },
       signature = {
