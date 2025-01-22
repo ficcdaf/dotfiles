@@ -17,9 +17,9 @@ local special_key = "←"
 vim.keymap.set({ "n", "i" }, special_key, "<C-CR>", { remap = true })
 
 vim.keymap.set({ "i", "n" }, "<C-t>", "<Nop>")
-map({ "n" }, "<C-Cr>", function()
-  vim.notify("test")
-end)
+-- map({ "n" }, "<C-Cr>", function()
+--   vim.notify("test")
+-- end)
 
 map({ "n", "x" }, "\\", function()
   LazyVim.format({ force = true })
