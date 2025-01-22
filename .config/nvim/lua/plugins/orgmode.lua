@@ -42,7 +42,7 @@ return {
   },
   {
     "akinsho/org-bullets.nvim",
-    enabled = false,
+    enabled = true,
     opts = {
       symbols = {
         list = false,

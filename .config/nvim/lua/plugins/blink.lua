@@ -1,4 +1,4 @@
-local follow_main = true
+local follow_main = false
 if follow_main then
   vim.g.lazyvim_blink_main = true
 end
