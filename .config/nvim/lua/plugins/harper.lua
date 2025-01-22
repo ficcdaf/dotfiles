@@ -1,6 +1,6 @@
 local harperSettings = {
-  fileDictPath = "/home/fic/.config/harper-ls/file_dictionaries/",
-  userDictPath = "/home/fic/.config/harper-ls/dictionary.txt",
+  -- fileDictPath = "/home/fic/.config/harper-ls/file_dictionaries/",
+  -- userDictPath = "/home/fic/.config/harper-ls/dictionary.txt",
   diagnosticSeverity = "warning",
   linters = {
     spell_check = true,
