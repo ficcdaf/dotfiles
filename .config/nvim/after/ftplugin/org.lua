@@ -10,6 +10,8 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
 vim.keymap.set("n", "<localleader>f", function()
   vim.cmd("%s/\\s\\+$//e")
 end, { desc = "Trim trailing whitespace" })
+-- vim.keymap.set("n", "{", "{zz", { remap = true })
+-- vim.keymap.set("n", "}", "}zz", { remap = true })
 -- vim.api.nvim_create_autocmd("BufWritePre", {
 --   pattern = "*",
 --   callback = function()
