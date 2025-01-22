@@ -89,7 +89,7 @@ map({ "n", "x" }, "<M-m>", "0", { remap = false })
 
 -- easily access null register
 -- map({ "n", "x" }, "<leader>n", '"_', { remap = false, silent = true, desc = "Null Register" })
-map({ "n", "x", "v" }, "<BS>", '"_', { remap = false, silent = true, desc = "Null Register" })
+map({ "n", "x", "v", "o" }, "<BS>", '"_', { remap = false, silent = true, desc = "Null Register" })
 
 -- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
 vim.keymap.del({ "n" }, "<S-h>")
