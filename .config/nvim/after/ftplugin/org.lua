@@ -7,14 +7,20 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   buffer = 0,
   command = "silent! write",
 })
-vim.keymap.set("n", "}", function()
-  require("orgmode").action("org_mappings.next_visible_heading")
-  vim.cmd("normal! zz")
-end)
-vim.keymap.set("n", "{", function()
-  require("orgmode").action("org_mappings.previous_visible_heading")
-  vim.cmd("normal! zz")
-end)
+local override = false
+if override then
+  vim.keymap.set("n", "}", function()
+    require("orgmode").action("org_mappings.next_visible_heading")
+    vim.cmd("normal! zz")
+  end)
+  vim.keymap.set({ "n", "x" }, "{", function()
+    local mode = vim.api.nvim_get_mode()
+    require("orgmode").action("org_mappings.previous_visible_heading")
+    if mode.mode == "n" then
+      vim.cmd("normal! zz")
+    end
+  end)
+end
 -- vim.api.nvim_create_autocmd({ "CursorMoved" }, {
 --   buffer = 0,
 --   callback = function()
