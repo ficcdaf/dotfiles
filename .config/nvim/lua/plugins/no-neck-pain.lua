@@ -28,7 +28,7 @@ return {
   enabled = true,
   opts = function()
     return {
-      width = 120,
+      width = 100,
       mappings = mapPrefix("<localleader><leader>", true),
       -- mappings = {
       --   enabled = true,
