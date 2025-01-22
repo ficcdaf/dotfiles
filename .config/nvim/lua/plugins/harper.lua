@@ -35,6 +35,7 @@ local spec = {
           autostart = false,
           filetypes = {
             "markdown",
+            "org",
           },
           settings = {
             ["harper-ls"] = harperSettings,
