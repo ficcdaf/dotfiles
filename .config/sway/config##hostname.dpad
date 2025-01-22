@@ -265,7 +265,7 @@ bindsym $mod+r mode "resize"
 
 mode "present" {
     # command starts mirroring
-    bindsym m mode "default"; exec $present mirror
+    bindsym m mode "default"; exec $present mirror 
     # these commands modify an already running mirroring window
     bindsym o mode "default"; exec $present set-output
     bindsym r mode "default"; exec $present set-region
@@ -273,6 +273,7 @@ mode "present" {
     bindsym s mode "default"; exec $present set-scaling
     bindsym f mode "default"; exec $present toggle-freeze
     bindsym c mode "default"; exec $present custom
+    # bindsym k mode "default";
 
     # return to default mode
     bindsym Return mode "default"
