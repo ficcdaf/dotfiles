@@ -25,11 +25,11 @@ end
 return {
   "shortcuts/no-neck-pain.nvim",
   version = "*",
-  enabled = false,
+  enabled = true,
   opts = function()
     return {
       width = 120,
-      mappings = mapPrefix("<leader><Cr>", true),
+      mappings = mapPrefix("<localleader><leader>", true),
       -- mappings = {
       --   enabled = true,
       -- },
