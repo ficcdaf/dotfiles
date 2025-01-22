@@ -1,5 +1,5 @@
 #!/bin/bash
-WL_PRESENT_DMENU="tofi"
+# WL_PRESENT_DMENU="tofi"
 usage() {
   echo "usage: wl-present [options] <command> [argument]"
   echo
