@@ -43,7 +43,7 @@ return {
   {
     "akinsho/org-bullets.nvim",
     -- dir = "~/dev/plugins/org-bullets.nvim",
-    enabled = true,
+    enabled = false,
     opts = {
       symbols = {
         -- list = false,
