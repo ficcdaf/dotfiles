@@ -1,6 +1,6 @@
 return {
-  "NStefan002/speedtyper.nvim",
-  enabled = false,
-  lazy = false,
-  branch = "v2",
+  "nvzone/typr",
+  dependencies = "nvzone/volt",
+  opts = {},
+  cmd = { "Typr", "TyprStats" },
 }
