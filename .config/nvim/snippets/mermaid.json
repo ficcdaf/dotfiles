@@ -1,0 +1,7 @@
+{
+  "seq": {
+    "description": "A->>B: C",
+    "prefix": "seq",
+    "body": ["${1:src}->>${2:dst}: ${3:label}"]
+  }
+}
