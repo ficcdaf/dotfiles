@@ -43,6 +43,12 @@ return {
             key = "a",
           },
           {
+            action = pick,
+            desc = " Projects",
+            icon = " ",
+            key = "p",
+          },
+          {
             action = function()
               vim.api.nvim_input("<CMD>ObsidianQuickSwitch<CR>")
             end,
