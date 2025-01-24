@@ -27,11 +27,16 @@ end, { desc = "Format" })
 
 -- preserve indent on insert
 map({ "n" }, "i", "i<C-f>")
-map({ "n" }, "<leader><Tab>n", "<CMD>tabnew<Cr>")
-map({ "n" }, "<leader><Tab>i", "<CMD>tabnext<Cr>")
-map({ "n" }, "<leader><Tab>m", "<CMD>tabprevious<Cr>")
+map({ "n" }, "<leader><Tab>n", "<CMD>tabnew<Cr>", { desc = "New Tab" })
+map({ "n" }, "<leader><Tab>i", "<CMD>tabnext<Cr>", { desc = "Next Tab" })
+map({ "n" }, "<leader><Tab>m", "<CMD>tabprevious<Cr>", { desc = "Previous Tab" })
+map({ "n" }, "<leader><Tab>D", "<CMD>tabonly<Cr>", { desc = "Close Other Tabs" })
 vim.keymap.del("n", "<leader><Tab>f")
 vim.keymap.del("n", "<leader><Tab>l")
+vim.keymap.del("n", "<leader><Tab>[")
+vim.keymap.del("n", "<leader><Tab>]")
+vim.keymap.del("n", "<leader><Tab>o")
+vim.keymap.del("n", "<leader><Tab><Tab>")
 
 map({ "n" }, "<M-c>", function()
   -- the `a` is necessary to return the cursor to the same
@@ -70,6 +75,7 @@ map({ "n", "t", "i" }, "<C-Left>", "<C-w>h", { desc = "Switch Window Left", rema
 map({ "n", "t", "i" }, "<C-Right>", "<C-w>l", { desc = "Switch Window Right", remap = true })
 map({ "n", "t", "i" }, "<C-Up>", "<C-w>k", { remap = true })
 map({ "n", "t", "i" }, "<C-Down>", "<C-w>j", { desc = "Switch Window Down", remap = true })
+map({ "n" }, "<C-w>d", "<C-w>q", { desc = "Close window", remap = true })
 
 map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
 map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
@@ -116,7 +122,8 @@ map({ "n", "x" }, "<C-a>", "<C-x>", { desc = "Decrement" })
 map("n", "<C-x>", function()
   Snacks.bufdelete()
 end, { remap = false, desc = "Delete Buffer" })
-
+map("n", "<C-S-X>", "<CMD>bd<CR>", { desc = "Delete buffer and window" })
+map("n", "<C-S-W>", "<C-w>c", { desc = "Close window" })
 -- yank history
 map({ "n", "x" }, "<leader>fp", function()
   if LazyVim.pick.picker.name == "telescope" then
