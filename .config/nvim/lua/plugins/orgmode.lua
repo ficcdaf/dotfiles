@@ -15,6 +15,7 @@ return {
         org_blank_before_new_entry = { heading = false, plain_list_item = false },
         win_split_mode = "auto",
         mappings = {
+          org_return_uses_meta_return = false,
           org = {
             org_timestamp_down = "<C-a>",
             org_timestamp_up = "<C-i>",
