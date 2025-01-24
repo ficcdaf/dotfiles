@@ -36,7 +36,7 @@ local function modmap(type, dir)
 end
 local override = true
 if override then
-  vim.keymap.set("n", "}", function()
+  vim.keymap.set({ "n", "x" }, "}", function()
     modmap("notsame", "next")
   end, {
     silent = true,
