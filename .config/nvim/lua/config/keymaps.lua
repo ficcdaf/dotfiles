@@ -25,6 +25,14 @@ map({ "n", "x" }, "\\", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
 
+-- preserve indent on insert
+map({ "n" }, "i", "i<C-f>")
+map({ "n" }, "<leader><Tab>n", "<CMD>tabnew<Cr>")
+map({ "n" }, "<leader><Tab>i", "<CMD>tabnext<Cr>")
+map({ "n" }, "<leader><Tab>m", "<CMD>tabprevious<Cr>")
+vim.keymap.del("n", "<leader><Tab>f")
+vim.keymap.del("n", "<leader><Tab>l")
+
 map({ "n" }, "<M-c>", function()
   -- the `a` is necessary to return the cursor to the same
   -- position it was before
