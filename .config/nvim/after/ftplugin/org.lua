@@ -8,6 +8,13 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   buffer = 0,
   command = "silent! write",
 })
+local function util(dir)
+  local mode = vim.api.nvim_get_mode()
+  require("orgmode").action("org_mappings." .. dir .. "_visible_heading")
+  if mode.mode == "n" then
+    vim.cmd("normal! zz")
+  end
+end
 local override = false
 if override then
   vim.keymap.set("n", "}", function()
@@ -39,3 +46,9 @@ end, { desc = "Trim trailing whitespace" })
 --     vim.cmd("%s/\\s\\+$//e")
 --   end,
 -- })
+vim.keymap.set("i", "<S-CR>", function()
+  require("orgmode").action("org_mappings.meta_return")
+end, {
+  silent = true,
+  buffer = true,
+})
