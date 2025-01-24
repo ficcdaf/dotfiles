@@ -147,7 +147,7 @@ default_floating_border pixel 1
     # bindsym $mod+Shift+l exec $lockcmd
     bindsym $mod+Shift+l exec $lockcmd
     bindsym $mod+Shift+u exec $exitcmd
-    bindsym $mod+Shift+; exec $shutdowncmd
+    bindsym $mod+Shift+semicolon exec $shutdowncmd
     # bindsym $mod+l exec $lockcmd
 #
 # Moving around:
