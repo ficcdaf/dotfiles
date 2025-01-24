@@ -19,7 +19,9 @@ return {
       preset = {
         -- Defaults to a picker that supports `fzf-lua`, `telescope.nvim` and `mini.pick`
         ---@type fun(cmd:string, opts:table)|nil
-        pick = nil,
+        pick = function(cmd, opts)
+          return LazyVim.pick(cmd, opts)()
+        end,
         -- Used by the `keys` section to show keymaps.
         -- Set your custom keymaps here.
         -- When using a function, the `items` argument are the default keymaps.
