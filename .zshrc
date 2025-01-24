@@ -77,6 +77,7 @@ alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 # Created by `pipx` on 2024-09-20 02:14:00
 export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
 export PATH="$PATH:/home/fic/.local/share/bob/nvim-bin"
+export PATH="$PATH:/home/fic/.luarocks/bin"
 fpath=(~/.zsh.d/ $fpath)
 function nh() {
   nohup "$@" > /dev/null 2>&1 &
