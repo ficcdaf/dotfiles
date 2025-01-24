@@ -21,6 +21,8 @@ return {
             org_timestamp_down = "<C-a>",
             org_timestamp_up = "<C-i>",
             org_return = false,
+            org_next_visible_heading = false,
+            org_previous_visible_heading = true,
           },
         },
       }

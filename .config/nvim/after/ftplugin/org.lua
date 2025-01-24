@@ -15,18 +15,13 @@ local function util(dir)
     vim.cmd("normal! zz")
   end
 end
-local override = false
+local override = true
 if override then
   vim.keymap.set("n", "}", function()
-    require("orgmode").action("org_mappings.next_visible_heading")
-    vim.cmd("normal! zz")
+    util("next")
   end)
   vim.keymap.set({ "n", "x" }, "{", function()
-    local mode = vim.api.nvim_get_mode()
-    require("orgmode").action("org_mappings.previous_visible_heading")
-    if mode.mode == "n" then
-      vim.cmd("normal! zz")
-    end
+    util("previous")
   end)
 end
 -- vim.api.nvim_create_autocmd({ "CursorMoved" }, {
