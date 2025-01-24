@@ -50,7 +50,7 @@ return {
   {
     "akinsho/org-bullets.nvim",
     -- dir = "~/dev/plugins/org-bullets.nvim",
-    enabled = false,
+    enabled = true,
     opts = {
       symbols = {
         -- list = false,
