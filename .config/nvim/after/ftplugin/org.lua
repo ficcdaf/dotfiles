@@ -38,16 +38,28 @@ local override = true
 if override then
   vim.keymap.set("n", "}", function()
     modmap("notsame", "next")
-  end)
+  end, {
+    silent = true,
+    buffer = true,
+  })
   vim.keymap.set({ "n", "x" }, "{", function()
     modmap("notsame", "previous")
-  end)
+  end, {
+    silent = true,
+    buffer = true,
+  })
   vim.keymap.set({ "n", "x" }, "[[", function()
     modmap("same", "previous")
-  end)
+  end, {
+    silent = true,
+    buffer = true,
+  })
   vim.keymap.set({ "n", "x" }, "]]", function()
     modmap("same", "next")
-  end)
+  end, {
+    silent = true,
+    buffer = true,
+  })
 end
 -- vim.api.nvim_create_autocmd({ "CursorMoved" }, {
 --   buffer = 0,
