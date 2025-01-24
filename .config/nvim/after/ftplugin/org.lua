@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   command = "silent! write",
 })
 
-local function modmap(dir, type)
+local function modmap(type, dir)
   local mode = vim.api.nvim_get_mode()
   local level = {
     notsame = {
@@ -27,7 +27,9 @@ local function modmap(dir, type)
       },
     },
   }
-  require("orgmode").action("org_mappings." .. dir .. "_visible_heading")
+  local map = level[type].map
+  local word = level[type].words[dir]
+  require("orgmode").action(map[1] .. word .. map[2])
   if mode.mode == "n" then
     vim.cmd("normal! zz")
   end
@@ -35,10 +37,16 @@ end
 local override = true
 if override then
   vim.keymap.set("n", "}", function()
-    modmap("next")
+    modmap("notsame", "next")
   end)
   vim.keymap.set({ "n", "x" }, "{", function()
-    modmap("previous")
+    modmap("notsame", "previous")
+  end)
+  vim.keymap.set({ "n", "x" }, "[[", function()
+    modmap("same", "previous")
+  end)
+  vim.keymap.set({ "n", "x" }, "]]", function()
+    modmap("same", "next")
   end)
 end
 -- vim.api.nvim_create_autocmd({ "CursorMoved" }, {
