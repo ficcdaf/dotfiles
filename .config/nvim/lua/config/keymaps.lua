@@ -26,7 +26,8 @@ map({ "n", "x" }, "\\", function()
 end, { desc = "Format" })
 
 -- preserve indent on insert
-map({ "n" }, "i", "i<C-f>")
+-- only do this if autoindent is on and we're on an empty line?
+-- map({ "n" }, "i", "i<C-f>")
 map({ "n" }, "<leader><Tab>n", "<CMD>tabnew<Cr>", { desc = "New Tab" })
 map({ "n" }, "<leader><Tab>i", "<CMD>tabnext<Cr>", { desc = "Next Tab" })
 map({ "n" }, "<leader><Tab>m", "<CMD>tabprevious<Cr>", { desc = "Previous Tab" })
