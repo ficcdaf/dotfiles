@@ -17,6 +17,25 @@ return {
         org_hide_emphasis_markers = true,
         org_blank_before_new_entry = { heading = false, plain_list_item = false },
         win_split_mode = "auto",
+        ui = {
+          menu = {
+            handler = function(data)
+              local Menu = require("org-modern.menu")
+              Menu:new({
+                window = {
+                  margin = { 1, 0, 1, 0 },
+                  padding = { 0, 1, 0, 1 },
+                  title_pos = "center",
+                  border = "single",
+                  zindex = 1000,
+                },
+                icons = {
+                  separator = "➜",
+                },
+              }):open(data)
+            end,
+          },
+        },
         mappings = {
           -- disable_all = true,
           org_return_uses_meta_return = false,
