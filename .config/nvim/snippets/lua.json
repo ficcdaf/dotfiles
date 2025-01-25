@@ -1,0 +1,7 @@
+{
+  "table": {
+    "description": "Pretty Lua table.",
+    "prefix": "tbl",
+    "body": ["{", "\t$0", "},"]
+  }
+}

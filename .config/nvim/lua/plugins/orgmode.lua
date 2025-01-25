@@ -3,6 +3,9 @@ return {
     "nvim-orgmode/orgmode",
     event = "VeryLazy",
     ft = { "org" },
+    dependencies = {
+      "danilshvalov/org-modern.nvim",
+    },
     opts = function()
       require("nvim-treesitter.configs").setup({
         ignore_install = { "org" },
