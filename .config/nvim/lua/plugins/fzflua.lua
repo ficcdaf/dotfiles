@@ -9,6 +9,7 @@ return {
         ["ctrl-v"] = actions.file_vsplit,
         ["ctrl-t"] = actions.file_tabedit,
         ["alt-q"] = actions.file_sel_to_qf,
+        -- TODO: why isn't this doing anything?!
         ["ctrl-p"] = actions.paste_register,
       },
       files = {
