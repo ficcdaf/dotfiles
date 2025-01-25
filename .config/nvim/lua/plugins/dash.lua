@@ -108,11 +108,19 @@ return {
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           {
             action = function()
-              require("telescope").extensions.orgmode.search_headings()
+              require("fzf-org").files()
             end,
-            desc = "Org",
+            desc = "Org Files",
             icon = " ",
             key = "o",
+          },
+          {
+            action = function()
+              require("fzf-org").orgmode()
+            end,
+            desc = "Org Headlines",
+            icon = " ",
+            key = "/",
           },
           {
             action = ":Org agenda a",

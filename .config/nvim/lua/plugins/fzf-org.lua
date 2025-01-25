@@ -6,30 +6,36 @@ return {
     "nvim-orgmode/orgmode",
   },
   keys = {
-    -- example keybindings
     {
-      "<leader>og",
+      "<leader>ofh",
       function()
         require("fzf-org").orgmode()
       end,
-      desc = "org-browse",
+      desc = "Org Headlines",
     },
     {
-      "<leader>of",
+      "<leader>off",
       function()
         require("fzf-org").files()
       end,
-      desc = "org-files",
+      desc = "Org Files",
     },
     {
-      "<leader>or",
+      "<leader>ofr",
       function()
         require("fzf-org").refile_to_file()
       end,
-      desc = "org-refile",
+      desc = "Org Refile",
     },
   },
-  opts = {
-    prompt = "Org > ",
-  },
+  opts = function()
+    local wk = require("which-key")
+    wk.add({
+      {
+        "<leader>of",
+        group = "fzf org",
+      },
+    })
+    return {}
+  end,
 }
