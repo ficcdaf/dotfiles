@@ -2,5 +2,9 @@ return {
   "vyfor/cord.nvim",
   branch = "client-server",
   build = ":Cord update",
-  -- opts = {}
+  opts = {
+    editor = {
+      tooltip = "Lean Mean Text Editing Machine",
+    },
+  },
 }
