@@ -16,13 +16,6 @@ opt.wrap = true
 opt.spelllang = { "en" }
 -- opt.spelloptions = "camel"
 opt.clipboard = "unnamedplus"
--- ---Function returns the root dir of org files
--- ---@param buf number
--- ---@return string|string[]
--- local function org_root(buf)
---   local util = require("lazyvim.util.root")
---   local cwd = vim.uv.cwd()
--- end
 vim.g.root_spec = {
   "lsp",
   { ".git", "lua", ".org_root" },
