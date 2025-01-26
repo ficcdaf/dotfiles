@@ -123,7 +123,7 @@ return {
             key = "/",
           },
           {
-            action = ":Org agenda a",
+            action = ":Org agenda",
             desc = "Agenda",
             icon = " ",
             key = "a",
