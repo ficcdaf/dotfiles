@@ -18,6 +18,9 @@ return {
         org_blank_before_new_entry = { heading = false, plain_list_item = false },
         win_split_mode = "auto",
         ui = {
+          input = {
+            use_vim_ui = true,
+          },
           menu = {
             handler = function(data)
               local Menu = require("org-modern.menu")
