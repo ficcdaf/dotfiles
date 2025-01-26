@@ -26,7 +26,7 @@ return {
               local Menu = require("org-modern.menu")
               Menu:new({
                 window = {
-                  margin = { 1, 0, 1, 0 },
+                  margin = { 1, 10, 1, 10 },
                   padding = { 0, 1, 0, 1 },
                   title_pos = "center",
                   border = "single",
