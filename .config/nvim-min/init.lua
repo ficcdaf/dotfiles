@@ -70,3 +70,6 @@ vim.keymap.set("n", "<leader><leader>", "<CMD>FzfLua<Cr>")
 
 -- require("ashen").setup()
 require("ashen").load()
+
+-- vim.inspect(require("ashen.plugins.lualine"))
+-- print(require("ashen.plugins.lualine").lualine_opts.options.component_separators.left)

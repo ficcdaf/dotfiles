@@ -6,7 +6,7 @@ return {
     -- dependencies = {
     --   "folke/snacks.nvim",
     -- },
-    dev = false,
+    dev = true,
     opts = {
       style = {
         -- italic = false,
