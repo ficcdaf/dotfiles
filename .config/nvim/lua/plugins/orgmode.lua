@@ -16,6 +16,8 @@ return {
         org_startup_folded = "inherit",
         org_hide_emphasis_markers = true,
         org_blank_before_new_entry = { heading = false, plain_list_item = false },
+        org_agenda_skip_scheduled_if_done = true,
+        org_agenda_skip_deadline_if_done = true,
         win_split_mode = "auto",
         ui = {
           input = {
