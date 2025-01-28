@@ -4,6 +4,9 @@ return {
   build = ":Cord update",
   opts = {
     log_level = vim.log.levels.OFF,
+    display = {
+      swap_icons = true,
+    },
     editor = {
       tooltip = "Autismmaxxing",
     },
