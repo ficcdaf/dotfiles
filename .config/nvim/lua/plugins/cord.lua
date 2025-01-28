@@ -3,9 +3,9 @@ return {
   branch = "client-server",
   build = ":Cord update",
   opts = {
-    log_level = vim.log.levels.WARN,
+    log_level = vim.log.levels.OFF,
     editor = {
-      tooltip = "Lean Mean Text Editing Machine",
+      tooltip = "Autismmaxxing",
     },
     timestamp = {
       reset_on_idle = true,

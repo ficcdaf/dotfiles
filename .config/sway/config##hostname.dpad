@@ -337,4 +337,4 @@ exec autotiling &
 exec blueman-applet &
 exec tmux start-server &
 exec udiskie &
-exec /home/fic/Applications/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
+# exec /home/fic/Applications/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
