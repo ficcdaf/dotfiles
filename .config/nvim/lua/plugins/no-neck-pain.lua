@@ -28,7 +28,7 @@ return {
   enabled = true,
   opts = function()
     return {
-      width = 100,
+      width = 90,
       mappings = mapPrefix("<C-Cr>", true),
       -- mappings = {
       --   enabled = true,
