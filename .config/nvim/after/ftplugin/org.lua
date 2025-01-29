@@ -1,5 +1,5 @@
 vim.opt_local.breakindent = true
-vim.opt_local.scrolloff = 4
+vim.opt_local.scrolloff = 2
 vim.cmd("setlocal formatoptions-=r")
 vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   buffer = 0,
