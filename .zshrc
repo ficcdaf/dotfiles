@@ -121,6 +121,7 @@ zle -N zle-keymap-select
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(rip completions zsh)"
 export DIRENV_LOG_FORMAT=""
 export GPG_TTY=$(tty)
 eval "$(direnv hook zsh)"
