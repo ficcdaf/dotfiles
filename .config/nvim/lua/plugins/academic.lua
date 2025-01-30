@@ -2,7 +2,7 @@ return {
   "ficcdaf/academic.nvim",
   -- event = { "FileType markdown", "FileType tex" },
   dev = true,
-  -- opts = {
-  --   debug = false,
-  -- },
+  opts = {
+    auto_install = false,
+  },
 }
