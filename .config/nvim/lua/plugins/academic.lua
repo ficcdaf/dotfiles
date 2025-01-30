@@ -3,6 +3,7 @@ return {
   -- event = { "FileType markdown", "FileType tex" },
   dev = true,
   opts = {
-    auto_install = false,
+    auto_install = true,
+    auto_rebuild = true,
   },
 }
