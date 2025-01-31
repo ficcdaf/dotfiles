@@ -6,11 +6,8 @@ local function mapPrefix(prefix, enabled)
   -- define the suffix mappings
   local mappings = {
     toggle = "n",
-    toggleLeftSide = "ql",
-    toggleRightSide = "qr",
     widthUp = "=",
     widthDown = "-",
-    scratchPad = "s",
   }
   -- concat prefix and suffix
   for action, suffix in pairs(mappings) do
