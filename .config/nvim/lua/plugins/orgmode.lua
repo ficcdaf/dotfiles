@@ -4,7 +4,10 @@ return {
     event = "VeryLazy",
     ft = { "org" },
     dependencies = {
-      "danilshvalov/org-modern.nvim",
+      {
+        "ficcdaf/org-modern.nvim",
+        dev = true,
+      },
     },
     opts = function()
       require("nvim-treesitter.configs").setup({
