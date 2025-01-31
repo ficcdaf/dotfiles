@@ -6,7 +6,7 @@ return {
     dependencies = {
       {
         "ficcdaf/org-modern.nvim",
-        dev = true,
+        dev = false,
       },
     },
     opts = function()
@@ -31,7 +31,7 @@ return {
               local Menu = require("org-modern.menu")
               Menu:new({
                 window = {
-                  margin = { 1, 120, 1, 10 },
+                  margin = { 1, 10, 1, 10 },
                   padding = { 0, 1, 0, 1 },
                   title_pos = "center",
                   border = "single",
