@@ -60,7 +60,7 @@ output $dell pos 1920 0 mode 1920x1200@59.950Hz
 output * bg $wallpaper fill
 
 workspace 1 output $benq
-workspace 0 output $dell
+workspace 10 output $dell
 
 # include "$HOME/.cache/wal/colors-sway"
 
