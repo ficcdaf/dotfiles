@@ -12,6 +12,7 @@ return {
   --   { "<", "<Plug>(bullets-promote)", ft = "markdown", mode = "v" },
   --   { "<<", "<Plug>(bullets-promote)", ft = "markdown" },
   -- },
+  ft = { "markdown" },
   init = function()
     vim.g.bullets_enabled_file_types = { "markdown" }
     vim.g.bullets_enable_in_empty_buffers = 1
