@@ -34,6 +34,7 @@ return {
       "xml",
       "yaml",
       "just",
+      "typst",
     },
     incremental_selection = {
       enable = true,
