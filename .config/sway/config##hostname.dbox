@@ -330,3 +330,4 @@ exec autotiling &
 exec blueman-applet &
 exec tmux start-server &
 exec udiskie &
+exec /usr/local/libexec/xdg-desktop-portal-termfilechooser -l TRACE -r &
