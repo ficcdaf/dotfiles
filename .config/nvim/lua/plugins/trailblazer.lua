@@ -5,6 +5,7 @@ return {
   dev = true,
   event = "UIEnter",
   config = function()
+    vim.cmd("hi TrailBlazerTrailMark guibg=#FFFFFF")
     local hl_groups = require("which-key").add({
       { "<leader>m", group = "Trailblazer" },
     })
