@@ -2,6 +2,7 @@
 return {
   "LeonHeidelbach/trailblazer.nvim",
   enabled = true,
+  dev = true,
   event = "UIEnter",
   config = function()
     local hl_groups = require("which-key").add({
