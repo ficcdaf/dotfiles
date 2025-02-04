@@ -2,7 +2,7 @@
 return {
   "LeonHeidelbach/trailblazer.nvim",
   enabled = true,
-  dev = true,
+  dev = false,
   event = "UIEnter",
   config = function()
     vim.cmd("hi TrailBlazerTrailMark guibg=#FFFFFF")
