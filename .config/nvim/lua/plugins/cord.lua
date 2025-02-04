@@ -1,6 +1,7 @@
 return {
   "vyfor/cord.nvim",
-  -- branch = "client-server",
+  dev = true,
+  branch = "client-server",
   build = ":Cord update",
   opts = {
     log_level = vim.log.levels.OFF,
