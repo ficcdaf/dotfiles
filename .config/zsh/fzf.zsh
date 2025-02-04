@@ -30,6 +30,19 @@ export FZF_TMUX_OPTS=" -p90%,70% "
 
 source ~/.config/zsh/fzf-zsh-completion.sh
 
+# press ctrl-r to repeat completion *without* accepting i.e. reload the completion
+# press right to accept the completion and retrigger it
+# press alt-enter to accept the completion and run it
+keys=(
+    ctrl-r:'repeat-fzf-completion'
+    right:accept:'repeat-fzf-completion'
+    alt-enter:accept:'zle accept-line'
+)
+
+zstyle ':completion:*' fzf-completion-keybindings "${keys[@]}"
+# also accept and retrigger completion when pressing / when completing cd
+zstyle ':completion::*:cd:*' fzf-completion-keybindings "${keys[@]}" /:accept:'repeat-fzf-completion'
+
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 source ~/.config/zsh/fzf-git.sh
