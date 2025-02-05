@@ -100,23 +100,23 @@ function cat() {
 }
 # . /opt/asdf-vm/asdf.sh
 # Need this to fix the cursor in tmux
-# print -n '\033[5 q'
-# function zle-keymap-select zle-line-init zle-line-finish
-# {
-#   case $KEYMAP in
-#       vicmd)      print -n '\033[1 q';; # block cursor
-#       viins|main) print -n '\033[5 q';; # line cursor
-#   esac
-# }
-# DISABLE_AUTO_TITLE="true"
-# function set_win_title(){
-#     echo -ne "\033]0; ${PWD/#$HOME/~} \007"
-# }
-# function viewport_osc(){
-#   print -Pn "\e]133;A\e\\"
-# }
-# # precmd_functions+=(set_win_title viewport_osc)
-# precmd_functions+=(viewport_osc)
+print -n '\033[5 q'
+function zle-keymap-select zle-line-init zle-line-finish
+{
+  case $KEYMAP in
+      vicmd)      print -n '\033[1 q';; # block cursor
+      viins|main) print -n '\033[5 q';; # line cursor
+  esac
+}
+DISABLE_AUTO_TITLE="true"
+function set_win_title(){
+    echo -ne "\033]0; ${PWD/#$HOME/~} \007"
+}
+function viewport_osc(){
+  print -Pn "\e]133;A\e\\"
+}
+# precmd_functions+=(set_win_title viewport_osc)
+precmd_functions+=(viewport_osc)
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select

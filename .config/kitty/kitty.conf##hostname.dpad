@@ -1,10 +1,10 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-map ctrl+enter send_text all \u2190
+# map ctrl+enter send_text all \u2190
 font_family SauceCodeProNFM
 bold_font auto
 italic_font auto
 bold_italic_font auto
-font_size 14.0
+font_size 12.0
 window_padding_width 0
 # force_ltr no
 single_window_padding_width -1
@@ -340,8 +340,8 @@ bold_font auto
 italic_font auto
 bold_italic_font auto
 # END_KITTY_FONTS
-include ~/.cache/wal/colors-kitty.conf
-background_opacity 0.9
+include ~/dev/plugins/ashen.nvim/extras/kitty/Ashen.conf
+background_opacity 1
 map ctrl+shift+r no_op
 map ctrl+shift+o no_op
 map ctrl+shift+q no_op

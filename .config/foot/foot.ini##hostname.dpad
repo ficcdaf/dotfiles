@@ -76,7 +76,7 @@ close=""
 
 [cursor]
 style=beam
-blink=no
+blink=yes
 blink-rate=600
 beam-thickness=0.5
 # underline-thickness=<font underline thickness>
