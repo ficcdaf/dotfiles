@@ -338,6 +338,7 @@ exec blueman-applet &
 exec tmux start-server &
 exec udiskie &
 # exec /home/fic/Applications/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
-exec_always killall swayidle; swayidle -w before-sleep '$lockcmd' after-resume 'swaymsg "output * dpms on"' &
+# NOTE: ensure that screen is always locked before system goes to sleep
+exec_always killall swayidle; swayidle -w before-sleep '$lockcmd' after-resume 'swaymsg "output * power on"' &
 
 
