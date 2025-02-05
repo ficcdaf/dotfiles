@@ -76,6 +76,7 @@ close=""
 
 [cursor]
 # style=block
+style=block
 # blink=no
 blink-rate=600
 beam-thickness=0.5
