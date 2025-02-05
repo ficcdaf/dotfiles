@@ -38,6 +38,8 @@ alias top=btop
 alias minvim='NVIM_APPNAME="nvim-min" nvim'
 alias vimclean='nvim --clean'
 alias catkeys='/bin/cat -v'
+alias hx="helix"
+alias h="helix"
 alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'
