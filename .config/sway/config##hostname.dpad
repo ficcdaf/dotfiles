@@ -337,5 +337,7 @@ exec autotiling &
 exec blueman-applet &
 exec tmux start-server &
 exec udiskie &
-# exec swayidle -w timeout 600 'swaylock -f' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f' &
 # exec /home/fic/Applications/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
+exec_always killall swayidle; swayidle -w before-sleep '$lockcmd' after-resume 'swaymsg "output * dpms on"' &
+
+
