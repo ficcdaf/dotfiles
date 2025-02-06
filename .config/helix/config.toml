@@ -10,6 +10,7 @@ line-number = "relative"
 cursorline = true
 bufferline = "multiple"
 color-modes = true
+scrolloff = 2
 
 [editor.cursor-shape]
 insert = "bar"
