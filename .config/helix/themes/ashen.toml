@@ -18,9 +18,12 @@
 "string" = "red_glowing"
 "string.regexp" = "orange_glow"
 "string.special" = "g_2"
+"string.special.url" = {fg = "red_glowing", modifiers = ["bold"]}
+"string.special.path" = {fg = "red_glowing", modifiers = ["bold"]}
 "string.special.symbol" = "orange_smolder"
 
 "comment" = { fg = "g_6", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "g_5", modifiers = ["italic"] }
 
 "variable" = "g_3"
 "variable.parameter" = { fg = "g_2", modifiers = ["italic"] }
@@ -37,7 +40,6 @@
 
 "keyword" = "red_ember"
 "keyword.operator" = "orange_blaze"
-"keyword.control.conditional" = "g_2"
 
 "operator" = "orange_glow"
 
