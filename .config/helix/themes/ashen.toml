@@ -9,12 +9,14 @@
 
 "constructor" = "g_1"
 
-"constant" = "blue"
-"constant.character" = "red_glowing"
+"constant" = "orange_blaze"
+"constant.builtin" = "blue"
+"constant.character" = {fg = "red_glowing", modifiers = ["bold"]}
 "constant.character.escape" = "g_2"
+"constant.numeric" = "blue"
 
 "string" = "red_glowing"
-"string.regexp" = "orange_blaze"
+"string.regexp" = "orange_glow"
 "string.special" = "g_2"
 "string.special.symbol" = "orange_smolder"
 
