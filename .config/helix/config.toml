@@ -11,6 +11,28 @@ color-modes = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[keys.normal]
+m = "move_char_left"
+n = "move_visual_line_down"
+e = "move_visual_line_up"
+i = "move_char_right"
+h = "insert_mode"
+H = "insert_at_line_start"
+l = "move_next_word_end"
+L = "move_next_long_word_end"
+k = "search_next"
+K = "search_prev"
+
+[keys.normal.M]
+m = "match_brackets"
+s = "surround_add"
+r = "surround_replace"
+d = "surround_delete"
+a = "select_textobject_around"
+i = "select_textobject_inner"
+
+
 # A comment...
 # m n e i
 # M match mode
@@ -18,8 +40,8 @@ select = "underline"
 # E end of word
 # I insert mode
 # h j k l
-# H
-# L
-# J
-# K
+# L end of word
+# H insert
+# J match mode
+# K Search occurrence
 
