@@ -2,6 +2,10 @@ theme = "onedark"
 
 [editor]
 line-number = "relative"
+default-yank-register = '+'
+cursorline = true
+bufferline = "multiple"
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
