@@ -26,8 +26,11 @@ display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
-character = "⸽"
+# character = "|"
 skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
 
 [keys.normal]
 m = "move_char_left"
