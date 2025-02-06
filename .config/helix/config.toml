@@ -24,10 +24,13 @@ J = "move_next_long_word_end"
 k = "search_next"
 K = "search_prev"
 
-[keys.normal.L]
+[keys.normal.l]
 m = "match_brackets"
+l = "match_brackets"
 s = "surround_add"
 r = "surround_replace"
 d = "surround_delete"
 a = "select_textobject_around"
 i = "select_textobject_inner"
+
+[keys.normal."C-w"]
