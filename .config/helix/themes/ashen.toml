@@ -103,8 +103,8 @@
 
 "ui.selection" = { bg = "g_8" }
 
-"ui.cursor" = { fg = "background", bg = "g_0" }
-# "ui.cursor.primary" = { fg = "blue" }
+"ui.cursor" = { fg = "background", bg = "g_4" }
+"ui.cursor.primary" = { fg = "background", bg = "g_0" }
 "ui.cursor.match" = {fg = "orange_smolder", modifiers = ["underlined"]}
 
 # "ui.cursor.primary.normal" = { fg = "base", bg = "rosewater" }
