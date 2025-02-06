@@ -11,11 +11,15 @@ cursorline = true
 bufferline = "multiple"
 color-modes = true
 scrolloff = 2
+jump-label-alphabet = "tnseriplfuwydhcxoaqz"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.statusline]
+mode.normal = "NRM"
 
 [keys.normal]
 m = "move_char_left"
