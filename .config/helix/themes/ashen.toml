@@ -111,7 +111,7 @@
 # "ui.cursor.insert" = { fg = "base", bg = "secondary_cursor_insert" }
 # "ui.cursor.select" = { fg = "base", bg = "secondary_cursor" }
 
-# "ui.cursorline.primary" = { bg = "cursorline" }
+"ui.cursorline.primary" = { bg = "cursorline" }
 
 # "ui.highlight" = { bg = "surface1", modifiers = ["bold"] }
 
