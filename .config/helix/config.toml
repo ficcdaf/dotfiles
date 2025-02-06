@@ -29,6 +29,9 @@ k = "search_next"
 K = "search_prev"
 C-q = ":qa"
 C-Q = ":qa!"
+"S-left" = ":bp"
+"S-right" = ":bn"
+
 [keys.select]
 m = "extend_char_left"
 M = "extend_to_line_start"
@@ -38,6 +41,8 @@ i = "extend_char_right"
 I = "extend_to_line_end"
 k = "extend_search_next"
 K = "extend_search_prev"
+j = "extend_next_sub_word_end"
+J = "extend_next_long_word_end"
 [keys.normal.l]
 m = "match_brackets"
 l = "match_brackets"
