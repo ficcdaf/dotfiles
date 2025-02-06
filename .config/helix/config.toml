@@ -27,6 +27,8 @@ j = "move_next_sub_word_end"
 J = "move_next_long_word_end"
 k = "search_next"
 K = "search_prev"
+C-q = ":qa"
+C-Q = ":qa!"
 
 [keys.select]
 m = "extend_char_left"
