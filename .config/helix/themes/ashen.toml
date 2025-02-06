@@ -107,20 +107,12 @@
 "ui.cursor.primary" = { fg = "background", bg = "g_0" }
 "ui.cursor.match" = {fg = "orange_smolder", modifiers = ["underlined"]}
 
-# "ui.cursor.primary.normal" = { fg = "base", bg = "rosewater" }
-# "ui.cursor.primary.insert" = { fg = "base", bg = "green" }
-# "ui.cursor.primary.select" = { fg = "base", bg = "flamingo" }
-
-# "ui.cursor.normal" = { fg = "base", bg = "secondary_cursor_normal" }
-# "ui.cursor.insert" = { fg = "base", bg = "secondary_cursor_insert" }
-# "ui.cursor.select" = { fg = "base", bg = "secondary_cursor" }
-
 "ui.cursorline.primary" = { bg = "cursorline" }
 
-# "ui.highlight" = { bg = "surface1", modifiers = ["bold"] }
+"ui.highlight" = { modifiers = ["bold"] }
 
-# "ui.menu" = { fg = "overlay2", bg = "surface0" }
-# "ui.menu.selected" = { fg = "text", bg = "surface1", modifiers = ["bold"] }
+"ui.menu" = { fg = "g_2", bg = "g_10" }
+"ui.menu.selected" = { modifiers = ["reversed"] }
 
 "diagnostic.error" = { underline = { color = "red_flame", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "orange_golden", style = "curl" } }
@@ -136,10 +128,6 @@ hint = "g_4"
 [palette]
 cursorline = "#212121"
 text = "#b4b4b4"
-# secondary_cursor = "#b5a6a8"
-# secondary_cursor_normal = "#b5a6a8"
-# secondary_cursor_insert = "#7ea87f"
-
 red_flame = "#C53030"
 red_glowing = "#DF6464"
 red_ember = "#B14242"
