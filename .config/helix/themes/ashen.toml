@@ -8,25 +8,26 @@
 "constructor" = "g_1"
 
 "constant" = "orange_blaze"
-"constant.character" = "teal"
-"constant.character.escape" = "pink"
+"constant.character" = "red_glowing"
+"constant.character.escape" = "g_2"
 
-"string" = "green"
-"string.regexp" = "pink"
-"string.special" = "blue"
-"string.special.symbol" = "red"
+"string" = "red_glowing"
+"string.regexp" = "orange_blaze"
+"string.special" = "g_2"
+"string.special.symbol" = "orange_smolder"
 
-"comment" = { fg = "overlay2", modifiers = ["italic"] }
+"comment" = { fg = "g_6", modifiers = ["italic"] }
 
-"variable" = "text"
-"variable.parameter" = { fg = "maroon", modifiers = ["italic"] }
-"variable.builtin" = "red"
-"variable.other.member" = "blue"
+"variable" = "g_3"
+"variable.parameter" = { fg = "g_2", modifiers = ["italic"] }
+"variable.builtin" = "blue"
+"variable.other.member" = "g_2"
 
-"label" = "sapphire" # used for lifetimes
+"label" = "red_ember" # used for lifetimes
 
-"punctuation" = "overlay2"
-"punctuation.special" = "sky"
+"punctuation" = "g_2"
+"punctuation.special" = "orange_golden"
+
 
 "keyword" = "mauve"
 "keyword.control.conditional" = { fg = "mauve", modifiers = ["italic"] }
