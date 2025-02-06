@@ -27,48 +27,49 @@
 
 "punctuation" = "g_2"
 "punctuation.special" = "orange_golden"
+"punctuation.bracket" = "g_6"
+"punctuation.delimiter" = "orange_smolder"
 
 
-"keyword" = "mauve"
-"keyword.control.conditional" = { fg = "mauve", modifiers = ["italic"] }
+"keyword" = "red_ember"
+"keyword.operator" = "orange_blaze"
+"keyword.control.conditional" = "g_2"
 
-"operator" = "sky"
+"operator" = "orange_glow"
 
-"function" = "blue"
-"function.macro" = "mauve"
+"function" = "red_ember"
+"function.macro" = "red_ember"
 
-"tag" = "blue"
+"tag" = "g_5"
 
-"namespace" = { fg = "yellow", modifiers = ["italic"] }
+"namespace" = { fg = "orange_blaze", modifiers = ["italic"] }
 
 "special" = "blue" # fuzzy highlight
 
-"markup.heading.1" = "red"
-"markup.heading.2" = "peach"
-"markup.heading.3" = "yellow"
-"markup.heading.4" = "green"
-"markup.heading.5" = "sapphire"
-"markup.heading.6" = "lavender"
-"markup.list" = "teal"
-"markup.list.unchecked" = "overlay2"
-"markup.list.checked" = "green"
-"markup.bold" = { fg = "red", modifiers = ["bold"] }
-"markup.italic" = { fg = "red", modifiers = ["italic"] }
-"markup.link.url" = { fg = "blue", modifiers = ["italic", "underlined"] }
-"markup.link.text" = "lavender"
-"markup.raw" = "green"
-"markup.quote" = "pink"
+"markup.heading.1" = "red_glowing"
+"markup.heading.2" = "red_glowing"
+"markup.heading.3" = "red_glowing"
+"markup.heading.4" = "red_glowing"
+"markup.heading.5" = "red_glowing"
+"markup.heading.6" = "red_glowing"
+"markup.list" = "orange_glow"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "red_glowing", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "red_ember"
+"markup.raw" = {fg = "g_4", bg = "g_10"}
+"markup.quote" = {modifiers = ["italic"]}
 
-"diff.plus" = "green"
-"diff.minus" = "red"
-"diff.delta" = "blue"
+"diff.plus" = "g_4"
+"diff.minus" = "red_ember"
+"diff.delta" = "orange_smolder"
 
 # User Interface
 # --------------
-"ui.background" = { fg = "text", bg = "base" }
+"ui.background" = { fg = "text", bg = "background" }
 
-"ui.linenr" = { fg = "surface1" }
-"ui.linenr.selected" = { fg = "lavender" }
+"ui.linenr" = { fg = "g_8" }
+"ui.linenr.selected" = { fg = "g_6" }
 
 "ui.statusline" = { fg = "subtext1", bg = "mantle" }
 "ui.statusline.inactive" = { fg = "surface2", bg = "mantle" }
@@ -129,6 +130,7 @@ hint = "g_4"
 
 [palette]
 cursorline = "#212121"
+text = "#b4b4b4"
 # secondary_cursor = "#b5a6a8"
 # secondary_cursor_normal = "#b5a6a8"
 # secondary_cursor_insert = "#7ea87f"
