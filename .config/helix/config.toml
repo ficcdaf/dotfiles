@@ -21,6 +21,9 @@ select = "underline"
 [editor.statusline]
 mode.normal = "NRM"
 
+[editor.lsp]
+display-inlay-hints = true
+
 [keys.normal]
 m = "move_char_left"
 M = "goto_line_start"
