@@ -14,15 +14,25 @@ select = "underline"
 
 [keys.normal]
 m = "move_char_left"
+M = "goto_line_start"
 n = "move_visual_line_down"
 e = "move_visual_line_up"
 i = "move_char_right"
+I = "goto_line_end"
 h = "insert_mode"
 H = "insert_at_line_start"
 j = "move_next_word_end"
 J = "move_next_long_word_end"
 k = "search_next"
 K = "search_prev"
+
+[keys.select]
+m = "move_char_left"
+M = "goto_line_start"
+n = "move_visual_line_down"
+e = "move_visual_line_up"
+i = "move_char_right"
+I = "goto_line_end"
 
 [keys.normal.l]
 m = "match_brackets"
@@ -34,3 +44,5 @@ a = "select_textobject_around"
 i = "select_textobject_inner"
 
 [keys.normal."C-w"]
+# m = "jump_list_view"
+# m = "jump_list_view"
