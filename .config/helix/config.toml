@@ -11,3 +11,15 @@ color-modes = true
 insert = "bar"
 normal = "block"
 select = "underline"
+# A comment...
+# m n e i
+# M match mode
+# N search occurrence
+# E end of word
+# I insert mode
+# h j k l
+# H
+# L
+# J
+# K
+
