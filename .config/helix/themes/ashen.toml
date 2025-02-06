@@ -99,7 +99,7 @@
 "ui.virtual.ruler" = "g_5" 
 "ui.virtual.indent-guide" = "g_8"
 "ui.virtual.wrap" = "g_8"
-"ui.virtual.inlay-hint" = "g_4"
+"ui.virtual.inlay-hint" = {fg = "g_6", modifiers = ["bold", "italic"]}
 "ui.virtual.jump-label" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "g_8" }
