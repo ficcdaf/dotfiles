@@ -28,7 +28,7 @@
 "variable" = "g_3"
 "variable.parameter" = { fg = "g_2", modifiers = ["italic"] }
 "variable.builtin" = "blue"
-"variable.other.member" = {fg = "g_2", modifiers = ["italic"]}
+"variable.other.member" = {fg = "g_2", modifiers = [""]}
 
 "label" = "red_ember" # used for lifetimes
 
@@ -95,16 +95,16 @@
 "ui.text.inactive" = { fg = "g_7" }
 "ui.text.directory" = { fg = "blue" }
 
-# "ui.virtual" = "overlay0"
-# "ui.virtual.ruler" = { bg = "surface0" }
-# "ui.virtual.indent-guide" = "surface0"
+"ui.virtual" = "g_5"
+"ui.virtual.ruler" = "g_5" 
+"ui.virtual.indent-guide" = "surface0"
 "ui.virtual.inlay-hint" = "g_4"
 "ui.virtual.jump-label" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "g_8" }
 
 "ui.cursor" = { fg = "background", bg = "g_0" }
-# "ui.cursor.primary" = { fg = "base", bg = "rosewater" }
+# "ui.cursor.primary" = { fg = "blue" }
 "ui.cursor.match" = {fg = "orange_smolder", modifiers = ["underlined"]}
 
 # "ui.cursor.primary.normal" = { fg = "base", bg = "rosewater" }
