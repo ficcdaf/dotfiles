@@ -97,7 +97,7 @@
 
 "ui.virtual" = "g_5"
 "ui.virtual.ruler" = "g_5" 
-"ui.virtual.indent-guide" = "surface0"
+"ui.virtual.indent-guide" = "g_7"
 "ui.virtual.inlay-hint" = "g_4"
 "ui.virtual.jump-label" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 

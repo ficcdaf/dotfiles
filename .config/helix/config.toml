@@ -24,6 +24,11 @@ mode.normal = "NRM"
 [editor.lsp]
 display-inlay-hints = true
 
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
 [keys.normal]
 m = "move_char_left"
 M = "goto_line_start"
