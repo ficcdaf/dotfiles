@@ -3,6 +3,8 @@
 "attribute" = "g_4"
 
 "type" = "blue"
+"type.builtin" = "blue"
+"type.parameter" = "orange_glow"
 "type.enum.variant" = "orange_blaze"
 
 "constructor" = "g_1"
