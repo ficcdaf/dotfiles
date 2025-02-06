@@ -44,7 +44,7 @@
 
 "namespace" = { fg = "orange_blaze", modifiers = ["italic"] }
 
-"special" = "blue" # fuzzy highlight
+"special" = "orange_smolder" # fuzzy highlight
 
 "markup.heading.1" = "red_glowing"
 "markup.heading.2" = "red_glowing"
@@ -71,22 +71,23 @@
 "ui.linenr" = { fg = "g_8" }
 "ui.linenr.selected" = { fg = "g_6" }
 
-"ui.statusline" = { fg = "g_3", bg = "g_10" }
-"ui.statusline.inactive" = { fg = "g_2", bg = "g_10" }
-"ui.statusline.normal" = { fg = "g_2", bg = "g_7", modifiers = ["bold"] }
+"ui.statusline" = { fg = "g_3", bg = "g_9" }
+"ui.statusline.inactive" = { fg = "g_5", bg = "g_10" }
+"ui.statusline.normal" = { fg = "g_3", bg = "g_7", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "background", bg = "red_ember", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "background", bg = "red_glowing", modifiers = ["bold"]  }
 
-"ui.popup" = { fg = "text", bg = "g_9" }
+"ui.popup" = { fg = "text", bg = "g_10" }
+"ui.info" = { fg = "orange_blaze", bg = "g_10" }
 "ui.window" = { fg = "g_7" }
-"ui.help" = { fg = "g_7", bg = "g_2" }
+"ui.help" = { fg = "background", bg = "g_5" }
 
 "ui.bufferline" = { fg = "text", bg = "background" }
-"ui.bufferline.active" = { fg = "g_8", bg = "g_5", underline = { color = "orange_blaze", style = "line" } }
+"ui.bufferline.active" = { fg = "g_2", bg = "g_10", underline = { color = "orange_blaze", style = "line" } }
 "ui.bufferline.background" = { bg = "background" }
 
 "ui.text" = "text"
-"ui.text.focus" = { fg = "text", bg = "g_1", modifiers = ["bold"] }
+"ui.text.focus" = { fg = "g_2", bg = "g_8", modifiers = ["bold"] }
 "ui.text.inactive" = { fg = "g_7" }
 "ui.text.directory" = { fg = "blue" }
 
@@ -100,7 +101,7 @@
 
 "ui.cursor" = { fg = "background", bg = "g_0" }
 # "ui.cursor.primary" = { fg = "base", bg = "rosewater" }
-# "ui.cursor.match" = { fg = "peach", modifiers = ["bold"] }
+"ui.cursor.match" = {fg = "orange_smolder", modifiers = ["underlined"]}
 
 # "ui.cursor.primary.normal" = { fg = "base", bg = "rosewater" }
 # "ui.cursor.primary.insert" = { fg = "base", bg = "green" }
