@@ -19,29 +19,15 @@ e = "move_visual_line_up"
 i = "move_char_right"
 h = "insert_mode"
 H = "insert_at_line_start"
-l = "move_next_word_end"
-L = "move_next_long_word_end"
+j = "move_next_word_end"
+J = "move_next_long_word_end"
 k = "search_next"
 K = "search_prev"
 
-[keys.normal.M]
+[keys.normal.L]
 m = "match_brackets"
 s = "surround_add"
 r = "surround_replace"
 d = "surround_delete"
 a = "select_textobject_around"
 i = "select_textobject_inner"
-
-
-# A comment...
-# m n e i
-# M match mode
-# N search occurrence
-# E end of word
-# I insert mode
-# h j k l
-# L end of word
-# H insert
-# J match mode
-# K Search occurrence
-
