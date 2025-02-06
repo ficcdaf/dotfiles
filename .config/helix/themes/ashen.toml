@@ -2,7 +2,7 @@
 # -------------------
 "attribute" = "g_4"
 
-"type" = "g_2"
+"type" = "blue"
 "type.enum.variant" = "orange_blaze"
 
 "constructor" = "g_1"
@@ -37,7 +37,7 @@
 
 "operator" = "orange_glow"
 
-"function" = "red_ember"
+"function" = {fg = "g_3", modifiers = ["bold"]}
 "function.macro" = "red_ember"
 
 "tag" = "g_5"
