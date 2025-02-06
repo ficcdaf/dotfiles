@@ -40,6 +40,8 @@
 
 "keyword" = "red_ember"
 "keyword.operator" = "orange_blaze"
+"keyword.directive" = {fg = "red_ember", modifiers = ["italic"]}
+"keyword.storage.modifier" = {fg = "red_ember", modifiers = ["italic"]}
 
 "operator" = "orange_glow"
 
