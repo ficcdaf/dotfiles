@@ -1,13 +1,13 @@
 # Syntax highlighting
 # -------------------
-"attribute" = "yellow"
+"attribute" = "g_4"
 
-"type" = "yellow"
-"type.enum.variant" = "teal"
+"type" = "g_2"
+"type.enum.variant" = "orange_blaze"
 
-"constructor" = "sapphire"
+"constructor" = "g_1"
 
-"constant" = "peach"
+"constant" = "orange_blaze"
 "constant.character" = "teal"
 "constant.character.escape" = "pink"
 
@@ -121,16 +121,16 @@
 "diagnostic.hint" = { underline = { color = "teal", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
-error = "red"
-warning = "yellow"
-info = "sky"
-hint = "teal"
+error = "red_flame"
+warning = "orange_golden"
+info = "g_2"
+hint = "g_4"
 
 [palette]
-cursorline = "#2a2b3c"
-secondary_cursor = "#b5a6a8"
-secondary_cursor_normal = "#b5a6a8"
-secondary_cursor_insert = "#7ea87f"
+cursorline = "#212121"
+# secondary_cursor = "#b5a6a8"
+# secondary_cursor_normal = "#b5a6a8"
+# secondary_cursor_insert = "#7ea87f"
 
 red_flame = "#C53030"
 red_glowing = "#DF6464"
