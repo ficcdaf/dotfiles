@@ -46,6 +46,7 @@
 "operator" = "orange_glow"
 
 "function" = {fg = "g_3", modifiers = ["bold"]}
+"function.builtin" = {fg = "g_3", modifiers = ["bold", "italic"]}
 "function.macro" = "red_ember"
 
 "tag" = "g_5"
@@ -54,12 +55,7 @@
 
 "special" = "orange_smolder" # fuzzy highlight
 
-"markup.heading.1" = "red_glowing"
-"markup.heading.2" = "red_glowing"
-"markup.heading.3" = "red_glowing"
-"markup.heading.4" = "red_glowing"
-"markup.heading.5" = "red_glowing"
-"markup.heading.6" = "red_glowing"
+"markup.heading" = "red_glowing"
 "markup.list" = "orange_glow"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
@@ -102,8 +98,8 @@
 # "ui.virtual" = "overlay0"
 # "ui.virtual.ruler" = { bg = "surface0" }
 # "ui.virtual.indent-guide" = "surface0"
-# "ui.virtual.inlay-hint" = { fg = "surface1", bg = "mantle" }
-# "ui.virtual.jump-label" = { fg = "rosewater", modifiers = ["bold"] }
+"ui.virtual.inlay-hint" = "g_4"
+"ui.virtual.jump-label" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "g_8" }
 
