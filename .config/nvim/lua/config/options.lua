@@ -25,12 +25,13 @@ vim.opt.langmap = vim.fn.join({
   escape(colemak) .. ";" .. escape(qwerty),
 }, ",")
 
-vim.keymap.set("n", "m", function()
+vim.g.maplocalleader = ","
+vim.g.mapleader = " "
+vim.opt.langmap = "mhnjekilhilejnkm"
+vim.keymap.set("n", "<leader>m", function()
   vim.notify("presed")
 end)
-vim.opt.langmap = "mhnjekilhilejnkm"
 
-vim.g.maplocalleader = ","
 vim.g.lazyvim_python_lsp = "basedpyright"
 -- vim.g.lazyvim_rust_diagnostics = "bacon-ls"
 vim.g.ai_cmp = false

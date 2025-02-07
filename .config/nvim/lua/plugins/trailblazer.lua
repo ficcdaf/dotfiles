@@ -1,7 +1,7 @@
 -- TODO: add trailblazer highlight groups to ashen
 return {
   "LeonHeidelbach/trailblazer.nvim",
-  enabled = true,
+  enabled = false,
   dev = false,
   event = "UIEnter",
   config = function()
