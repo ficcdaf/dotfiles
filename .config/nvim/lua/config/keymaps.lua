@@ -3,6 +3,8 @@
 -- Add any additional keymaps here
 local wk = require("which-key")
 
+-- vim.keymap.del("n", "n")
+-- vim.keymap.del("n", "N")
 local map = vim.keymap.set
 
 -- required to remap special sequence

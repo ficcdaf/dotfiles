@@ -58,6 +58,7 @@ M.init = function()
       set(l, r)
     end
   end
+  vim.keymap.set("n", "n", "j")
   return out
 end
 
