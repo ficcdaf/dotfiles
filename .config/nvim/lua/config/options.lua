@@ -13,9 +13,8 @@ end
 
 vim.g.maplocalleader = ","
 vim.g.mapleader = " "
-vim.opt.langmap = "mhnjekilhilejnkm"
-vim.keymap.set("n", "<leader><BS>", "<leader><CR>", { remap = true })
-vim.keymap.set("n", "<leader><CR>", function()
+vim.keymap.set("n", "m", "h", { noremap = true })
+vim.keymap.set("n", "<leader>m", function()
   vim.notify("presed")
 end)
 
