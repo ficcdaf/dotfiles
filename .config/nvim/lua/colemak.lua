@@ -12,10 +12,6 @@ M.map = {
 }
 
 M.modes = {
-  -- "n",
-  -- "x",
-  -- "v",
-  -- "o",
   "n",
   "v",
   "x",
@@ -58,7 +54,7 @@ M.init = function()
       set(l, r)
     end
   end
-  vim.keymap.set("n", "n", "j")
+  -- vim.keymap.set("n", "n", "j")
   return out
 end
 

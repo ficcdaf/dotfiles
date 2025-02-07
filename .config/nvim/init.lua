@@ -25,3 +25,8 @@ require("config.lazy")
 --   }
 --   require("neovide-config").setup(nv_opts)
 -- end
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    require("colemak").init()
+  end,
+})

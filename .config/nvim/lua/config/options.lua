@@ -18,7 +18,6 @@ vim.keymap.set("n", "<leader>m", "<CMD>echo hi<cr>")
 -- vim.keymap.set("n", "<C-S-M>", function()
 --   vim.notify("presed")
 -- end)
-require("colemak").init()
 vim.g.lazyvim_python_lsp = "basedpyright"
 -- vim.g.lazyvim_rust_diagnostics = "bacon-ls"
 vim.g.ai_cmp = false
