@@ -12,16 +12,20 @@ M.map = {
 }
 
 M.modes = {
+  -- "n",
+  -- "x",
+  -- "v",
+  -- "o",
   "n",
-  "x",
   "v",
+  "x",
+  "s",
   "o",
 }
 
 local mods = {
   "<C-",
   "<M-",
-  "<S-",
   "<C-M-",
   "<C-S-",
   "<M-S-",
@@ -39,14 +43,22 @@ local get_permutations = function(key)
   return out
 end
 
-local opts = { noremap = true }
-
 local function set(lhs, rhs)
-  vim.keymap.set(M.modes, lhs, rhs, opts)
+  vim.keymap.set(M.modes, lhs, rhs, { noremap = true })
 end
 
 M.init = function()
+  local out = {}
   for lhs, rhs in pairs(M.map) do
-    local perms = get_lhs_permutations(lhs)
+    local lhs_perms = get_permutations(lhs)
+    local rhs_perms = get_permutations(rhs)
+    for i, l in ipairs(lhs_perms) do
+      local r = rhs_perms[i]
+      out[l] = r
+      set(l, r)
+    end
   end
+  return out
 end
+
+return M

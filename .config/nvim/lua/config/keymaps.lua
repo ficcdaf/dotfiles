@@ -62,57 +62,54 @@ map({ "n" }, "<C-n>", "<C-e>", { noremap = true, desc = "Scroll Down" })
 -- Snacks.toggle.zen():map("<leader>uz")
 map({ "n" }, "cl", "vgu", { noremap = true, desc = "Lowercase current char" })
 map({ "n" }, "cu", "vgU", { noremap = true, desc = "Uppercase current char" })
--- Bind arrows to hjkl to my colemak-dh motions work as expected
-map({ "n", "x" }, "<Up>", "k", { desc = "Up", remap = true })
-map({ "n", "x" }, "<Down>", "j", { desc = "Down", remap = true })
-map({ "n", "x" }, "<Left>", "h", { desc = "Left", remap = true })
-map({ "n", "x" }, "<Right>", "l", { desc = "Right", remap = true })
+--
 
--- map({ "n", "t", "i" }, "<C-Left>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Switch Window Left", remap = true })
--- map({ "n", "t", "i" }, "<C-Right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Switch Window Right", remap = true })
--- map({ "n", "t", "i" }, "<C-Up>", "<cmd> TmuxNavigateUp<CR>", { remap = true })
--- map({ "n", "t", "i" }, "<C-Down>", "<cmd> TmuxNavigateDown<CR>", { desc = "Switch Window Down", remap = true })
-map({ "n", "t", "i" }, "<C-Left>", "<C-w>h", { desc = "Switch Window Left", remap = true })
-map({ "n", "t", "i" }, "<C-Right>", "<C-w>l", { desc = "Switch Window Right", remap = true })
-map({ "n", "t", "i" }, "<C-Up>", "<C-w>k", { remap = true })
-map({ "n", "t", "i" }, "<C-Down>", "<C-w>j", { desc = "Switch Window Down", remap = true })
-map({ "n" }, "<C-w>d", "<C-w>q", { desc = "Close window", remap = true })
+local colemak = false
+if colemak then
+  -- Bind arrows to hjkl to my colemak-dh motions work as expected
+  map({ "n", "x" }, "<Up>", "k", { desc = "Up", remap = true })
+  map({ "n", "x" }, "<Down>", "j", { desc = "Down", remap = true })
+  map({ "n", "x" }, "<Left>", "h", { desc = "Left", remap = true })
+  map({ "n", "x" }, "<Right>", "l", { desc = "Right", remap = true })
 
-map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
-map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
-map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })
-map({ "n", "x", "v" }, "<M-Down>", "<M-j>", { remap = true })
--- map({ "n" }, "<S-Left>", "[b", { desc = "Previous Buffer", remap = true })
-map({ "n" }, "<S-Left>", "<CMD>BufferLineCyclePrev<CR>", { desc = "Previous Buffer", remap = true })
--- map({ "n" }, "<S-Right>", "]b", { desc = "Next Buffer", remap = true })
-map({ "n" }, "<S-Right>", "<CMD>BufferLineCycleNext<CR>", { desc = "Next Buffer", remap = true })
--- map({ "n" }, "<S-Down>", "5j", { remap = true })
--- map({ "n" }, "<S-Up>", "5k", { remap = true })
-map({ "i" }, "<M-e>", "<Esc>", { desc = "Escape insert mode", remap = true })
+  map({ "n", "t", "i" }, "<C-Left>", "<C-w>h", { desc = "Switch Window Left", remap = true })
+  map({ "n", "t", "i" }, "<C-Right>", "<C-w>l", { desc = "Switch Window Right", remap = true })
+  map({ "n", "t", "i" }, "<C-Up>", "<C-w>k", { remap = true })
+  map({ "n", "t", "i" }, "<C-Down>", "<C-w>j", { desc = "Switch Window Down", remap = true })
+  map({ "n" }, "<C-w>d", "<C-w>q", { desc = "Close window", remap = true })
 
--- better navigation
-map({ "n" }, "<C-u>", "<C-u>zz", { remap = false })
-map({ "n" }, "<C-d>", "<C-d>zz", { remap = false })
-map({ "n" }, "n", "nzz", { remap = false })
-map({ "n" }, "N", "Nzz", { remap = false })
-map({ "n" }, "{", "{zz", { remap = false })
-map({ "n" }, "}", "}zz", { remap = false })
-map({ "n" }, "<PageDown>", "<Down>zz", { remap = false })
-map({ "n" }, "<PageUp>", "<Up>zz", { remap = false })
-map({ "n", "x" }, "<M-i>", "$", { remap = false })
-map({ "n", "x" }, "<M-m>", "0", { remap = false })
+  map({ "x" }, "<M-Left>", "<M-h>", { remap = true })
+  map({ "x" }, "<M-Right>", "<M-l>", { remap = true })
+  map({ "n", "x", "v" }, "<M-Up>", "<M-k>", { remap = true })
+  map({ "n", "x", "v" }, "<M-Down>", "<M-j>", { remap = true })
+  map({ "n" }, "<S-Left>", "<CMD>BufferLineCyclePrev<CR>", { desc = "Previous Buffer", remap = true })
+  map({ "n" }, "<S-Right>", "<CMD>BufferLineCycleNext<CR>", { desc = "Next Buffer", remap = true })
+  map({ "i" }, "<M-e>", "<Esc>", { desc = "Escape insert mode", remap = true })
 
--- easily access null register
--- map({ "n", "x" }, "<leader>n", '"_', { remap = false, silent = true, desc = "Null Register" })
-map({ "n", "x", "v", "o" }, "<BS>", '"_', { remap = false, silent = true, desc = "Null Register" })
+  -- better navigation
+  map({ "n" }, "<C-u>", "<C-u>zz", { remap = false })
+  map({ "n" }, "<C-d>", "<C-d>zz", { remap = false })
+  map({ "n" }, "n", "nzz", { remap = false })
+  map({ "n" }, "N", "Nzz", { remap = false })
+  map({ "n" }, "{", "{zz", { remap = false })
+  map({ "n" }, "}", "}zz", { remap = false })
+  map({ "n" }, "<PageDown>", "<Down>zz", { remap = false })
+  map({ "n" }, "<PageUp>", "<Up>zz", { remap = false })
+  map({ "n", "x" }, "<M-i>", "$", { remap = false })
+  map({ "n", "x" }, "<M-m>", "0", { remap = false })
 
--- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
-vim.keymap.del({ "n" }, "<S-h>")
-vim.keymap.del({ "n" }, "<S-l>")
-map({ "n" }, "<S-h>", "L", { remap = false })
-map({ "n" }, "<S-l>", "H", { remap = false })
+  -- easily access null register
+  -- map({ "n", "x" }, "<leader>n", '"_', { remap = false, silent = true, desc = "Null Register" })
+
+  -- remove the default lazyvim, and also swap H and L (for move cursor) to make more sense on colemak
+  vim.keymap.del({ "n" }, "<S-h>")
+  vim.keymap.del({ "n" }, "<S-l>")
+  map({ "n" }, "<S-h>", "L", { remap = false })
+  map({ "n" }, "<S-l>", "H", { remap = false })
+end
 -- better delete and put
 
+map({ "n", "x", "v", "o" }, "<BS>", '"_', { remap = false, silent = true, desc = "Null Register" })
 -- Duplicate and comment line
 map({ "n" }, "<leader>yc", '"zyygcc"zp', { remap = true, silent = true, desc = "Duplicate and comment line" })
 
