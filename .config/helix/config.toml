@@ -7,7 +7,7 @@ undercurl = true
 # maybe it's better to just get used to using the clipboards separately?
 # Wouldn't be a bad idea to encorporate two clipboards into my workflow,
 # especially for stuff like swapping selections and stuff...
-# default-yank-register = '+'
+default-yank-register = '+'
 cursorline = true
 bufferline = "multiple"
 color-modes = true
@@ -70,8 +70,8 @@ i = "extend_char_right"
 I = "extend_to_line_end"
 k = "extend_search_next"
 K = "extend_search_prev"
-j = "extend_next_sub_word_end"
-J = "extend_next_long_word_end"
+l = "extend_next_sub_word_end"
+L = "extend_next_long_word_end"
 [keys.normal.k]
 m = "match_brackets"
 k = "match_brackets"
@@ -102,3 +102,6 @@ H = "no_op"
 J = "no_op"
 K = "no_op"
 L = "no_op"
+
+[keys.normal.g]
+z = "goto_window_center"
