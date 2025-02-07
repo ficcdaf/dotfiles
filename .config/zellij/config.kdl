@@ -139,7 +139,7 @@ keybinds clear-defaults=true {
         bind "Ctrl M" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
-        bind "Ctrl O" { SwitchToMode "session"; }
+        bind "Ctrl S" { SwitchToMode "session"; }
     }
     shared_except "locked" "scroll" {
         // bind "Alt left" { MoveFocusOrTab "left"; }
@@ -160,7 +160,7 @@ keybinds clear-defaults=true {
         bind "Ctrl b" { SwitchToMode "tmux"; }
     }
     shared_except "locked" "scroll" "search" {
-        bind "Ctrl s" { SwitchToMode "scroll"; }
+        bind "Ctrl ?" { SwitchToMode "scroll"; }
     }
     shared_except "locked" "tab" {
         bind "Ctrl t" { SwitchToMode "tab"; }
