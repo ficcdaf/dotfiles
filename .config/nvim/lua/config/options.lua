@@ -14,7 +14,7 @@ end
 vim.g.maplocalleader = ","
 vim.g.mapleader = " "
 vim.keymap.set("n", "m", "h", { noremap = true })
-vim.keymap.set("n", "<leader>m", function()
+vim.keymap.set("n", "<C-S-M>", function()
   vim.notify("presed")
 end)
 
