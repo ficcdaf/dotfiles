@@ -11,24 +11,11 @@ local function escape(str)
   return vim.fn.escape(str, escape_chars)
 end
 
--- Recommended to use lua template string
-local qwerty = [[kjlh]]
-local qwerty_shift = [[KJLH]]
-local colemak = [[mnei]]
-local colemak_shift = [[MNEI]]
-
-vim.opt.langmap = vim.fn.join({
-  -- | `to` should be first     | `from` should be second
-  escape(colemak_shift)
-    .. ";"
-    .. escape(qwerty_shift),
-  escape(colemak) .. ";" .. escape(qwerty),
-}, ",")
-
 vim.g.maplocalleader = ","
 vim.g.mapleader = " "
 vim.opt.langmap = "mhnjekilhilejnkm"
-vim.keymap.set("n", "<leader>m", function()
+vim.keymap.set("n", "<leader><BS>", "<leader><CR>", { remap = true })
+vim.keymap.set("n", "<leader><CR>", function()
   vim.notify("presed")
 end)
 
