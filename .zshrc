@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 ASHEN="$HOME/dev/plugins/ashen.nvim"
 source $ASHEN/extras/fzf/ashen.sh
 unset LS_COLORS
+export EDITOR="helix"
 
 # Note: if I do get Obsidian Bridge working, this is
 # a really bad way to load the env because 
