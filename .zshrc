@@ -2,8 +2,7 @@
 bindkey -r '\ex'
 ZSH="$HOME/.oh-my-zsh"
 export DISABLE_LS_COLORS=true
-plugins=(git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
-# plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
+plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source ~/.profile
 source $ZSH/oh-my-zsh.sh
 ASHEN="$HOME/dev/plugins/ashen.nvim"
@@ -130,8 +129,8 @@ eval "$(zoxide init zsh)"
 eval "$(rip completions zsh)"
 export DIRENV_LOG_FORMAT=""
 export GPG_TTY=$(tty)
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpg-connect-agent /bye > /dev/null
+# export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+# gpg-connect-agent /bye > /dev/null
 eval "$(direnv hook zsh)"
 # colorscript -e 36
 source ~/scripts/obsidian-bridge.sh
