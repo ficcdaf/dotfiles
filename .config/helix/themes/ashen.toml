@@ -100,7 +100,6 @@
 "ui.virtual.indent-guide" = "g_8"
 "ui.virtual.wrap" = "g_8"
 "ui.virtual.inlay-hint" = {fg = "g_6", modifiers = [ "italic"]}
-# "ui.virtual.inlay-hint" = {fg = "g_6", modifiers = ["bold", "italic"]}
 "ui.virtual.jump-label" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "g_8" }
@@ -112,8 +111,7 @@
 "ui.cursorline.primary" = { bg = "cursorline" }
 "ui.cursorline" = { bg = "g_11" }
 
-"ui.highlight" = { fg = "orange_blaze", bg = "cursorline", modifiers = ["bold"] }
-# "ui.highlight" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
+"ui.highlight" = { fg = "orange_blaze", bg = "cursorline", underline = {color = "orange_smolder", style = "dotted"}, modifiers = ["bold"] }
 
 "ui.menu" = { fg = "g_2", bg = "g_10" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
