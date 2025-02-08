@@ -112,7 +112,8 @@
 "ui.cursorline.primary" = { bg = "cursorline" }
 "ui.cursorline" = { bg = "g_11" }
 
-"ui.highlight" = { modifiers = ["bold"] }
+"ui.highlight" = { fg = "orange_blaze", bg = "cursorline", modifiers = ["bold"] }
+# "ui.highlight" = { fg = "background", bg = "orange_blaze", modifiers = ["bold"] }
 
 "ui.menu" = { fg = "g_2", bg = "g_10" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
