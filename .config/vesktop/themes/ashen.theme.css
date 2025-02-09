@@ -10,27 +10,27 @@
   --wallpaper: url("/home/fic/Pictures/wallpapers/sidonia-blurred.png");
 
   /* Special */
-  --background: #1e1e1e;
+  --background: #121212;
   --foreground: #c3c3c3;
   /* --foreground: #b22c2c; */
   --cursor: #c3c3c3;
 
   /* Colors */
   --color0: #1e1e1e;
-  --color1: #781e1e;
-  --color2: #842121;
-  --color3: #862121;
-  --color4: #257a96;
-  --color5: #259797;
-  --color6: #a82929;
+  --color1: #C4693D;
+  --color2: #B14242;
+  --color3: #B14242;
+  --color4: #C4693D;
+  --color5: #D87C4A;
+  --color6: #DF6464;
   --color7: #988d8d;
   --color8: #6c5959;
-  --color9: #a12828;
-  --color10: #b22c2c;
-  --color11: #b42c2c;
-  --color12: #32aac8;
-  --color13: #32c9c9;
-  --color14: #d14848;
+  --color9: #DF6464;
+  --color10: #B14242;
+  --color11: #B14242;
+  --color12: #B14242;
+  --color13: #C4693D;
+  --color14: #B14242;
   --color15: #c3c3c3;
 }
 
