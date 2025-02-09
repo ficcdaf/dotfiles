@@ -5,7 +5,7 @@ colors=""
 
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git .anaconda .cache .conda .cmake .dart* .git* .java .librewolf .pub-cache"
 FZF_DEFAULT_OPTS="--height 50% --layout=default --border --color=hl:#933737"
 export FZF_DEFAULT_OPTS="
   $FZF_DEFAULT_OPTS
