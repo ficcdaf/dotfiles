@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 local wk = require("which-key")
 
+require("colemak").init()
 -- vim.keymap.del("n", "n")
 -- vim.keymap.del("n", "N")
 local map = vim.keymap.set
