@@ -129,7 +129,7 @@ eval "$(zoxide init zsh)"
 eval "$(rip completions zsh)"
 export DIRENV_LOG_FORMAT=""
 export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
+# gpg-connect-agent updatestartuptty /bye >/dev/null
 # export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 # gpg-connect-agent /bye > /dev/null
 eval "$(direnv hook zsh)"
