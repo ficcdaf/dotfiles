@@ -39,6 +39,8 @@ alias top=btop
 alias minvim='NVIM_APPNAME="nvim-min" nvim'
 alias vimclean='nvim --clean'
 alias catkeys='/bin/cat -v'
+alias e="$EDITOR"
+alias edit="$EDITOR"
 alias hx="helix"
 alias h="helix"
 alias v='nvim'
@@ -65,6 +67,7 @@ alias tnt="tmux new-session -t"
 
 alias svenv="source .venv/bin/activate"
 alias szsh="source ~/.zshrc"
+alias ezsh="$EDITOR ~/.zshrc"
 alias vzsh="vim ~/.zshrc"
 alias vtmux="vim ~/.config/tmux/tmux.conf"
 alias icat="kitty +kitten icat"
