@@ -108,6 +108,13 @@ if colemak then
   vim.keymap.del({ "n" }, "<S-l>")
   map({ "n" }, "<S-h>", "L", { remap = false })
   map({ "n" }, "<S-l>", "H", { remap = false })
+else
+  vim.api.nvim_create_autocmd("UIEnter", {
+    callback = function()
+      require("colemak").init()
+      vim.notify("colemak")
+    end,
+  })
 end
 -- better delete and put
 
@@ -146,7 +153,7 @@ map({ "n", "x" }, "<leader>Y", ":wa<CR>", { desc = "Save All" })
 -- <leader>o is the prefix for all Obsidian bindings
 
 wk.add({
-  { "<leader>O", group = "Obsidian" },
+  { "<leader>O",  group = "Obsidian" },
   { "<leader>Od", group = "Daily Note" },
   { "<leader>Ol", group = "Follow Link" },
 })

@@ -25,7 +25,7 @@ require("config.lazy")
 --   }
 --   require("neovide-config").setup(nv_opts)
 -- end
-vim.api.nvim_create_autocmd("VimEnter", {
+vim.api.nvim_create_autocmd("UIEnter", {
   callback = function()
     require("colemak").init()
     vim.notify("colemak")
