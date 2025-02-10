@@ -25,6 +25,7 @@ newline = "all"
 [editor.whitespace.characters]
 newline = "↪"
 tab = "→"
+tabpad = "·"
 
 [editor.cursor-shape]
 insert = "bar"
