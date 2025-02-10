@@ -96,7 +96,8 @@
 "ui.text.directory" = { fg = "blue" }
 
 "ui.virtual" = "g_5"
-"ui.virtual.ruler" = "g_5" 
+"ui.virtual.ruler" = "g_8" 
+"ui.virtual.whitespace" = "g_8"
 "ui.virtual.indent-guide" = "g_8"
 "ui.virtual.wrap" = "g_8"
 "ui.virtual.inlay-hint" = {fg = "g_6", modifiers = [ "italic"]}
