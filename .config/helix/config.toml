@@ -36,11 +36,9 @@ enable = true
 [keys.normal]
 ret = "goto_word"
 m = "move_char_left"
-M = "goto_line_start"
 n = "move_visual_line_down"
 e = "move_visual_line_up"
 i = "move_char_right"
-I = "goto_line_end"
 h = "insert_mode"
 H = "insert_at_line_start"
 w = "move_next_sub_word_start"
@@ -54,8 +52,8 @@ A-N = "join_selections_space"
 C-q = ":qa"
 C-Q = ":qa!"
 C-m = "jump_view_left"
-C-M = ":bp"
-C-I = ":bn"
+M = ":bp"
+I = ":bn"
 C-n = "jump_view_down"
 C-e = "jump_view_up"
 C-i = "jump_view_right"
@@ -63,7 +61,7 @@ C-i = "jump_view_right"
 "S-right" = ":bn"
 
 [keys.select]
-ret = "goto_word"
+ret = "extend_to_word"
 m = "extend_char_left"
 M = "extend_to_line_start"
 n = "extend_visual_line_down"
@@ -111,6 +109,8 @@ L = "no_op"
 
 [keys.normal.g]
 z = "goto_window_center"
+m = "goto_line_start"
+i = "goto_line_end"
 
 [keys.normal.backspace]
 d = "delete_selection_noyank"
