@@ -57,8 +57,7 @@ I = ":bn"
 C-n = "jump_view_down"
 C-e = "jump_view_up"
 C-i = "jump_view_right"
-"S-left" = ":bp"
-"S-right" = ":bn"
+# X = "extend_line_above"
 
 [keys.select]
 ret = "extend_to_word"
@@ -96,8 +95,6 @@ I = "swap_view_right"
 d = "wclose"
 V = ":vsplit-new"
 S = ":hsplit-new"
-
-
 h = "no_op"
 j = "no_op"
 k = "no_op"
