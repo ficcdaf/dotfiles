@@ -13,6 +13,8 @@ bufferline = "multiple"
 color-modes = true
 scrolloff = 2
 jump-label-alphabet = "tnseriplfuwydhcxoaqz"
+# minimum severity to show
+end-of-line-diagnostics = "hint"
 # rulers = [120]
 
 [editor.cursor-shape]
@@ -29,6 +31,10 @@ display-messages = true
 # TODO: disable auto signature help
 # and set a binding for it instead
 # auto-signature-help = false
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "disable"
 
 [editor.indent-guides]
 render = true
