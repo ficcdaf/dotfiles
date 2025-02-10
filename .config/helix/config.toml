@@ -71,6 +71,7 @@ C-i = "jump_view_right"
 X = "extend_line_above"
 
 [keys.select]
+X = "extend_line_above"
 ret = "extend_to_word"
 m = "extend_char_left"
 M = "extend_to_line_start"
