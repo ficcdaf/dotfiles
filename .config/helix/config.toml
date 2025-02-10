@@ -84,6 +84,9 @@ C-e = "jump_view_up"
 C-i = "jump_view_right"
 X = "extend_line_above"
 
+[keys.normal.space]
+x = ":bc"
+
 [keys.select.g]
 m = "extend_to_line_start"
 i = "extend_to_line_end"
