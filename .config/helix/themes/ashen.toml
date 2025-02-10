@@ -55,7 +55,7 @@
 
 "special" = "orange_smolder" # fuzzy highlight
 
-"markup.heading" = "red_glowing"
+"markup.heading" = {fg = "red_glowing", modifiers = ["bold"]}
 "markup.list" = "orange_glow"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
