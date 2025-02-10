@@ -25,6 +25,10 @@ mode.normal = "NRM"
 
 [editor.lsp]
 display-inlay-hints = true
+display-messages = true
+# TODO: disable auto signature help
+# and set a binding for it instead
+# auto-signature-help = false
 
 [editor.indent-guides]
 render = true
