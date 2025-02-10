@@ -11,7 +11,7 @@ include=~/dev/plugins/ashen.nvim/extras/foot/ashen.ini
 
 # font=monospace:size=10
 # font=SauceCodePro NFM:size=12
-font = SauceCodePro Nerd Font:size=12
+font = SauceCodePro NFM:size=12
 # font-bold=<bold variant of regular font>
 # font-italic=<italic variant of regular font>
 # font-bold-italic=<bold+italic variant of regular font>
