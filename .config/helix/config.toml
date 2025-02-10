@@ -59,6 +59,7 @@ skip-levels = 1
 enable = true
 
 [keys.normal]
+"C-/" = ":reflow"
 ret = "goto_word"
 m = "move_char_left"
 n = "move_visual_line_down"
