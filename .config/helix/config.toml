@@ -23,7 +23,8 @@ space = "none"
 newline = "all"
 
 [editor.whitespace.characters]
-newline = "↪"
+newline = ""
+# newline = "↪"
 tab = "→"
 tabpad = "·"
 
