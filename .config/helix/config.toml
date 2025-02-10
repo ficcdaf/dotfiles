@@ -8,7 +8,7 @@ undercurl = true
 # Wouldn't be a bad idea to encorporate two clipboards into my workflow,
 # especially for stuff like swapping selections and stuff...
 # default-yank-register = '+'
-cursorline = false
+cursorline = true
 bufferline = "multiple"
 color-modes = true
 scrolloff = 2

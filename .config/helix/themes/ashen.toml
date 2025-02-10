@@ -110,7 +110,7 @@
 "ui.cursor.match" = {fg = "orange_smolder", modifiers = ["underlined"]}
 
 "ui.cursorline.primary" = { bg = "cursorline" }
-"ui.cursorline" = { bg = "g_11" }
+"ui.cursorline" = { bg = "g_12" }
 
 "ui.highlight" = { fg = "orange_blaze", bg = "cursorline", underline = {color = "orange_smolder", style = "dotted"}, modifiers = ["bold"] }
 
@@ -129,7 +129,7 @@ info = "g_2"
 hint = "g_4"
 
 [palette]
-cursorline = "#212121"
+cursorline = "#191919"
 text = "#b4b4b4"
 red_flame = "#C53030"
 red_glowing = "#DF6464"
