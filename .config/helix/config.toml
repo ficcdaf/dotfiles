@@ -17,6 +17,15 @@ jump-label-alphabet = "tnseriplfuwydhcxoaqz"
 end-of-line-diagnostics = "hint"
 # rulers = [120]
 
+[editor.whitespace.render]
+tab = "all"
+space = "none"
+newline = "all"
+
+[editor.whitespace.characters]
+newline = "↪"
+tab = "→"
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
