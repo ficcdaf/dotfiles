@@ -13,6 +13,7 @@ bufferline = "multiple"
 color-modes = true
 scrolloff = 2
 jump-label-alphabet = "tnseriplfuwydhcxoaqz"
+# rulers = [120]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -57,7 +58,7 @@ I = ":bn"
 C-n = "jump_view_down"
 C-e = "jump_view_up"
 C-i = "jump_view_right"
-# X = "extend_line_above"
+X = "extend_line_above"
 
 [keys.select]
 ret = "extend_to_word"
