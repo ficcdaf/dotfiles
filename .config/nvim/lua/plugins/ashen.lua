@@ -33,6 +33,8 @@ return {
           -- NonText = { "#FFFFFF" },
         },
         merge_override = {
+          FloatBorder = { bg = "#000000" }, -- it works
+          NormalFloat = { bg = "#000000" }, -- it doesn't works
           -- ["@function"] = { bold = true },
           -- Normal = { italic = true },
           -- Normal = {"red_ember"},
