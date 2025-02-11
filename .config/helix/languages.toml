@@ -1,0 +1,2 @@
+[language-server.lua-language-server.config.Lua]
+workspace.library = ["/usr/share/nvim/runtime/lua", "/home/fic/.config/nvim/lua"]
