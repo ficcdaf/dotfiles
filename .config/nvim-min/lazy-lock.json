@@ -1,5 +1,5 @@
 {
-  "fzf-lua": { "branch": "main", "commit": "e3fefd97875827e47dc4bbf1074ee464b2d8e6a8" },
-  "lazy.nvim": { "branch": "main", "commit": "7527af40ddd4a93a02911be570b32609b9d4ea53" },
+  "fzf-lua": { "branch": "main", "commit": "a0e901d220892cb6248fa8066d178bea6c047360" },
+  "lazy.nvim": { "branch": "main", "commit": "f15a93907ddad3d9139aea465ae18336d87f5ce6" },
   "mini.icons": { "branch": "main", "commit": "ec61af6e606fc89ee3b1d8f2f20166a3ca917a36" }
 }

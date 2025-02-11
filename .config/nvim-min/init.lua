@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
+			{ out,                            "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -31,7 +31,14 @@ require("lazy").setup({
 		{
 			dir = "~/dev/plugins/ashen.nvim/",
 			opts = {
-				variant = "light",
+				-- variant = "light",
+				transparent = true,
+				hl = {
+					merge_override = {
+						FloatBorder = { bg = "#000000" }, -- it works
+						NormalFloat = { bg = "#000000" }, -- it doesn't works
+					}
+				}
 			},
 		},
 		{
