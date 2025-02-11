@@ -15,7 +15,7 @@ return {
         italic_comments = true,
         bold_functions = true,
       },
-      transparent = false,
+      transparent = true,
       colors = {
         -- background = "#121212",
         -- background = "#131313",
