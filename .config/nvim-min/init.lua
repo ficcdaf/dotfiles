@@ -22,8 +22,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 vim.keymap.set("n", "<C-q>", "<CMD>qa!<Cr>")
-vim.keymap.set("n", "<leader>gg", "<CMD>Neogit<Cr>")
-
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
@@ -31,49 +29,22 @@ require("lazy").setup({
 		{
 			dir = "~/dev/plugins/ashen.nvim/",
 			opts = {
-				-- variant = "light",
 				transparent = true,
 				hl = {
 					merge_override = {
-						FloatBorder = { bg = "#000000" }, -- it works
-						NormalFloat = { bg = "#000000" }, -- it doesn't works
+						FloatBorder = { bg = "#000000" },
+						NormalFloat = { bg = "#000000" },
 					}
 				}
 			},
 		},
-		{
-			"ibhagwan/fzf-lua",
-			-- optional for icon support
-			-- dependencies = { "nvim-tree/nvim-web-devicons" },
-			-- or if using mini.icons/mini.nvim
-			dependencies = { "echasnovski/mini.icons" },
-			opts = {
-				-- fzf_colors = true,
-			},
-		},
-		-- {
-		-- 	"NeogitOrg/neogit",
-		-- 	dependencies = {
-		-- 		"nvim-lua/plenary.nvim", -- required
-		-- 		"sindrets/diffview.nvim", -- optional - Diff integration
-		--
-		-- 		-- Only one of these is needed.
-		-- 		"ibhagwan/fzf-lua", -- optional
-		-- 	},
-		-- 	config = true,
-		-- },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
 	install = { colorscheme = { "ashen" } },
 	-- automatically check for plugin updates
-	checker = { enabled = true },
+	checker = { enabled = false }
 })
 
-vim.keymap.set("n", "<leader><leader>", "<CMD>FzfLua<Cr>")
-
--- require("ashen").setup()
 require("ashen").load()
-
--- vim.inspect(require("ashen.plugins.lualine"))
--- print(require("ashen.plugins.lualine").lualine_opts.options.component_separators.left)
+vim.cmd("hi NormalFloat")
