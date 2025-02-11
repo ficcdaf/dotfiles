@@ -7,7 +7,7 @@
 # app-id=foot # globally set wayland app-id. Default values are "foot" and "footclient" for desktop and server mode
 title=foot
 # locked-title=no
-include=~/dev/plugins/ashen.nvim/extras/foot/ashen.ini
+include=~/dev/ashen/monorepo/foot/ashen.ini
 
 # font=monospace:size=10
 # font=SauceCodePro NFM:size=12
