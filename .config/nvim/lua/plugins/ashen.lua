@@ -1,12 +1,13 @@
 return {
   {
     -- dir = "~/dev/plugins/ashen.nvim/",
-    "ficcdaf/ashen.nvim",
+    "ashen-org/ashen.nvim",
     -- only for debugging
     -- dependencies = {
     --   "folke/snacks.nvim",
     -- },
-    dev = true,
+    enabled = true,
+    dev = false,
     opts = {
       style = {
         -- italic = false,
