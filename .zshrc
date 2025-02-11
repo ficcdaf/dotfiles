@@ -5,7 +5,7 @@ export DISABLE_LS_COLORS=true
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source ~/.profile
 source $ZSH/oh-my-zsh.sh
-ASHEN="$HOME/dev/plugins/ashen.nvim"
+ASHEN="$HOME/dev/ashen/ashen.nvim"
 source $ASHEN/extras/fzf/ashen.sh
 unset LS_COLORS
 export EDITOR="helix"
