@@ -6,8 +6,47 @@
 
 [manager]
 keymap = [
+  # Navigation
   { on = "e", run = "arrow -1", desc = "Move cursor up" },
   { on = "n", run = "arrow 1", desc = "Move cursor down" },
+  { on = "m", run = "leave", desc = "Go back to the parent directory" },
+  { on = "i", run = "enter", desc = "Enter the child directory" },
+  # Find
+  { on = "j", run = "find_arrow", desc = "Goto the next found" },
+  { on = "J", run = "find_arrow --previous", desc = "Goto the previous found" },
+  # Linemode
+  { on = [
+    "k",
+    "s",
+  ], run = "linemode size", desc = "Linemode: size" },
+  { on = [
+    "k",
+    "p",
+  ], run = "linemode permissions", desc = "Linemode: permissions" },
+  { on = [
+    "k",
+    "b",
+  ], run = "linemode btime", desc = "Linemode: btime" },
+  { on = [
+    "k",
+    "k",
+  ], run = "linemode mtime", desc = "Linemode: mtime" },
+  { on = [
+    "k",
+    "o",
+  ], run = "linemode owner", desc = "Linemode: owner" },
+  { on = [
+    "k",
+    "n",
+  ], run = "linemode none", desc = "Linemode: none" },
+]
+
+[input]
+keymap = [
+  { on = "l", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
+  { on = "L", run = "forward --far --end-of-word", desc = "Move forward to the end of the current or next WORD" },
+	{ on = "h", run = "insert",                             desc = "Enter insert mode" },
+	{ on = "H", run = [ "move first-char", "insert" ],      desc = "Move to the BOL, and enter insert mode" },
 ]
 
 [[manager.prepend_keymap]]
