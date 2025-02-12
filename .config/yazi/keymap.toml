@@ -56,6 +56,10 @@ prepend_keymap = [
   { on = [
     "C",
   ], run = "plugin ouch zip", desc = "Compress with ouch" },
+  { on = [
+    "g",
+    "i",
+  ], run = "plugin lazygit", desc = "run lazygit" },
 ]
 
 
