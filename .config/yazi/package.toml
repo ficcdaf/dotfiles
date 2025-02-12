@@ -48,11 +48,6 @@ use = "aresler/path-from-root"
 rev = "68277d2"
 hash = "ada10d1213f2117878e0fd90df708619"
 
-[[plugin.deps]]
-use = "yazi-rs/plugins:git"
-rev = "8945e54"
-hash = "771f18427fb75fb19990ce602bb322f4"
-
 [[flavor.deps]]
 use = "ashen-org/ashen:ashen"
 rev = "ded1f4e"
