@@ -44,9 +44,15 @@ prepend_keymap = [
   ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto git root" },
   { on = "o", run = "plugin open-with-cmd --ags=block", desc = "Open with command in terminal" },
   { on = "O", run = "plugin open-with-cmd", desc = "Open with command" },
-  # {on = "<C-e>", run = 'o'}
+  { on = [
+    "'",
+    ";",
+  ], run = 'plugin custom-shell -- auto --interactive', desc = "custom-shell as default, interactive" },
+  { on = [
+    "'",
+    ":",
+  ], run = 'plugin custom-shell -- auto --interactive --block', desc = "custom-shell as default, interactive, block" },
 ]
-
 [input]
 prepend_keymap = [
   { on = "l", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
