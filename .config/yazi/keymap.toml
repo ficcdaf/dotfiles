@@ -52,8 +52,13 @@ prepend_keymap = [
     "'",
     ":",
   ], run = 'plugin custom-shell -- auto --interactive --block', desc = "custom-shell as default, interactive, block" },
-  {on = "h", run = 'shell --block "helix ."'}
+  { on = "h", run = 'shell --block "helix ."' },
+  { on = [
+    "C",
+  ], run = "plugin ouch zip", desc = "Compress with ouch" },
 ]
+
+
 [input]
 prepend_keymap = [
   { on = "l", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
