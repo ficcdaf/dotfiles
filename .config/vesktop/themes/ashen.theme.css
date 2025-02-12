@@ -9,6 +9,7 @@
 :root {
   /* Special */
   --background: #121212;
+  --background-alt: #212121;
   --foreground: #c3c3c3;
   /* --foreground: #b22c2c; */
   --cursor: #c3c3c3;
@@ -103,7 +104,8 @@ html.newBrand {
   --interactive-active: var(--foreground);
   --interactive-muted: #c3c3c3;
   --background-primary: var(--background);
-  --background-secondary: var(--lightbg);
+  /* --background-secondary: var(--lightbg); */
+  --background-secondary: var(--background);
   --background-secondary-alt: var(--background);
   --background-tertiary: var(--background);
   --background-accent: var(--background);
