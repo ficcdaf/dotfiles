@@ -8,6 +8,11 @@ use = "AnirudhG07/custom-shell"
 rev = "6b4550a"
 hash = "43019cca17a4d7b41746c2e0a6b8f33f"
 
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "5ce76dc"
+hash = "52e5f5c602962e7cbf874da28f52ba45"
+
 [[flavor.deps]]
 use = "ashen-org/ashen:ashen"
 rev = "ded1f4e"
