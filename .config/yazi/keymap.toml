@@ -52,6 +52,7 @@ prepend_keymap = [
     "'",
     ":",
   ], run = 'plugin custom-shell -- auto --interactive --block', desc = "custom-shell as default, interactive, block" },
+  {on = "h", run = 'shell --block "helix ."'}
 ]
 [input]
 prepend_keymap = [

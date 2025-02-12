@@ -28,6 +28,7 @@ LOG_FILE = "/tmp/completion.log"
 [[language]]
 name = "toml"
 roots = ["."]
+auto-format = true
 
 [[language]]
 name = "markdown"
