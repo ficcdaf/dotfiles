@@ -1,11 +1,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
-# [manager]
-# prepend_keymap = [{ on = "<C-n>", run = '''
-#   shell 'dragon-drop -x -i -T "$1"' --confirm
-# ''' }]
 
 [manager]
-keymap = [
+prepend_keymap = [
   # Navigation
   { on = "e", run = "arrow -1", desc = "Move cursor up" },
   { on = "n", run = "arrow 1", desc = "Move cursor down" },
@@ -39,23 +35,17 @@ keymap = [
     "k",
     "n",
   ], run = "linemode none", desc = "Linemode: none" },
+  { on = "!", run = 'shell --block --interactive', desc = "Open shell here" },
+  { on = "<C-n>", run = ''', shell 'dragon-drop -x -i -T "$1"' --confirm, ''', desc = "Drag and drop selection" },
 ]
 
 [input]
-keymap = [
+prepend_keymap = [
   { on = "l", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
   { on = "L", run = "forward --far --end-of-word", desc = "Move forward to the end of the current or next WORD" },
-	{ on = "h", run = "insert",                             desc = "Enter insert mode" },
-	{ on = "H", run = [ "move first-char", "insert" ],      desc = "Move to the BOL, and enter insert mode" },
+  { on = "h", run = "insert", desc = "Enter insert mode" },
+  { on = "H", run = [
+    "move first-char",
+    "insert",
+  ], desc = "Move to the BOL, and enter insert mode" },
 ]
-
-[[manager.prepend_keymap]]
-on = "!"
-run = 'shell --block --interactive'
-desc = "Open shell here"
-[[manager.prepend_keymap]]
-on = "<C-n>"
-run = '''
-shell 'dragon-drop -x -i -T "$1"' --confirm
-'''
-desc = "Drag and drop selection"
