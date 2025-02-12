@@ -41,7 +41,9 @@ prepend_keymap = [
   { on = [
     "g",
     "r",
-  ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto git root"},
+  ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto git root" },
+  { on = "o", run = "plugin open-with-cmd --ags=block", desc = "Open with command in terminal" },
+  { on = "O", run = "plugin open-with-cmd", desc = "Open with command" },
   # {on = "<C-e>", run = 'o'}
 ]
 
