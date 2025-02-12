@@ -1,7 +1,14 @@
+"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 # [manager]
 # prepend_keymap = [{ on = "<C-n>", run = '''
 #   shell 'dragon-drop -x -i -T "$1"' --confirm
 # ''' }]
+
+[manager]
+keymap = [
+  { on = "e", run = "arrow -1", desc = "Move cursor up" },
+  { on = "n", run = "arrow 1", desc = "Move cursor down" },
+]
 
 [[manager.prepend_keymap]]
 on = "!"
