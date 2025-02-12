@@ -264,7 +264,7 @@ keymap = [
 	{ on = "_",      run = "move first-char", desc = "Move to the first non-whitespace character" },
 	{ on = "^",      run = "move first-char", desc = "Move to the first non-whitespace character" },
 	{ on = "<C-a>",  run = "move bol",        desc = "Move to the BOL" },
-	{ on = "<C-e>",  run = "move eol",        desc = "Move to the EOL" },
+	{ on = "<C-l>",  run = "move eol",        desc = "Move to the EOL" },
 	{ on = "<Home>", run = "move bol",        desc = "Move to the BOL" },
 	{ on = "<End>",  run = "move eol",        desc = "Move to the EOL" },
 

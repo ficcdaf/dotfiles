@@ -42,6 +42,7 @@ prepend_keymap = [
     "g",
     "r",
   ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto git root"},
+  # {on = "<C-e>", run = 'o'}
 ]
 
 [input]
