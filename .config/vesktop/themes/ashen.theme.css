@@ -9,7 +9,7 @@
 :root {
   /* Special */
   --background: #121212;
-  --background-alt: #212121;
+  --background-alt: #191919;
   --foreground: #c3c3c3;
   /* --foreground: #b22c2c; */
   --cursor: #c3c3c3;
@@ -51,9 +51,10 @@ element {
 :root {
   /* Yeah, I know lightbg is actually darker than darkbg but whatever
      * change & pull it if you wish */
-  --lightbg: linear-gradient(rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.06)),
-    var(--background);
+  /* --lightbg: linear-gradient(rgba(255, 255, 255, 0.06), */
+  /* rgba(255, 255, 255, 0.06)), */
+  /* var(--background); */
+  --lightbg: #191919;
   --darkbg: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     var(--background);
   --bdfdb-blurple: var(--color1);
@@ -105,7 +106,7 @@ html.newBrand {
   --interactive-muted: #c3c3c3;
   --background-primary: var(--background);
   /* --background-secondary: var(--lightbg); */
-  --background-secondary: var(--background);
+  --background-secondary: var(--background-alt);
   --background-secondary-alt: var(--background);
   --background-tertiary: var(--background);
   --background-accent: var(--background);
