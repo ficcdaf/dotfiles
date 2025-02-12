@@ -3,6 +3,11 @@ use = "Ape/open-with-cmd"
 rev = "433cf30"
 hash = "86e0312b01bc5762813c6c1d0517f073"
 
+[[plugin.deps]]
+use = "AnirudhG07/custom-shell"
+rev = "6b4550a"
+hash = "43019cca17a4d7b41746c2e0a6b8f33f"
+
 [[flavor.deps]]
 use = "ashen-org/ashen:ashen"
 rev = "ded1f4e"
