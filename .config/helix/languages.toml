@@ -30,11 +30,15 @@ name = "toml"
 roots = ["."]
 auto-format = true
 
+[[language-server.iwe]]
+command = "iwes"
+
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "markdown-oxide", "scls"]
+language-servers = ["marksman", "iwe", "scls"]
+# language-servers = ["marksman", "markdown-oxide", "scls"]
 # language-servers = ["marksman", "markdown-oxide", "buffer-language-server"]
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+# formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
 
 
@@ -45,4 +49,4 @@ file-types = []
 shebangs = []
 roots = []
 auto-format = false
-language-servers = [ "scls" ]
+language-servers = ["scls"]
