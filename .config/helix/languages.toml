@@ -36,7 +36,8 @@ command = "iwes"
 [[language]]
 name = "markdown"
 # language-servers = ["iwe", "scls"]
-language-servers = ["marksman", "markdown-oxide", "scls"]
+# language-servers = ["marksman", "markdown-oxide", "scls"]
+language-servers = ["markdown-oxide", "scls"]
 # language-servers = ["marksman", "markdown-oxide", "buffer-language-server"]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
