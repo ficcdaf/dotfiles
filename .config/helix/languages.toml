@@ -4,11 +4,15 @@ workspace.library = [
   "/home/fic/.config/nvim/lua",
 ]
 
+[language-server.buffer-language-server]
+command = "buffer-language-server"
+
 [[language]]
 name = "toml"
 roots = ["."]
 
 [[language]]
 name = "markdown"
+language-servers = ["marksman", "markdown-oxide", "buffer-language-server"]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
