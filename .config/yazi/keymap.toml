@@ -37,7 +37,7 @@ prepend_keymap = [
   ], run = "linemode none", desc = "Linemode: none" },
   { on = "!", run = 'shell "$SHELL" --block', desc = "Open shell here" },
   # { on = "!", run = 'shell --block --interactive', desc = "Open shell here" },
-  { on = "<C-n>", run = ''', shell 'dragon-drop -x -i -T "$1"' --confirm, ''', desc = "Drag and drop selection" },
+  { on = "<C-n>", run = "shell  --confirm dragon-drop -x -i -T '$1'", desc = "Drag and drop selection" },
   { on = [
     "g",
     "r",
