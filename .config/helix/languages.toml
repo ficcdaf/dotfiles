@@ -51,3 +51,7 @@ shebangs = []
 roots = []
 auto-format = false
 language-servers = ["scls"]
+
+
+# [language-server.texlab.config.texlab.build]
+# onSave = true
