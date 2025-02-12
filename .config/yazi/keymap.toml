@@ -38,6 +38,10 @@ prepend_keymap = [
   { on = "!", run = 'shell "$SHELL" --block', desc = "Open shell here" },
   # { on = "!", run = 'shell --block --interactive', desc = "Open shell here" },
   { on = "<C-n>", run = ''', shell 'dragon-drop -x -i -T "$1"' --confirm, ''', desc = "Drag and drop selection" },
+  { on = [
+    "g",
+    "r",
+  ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto git root"},
 ]
 
 [input]
