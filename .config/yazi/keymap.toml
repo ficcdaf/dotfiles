@@ -60,9 +60,15 @@ prepend_keymap = [
     "g",
     "i",
   ], run = "plugin lazygit", desc = "run lazygit" },
+  { on = "<A-y>", run = [
+    "plugin copy-file-contents",
+  ], desc = "Copy contents of file" },
+  { on = [
+    "c",
+    "r",
+  ], run = "plugin path-from-root", desc = "Copies path from git root" },
+
 ]
-
-
 [input]
 prepend_keymap = [
   { on = "l", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
