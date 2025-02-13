@@ -1,5 +1,5 @@
 # -*- conf -*-
-
+[main]
 # shell=$SHELL (if set, otherwise user's default shell from /etc/passwd)
 # term=foot (or xterm-256color if built with -Dterminfo=disabled)
 # login-shell=no
@@ -71,7 +71,7 @@ close=""
 
 [url]
 # launch=xdg-open ${url}
-# label-letters=sadfjklewcmpgh
+label-letters=tnserigmdhcao
 # osc8-underline=url-mode
 # protocols=http, https, ftp, ftps, file, gemini, gopher
 # uri-characters=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.,~:;/?#@!$&%*+="'()[]
