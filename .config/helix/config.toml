@@ -48,7 +48,7 @@ display-messages = true
 # auto-signature-help = false
 
 [editor.inline-diagnostics]
-cursor-line = "hint"
+cursor-line = "disable"
 other-lines = "disable"
 
 [editor.indent-guides]
@@ -91,10 +91,8 @@ x = ":bc"
 
 # UI settings and stuff
 [keys.normal.space.u]
-d = [
-  ':toggle end-of-line-diagnostics hint disable',
-  ':toggle inline-diagnostics.cursor-line disable hint',
-]
+d = [':toggle end-of-line-diagnostics hint disable']
+D = ':toggle inline-diagnostics.cursor-line disable hint'
 w = ':toggle soft-wrap.enable'
 
 [keys.select.g]
