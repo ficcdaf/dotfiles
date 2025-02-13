@@ -15,7 +15,7 @@ color-modes = true
 scrolloff = 2
 jump-label-alphabet = "tnseriplfuwydhcxoaqz"
 # minimum severity to show
-end-of-line-diagnostics = "hint"
+end-of-line-diagnostics = "disable"
 # rulers = [120]
 
 [editor.whitespace.render]
@@ -47,9 +47,9 @@ display-messages = true
 # and set a binding for it instead
 # auto-signature-help = false
 
-# [editor.inline-diagnostics]
-# cursor-line = "disable"
-# other-lines = "disable"
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "disable"
 
 [editor.indent-guides]
 render = true
@@ -92,8 +92,8 @@ x = ":bc"
 # UI settings and stuff
 [keys.normal.space.u]
 d = [
-  # ':toggle inline-diagnostics.cursor-line disable hint',
   ':toggle end-of-line-diagnostics hint disable',
+  ':toggle inline-diagnostics.cursor-line disable hint',
 ]
 w = ':toggle soft-wrap.enable'
 
