@@ -1,8 +1,10 @@
 set selection-clipboard clipboard
 map <C-i> zoom in
 map <C-o> zoom out
-map <S-Down> navigate next
-map <S-Up> navigate previous
+map N navigate next
+map E navigate previous
+map n scroll down
+map e scroll up
 
 set completion-bg "#121212"
 set completion-fg "#d5d5d5"
