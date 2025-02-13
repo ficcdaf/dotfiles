@@ -71,6 +71,10 @@ prepend_keymap = [
   ], desc = "Copy contents of file" },
   { on = [
     "c",
+    "m",
+  ], run = 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', desc = "Mime copy" },
+  { on = [
+    "c",
     "r",
   ], run = "plugin path-from-root", desc = "Copies path from git root" },
 
