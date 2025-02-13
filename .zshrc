@@ -8,7 +8,18 @@ source $ZSH/oh-my-zsh.sh
 ASHEN="$HOME/dev/ashen/ashen.nvim"
 source $ASHEN/extras/fzf/ashen.sh
 unset LS_COLORS
-export EDITOR="hx"
+
+if whence -w helix &>/dev/null; then
+  # Stable
+  HELIX="helix"
+  export EDITOR="helix"
+  alias hx="helix"
+else
+  # Latest
+  HELIX="hx"
+  alias helix="hx"
+  export EDITOR="hx"
+fi
 
 # Note: if I do get Obsidian Bridge working, this is
 # a really bad way to load the env because 
@@ -41,8 +52,7 @@ alias vimclean='nvim --clean'
 alias catkeys='/bin/cat -v'
 alias e="$EDITOR"
 alias edit="$EDITOR"
-# alias hx="helix"
-alias h="hx"
+alias h="$HELIX"
 alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'

@@ -50,5 +50,5 @@ hash = "ada10d1213f2117878e0fd90df708619"
 
 [[flavor.deps]]
 use = "ashen-org/ashen:ashen"
-rev = "ded1f4e"
-hash = "dd7112a30425b077d45359e1cad20759"
+rev = "143aad5"
+hash = "a6f097910912721681300869a94d1fd8"
