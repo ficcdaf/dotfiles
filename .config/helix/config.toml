@@ -47,9 +47,9 @@ display-messages = true
 # and set a binding for it instead
 # auto-signature-help = false
 
-[editor.inline-diagnostics]
-cursor-line = "error"
-other-lines = "disable"
+# [editor.inline-diagnostics]
+# cursor-line = "disable"
+# other-lines = "disable"
 
 [editor.indent-guides]
 render = true
@@ -91,7 +91,10 @@ x = ":bc"
 
 # UI settings and stuff
 [keys.normal.space.u]
-d = ':toggle inline-diagnostics.cursor-line disable warning'
+d = [
+  # ':toggle inline-diagnostics.cursor-line disable hint',
+  ':toggle end-of-line-diagnostics hint disable',
+]
 w = ':toggle soft-wrap.enable'
 
 [keys.select.g]
