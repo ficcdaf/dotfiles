@@ -11,6 +11,8 @@ set $up e
 set $right i
 # Your preferred terminal emulator
 # set $term ghostty
+# set $term foot
+exec_always foot --server
 set $term footclient
 # Your preferred application launcher
 # set $menu wmenu-run
@@ -320,7 +322,6 @@ bindsym $mod+Shift+s exec grimshot save area
 # TODO: add obsidian and filen?
 
 # WARNING: DO NOT TOUCH OR ELSE BAD THINGS WILL HAPPEN!!!!
-exec_always foot --server
 exec /home/fic/AppImage/Filen_linux_x86_64_d2f22b59bc2cfc7139a84517bb91afba.AppImage
 exec xembedsniproxy
 exec nm-applet

@@ -94,6 +94,7 @@ x = ":bc"
 d = [':toggle end-of-line-diagnostics hint disable']
 D = ':toggle inline-diagnostics.cursor-line disable hint'
 w = ':toggle soft-wrap.enable'
+W = ':toggle soft-wrap.wrap-at-text-width'
 
 [keys.select.g]
 m = "extend_to_line_start"

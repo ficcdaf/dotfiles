@@ -20,8 +20,8 @@ font = SauceCodePro NFM:size=12, Symbols Nerd Font Mono:size=12, FreeMono:size=1
 # letter-spacing=0
 # horizontal-letter-offset=0
 # vertical-letter-offset=0
-# underline-offset=<font metrics>
-underline-thickness=1
+underline-offset=3
+# underline-thickness=1
 # strikeout-thickness=<font strikeout thickness>
 # box-drawings-uses-font-glyphs=no
 # dpi-aware=no
