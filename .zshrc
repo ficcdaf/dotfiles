@@ -104,6 +104,9 @@ function nh() {
 function ls() {
   eza --long --color=always --git --header --icons "$@"
 }
+function copymime() {
+  wl-copy -t 'text/uri-list' <<< "file://$@"
+}
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
   yazi "$@" --cwd-file="$tmp"

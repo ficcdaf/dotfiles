@@ -37,7 +37,10 @@ prepend_keymap = [
   ], run = "linemode none", desc = "Linemode: none" },
   { on = "!", run = 'shell "$SHELL" --block', desc = "Open shell here" },
   # { on = "!", run = 'shell --block --interactive', desc = "Open shell here" },
-  { on = "<C-n>", run = "shell  --confirm dragon-drop -x -i -T '$1'", desc = "Drag and drop selection" },
+  { on = [
+    "<space>",
+    "d",
+  ], run = 'shell -- dragon-drop -x -i -T "$1"', desc = "Drag and drop selection" },
   { on = [
     "g",
     "r",
@@ -60,7 +63,10 @@ prepend_keymap = [
     "g",
     "i",
   ], run = "plugin lazygit", desc = "run lazygit" },
-  { on = "<A-y>", run = [
+  { on = [
+    "c",
+    "C",
+  ], run = [
     "plugin copy-file-contents",
   ], desc = "Copy contents of file" },
   { on = [
