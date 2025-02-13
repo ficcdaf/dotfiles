@@ -89,6 +89,11 @@ X = "extend_line_above"
 [keys.normal.space]
 x = ":bc"
 
+# UI settings and stuff
+[keys.normal.space.u]
+d = ':toggle inline-diagnostics.cursor-line disable warning'
+w = ':toggle soft-wrap.enable'
+
 [keys.select.g]
 m = "extend_to_line_start"
 i = "extend_to_line_end"
