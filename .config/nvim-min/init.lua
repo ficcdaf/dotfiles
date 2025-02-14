@@ -27,15 +27,9 @@ require("lazy").setup({
 	spec = {
 		-- "ficcdaf/ashen.nvim",
 		{
-			dir = "~/dev/plugins/ashen.nvim/",
+			dir = "~/dev/ashen/ashen.nvim/",
 			opts = {
-				transparent = true,
-				hl = {
-					merge_override = {
-						FloatBorder = { bg = "#000000" },
-						NormalFloat = { bg = "#000000" },
-					}
-				}
+				variant = "foobar"
 			},
 		},
 	},
@@ -47,4 +41,3 @@ require("lazy").setup({
 })
 
 require("ashen").load()
-vim.cmd("hi NormalFloat")
