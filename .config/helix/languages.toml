@@ -7,7 +7,8 @@ workspace.library = [
 [language-server.tinymist]
 command = "tinymist"
 [language-server.tinymist.config]
-exportPdf = "onSave"
+exportPdf = "onType"
+# exportPdf = "onSave"
 outputPath = "$root/target/$dir/$name"
 formatterMode = "typstyle"
 
