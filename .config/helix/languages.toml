@@ -1,3 +1,10 @@
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+# Config example
+# [language-server.harper-ls.config.harper-ls]
+# diagnosticSeverity = "warning"
+
 [language-server.lua-language-server.config.Lua]
 workspace.library = [
   "/usr/share/nvim/runtime/lua",
@@ -15,6 +22,7 @@ formatterMode = "typstyle"
 [[language]]
 name = "typst"
 auto-format = true
+language-servers = ["tinymist", "harper-ls"]
 
 [language-server.buffer-language-server]
 command = "buffer-language-server"
