@@ -4,6 +4,10 @@ workspace.library = [
   "/home/fic/.config/nvim/lua",
 ]
 
+[language-server.tinymist]
+command = "tinymist"
+config = { exportPdf = "onSave", outputPath = "$root/target/$dir/$name" }
+
 [language-server.buffer-language-server]
 command = "buffer-language-server"
 
