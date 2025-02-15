@@ -39,7 +39,7 @@ name = "markdown"
 # language-servers = ["marksman", "markdown-oxide", "scls"]
 # language-servers = ["markdown-oxide", "scls"]
 # language-servers = ["marksman", "markdown-oxide", "buffer-language-server"]
-language-servers = ["marksman", "iwe", "scls"]
+language-servers = ["iwe", "scls"]
 # formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
 
