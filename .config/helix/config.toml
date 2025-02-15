@@ -55,6 +55,7 @@ skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
+# wrap-indicator = ""
 
 [keys.normal]
 "+" = ":reflow"
