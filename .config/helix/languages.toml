@@ -48,6 +48,7 @@ LOG_FILE = "/tmp/completion.log"
 [[language]]
 name = "toml"
 roots = ["."]
+language-servers = ["taplo", "scls"]
 auto-format = true
 
 [language-server.iwe]
@@ -61,7 +62,7 @@ name = "markdown"
 # language-servers = ["marksman", "markdown-oxide", "buffer-language-server"]
 # language-servers = ["iwe", "scls"]
 # language-servers = ["marksman", "iwe", "scls"]
-language-servers = ["marksman", "scls"]
+language-servers = ["marksman", "scls", "harper-ls"]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
 
