@@ -4,6 +4,7 @@ ZSH="$HOME/.oh-my-zsh"
 export DISABLE_LS_COLORS=true
 export PAGER=ov
 export MANPAGER="ov --section-delimiter '^[^\s]' --section-header"
+export EGET_BIN="/home/fic/.eget/bin"
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases copybuffer copyfile copypath fancy-ctrl-z systemd )
 # plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source ~/.profile
@@ -99,6 +100,7 @@ alias yadmadd="~/dev/autoyadm/yadmadd.sh"
 export PATH="$PATH:/home/fic/.local/bin:/home/fic/.cargo/bin:/home/fic/go/bin"
 export PATH="$PATH:/home/fic/.local/share/bob/nvim-bin"
 export PATH="$PATH:/home/fic/.luarocks/bin"
+export PATH="$PATH:/home/fic/.local/share/npm/bin"
 export PATH="$PATH:/home/fic/.local/share/npm/bin"
 fpath=(~/.zsh.d/ $fpath)
 function nh() {

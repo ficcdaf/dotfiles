@@ -161,17 +161,19 @@ KeyBind:
         - "Enter"
         - "Down"
         - "ctrl+N"
+        - "n"
     up:
         - "Up"
+        - "e"
         - "ctrl+p"
     top:
-        - "Home"
+        - "E"
     bottom:
-        - "End"
+        - "N"
     left:
-        - "left"
+        - "m"
     right:
-        - "right"
+        - "i"
     half_left:
         - "ctrl+left"
     half_right:
@@ -202,9 +204,9 @@ KeyBind:
     previous_section:
         - "^"
     mark:
-        - "m"
+        - "k"
     remove_mark:
-        - "M"
+        - "K"
     remove_all_mark:
         - "ctrl+delete"
     next_mark:
@@ -238,9 +240,9 @@ KeyBind:
     goto:
         - "g"
     next_search:
-        - "n"
+        - "j"
     next_backsearch:
-        - "N"
+        - "J"
     next_doc:
         - "]"
     previous_doc:
@@ -251,7 +253,7 @@ KeyBind:
     multi_color:
         - "."
     jump_target:
-        - "j"
+        - "ctrl+j"
 
 Mode:
   markdown:
