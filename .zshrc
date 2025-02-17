@@ -2,7 +2,7 @@
 bindkey -r '\ex'
 ZSH="$HOME/.oh-my-zsh"
 export DISABLE_LS_COLORS=true
-# export PAGER=ov
+export PAGER=ov
 plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases copybuffer copyfile copypath fancy-ctrl-z systemd )
 # plugins=(ssh-agent git github zsh-autosuggestions zsh-syntax-highlighting aliases colored-man-pages copybuffer copyfile copypath fancy-ctrl-z systemd )
 source ~/.profile
