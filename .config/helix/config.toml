@@ -82,8 +82,8 @@ I = ":bn"
 C-n = "jump_view_down"
 C-e = "jump_view_up"
 C-i = "jump_view_right"
-# X = "extend_line_above"
-X = "toggle_line_select"
+X = "extend_line_above"
+A-x = "toggle_line_select"
 
 [keys.normal."["]
 x = "extend_line_above"
