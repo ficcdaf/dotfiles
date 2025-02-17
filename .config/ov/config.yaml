@@ -50,8 +50,10 @@ StyleHeader:
   Bold: true
   Foreground: "red"
 StyleOverStrike:
+  Foreground: "yellow"
   Bold: true
 StyleOverLine:
+  Foreground: "red"
   Underline: true
 StyleLineNumber:
   Bold: true
