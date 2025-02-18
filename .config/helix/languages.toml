@@ -79,3 +79,13 @@ language-servers = ["scls"]
 
 [language-server.texlab.config.texlab.build]
 onSave = true
+
+[[language]]
+name = "mail"
+scope = "text.mail"
+file-types = ["eml"]
+injection-regex = "mail|eml|email"
+
+[[grammar]]
+name = "mail"
+source.path = "/home/fic/dev/tree-sitter-mail"
