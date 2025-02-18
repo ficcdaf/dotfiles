@@ -12,8 +12,11 @@
 (header_other
   (header_unstructured) @comment)
 
+; Firstname Lastname
 (atom) @variable
 
+; Email Address
+; currently this includes the wrapping <>, can we change this?
 (email) @string
 
 ; (header_subject) @markup.heading
