@@ -156,6 +156,7 @@ default_floating_border pixel 1
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+l exec $lockcmd
+    bindsym $mod+Tab exec ~/scripts/windows.py
 #
 # Moving around:
 #
