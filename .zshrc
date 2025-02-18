@@ -134,7 +134,7 @@ function zle-keymap-select zle-line-init zle-line-finish
       viins|main) print -n '\033[5 q';; # line cursor
   esac
 }
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 function set_win_title(){
     echo -ne "\033]0; ${PWD/#$HOME/~} \007"
 }

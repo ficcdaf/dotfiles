@@ -88,5 +88,5 @@ file-types = ["eml"]
 
 [[grammar]]
 name = "mail"
-# source.path = "/home/fic/dev/tree-sitter-mail"
-source = { git = "https://github.com/stevenxxiu/tree-sitter-mail", rev = "e3d63ac2093e22777cb30d70b9264f48814622ad" }
+source.path = "/home/fic/dev/tree-sitter-mail"
+# source = { git = "https://github.com/stevenxxiu/tree-sitter-mail", rev = "e3d63ac2093e22777cb30d70b9264f48814622ad" }
