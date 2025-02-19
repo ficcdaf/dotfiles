@@ -19,5 +19,8 @@
 ; currently this includes the wrapping <>, can we change this?
 (email) @string
 
+(body
+  (quoted_line) @markup.quote)
+
 ; (header_subject) @markup.heading
 ; (header_other) @markup.environment
