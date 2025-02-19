@@ -20,7 +20,7 @@
 (email) @string
 
 (body
-  (quoted_line) @markup.quote)
+  (quoted_line
+    (quote_marker) @punctuation.special
+    (quote_contents) @markup.quote))
 
-; (header_subject) @markup.heading
-; (header_other) @markup.environment
