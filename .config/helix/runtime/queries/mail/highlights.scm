@@ -8,7 +8,7 @@
 (header_separator) @punctuation.delimiter
 
 (header_subject
-  (header_unstructured) @markup.heading)
+  (header_unstructured) @markup.bold)
 (header_other
   (header_unstructured) @comment)
 
