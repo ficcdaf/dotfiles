@@ -42,7 +42,7 @@ display-inlay-hints = true
 display-messages = true
 # TODO: disable auto signature help
 # and set a binding for it instead
-# auto-signature-help = false
+auto-signature-help = true
 
 [editor.inline-diagnostics]
 cursor-line = "disable"
@@ -56,7 +56,11 @@ skip-levels = 1
 [editor.soft-wrap]
 enable = true
 
+[keys.insert]
+C-k = "signature_help"
+
 [keys.normal]
+C-k = "signature_help"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 "\\" = ":format"
 "+" = ":reflow"
@@ -100,6 +104,8 @@ D = ':toggle inline-diagnostics.cursor-line disable hint'
 w = ':toggle soft-wrap.enable'
 s = ':set soft-wrap.wrap-at-text-width true'
 S = ':set soft-wrap.wrap-at-text-width false'
+k = ":toggle lsp.auto-signature-help"
+
 [keys.select.g]
 m = "extend_to_line_start"
 i = "extend_to_line_end"
