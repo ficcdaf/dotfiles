@@ -19,9 +19,7 @@ X-ExtEditorR-Help: Delivery format options: auto, plaintext, html, both.
 X-ExtEditorR-Help: Custom header names must start with "X-".
 X-ExtEditorR-Help: KEEP blank line below to separate headers from body.
 
-Thanks for your response@
-
-*Markdown*
+Thanks for your response!
 
 ---
 Daniel Fichtinger
