@@ -84,7 +84,8 @@ onSave = true
 name = "mail"
 scope = "text.mail"
 file-types = ["eml"]
-# injection-regex = "mail|eml|email"
+# language-servers = ["harper-ls"]
+injection-regex = "mail|eml|email"
 
 [[grammar]]
 name = "mail"
