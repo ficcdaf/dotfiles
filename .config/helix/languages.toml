@@ -3,8 +3,8 @@ command = "harper-ls"
 args = ["--stdio"]
 # Config example
 # diagnosticSeverity = "warning"
-# [language-server.harper-ls.config.harper-ls.linters]
-# long_sentences = false
+[language-server.harper-ls.config.harper-ls.linters]
+long_sentences = false
 
 [language-server.lua-language-server.config.Lua]
 workspace.library = [
