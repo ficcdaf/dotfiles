@@ -17,7 +17,8 @@ command = "tinymist"
 [language-server.tinymist.config]
 exportPdf = "onType"
 # exportPdf = "onSave"
-outputPath = "$root/target/$dir/$name"
+# outputPath = "$root/target/$dir/$name"
+outputPath = "$dir/$name"
 formatterMode = "typstyle"
 
 [[language]]
