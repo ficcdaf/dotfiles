@@ -49,7 +49,7 @@ source ~/.config/zsh/fzf.zsh
 
 # alias ls="eza -lh --git"
 # alias ls="eza --long --color=always --git --header --icons --no-user"
-alias vlc="env -u DISPLAY vlc"
+# alias vlc="env -u DISPLAY vlc"
 alias ts="tree-sitter"
 alias c="clear"
 alias top=btop
