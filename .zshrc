@@ -102,16 +102,15 @@ export PATH="$PATH:/home/fic/.eget/bin"
 export PATH="$PATH:/home/fic/.local/share/bob/nvim-bin"
 export PATH="$PATH:/home/fic/.luarocks/bin"
 export PATH="$PATH:/home/fic/.local/share/npm/bin"
-export PATH="$PATH:/home/fic/.local/share/npm/bin"
 fpath=(~/.zsh.d/ $fpath)
-function nh() {
+function noh() {
   nohup "$@" > /dev/null 2>&1 &
 }
 function ls() {
   eza --long --color=always --git --header --icons "$@"
 }
-function copymime() {
-  wl-copy -t 'text/uri-list' <<< "file://$@"
+function wl-mime() {
+  wl-copy -t 'text/uri-list' <<< "file://$PWD/$@"
 }
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
