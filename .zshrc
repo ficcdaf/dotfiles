@@ -49,6 +49,7 @@ source ~/.config/zsh/fzf.zsh
 
 # alias ls="eza -lh --git"
 # alias ls="eza --long --color=always --git --header --icons --no-user"
+alias ts="tree-sitter"
 alias c="clear"
 alias top=btop
 alias minvim='NVIM_APPNAME="nvim-min" nvim'
