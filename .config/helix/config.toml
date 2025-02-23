@@ -106,6 +106,7 @@ w = ':toggle soft-wrap.enable'
 s = ':set soft-wrap.wrap-at-text-width true'
 S = ':set soft-wrap.wrap-at-text-width false'
 k = ":toggle lsp.auto-signature-help"
+h = ':toggle lsp.display-inlay-hints'
 
 [keys.select.g]
 m = "extend_to_line_start"
