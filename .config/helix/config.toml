@@ -89,7 +89,7 @@ C-n = "jump_view_down"
 C-e = "jump_view_up"
 C-i = "jump_view_right"
 X = "extend_line_above"
-A-x = "toggle_line_select"
+# A-x = "toggle_line_select"
 D = "kill_to_line_end"
 A-d = "kill_to_line_start"
 
