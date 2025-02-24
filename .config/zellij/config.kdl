@@ -271,7 +271,23 @@ load_plugins {
 // Default: default
 // 
 // theme "dracula"
-theme "ashen" 
+theme "default" 
+themes {
+    default {
+      fg "#f5f5f5"
+      bg "#121212"
+      black "#121212"
+      red "#B14242"
+      // green "#000000"
+      green "#B14242"
+      yellow "#E49A44"
+      orange "#D87C4A"
+      magenta "#a7a7a7"
+      cyan "#b4b4b4"
+      white "#d5d5d5"
+      blue "#4A8B8B"
+    }
+}
 // Choose the base input mode of zellij.
 // Default: normal
 // 
