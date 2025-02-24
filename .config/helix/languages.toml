@@ -112,6 +112,7 @@ injection-regex = "mail|eml|email"
 
 [[grammar]]
 name = "mail"
-source = { git = "https://github.com/ficcdaf/tree-sitter-mail", rev = "4b2a10dbd4b235df2874bce750c8893a296dd3df" }
+# source = { git = "https://github.com/ficcdaf/tree-sitter-mail", rev = "4b2a10dbd4b235df2874bce750c8893a296dd3df" }
+# source = { path = "/home/fic/dev/tree-sitter-mail"}
 
 
