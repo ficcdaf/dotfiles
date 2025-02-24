@@ -37,6 +37,11 @@ fi
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey "^e" edit-command-line
+bindkey "^h" beginning-of-line
+bindkey "^l" end-of-line
+bindkey "^b" backward-word
+bindkey "^d" backward-kill-word
+bindkey "^w" forward-word
 
 # autoload -Uz compinit
 # compinit
