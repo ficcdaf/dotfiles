@@ -146,7 +146,7 @@ function viewport_osc(){
 function mksh(){
   local path="$1.sh"
   if [[ ! -f "$path" ]]; then
-    echo "#!/bin/env bash\n" >> "$path"
+    echo '#!/bin/env bash\n\necho "Hello, World!"' >> "$path"
     /usr/bin/chmod +x "$path"
     echo "$path created."
   else
