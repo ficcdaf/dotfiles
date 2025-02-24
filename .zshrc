@@ -142,6 +142,18 @@ function set_win_title(){
 function viewport_osc(){
   print -Pn "\e]133;A\e\\"
 }
+
+function mksh(){
+  local path="$1.sh"
+  if [[ ! -f "$path" ]]; then
+    echo "#!/bin/env bash\n" >> "$path"
+    /usr/bin/chmod +x "$path"
+    echo "$path created."
+  else
+    echo "$path already exists."
+  fi
+}
+
 # precmd_functions+=(set_win_title viewport_osc)
 precmd_functions+=(viewport_osc)
 zle -N zle-line-init
