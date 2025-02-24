@@ -51,7 +51,7 @@ LOG_FILE = "/tmp/completion.log"
 name = "toml"
 roots = ["."]
 language-servers = ["taplo", "scls"]
-auto-format = true
+auto-format = false
 
 [language-server.iwe]
 command = "iwes"
