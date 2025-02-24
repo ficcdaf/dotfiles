@@ -274,17 +274,17 @@ load_plugins {
 theme "default" 
 themes {
     default {
-      fg "#f5f5f5"
-      bg "#121212"
-      black "#121212"
-      red "#CC241D"
-      green "#B14242"
-      yellow "#D79921"
-      blue "#3C8588"
-      magenta "#D87C4A"
-      cyan "#689D6A"
-      white "#FBF1C7"
-      orange "#D65D0E"
+        fg "#f5f5f5"
+        bg "#121212"
+        black "#121212"
+        red "#B14242"
+        green "#B14242"
+        yellow "#D79921"
+        blue "#3C8588"
+        magenta "#C4693D"
+        cyan "#689D6A"
+        white "#d5d5d5"
+        orange "#C4693D"
   }
 }
 // Choose the base input mode of zellij.
