@@ -1,16 +1,24 @@
 themes {
     ashen {
-      fg "#f5f5f5"
-      bg "#121212"
-      black "#121212"
-      red "#B14242"
-      // green "#000000"
-      green "#D87C4A"
-      yellow "#E49A44"
-      orange "#D87C4A"
-      magenta "#a7a7a7"
-      cyan "#b4b4b4"
-      white "#d5d5d5"
-      blue "#4A8B8B"
-    }
+        fg "#f5f5f5"
+        bg "#121212"
+        // dark gray
+        black "#121212"
+        // red_ember
+        red "#B14242"
+        // red_ember
+        green "#B14242"
+        // orange_blaze
+        yellow "#C4693D"
+        // blue
+        blue "#4A8B8B"
+        // orange_blaze
+        magenta "#C4693D"
+        // blue
+        cyan "#4A8B8B"
+        // off-white
+        white "#d5d5d5"
+        // orange_blaze
+        orange "#C4693D"
+  }
 }
