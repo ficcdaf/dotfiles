@@ -96,6 +96,7 @@ b = "move_prev_word_start"
 C-b = "move_prev_sub_word_start"
 l = "move_next_word_end"
 C-l = "move_next_sub_word_end"
+A-l = "move_prev_sub_word_start"
 
 [keys.normal."["]
 x = "extend_line_above"
@@ -116,6 +117,7 @@ h = ':toggle lsp.display-inlay-hints'
 m = "extend_to_line_start"
 i = "extend_to_line_end"
 I = "extend_to_line_end_newline"
+
 [keys.select]
 X = "extend_line_above"
 ret = "extend_to_word"
@@ -128,7 +130,10 @@ J = "extend_search_prev"
 C-l = "extend_next_sub_word_end"
 l = "extend_next_word_end"
 C-w = "extend_next_sub_word_start"
+C-b = "extend_prev_sub_word_start"
 L = "extend_next_long_word_end"
+A-l = "extend_prev_sub_word_start"
+
 [keys.normal.k]
 m = "match_brackets"
 k = "match_brackets"
