@@ -100,8 +100,8 @@ x = ":bc"
 
 # UI settings and stuff
 [keys.normal.space.u]
-d = ':toggle end-of-line-diagnostics hint disable'
-D = ':toggle inline-diagnostics.cursor-line disable hint'
+D = ':toggle end-of-line-diagnostics hint disable'
+d = ':toggle inline-diagnostics.cursor-line disable hint'
 w = ':toggle soft-wrap.enable'
 s = ':set soft-wrap.wrap-at-text-width true'
 S = ':set soft-wrap.wrap-at-text-width false'
