@@ -1,1 +1,0 @@
-/home/fic/dev/tree-sitter-mail/queries/mail/highlights.scm
