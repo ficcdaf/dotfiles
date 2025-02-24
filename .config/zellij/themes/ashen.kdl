@@ -1,6 +1,6 @@
 themes {
     ashen {
-        fg "#f5f5f5"
+        fg "#d5d5d5"
         bg "#121212"
         // dark gray
         black "#121212"
