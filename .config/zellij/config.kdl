@@ -277,16 +277,15 @@ themes {
       fg "#f5f5f5"
       bg "#121212"
       black "#121212"
-      red "#B14242"
-      // green "#000000"
+      red "#CC241D"
       green "#B14242"
-      yellow "#E49A44"
-      orange "#D87C4A"
-      magenta "#a7a7a7"
-      cyan "#b4b4b4"
-      white "#d5d5d5"
-      blue "#4A8B8B"
-    }
+      yellow "#D79921"
+      blue "#3C8588"
+      magenta "#D87C4A"
+      cyan "#689D6A"
+      white "#FBF1C7"
+      orange "#D65D0E"
+  }
 }
 // Choose the base input mode of zellij.
 // Default: normal
