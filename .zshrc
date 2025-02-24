@@ -147,7 +147,11 @@ function viewport_osc() {
 
 function mksh() {
   local path="$1.sh"
-  if [[ pathchk --portability "$path" ]]
+  if [[ /usr/bin/pathchk -p -P "$path" && "$path" != "" ]]; then
+    echo "test"
+  else
+    echo "else"
+  fi
   # if [[ ! -f "$path" ]]; then
   #   echo '#!/bin/env bash\n\necho "Hello, World!"' >>"$path"
   #   /usr/bin/chmod +x "$path"
