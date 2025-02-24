@@ -152,7 +152,11 @@ function mksh() {
     /usr/bin/chmod +x "$filepath"
     echo "$filepath created."
   else
-    echo "$filepath already exists or is invalid."
+    if [[ "$filepath" == ".sh" ]]; then
+      echo "You must supply an argument!"
+    else
+      echo "$filepath already exists"
+    fi
   fi
 }
 
