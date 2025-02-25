@@ -150,7 +150,7 @@ default_floating_border pixel 1
     bindsym $mod+Shift+l exec $lockcmd
     bindsym $mod+Tab exec sway-window-switcher
     bindsym $mod+Shift+u exec $exitcmd
-    bindsym $mod+Shift+semicolon exec $shutdowncmd
+    # bindsym $mod+Shift+semicolon exec $shutdowncmd
     bindsym $mod+Ctrl+r exec notify-send "test"
     # bindsym $mod+l exec $lockcmd
 #
@@ -267,7 +267,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+# bindsym $mod+r mode "resize"
 
 mode "present" {
     # command starts mirroring
