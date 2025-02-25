@@ -98,6 +98,10 @@ onSave = true
 [[language]]
 name = "devicetree"
 file-types = ["dts", "dtsi", "keymap"]
+# 6557729f4afaf01dec7481d4e5975515ea8f0edd
+[[grammar]]
+name = "devicetree"
+source = { git = "https://github.com/joelspadin/tree-sitter-devicetree", rev = "6557729f4afaf01dec7481d4e5975515ea8f0edd" }
 
 
 [[language]]
