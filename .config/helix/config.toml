@@ -61,6 +61,7 @@ wrap-indicator = ""
 C-k = "signature_help"
 
 [keys.normal]
+backspace = "trim_selections"
 C-k = "signature_help"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 "\\" = ":format"
@@ -212,6 +213,6 @@ n = "move_line_down"
 e = "move_line_up"
 l = "goto_last_line"
 
-[keys.normal.backspace]
+[keys.normal."_"]
 d = "delete_selection_noyank"
 c = "change_selection_noyank"
