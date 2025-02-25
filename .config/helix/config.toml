@@ -64,11 +64,18 @@ C-k = "signature_help"
 # Treesitter selections
 # Left <-> Right: Sibling nodes
 # Up <-> Down: Parent/Child nodes
-# TODO: move_parent_node_end conflict
+A-S-n= "move_parent_node_end"
+A-S-e= "move_parent_node_start"
+A-a = "select_all_siblings"
 A-m = "select_prev_sibling"
 A-n = "shrink_selection"
 A-e = "expand_selection"
 A-i = "select_next_sibling"
+"{" = "rotate_selections_backward"
+"}" = "rotate_selections_forward"
+"A-{" = "rotate_selection_contents_backward"
+"A-}" = "rotate_selection_contents_forward"
+
 tab = "trim_selections"
 C-k = "signature_help"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
@@ -128,6 +135,16 @@ i = "extend_to_line_end"
 I = "extend_to_line_end_newline"
 
 [keys.select]
+# Treesitter selections
+# Left <-> Right: Sibling nodes
+# Up <-> Down: Parent/Child nodes
+A-S-n= "move_parent_node_end"
+A-S-e= "move_parent_node_start"
+A-a = "select_all_siblings"
+A-m = "select_prev_sibling"
+A-n = "shrink_selection"
+A-e = "expand_selection"
+A-i = "select_next_sibling"
 X = "extend_line_above"
 ret = "extend_to_word"
 m = "extend_char_left"
