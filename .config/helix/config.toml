@@ -61,7 +61,14 @@ wrap-indicator = ""
 C-k = "signature_help"
 
 [keys.normal]
+# Treesitter selections
+# Left <-> Right: Sibling nodes
+# Up <-> Down: Parent/Child nodes
+# TODO: move_parent_node_end conflict
 A-m = "select_prev_sibling"
+A-n = "shrink_selection"
+A-e = "expand_selection"
+A-i = "select_next_sibling"
 tab = "trim_selections"
 C-k = "signature_help"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
