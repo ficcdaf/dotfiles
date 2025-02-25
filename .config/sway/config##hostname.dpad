@@ -16,7 +16,7 @@ set $term footclient
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
 # set $menu tofi-run | xargs swaymsg exec --
-set $drun fuzzel --hide-before-typing --placeholder="Select an application:"
+set $drun fuzzel --hide-before-typing -I --placeholder="Select an application:"
 # set $drun tofi-drun --drun-launch=true
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit sway lil bro?: " | grep -q Yes && swaymsg exit
 set $shutdowncmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna poweroff lil bro?: " | grep -q Yes && poweroff
@@ -148,7 +148,7 @@ default_floating_border pixel 1
     # Exit sway (logs you out of your Wayland session)
     # bindsym $mod+Shift+l exec $lockcmd
     bindsym $mod+Shift+l exec $lockcmd
-    bindsym $mod+Tab exec ~/scripts/windows.py
+    bindsym $mod+Tab exec sway-window-switcher
     bindsym $mod+Shift+u exec $exitcmd
     bindsym $mod+Shift+semicolon exec $shutdowncmd
     # bindsym $mod+l exec $lockcmd
