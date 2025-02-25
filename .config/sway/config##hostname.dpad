@@ -16,7 +16,7 @@ set $term footclient
 # set $menu wmenu-run
 set $menu tofi-run | xargs swaymsg exec --
 # set $menu tofi-run | xargs swaymsg exec --
-set $drun fuzzel --counter
+set $drun fuzzel --placeholder="Select an application:"
 # set $drun tofi-drun --drun-launch=true
 set $exitcmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna exit sway lil bro?: " | grep -q Yes && swaymsg exit
 set $shutdowncmd echo -e "No\nYes" | tofi --prompt-text="u sure u wanna poweroff lil bro?: " | grep -q Yes && poweroff
