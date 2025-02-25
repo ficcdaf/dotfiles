@@ -61,6 +61,7 @@ wrap-indicator = ""
 C-k = "signature_help"
 
 [keys.normal]
+A-m = "select_prev_sibling"
 tab = "trim_selections"
 C-k = "signature_help"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
