@@ -60,7 +60,7 @@ output "DP-1" {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 14
+    gaps 16
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -196,15 +196,13 @@ window-rule {
     }
 }
 window-rule {
-    match app-id="firefox$"
+    match app-id="vesktop$"
     clip-to-geometry true
+    // draw-border-with-background true
 }
 window-rule {
     match app-id="firefox$"
     clip-to-geometry true
-    // focus-ring {
-    //     width 2
-    // }
 }
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
