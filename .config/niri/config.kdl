@@ -158,7 +158,7 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // spawn-at-startup "alacritty" "-e" "fish"
-spawn-at-startup "dunst"
+spawn-at-startup "dunst" "&"
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
@@ -198,7 +198,7 @@ window-rule {
 window-rule {
     match app-id="vesktop$"
     // clip-to-geometry true
-    min-width 500
+    // min-width 500
  // draw-border-with-background true
 }
 window-rule {
