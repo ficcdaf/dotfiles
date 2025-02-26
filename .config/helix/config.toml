@@ -133,6 +133,7 @@ h = ':toggle lsp.display-inlay-hints'
 m = "extend_to_line_start"
 i = "extend_to_line_end"
 I = "extend_to_line_end_newline"
+l = "no_op"
 
 [keys.select]
 # Treesitter selections
