@@ -99,12 +99,13 @@ layout {
     // `draw-border-with-background`.
     // You can change how the focus ring looks.
     focus-ring {
+        off
         width 1
         active-color "#B14242"
         inactive-color "#121212"
     }
     border {
-        off
+        // off
         width 1
         active-color "#B14242"
         inactive-color "#121212"
