@@ -15,9 +15,10 @@ unset LS_COLORS
 
 if whence -w helix &>/dev/null; then
   # Stable
-  HELIX="helix"
-  export EDITOR="helix"
-  alias hx="helix"
+  HELIX="hx"
+  export EDITOR="hx"
+  alias helix="hx"
+  # alias hx="helix"
 else
   # Latest
   HELIX="hx"

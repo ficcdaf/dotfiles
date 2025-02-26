@@ -133,3 +133,8 @@ source = { git = "https://github.com/ficcdaf/tree-sitter-mail", rev = "8e60f38ef
 [[language]]
 name = "python"
 language-servers = [ "basedpyright" ]
+
+[[language]]
+name = "kdl"
+# Configure kdlfmt to use stdin
+formatter = { command = "kdlfmt", args = ["format", "-"] }
