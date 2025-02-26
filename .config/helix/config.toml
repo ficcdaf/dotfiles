@@ -3,7 +3,7 @@ theme = "ashen"
 [editor]
 line-number = "relative"
 undercurl = true
-true-color = true
+# true-color = true
 # Not sure if I should enable this by default...
 # maybe it's better to just get used to using the clipboards separately?
 # Wouldn't be a bad idea to encorporate two clipboards into my workflow,

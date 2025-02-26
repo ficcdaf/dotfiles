@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export EDITOR="helix"
+export EDITOR="hx"
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 export OZONE_PLATFORM=wayland
 # export XDG_CURRENT_DESKTOP=sway
