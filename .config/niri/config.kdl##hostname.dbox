@@ -13,15 +13,15 @@ input {
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
     touchpad {
-        // off
-        tap
+        off
+ // tap
         // dwt
         // dwtp
         // drag-lock
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
-        scroll-method "two-finger"
+        // scroll-method "two-finger"
  // disabled-on-external-mouse
     }
     mouse {
@@ -32,14 +32,13 @@ input {
  // scroll-method "no-scroll"
     }
     trackpoint {
- // off
-        // natural-scroll
+        off
+ // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "on-button-down"
         // scroll-button 273
         // middle-emulation
-
     }
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
@@ -51,11 +50,11 @@ input {
 // BenQ
 output "DP-1" {
     mode "1920x1080@143.981"
+    position x=1920 y=0
 }
 // Dell
 output "HDMI-A-1" {
     mode "1920x1200@59.950"
-    position x=1920 y=0
 }
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -322,12 +321,12 @@ binds {
         focus-column-right
     }
     Mod+M {
-        focus-column-left
+        focus-column-or-monitor-left
     }
     // Mod+N     { focus-window-down; }
     // Mod+E     { focus-window-up; }
     Mod+I {
-        focus-column-right
+        focus-column-or-monitor-right
     }
     Mod+Shift+Left {
         move-column-left
