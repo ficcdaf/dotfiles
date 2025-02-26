@@ -196,8 +196,12 @@ window-rule {
     }
 }
 window-rule {
+    match app-id="thunderbird$"
+    default-column-width { proportion 0.75; }
+}
+window-rule {
     match app-id="vesktop$"
-    // clip-to-geometry true
+ // clip-to-geometry true
     // min-width 500
  // draw-border-with-background true
 }
