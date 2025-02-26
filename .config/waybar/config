@@ -18,9 +18,22 @@
   "sway/window": {
     "max-length": 50
   },
+  // "niri/workspaces": {
+  //   "disable-scroll": false,
+  // },
   "niri/workspaces": {
-    "disable-scroll": false,
-  },
+    "format": "{icon}",
+    "format-icons": {
+      // Named workspaces
+      // (you need to configure them in niri)
+      "browser": "",
+      "discord": "",
+      "chat": "<b></b>",
+      // Icons by state
+      "active": "",
+      "default": ""
+    }
+  }
   //   "sway/workspaces": {
   //     "disable-scroll" : false,
   // },
