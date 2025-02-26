@@ -114,7 +114,7 @@ function noh() {
 function ls() {
   eza --long --color=always --git --header --icons "$@"
 }
-function wl-mime() {
+function copyl() {
   wl-copy -t 'text/uri-list' <<<"file://$PWD/$@"
 }
 function y() {
