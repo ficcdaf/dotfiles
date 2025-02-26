@@ -197,8 +197,9 @@ window-rule {
 }
 window-rule {
     match app-id="vesktop$"
-    clip-to-geometry true
-    // draw-border-with-background true
+    // clip-to-geometry true
+    max-width 876
+ // draw-border-with-background true
 }
 window-rule {
     match app-id="firefox$"
