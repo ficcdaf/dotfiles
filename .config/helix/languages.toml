@@ -1,3 +1,9 @@
+# [language-server.basedpyright]
+# command = "basedpyright"
+[language-server.basedpyright.config.basedpyright.analysis]
+typeCheckingMode = "standard"
+inlayHints.genericTypes = true
+
 [language-server.harper-ls]
 command = "harper-ls"
 args = ["--stdio"]
