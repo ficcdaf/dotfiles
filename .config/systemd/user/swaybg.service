@@ -4,5 +4,6 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/swaybg -m fill -i "%h/Pictures/wallpapers/sidonia-blurred.png"
+ExecStart=/usr/bin/swaybg -m fill -i "%h/Pictures/wallpapers/evangelion.png"
 Restart=on-failure
+

@@ -48,12 +48,14 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
     focus-follows-mouse
 }
-output "eDP-1" {
-    scale 1.5
-}
+// BenQ
 output "DP-1" {
-    mode "3840x2160"
-    scale 2
+    mode "1920x1080@143.981"
+}
+// Dell
+output "HDMI-A-1" {
+    mode "1920x1200@59.950"
+    position x=1920 y=0
 }
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
