@@ -136,6 +136,6 @@ language-servers = [ "basedpyright" ]
 
 [[language]]
 name = "kdl"
-autoformat = true
+auto-format = true
 # Configure kdlfmt to use stdin
 formatter = { command = "kdlfmt", args = ["format", "-"] }
