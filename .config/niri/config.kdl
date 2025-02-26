@@ -112,7 +112,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        off
+        // off
 
         // How many logical pixels the ring extends out from the windows.
         width 1
@@ -148,7 +148,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        // off
+        off
 
         width 1
         active-color "#B14242"
@@ -258,7 +258,7 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"#
     focus-ring {
-        width 4
+        width 2
     }
 }
 
@@ -291,6 +291,10 @@ window-rule {
     clip-to-geometry true
 }
 
+environment {
+    QT_QPA_PLATFORM "wayland"
+    DISPLAY ":0"
+}
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
