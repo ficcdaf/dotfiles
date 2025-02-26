@@ -343,10 +343,10 @@ binds {
     // Mod+Ctrl+N     { move-window-down-or-to-workspace-down; }
     // Mod+Ctrl+E     { move-window-up-or-to-workspace-up; }
 
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
-    Mod+Ctrl+Home { move-column-to-first; }
-    Mod+Ctrl+End  { move-column-to-last; }
+    Mod+A { focus-column-first; }
+    Mod+O  { focus-column-last; }
+    Mod+Shift+A { move-column-to-first; }
+    Mod+Shift+O  { move-column-to-last; }
 
     // don't love these honestly
     // TODO: Change smart-mouse to LGUI on keyboard?
@@ -382,8 +382,8 @@ binds {
     Mod+U              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-    Mod+Ctrl+L         { move-column-to-workspace-down; }
-    Mod+Ctrl+U         { move-column-to-workspace-up; }
+    Mod+Shift+L         { move-column-to-workspace-down; }
+    Mod+Shift+U         { move-column-to-workspace-up; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
@@ -391,8 +391,8 @@ binds {
 
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+L         { move-workspace-down; }
-    Mod+Shift+U         { move-workspace-up; }
+    Mod+Ctrl+L         { move-workspace-down; }
+    Mod+Ctrl+U         { move-workspace-up; }
 
     // You can bind mouse wheel scroll ticks using the following syntax.
     // These binds will change direction based on the natural-scroll setting.
@@ -474,8 +474,8 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+Shift+F { maximize-column; }
-    Mod+F { fullscreen-window; }
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
