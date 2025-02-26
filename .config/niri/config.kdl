@@ -299,7 +299,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "footclient"; }
-    Mod+D { spawn "fuzzel" "--hide-before-typing" "-I" "--placeholder='Select an application:'"; }
+    Mod+D { spawn "fuzzel" "--hide-before-typing" "-I" "--placeholder=Select an application:"; }
     Mod+Ctrl+semicolon { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
@@ -323,8 +323,8 @@ binds {
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+M     { focus-column-left; }
-    Mod+N     { focus-window-down; }
-    Mod+E     { focus-window-up; }
+    // Mod+N     { focus-window-down; }
+    // Mod+E     { focus-window-up; }
     Mod+I     { focus-column-right; }
 
     Mod+Shift+Left  { move-column-left; }
@@ -332,16 +332,16 @@ binds {
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Right { move-column-right; }
     Mod+Shift+M     { move-column-left; }
-    Mod+Shift+N     { move-window-down; }
-    Mod+Shift+E     { move-window-up; }
+    // Mod+Shift+N     { move-window-down; }
+    // Mod+Shift+E     { move-window-up; }
     Mod+Shift+I     { move-column-right; }
 
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
-    // Mod+N     { focus-window-or-workspace-down; }
-    // Mod+E     { focus-window-or-workspace-up; }
-    // Mod+Ctrl+N     { move-window-down-or-to-workspace-down; }
-    // Mod+Ctrl+E     { move-window-up-or-to-workspace-up; }
+    Mod+N     { focus-window-or-workspace-down; }
+    Mod+E     { focus-window-or-workspace-up; }
+    Mod+Shift+N     { move-window-down-or-to-workspace-down; }
+    Mod+Shift+E     { move-window-up-or-to-workspace-up; }
 
     Mod+A { focus-column-first; }
     Mod+O  { focus-column-last; }
