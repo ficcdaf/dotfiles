@@ -123,3 +123,7 @@ injection-regex = "mail|eml|email"
 name = "mail"
 source = { git = "https://github.com/ficcdaf/tree-sitter-mail", rev = "8e60f38efbae1cc5f22833ae13c5500dd0f3b12f" }
 # source = { path = "/home/fic/dev/tree-sitter-mail"}
+
+[[language]]
+name = "python"
+language-servers = [ "basedpyright" ]
