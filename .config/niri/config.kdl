@@ -293,7 +293,13 @@ window-rule {
 
 environment {
     QT_QPA_PLATFORM "wayland"
-    DISPLAY ":0"
+    DISPLAY null
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    OZONE_PLATFORM "wayland"
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt5ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    QT_AUTO_SCREEN_SCALE_FACTOR "1"
 }
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
