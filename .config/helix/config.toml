@@ -89,8 +89,8 @@ i = "move_char_right"
 h = "insert_mode"
 H = "insert_at_line_start"
 L = "move_next_long_word_end"
-j = "search_next"
-J = "search_prev"
+j = ["search_next", "align_view_center"]
+J = ["search_prev", "align_view_center"]
 N = "join_selections"
 A-N = "join_selections_space"
 C-q = ":qa"
@@ -133,7 +133,8 @@ h = ':toggle lsp.display-inlay-hints'
 m = "extend_to_line_start"
 i = "extend_to_line_end"
 I = "extend_to_line_end_newline"
-l = "no_op"
+l = "goto_file_end"
+L = "goto_last_line"
 
 [keys.select]
 # Treesitter selections
@@ -152,8 +153,8 @@ m = "extend_char_left"
 n = "extend_visual_line_down"
 e = "extend_visual_line_up"
 i = "extend_char_right"
-j = "extend_search_next"
-J = "extend_search_prev"
+j = ["extend_search_next", "align_view_center"]
+J = ["extend_search_prev", "align_view_center"]
 C-l = "extend_next_sub_word_end"
 l = "extend_next_word_end"
 C-w = "extend_next_sub_word_start"
@@ -232,12 +233,13 @@ L = "no_op"
 
 [keys.normal.g]
 z = "goto_window_center"
-m = "goto_line_start"
+m = "goto_first_nonwhitespace"
 i = "goto_line_end"
 I = "goto_line_end_newline"
 n = "move_line_down"
 e = "move_line_up"
-l = "goto_last_line"
+l = "goto_file_end"
+L = "goto_last_line"
 
 [keys.normal.backspace]
 d = "delete_selection_noyank"
