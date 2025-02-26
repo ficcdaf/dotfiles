@@ -1,11 +1,11 @@
 {
   "layer": "top",
   "modules-left": [
-    "sway/workspaces",
+    "niri/workspaces",
     "sway/mode"
   ],
   "modules-center": [
-    "sway/window"
+    "niri/window"
   ],
   "modules-right": [
     "cpu",
@@ -15,25 +15,22 @@
     "tray",
     "clock"
   ],
-  "sway/window": {
+  "niri/window": {
     "max-length": 50
   },
-  // "niri/workspaces": {
-  //   "disable-scroll": false,
-  // },
   "niri/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      // Named workspaces
-      // (you need to configure them in niri)
-      "browser": "",
-      "discord": "",
-      "chat": "<b></b>",
-      // Icons by state
-      "active": "",
-      "default": ""
-    }
-  }
+    // "format": "{icon}",
+    // "format-icons": {
+    //   // Named workspaces
+    //   // (you need to configure them in niri)
+    //   "browser": "",
+    //   "discord": "",
+    //   "chat": "<b></b>",
+    //   // Icons by state
+    //   "active": "",
+    //   "default": ""
+    // }
+  },
   //   "sway/workspaces": {
   //     "disable-scroll" : false,
   // },
