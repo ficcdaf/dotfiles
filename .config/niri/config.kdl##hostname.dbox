@@ -437,10 +437,10 @@ binds {
         focus-workspace-up
     }
     Mod+L {
-        focus-workspace-down
+        focus-monitor-left
     }
     Mod+U {
-        focus-workspace-up
+        focus-monitor-right
     }
     Mod+Ctrl+Page_Down {
         move-column-to-workspace-down
