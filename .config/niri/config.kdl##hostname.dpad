@@ -320,12 +320,12 @@ binds {
         focus-column-right
     }
     Mod+M {
-        focus-column-left
+        focus-column-or-monitor-left
     }
     // Mod+N     { focus-window-down; }
     // Mod+E     { focus-window-up; }
     Mod+I {
-        focus-column-right
+        focus-column-or-monitor-right
     }
     Mod+Shift+Left {
         move-column-left
@@ -436,10 +436,10 @@ binds {
         focus-workspace-up
     }
     Mod+L {
-        focus-workspace-down
+        focus-monitor-left
     }
     Mod+U {
-        focus-workspace-up
+        focus-monitor-right
     }
     Mod+Ctrl+Page_Down {
         move-column-to-workspace-down
