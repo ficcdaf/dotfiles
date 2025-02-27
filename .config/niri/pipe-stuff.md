@@ -1,4 +1,5 @@
 ```ini
+[iPutHereForHL]
 pipe-scrollback=[fish -c "piped_window_editor"] Shift+Mod1+o
 pipe-visible=[fish -c "piped_window_editor"] Shift+Mod1+l
 ```
