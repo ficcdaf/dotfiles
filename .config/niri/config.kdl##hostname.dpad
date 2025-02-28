@@ -196,7 +196,7 @@ window-rule {
     }
 }
 window-rule {
-    match app-id="thunderbird$"
+    match app-id="thunderbird$|betterbird$"
     default-column-width {
         proportion 0.75
     }
