@@ -88,11 +88,11 @@ language-servers = ["scls"]
 [language-server.texlab.config.texlab.build]
 onSave = true
 
-# [[language]]
-# name = "mail"
+[[language]]
+name = "mail"
 # scope = "text.mail"
 # file-types = ["eml"]
-# # language-servers = ["harper-ls"]
+language-servers = ["harper-ls"]
 # injection-regex = "mail|eml|email"
 
 # [[grammar]]
