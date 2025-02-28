@@ -682,6 +682,9 @@ binds {
     Mod+Alt+S {
         spawn "~/scripts/recorder.sh"
     }
+    Mod+Tab {
+        spawn "~/scripts/niri/window-picker.py"
+    }
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
     // so they may, for example, forward the key presses as-is to a remote machine.
