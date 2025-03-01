@@ -27,6 +27,7 @@
 "string.special.symbol" = "orange_smolder"
 
 "comment" = { fg = "g_6", modifiers = ["italic"] }
+# "comment" = { fg = "#838383", modifiers = ["italic"] }
 "comment.block.documentation" = { fg = "g_5", modifiers = ["italic"] }
 
 "variable" = "g_3"
