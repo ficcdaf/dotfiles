@@ -93,7 +93,7 @@ hide-when-typing=yes
 # long-press-delay=400
 
 [colors]
-alpha=1.0
+alpha=0.95
 # background=121212
 # foreground=f5f5f5    
 # flash=7f7f00
