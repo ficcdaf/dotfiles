@@ -31,7 +31,7 @@ tabpad = " "
 
 [editor.cursor-shape]
 # insert = "bar"
-# normal = "block"
+normal = "block"
 # select = "underline"
 
 [editor.statusline]
