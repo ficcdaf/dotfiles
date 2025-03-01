@@ -76,6 +76,7 @@ A-i = "select_next_sibling"
 "A-{" = "rotate_selection_contents_backward"
 "A-}" = "rotate_selection_contents_forward"
 
+C-f = "jump_forward"
 a = "append_mode_same_line"
 tab = "trim_selections"
 C-k = "signature_help"
