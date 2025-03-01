@@ -97,12 +97,13 @@ language-servers = ["harper-ls"]
 
 [[grammar]]
 name = "ini"
-# scope = "source.ini"
-# injection-regex = "ini"
-# comment-token = "#"
-# indent = { tab-width = 4, unit = "\t" }
+
 source.path = "/home/fic/dev/tree-sitter-ini"
 [[language]]
+scope = "source.ini"
+injection-regex = "ini"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
 name = "ini"
 file-types = [
   "ini",

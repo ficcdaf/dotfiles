@@ -59,6 +59,9 @@ output "HDMI-A-1" {
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
     gaps 16
@@ -197,7 +200,7 @@ window-rule {
     }
 }
 window-rule {
-    match app-id="thunderbird$"
+    match app-id="thunderbird$|Betterbird$"
     default-column-width {
         proportion 0.75
     }
@@ -321,12 +324,12 @@ binds {
         focus-column-right
     }
     Mod+M {
-        focus-column-left
+        focus-column-or-monitor-left
     }
     // Mod+N     { focus-window-down; }
     // Mod+E     { focus-window-up; }
     Mod+I {
-        focus-column-right
+        focus-column-or-monitor-right
     }
     Mod+Shift+Left {
         move-column-left
@@ -376,11 +379,11 @@ binds {
     }
     // don't love these honestly
     // TODO: Change smart-mouse to LGUI on keyboard?
-    Mod+Ctrl+Left {
+    Mod+Comma {
         focus-monitor-left
     }
-    Mod+Ctrl+Down {
-        focus-monitor-down
+    Mod+Period {
+        focus-monitor-right
     }
     Mod+Ctrl+Up {
         focus-monitor-up
@@ -437,10 +440,10 @@ binds {
         focus-workspace-up
     }
     Mod+L {
-        focus-workspace-down
+        focus-monitor-left
     }
     Mod+U {
-        focus-workspace-up
+        focus-monitor-right
     }
     Mod+Ctrl+Page_Down {
         move-column-to-workspace-down
@@ -600,11 +603,11 @@ binds {
         consume-or-expel-window-right
     }
     // Consume one window from the right to the bottom of the focused column.
-    Mod+Comma {
+    Mod+BraceLeft {
         consume-window-into-column
     }
     // Expel the bottom window from the focused column to the right.
-    Mod+Period {
+    Mod+BraceRight {
         expel-window-from-column
     }
     Mod+R {
@@ -682,6 +685,9 @@ binds {
     }
     Mod+Alt+S {
         spawn "~/scripts/recorder.sh"
+    }
+    Mod+Tab {
+        spawn "~/scripts/niri/window-picker.py"
     }
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
