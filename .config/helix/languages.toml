@@ -95,6 +95,44 @@ name = "mail"
 language-servers = ["harper-ls"]
 # injection-regex = "mail|eml|email"
 
+[[grammar]]
+name = "ini"
+scope = "source.ini"
+injection-regex = "ini"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
+source.path = "/home/fic/dev/tree-sitter-ini"
+[[language]]
+name = "ini"
+file-types = [
+  "ini",
+  # Systemd unit files
+  "service",
+  "automount",
+  "device",
+  "mount",
+  "path",
+  "service",
+  "slice",
+  "socket",
+  "swap",
+  "target",
+  "timer",
+  # Podman quadlets
+  "container",
+  "volume",
+  "kube",
+  "network",
+  { glob = ".editorconfig" },
+  { glob = ".npmrc" },
+  { glob = "hgrc" },
+  { glob = "npmrc" },
+  { glob = "rclone.conf" },
+  "conf",
+  "properties",
+  "cfg",
+  "directory"
+]
 # [[grammar]]
 # name = "mail"
 # source.path = "/home/fic/dev/tree-sitter-mail"

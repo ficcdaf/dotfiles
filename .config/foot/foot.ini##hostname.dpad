@@ -1,5 +1,5 @@
 # -*- conf -*-
-[main]
+# [main]
 # shell=$SHELL (if set, otherwise user's default shell from /etc/passwd)
 # term=foot (or xterm-256color if built with -Dterminfo=disabled)
 # login-shell=no
@@ -93,7 +93,7 @@ hide-when-typing=yes
 # long-press-delay=400
 
 [colors]
-alpha=1.0
+alpha=0.95
 # background=121212
 # foreground=f5f5f5    
 # flash=7f7f00
