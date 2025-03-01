@@ -95,6 +95,10 @@ name = "mail"
 language-servers = ["harper-ls"]
 # injection-regex = "mail|eml|email"
 
+[[grammar]]
+name = "ini"
+source.path = "/home/fic/dev/tree-sitter-ini"
+
 # [[grammar]]
 # name = "mail"
 # source.path = "/home/fic/dev/tree-sitter-mail"
