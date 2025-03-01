@@ -412,10 +412,10 @@ binds {
     Mod+Shift+Ctrl+Up {
         move-column-to-monitor-up
     }
-    Mod+Shift+Ctrl+Right {
+    Mod+Shift+Period {
         move-column-to-monitor-right
     }
-    Mod+Shift+Ctrl+M {
+    Mod+Shift+Comma {
         move-column-to-monitor-left
     }
     Mod+Shift+Ctrl+N {

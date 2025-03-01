@@ -78,8 +78,8 @@ label-letters=tnserigmdhcao
 
 [cursor]
 style=beam
-blink=yes
-blink-rate=600
+# blink=yes
+# blink-rate=600
 beam-thickness=0.5
 # underline-thickness=<font underline thickness>
 # color=121212 f5f5f5
