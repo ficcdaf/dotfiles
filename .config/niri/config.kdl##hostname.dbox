@@ -163,6 +163,7 @@ layout {
 // See the binds section below for more spawn examples.
 // spawn-at-startup "alacritty" "-e" "fish"
 spawn-at-startup "dunst" "&"
+spawn-at-startup "xwayland-satellite"
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
@@ -244,7 +245,7 @@ clip-to-geometry true
 }
 environment {
     QT_QPA_PLATFORM "wayland"
-    DISPLAY null
+    DISPLAY ":0"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     OZONE_PLATFORM "wayland"
     QT_QPA_PLATFORM "wayland"

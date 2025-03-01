@@ -41,3 +41,4 @@
 .config/niri
 .config/fish
 .config/yadm/tracked
+.config/ncspot
