@@ -127,7 +127,7 @@ file-types = [
   { glob = "npmrc" },
   { glob = "rclone.conf" },
   { glob = "**/tmp/*.conf" },
-  { glob = "/var/tmp/test.conf" },
+  # { glob = "/var/tmp/test.conf" },
   { glob = "test.conf" },
   "properties",
   "cfg",
