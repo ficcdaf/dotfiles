@@ -30,9 +30,9 @@ tab = ""
 tabpad = " "
 
 [editor.cursor-shape]
-insert = "bar"
-normal = "block"
-select = "underline"
+# insert = "bar"
+# normal = "block"
+# select = "underline"
 
 [editor.statusline]
 mode.normal = "NRM"
