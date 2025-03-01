@@ -102,6 +102,8 @@ injection-regex = "ini"
 comment-token = "#"
 indent = { tab-width = 4, unit = "\t" }
 source.path = "/home/fic/dev/tree-sitter-ini"
+[[language]]
+name = "ini"
 file-types = [
   "ini",
   # Systemd unit files
@@ -126,9 +128,7 @@ file-types = [
   { glob = "hgrc" },
   { glob = "npmrc" },
   { glob = "rclone.conf" },
-  { glob = "**/tmp/*.conf" },
-  # { glob = "/var/tmp/test.conf" },
-  { glob = "test.conf" },
+  "conf",
   "properties",
   "cfg",
   "directory"
