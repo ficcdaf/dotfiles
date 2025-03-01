@@ -97,10 +97,10 @@ language-servers = ["harper-ls"]
 
 [[grammar]]
 name = "ini"
-scope = "source.ini"
-injection-regex = "ini"
-comment-token = "#"
-indent = { tab-width = 4, unit = "\t" }
+# scope = "source.ini"
+# injection-regex = "ini"
+# comment-token = "#"
+# indent = { tab-width = 4, unit = "\t" }
 source.path = "/home/fic/dev/tree-sitter-ini"
 [[language]]
 name = "ini"
@@ -131,7 +131,7 @@ file-types = [
   "conf",
   "properties",
   "cfg",
-  "directory"
+  "directory",
 ]
 # [[grammar]]
 # name = "mail"
@@ -170,7 +170,7 @@ source = { git = "https://github.com/ficcdaf/tree-sitter-mail", rev = "8e60f38ef
 
 [[language]]
 name = "python"
-language-servers = [ "basedpyright" ]
+language-servers = ["basedpyright"]
 
 [[language]]
 name = "kdl"
