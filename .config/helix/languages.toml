@@ -97,6 +97,10 @@ language-servers = ["harper-ls"]
 
 [[grammar]]
 name = "ini"
+scope = "source.ini"
+injection-regex = "ini"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
 source.path = "/home/fic/dev/tree-sitter-ini"
 file-types = [
   "ini",
@@ -123,7 +127,8 @@ file-types = [
   { glob = "npmrc" },
   { glob = "rclone.conf" },
   { glob = "**/tmp/*.conf" },
-  # "conf",
+  { glob = "/var/tmp/test.conf" },
+  { glob = "test.conf" },
   "properties",
   "cfg",
   "directory"
