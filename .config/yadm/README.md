@@ -6,6 +6,15 @@ I use Arch btw.
 
 The root of this repo is equivalent to my $HOME directory.
 
+## Note on this repository
+
+**Important**: I'm migrating this repository from GitHub to [Codeberg](https://codeberg.org/ficcdaf/dotfiles). If you're reading this on GitHub, the repo is likely out-of-date and will be removed sometime in the future.
+
+I use this repository to sync and backup my dotfiles. This is done automatically on a timer. Therefore, these configs are:
+
+- Always up-to-date.
+- Potentially broken on any given commit.
+
 ## Note On Keybindings
 
 A note on keybindings: I use Colemak-DH, which is a non-qwerty keyboard layout. I use either `MNEI` or the arrow keys (which is a mod key + `MNEI` on my keyboard) for navigation, depending on a few different factors.
