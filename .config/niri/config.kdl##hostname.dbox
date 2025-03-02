@@ -72,6 +72,7 @@ layout {
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
     center-focused-column "never"
+    // /-always-center-single-column
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
         // Proportion sets the width as a fraction of the output width, taking gaps into account.
@@ -603,7 +604,7 @@ binds {
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
     // Switches focus between the current and the previous workspace.
-    Mod+Shift+Tab {
+    Alt+Tab {
         focus-workspace-previous
     }
     // Adapt the sway-window-switcher and bind it here
