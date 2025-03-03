@@ -1,6 +1,0 @@
-[pull]
-	rebase = false
-[advice]
-	addIgnoredFile = false
-[core]
-	fileMode = false

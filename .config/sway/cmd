@@ -1,1 +1,0 @@
-./script.sh > /path/to/logfile.txt 2>&1

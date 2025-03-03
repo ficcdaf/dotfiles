@@ -1,7 +1,0 @@
-#command
-m back-line
-n forw-line
-e back-line
-i forw-line
-j repeat-search
-J reverse-search

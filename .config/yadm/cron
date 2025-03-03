@@ -1,1 +1,0 @@
-*/5 * * * * /home/fic/.config/yadm/auto.sh >> /home/fic/yadm-auto-push.log

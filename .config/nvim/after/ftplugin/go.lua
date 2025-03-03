@@ -1,1 +1,0 @@
-vim.b.spell = false

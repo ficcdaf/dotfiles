@@ -1,8 +1,0 @@
-[Unit]
-PartOf=graphical-session.target
-After=graphical-session.target
-Requisite=graphical-session.target
-
-[Service]
-ExecStart=/usr/bin/swayidle -w before-sleep 'swaylock -c 121212 -e -f -F'
-Restart=on-failure
